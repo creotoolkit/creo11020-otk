@@ -1,0 +1,544 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcTextStyle"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      564
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcBase.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcBase-TextStyle.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcTextStyle</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcBase.html">pfcBase.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcTextStyle</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcTextStyle</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies the text attributes.
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcBase-TextStyle.html">pfcTextStyle_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new text style object.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Angle">GetAngle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Angle">SetAngle</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The angle of rotation of the whole text, in counterclockwise degrees.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#FontName">GetFontName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FontName">SetFontName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The font name.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Height">GetHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Height">SetHeight</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The text height, in screen coordinates. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsMirrored">GetIsMirrored</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsMirrored">SetIsMirrored</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If this is <tt>true</tt>, the text is mirrored. Otherwise, the text is not mirrored.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsUnderlined">GetIsUnderlined</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsUnderlined">SetIsUnderlined</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If this is <tt>true</tt>, the text is underlined. Otherwise, the text is not underlined.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#SlantAngle">GetSlantAngle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SlantAngle">SetSlantAngle</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The slant angle of the text, in clockwise degrees.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Thickness">GetThickness</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Thickness">SetThickness</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The text thickness.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#WidthFactor">GetWidthFactor</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#WidthFactor">SetWidthFactor</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The ratio of the width of each character (including the gap) as a proportion of the height. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Angle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetAngle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAngle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The angle of rotation of the whole text, in counterclockwise degrees.  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#240">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#241">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FontName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetFontName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFontName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The font name.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#242">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#243">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Height">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHeight</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The text height, in screen coordinates. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#244">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#245">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="WidthFactor">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetWidthFactor</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetWidthFactor</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The ratio of the width of each character (including the gap) as a proportion of the height. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#252">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#253">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SlantAngle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetSlantAngle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSlantAngle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The slant angle of the text, in clockwise degrees.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#248">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#249">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Thickness">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetThickness</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetThickness</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The text thickness.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#250">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#251">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsUnderlined">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsUnderlined</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsUnderlined</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If this is <tt>true</tt>, the text is underlined. Otherwise, the text is not underlined.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#254">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#255">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsMirrored">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsMirrored</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsMirrored</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If this is <tt>true</tt>, the text is mirrored. Otherwise, the text is not mirrored.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#246">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#247">Annotations: Annotation Features and Annotations: Text Style Properties</a>, <a href="../manual0/JAnnot.html#256">Annotations: Annotation Features and Annotations: Text Style Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcBase-TextStyle.html">pfcTextStyle_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new text style object.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

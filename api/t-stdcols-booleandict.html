@@ -1,0 +1,580 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "xbooldictionary"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-stdcols.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-stdcols-booleandict.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;xbooldictionary</h2>
+<tt>
+     # include
+     &lt;<b><a href="h-cipxx.html">stdcols.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>xbooldictionary</b>
+<br>&nbsp;: public <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>xbooldictionary</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Dictionary of booleans.<br>
+<br>A dictionary cannot contain duplicate keys, each key can map to at most one value. Dictionary provides methods for accessing a value by its key, for inserting and removing values as well as for iterating through the dictionary elements.<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#clearall">clearall</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-stdcols-booleandict.html">xbooldictionary</a>&nbsp;*</tt></td><td class="func-signature"><tt><a class="method" href="#create">create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new empty dictionary.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-stdcols-booleandict.html">xbooldictionary</a>&nbsp;*</tt></td><td class="func-signature"><tt><a class="method" href="#createCapacity">createCapacity</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;count)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new empty dictionary with a specified initial capacity. Capacity is the number of elements, that can be added to the dictionary without having to reallocate its internal buffers.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#find">find</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;*value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Finds an element with the specified key in the dictionary. If an element is found, returns <tt>xtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified key exists in the dictionary without returning its value.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#getbyindex">getbyindex</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;*value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the value of an element with the specified index from a dictionary. If an element is found, returns <tt>yxtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its value. Use this method together with methods <tt>getmapsize</tt> and <tt>getkeybyindex</tt> to iterate through the dictionary.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#getkeybyindex">getkeybyindex</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-xstring.html#xstring">xstring</a>&nbsp;*key)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the key of an element with the specified index from a dictionary. If an element is found, returns <tt>xtrue</tt> and sets the key pointer to point to the found string value, otherwise returns <tt>xfalse</tt>. If the key pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its key. Use this method together with methods <tt>getmapsize</tt> and <tt>getbyindex</tt> to iterate through the dictionary.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#getmapsize">getmapsize</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the dictionary size. This size can be greater than the current number of elements in the dictionary, in fact this is a size of the dictionary hashtable.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#remove">remove</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes an element with the specified key from a dictionary.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#removebyindex">removebyindex</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes an element with the specified index from a dictionary. If an element with this index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#set">set</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Assigns a new value to the dictionary element with the specified key, if such an element exists, otherwise adds a new element with the given key and value to the dictionary.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#setbyindex">setbyindex</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Changes the value of a dictionary element with the specified index to the specified value. If an element with the specified index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="getmapsize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>getmapsize</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the dictionary size. This size can be greater than the current number of elements in the dictionary, in fact this is a size of the dictionary hashtable.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Size of the dictionary.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="find">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>find</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;*value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Finds an element with the specified key in the dictionary. If an element is found, returns <tt>xtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified key exists in the dictionary without returning its value.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key to be found.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Pointer to the return value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the value is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="set">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>set</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Assigns a new value to the dictionary element with the specified key, if such an element exists, otherwise adds a new element with the given key and value to the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key of an element.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>New value of an element.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="setbyindex">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>setbyindex</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Changes the value of a dictionary element with the specified index to the specified value. If an element with the specified index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>New element value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="remove">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>remove</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;key)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes an element with the specified key from a dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key of an element to remove.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="removebyindex">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>removebyindex</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes an element with the specified index from a dictionary. If an element with this index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of an element to remove.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="getbyindex">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>getbyindex</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;*value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the value of an element with the specified index from a dictionary. If an element is found, returns <tt>yxtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its value. Use this method together with methods <tt>getmapsize</tt> and <tt>getkeybyindex</tt> to iterate through the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Pointer to the return value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the index is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="getkeybyindex">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>getkeybyindex</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-xstring.html#xstring">xstring</a>&nbsp;*key)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the key of an element with the specified index from a dictionary. If an element is found, returns <tt>xtrue</tt> and sets the key pointer to point to the found string value, otherwise returns <tt>xfalse</tt>. If the key pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its key. Use this method together with methods <tt>getmapsize</tt> and <tt>getbyindex</tt> to iterate through the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Pointer to the returned key.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the index is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="clearall">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>clearall</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-stdcols-booleandict.html">xbooldictionary</a>&nbsp;*</tt></td><td class="func-name"><tt>create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new empty dictionary.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created dictionary.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="createCapacity">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-stdcols-booleandict.html">xbooldictionary</a>&nbsp;*</tt></td><td class="func-name"><tt>createCapacity</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;count)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new empty dictionary with a specified initial capacity. Capacity is the number of elements, that can be added to the dictionary without having to reallocate its internal buffers.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>count</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created dictionary.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

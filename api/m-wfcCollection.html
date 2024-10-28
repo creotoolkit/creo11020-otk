@@ -1,0 +1,297 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "wfcCollection.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      105
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-wfcCollection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "wfcCollection.h"</h2>
+<b>Description</b>
+<br>
+<br>
+  Contains interfaces for object collection, for use in Feature Element Tree functionality.
+  <br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This enumerated type lists the types of curve collection instructions
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-SurfaceCollectionRefType.html">wfcSurfaceCollectionRefType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This enumerated type lists the types of surface collection reference types
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This enumerated type lists the types of surface collection instruction types
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-CurveCollectionInstrAttribute.html">wfcCurveCollectionInstrAttribute</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This enumerated type lists the types of curve collection instruction attributes
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-ChainCollectionUIControl.html">wfcChainCollectionUIControl</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This enumerated type lists the enums to controls interactive curve collection dialog </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcCollection-SurfaceCollectionRule.html">wfcSurfaceCollectionRule</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+            This enumerated type lists the rules for surface collection.
+        </td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CollectCurvesFilter.html">wfcCollectCurvesFilter</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Base class for classes to filter selections collected using <tt><b><a class="method" href="t-wfcSolid-WSolid.html#CollectCurves">wfcWSolid::CollectCurves(wfcChainCollectionUIControls_ptr, optional wfcCollectCurvesFilter_ptr, optional xany, optional wfcCurveCollection_ptr)</a></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-Collection.html">wfcCollection</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Class for collection object used in feature creation using element tree </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CollectSurfacesFilter.html">wfcCollectSurfacesFilter</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+            Base class for classes to filter selections collected using <tt><b><a class="method" href="t-wfcSolid-WSolid.html#CollectSurfaces">wfcWSolid::CollectSurfaces(wfcSurfaceCollectionInstrTypes_ptr, optional wfcCollectSurfacesFilter_ptr, optional wfcSurfaceCollection_ptr)</a></b></tt>
+        </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CrvCollectionInstrAttribute.html">wfcCrvCollectionInstrAttribute</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Attributes used in curve collection </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Class for curve collection  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CurveCollectionInstruction.html">wfcCurveCollectionInstruction</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Class for instruction in curve collection  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Class for surface collection  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionInstruction.html">wfcSurfaceCollectionInstruction</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Class for instruction in surface collection  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionReference.html">wfcSurfaceCollectionReference</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-ChainCollectionUIControls.html">wfcChainCollectionUIControls</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CrvCollectionInstrAttributes.html">wfcCrvCollectionInstrAttributes</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface contains a sequence of curve collection instruction attributes.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-CurveCollectionInstructions.html">wfcCurveCollectionInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface contains a sequence of curve collection instructions.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionInstrTypes.html">wfcSurfaceCollectionInstrTypes</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionInstructions.html">wfcSurfaceCollectionInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface contains a sequence of surface collection instructions.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This interface contains a sequence of surface collection references.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,782 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWDetailSymbolInstItem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1079
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcDetail.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcDetail-WDetailSymbolInstItem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWDetailSymbolInstItem</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcDetail.html">wfcDetail.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWDetailSymbolInstItem</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcAnnotation-Annotation.html">wfcAnnotation</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcDetail-DetailSymbolInstItem.html">pfcDetailSymbolInstItem</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWDetailSymbolInstItem</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Extends the functionality of <tt><b><tt><b><a class="class" href="t-pfcDetail-DetailSymbolInstItem.html">pfcDetailSymbolInstItem</a></b></tt></b></tt>
+<br>
+<br>This is the actual type of Detail SymbolInst Items in Object Toolkit.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddLeader">AddLeader</a>
+ (<a class="type" href="t-pfcDetail-Attachment.html">pfcAttachment_ptr</a>&nbsp;LeaderAttach)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddVarText">AddVarText</a>
+ (<a class="type" href="t-pfcDetail-DetailVariantText.html">pfcDetailVariantText_ptr</a>&nbsp;Text)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Add variable text to the symbol instance. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAnnotationPlane">GetAnnotationPlane</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAttachedDimension">GetAttachedDimension</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Finds the dimension to which the symbol instance is directly attached. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailEntityInstructions.html">pfcDetailEntityInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetEntityInstructions">GetEntityInstructions</a>
+ (<a class="type" href="t-pfcDetail-DetailEntityItem.html">pfcDetailEntityItem_ptr</a>&nbsp;Item)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Gets data of an entity in the symbol instance. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetFeature">GetFeature</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Return the feature that is shown the detail symbol instance. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailNoteInstructions.html">pfcDetailNoteInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetNoteInstructions">GetNoteInstructions</a>
+ (<a class="type" href="t-pfcDetail-DetailNoteItem.html">pfcDetailNoteItem_ptr</a>&nbsp;Item, <a class="type" href="t-pfcBase-DimDisplayMode.html">pfcDimDisplayMode</a>&nbsp;DispMode)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Gets data of a note in the symbol instance. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationPlane">SetAnnotationPlane</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcAnnotation-Annotation.html"><tt>wfcAnnotation</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcAnnotation-Annotation.html#ShowInDrawing"><tt>ShowInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#DisplayInDrawing"><tt>DisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay"><tt>Undisplay</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UndisplayInDrawing"><tt>UndisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsShown"><tt>IsShown</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Update"><tt>Update</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyle"><tt>GetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyle"><tt>SetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyleInDrawing"><tt>GetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyleInDrawing"><tt>SetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdateAttachment"><tt>UpdateAttachment</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdatePosition"><tt>UpdatePosition</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsAssociative"><tt>IsAssociative</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAttachmentAssociativity"><tt>GetAttachmentAssociativity</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAnnotationElement"><tt>GetAnnotationElement</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsInactive"><tt>IsInactive</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Rotate"><tt>Rotate</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy"><tt>ConvertLegacy</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#NeedsConversion"><tt>NeedsConversion</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetSecurityMarking"><tt>GetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetSecurityMarking"><tt>SetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsUsingXSecReference"><tt>IsUsingXSecReference</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailItem.html"><tt>pfcDetailItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailItem.html#GetDetailType"><tt>GetDetailType</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItem.html#Delete"><tt>Delete</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailSymbolInstItem.html"><tt>pfcDetailSymbolInstItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#Draw"><tt>Draw</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#Show"><tt>Show</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#Remove"><tt>Remove</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#GetInstructions"><tt>GetInstructions</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#Modify"><tt>Modify</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailSymbolInstItem.html#ListGroups"><tt>ListGroups</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetAttachedDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-name"><tt>GetAttachedDimension</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Finds the dimension to which the symbol instance is directly attached. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The symbol instance is not placed on item to a dimension</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The symbol instance is placed on a dim but we are unable to fill in the output structure on account of the dimension's model being missing (perhaps it was suppressed in the assembly). </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#431">Drawings: Symbol Instance Data</a>, <a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The dimension to which the symbol instance is directly attached. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddLeader">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddLeader</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-Attachment.html">pfcAttachment_ptr</a>&nbsp;LeaderAttach)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Not enough memory. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#432">Drawings: Symbol Instance Data</a>, <a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LeaderAttach</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddVarText">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddVarText</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-DetailVariantText.html">pfcDetailVariantText_ptr</a>&nbsp;Text)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Add variable text to the symbol instance. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Not enough memory. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#433">Drawings: Symbol Instance Data</a>, <a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Text</b></tt>
+</dt>
+<dd>The variable text. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-name"><tt>GetFeature</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Return the feature that is shown the detail symbol instance. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The symbol instance is not generated from a solid model feature. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#437">Drawings: Cross-referencing Weld Symbols and Drawing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The feature (i.e. weld feature) that produces the symbol. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationPlane</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - Annotation plane is not appropriate for this data.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#210">Annotations: Annotation Features and Annotations: Creating, Reading and Modifying 3D Symbols</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotPlane</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-name"><tt>GetAnnotationPlane</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - Annotation plane is not appropriate for this data.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#209">Annotations: Annotation Features and Annotations: Creating, Reading and Modifying 3D Symbols</a>, <a href="../manual0/JAnnot.html#210">Annotations: Annotation Features and Annotations: Creating, Reading and Modifying 3D Symbols</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetEntityInstructions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailEntityInstructions.html">pfcDetailEntityInstructions_ptr</a></tt></td><td class="func-name"><tt>GetEntityInstructions</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-DetailEntityItem.html">pfcDetailEntityItem_ptr</a>&nbsp;Item)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Gets data of an entity in the symbol instance. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No symbols were found in the model.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Item</b></tt>
+</dt>
+<dd>The entity attached to symbol instance. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The entity data in symbol instance space. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetNoteInstructions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailNoteInstructions.html">pfcDetailNoteInstructions_ptr</a></tt></td><td class="func-name"><tt>GetNoteInstructions</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-DetailNoteItem.html">pfcDetailNoteItem_ptr</a>&nbsp;Item, <a class="type" href="t-pfcBase-DimDisplayMode.html">pfcDimDisplayMode</a>&nbsp;DispMode)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Gets data of a note in the symbol instance. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No symbols were found in the model.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#434">Drawings: Symbol Instance Data</a>, <a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Item</b></tt>
+</dt>
+<dd>The pfcDetailNoteItem attached to symbol instance. </dd>
+<dt>
+<tt><b>DispMode</b></tt>
+</dt>
+<dd>The display mode. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The note data in symbol instance space encapsulated in pfcDetailNoteInstructions_ptr. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

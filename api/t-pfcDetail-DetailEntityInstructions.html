@@ -1,0 +1,511 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDetailEntityInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      142
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailEntityInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDetailEntityInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDetail.html">pfcDetail.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDetailEntityInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcDetail-DetailCreateInstructions.html">pfcDetailCreateInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcDetailEntityInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a detail entity item.
+It may be used when creating detail entities (<tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">pfcDetailSymbolDefItem::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt>), or accessing existing entities (<tt><b><a class="method" href="t-pfcDetail-DetailEntityItem.html#Modify">pfcDetailEntityItem::Modify(pfcDetailEntityInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailEntityItem.html#GetInstructions">pfcDetailEntityItem::GetInstructions()</a></b></tt>).
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcGeometry-LineDescriptor.html#Create">pfcLineDescriptor::Create(pfcPoint3D_ptr, pfcPoint3D_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-ArcDescriptor.html#Create">pfcArcDescriptor::Create(pfcVector3D_ptr, pfcVector3D_ptr, pfcPoint3D_ptr, xreal, xreal, xreal)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-ArrowDescriptor.html#Create">pfcArrowDescriptor::Create(pfcPoint3D_ptr, pfcPoint3D_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-CircleDescriptor.html#Create">pfcCircleDescriptor::Create(pfcPoint3D_ptr, xreal, pfcVector3D_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-SplineDescriptor.html#Create">pfcSplineDescriptor::Create(pfcSplinePoints_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-BSplineDescriptor.html#Create">pfcBSplineDescriptor::Create(xint, pfcBSplinePoints_ptr, xrealsequence_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-EllipseDescriptor.html#Create">pfcEllipseDescriptor::Create(pfcPoint3D_ptr, pfcVector3D_ptr, pfcVector3D_ptr, xreal, xreal, xreal, xreal)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-PolygonDescriptor.html#Create">pfcPolygonDescriptor::Create(pfcPoint3Ds_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcGeometry-CompositeCurveDescriptor.html#Create">pfcCompositeCurveDescriptor::Create(pfcCurveDescriptors_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel2D-Model2D.html#List2DViews">pfcModel2D::List2DViews()</a></b></tt>, <tt><b><a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetBackgroundView">pfcSheetOwner::GetSheetBackgroundView(xint)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#435">Drawings: Symbol Instance Data</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailEntityInstructions.html">pfcDetailEntityInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;inGeometry, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;inView)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an instructions object describing how to construct a detail entity, for use in the methods <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">pfcDetailSymbolDefItem::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailEntityItem.html#Modify">pfcDetailEntityItem::Modify(pfcDetailEntityInstructions_ptr)</a></b></tt>.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Color">GetColor</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Color">SetColor</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#FontName">GetFontName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FontName">SetFontName</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The name of the linestyle.  If <tt>null</tt>, the default linestyle is used.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Geometry">GetGeometry</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Geometry">SetGeometry</a>
+ (<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The geometry of the detail entity.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsConstruction">GetIsConstruction</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsConstruction">SetIsConstruction</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Whether or not the entity is construction.  If <tt>null</tt>, the entity is not a construction entity.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#View">GetView</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#View">SetView</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The drawing view associated with the entity.  This can be a view of a drawing model, or a drawing sheet background view.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Width">GetWidth</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Width">SetWidth</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The width of the entity line.  If <tt>null</tt>, the default width is used.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailCreateInstructions.html"><tt>pfcDetailCreateInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Geometry">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a></tt></td><td class="func-name"><tt>GetGeometry</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetGeometry</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The geometry of the detail entity.<br>
+<br>When creating a "circle" detail entity, use an arc with a start
+   angle of 0 and an end angle of 2*PI. Creo Parametric represents circle detail
+   entities with the <tt><b><tt><b><a class="class" href="t-pfcGeometry-ArcDescriptor.html">pfcArcDescriptor</a></b></tt></b></tt> object.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#447">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#448">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsConstruction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsConstruction</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsConstruction</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Whether or not the entity is construction.  If <tt>null</tt>, the entity is not a construction entity.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#449">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#450">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Color">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-name"><tt>GetColor</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetColor</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#451">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#452">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FontName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetFontName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFontName</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The name of the linestyle.  If <tt>null</tt>, the default linestyle is used.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No font name is specified.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#453">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#454">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Width">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetWidth</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetWidth</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The width of the entity line.  If <tt>null</tt>, the default width is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#455">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#456">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="View">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a></tt></td><td class="func-name"><tt>GetView</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetView</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The drawing view associated with the entity.  This can be a view of a drawing model, or a drawing sheet background view.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The entity is not attached to a drawing view.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#457">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailEntityInstructions.html">pfcDetailEntityInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;inGeometry, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;inView)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an instructions object describing how to construct a detail entity, for use in the methods <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">pfcDetailSymbolDefItem::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailEntityItem.html#Modify">pfcDetailEntityItem::Modify(pfcDetailEntityInstructions_ptr)</a></b></tt>.
+<br>
+<br>When creating a "circle" detail entity, use an arc with a start angle
+   of 0 and an end angle of 2*PI. Creo Parametric represents circle detail entities
+   with the <tt><b><tt><b><a class="class" href="t-pfcGeometry-ArcDescriptor.html">pfcArcDescriptor</a></b></tt></b></tt> object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#446">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The curve geometry describing the trajectory of the detail entity (in screen coordinates).</dd>
+<dt>
+<tt><b>inView</b></tt>
+</dt>
+<dd>The drawing view associated with the entity.  This can be a model view obtained from <tt><b><a class="method" href="t-pfcModel2D-Model2D.html#List2DViews">pfcModel2D::List2DViews()</a></b></tt>, or a drawing sheet background view obtained from <tt><b><a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetBackgroundView">pfcSheetOwner::GetSheetBackgroundView(xint)</a></b></tt>.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

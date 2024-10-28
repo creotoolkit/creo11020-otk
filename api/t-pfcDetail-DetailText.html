@@ -1,0 +1,627 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDetailText"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      165
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailText.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDetailText</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDetail.html">pfcDetail.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDetailText</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcDetailText</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a text entry in a detail note.
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailText.html">pfcDetailText_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inText)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a data object containing a text item in a note.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#FontName">GetFontName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FontName">SetFontName</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetFont">pfcAnnotationTextStyle::SetFont</a></tt>
+<p></p>The name of the text font.  If <tt>null</tt>, the default Creo Parametric font is used.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsUnderlined">GetIsUnderlined</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsUnderlined">SetIsUnderlined</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#UnderlineText">pfcAnnotationTextStyle::UnderlineText</a></tt>
+<p></p>Whether or not the text is underlined.  If <tt>null</tt>, the text is not underlined.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Text">GetText</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Text">SetText</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The text string. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#TextHeight">GetTextHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TextHeight">SetTextHeight</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetHeight">pfcAnnotationTextStyle::SetHeight</a></tt>
+<p></p>The text height.  If <tt>null</tt>, the default note text height is used.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#TextSlantAngle">GetTextSlantAngle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TextSlantAngle">SetTextSlantAngle</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetSlantAngle">pfcAnnotationTextStyle::SetSlantAngle</a></tt>
+<p></p>The text slant angle. If <tt>null</tt>, no slant angle is applied.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTextStyle">GetTextStyle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#TextThickness">GetTextThickness</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TextThickness">SetTextThickness</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetThickness">pfcAnnotationTextStyle::SetThickness</a></tt>
+<p></p>The text thickness.  If <tt>null</tt>, a thickness of 0.0 is applied.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#TextWidthFactor">GetTextWidthFactor</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TextWidthFactor">SetTextWidthFactor</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetWidth">pfcAnnotationTextStyle::SetWidth</a></tt>
+<p></p>The text width factor.  If <tt>null</tt>, the width factor of 1.0 is applied.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetFont">pfcAnnotationTextStyle::SetFont</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#UnderlineText">pfcAnnotationTextStyle::UnderlineText</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetHeight">pfcAnnotationTextStyle::SetHeight</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetSlantAngle">pfcAnnotationTextStyle::SetSlantAngle</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetTextStyle">SetTextStyle</a>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetThickness">pfcAnnotationTextStyle::SetThickness</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetWidth">pfcAnnotationTextStyle::SetWidth</a></tt>
+<p></p>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="TextHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetTextHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextHeight</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetHeight">pfcAnnotationTextStyle::SetHeight</a></tt>
+<p></p>
+<br>The text height.  If <tt>null</tt>, the default note text height is used.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TextWidthFactor">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetTextWidthFactor</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextWidthFactor</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetWidth">pfcAnnotationTextStyle::SetWidth</a></tt>
+<p></p>
+<br>The text width factor.  If <tt>null</tt>, the width factor of 1.0 is applied.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TextSlantAngle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetTextSlantAngle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextSlantAngle</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetSlantAngle">pfcAnnotationTextStyle::SetSlantAngle</a></tt>
+<p></p>
+<br>The text slant angle. If <tt>null</tt>, no slant angle is applied.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TextThickness">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetTextThickness</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextThickness</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetThickness">pfcAnnotationTextStyle::SetThickness</a></tt>
+<p></p>
+<br>The text thickness.  If <tt>null</tt>, a thickness of 0.0 is applied.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FontName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetFontName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFontName</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#SetFont">pfcAnnotationTextStyle::SetFont</a></tt>
+<p></p>
+<br>The name of the text font.  If <tt>null</tt>, the default Creo Parametric font is used.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsUnderlined">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsUnderlined</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsUnderlined</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDetail-DetailText.html#SetTextStyle">pfcDetailText::SetTextStyle</a>, <a class="method" href="t-pfcDetail-AnnotationTextStyle.html#UnderlineText">pfcAnnotationTextStyle::UnderlineText</a></tt>
+<p></p>
+<br>Whether or not the text is underlined.  If <tt>null</tt>, the text is not underlined.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Text">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetText</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetText</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The text string. <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTextStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-name"><tt>GetTextStyle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetTextStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextStyle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextStyle</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailText.html">pfcDetailText_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inText)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a data object containing a text item in a note.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inText</b></tt>
+</dt>
+<dd>The text string.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

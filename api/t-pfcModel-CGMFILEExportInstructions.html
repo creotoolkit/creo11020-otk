@@ -1,0 +1,254 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcCGMFILEExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      40
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-CGMFILEExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcCGMFILEExportInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcModel.html">pfcModel.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcCGMFILEExportInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcModel-ExportInstructions.html">pfcExportInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcCGMFILEExportInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Used to export a drawing in CGM format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Save As &gt; Export &gt; CGM</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric on-line help.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcModel-CGMFILEExportInstructions.html#Create">pfcCGMFILEExportInstructions::Create(pfcCGMExportType, pfcCGMScaleType)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-Model.html#Export">pfcModel::Export(xrstring, pfcExportInstructions_ptr)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#34">Interface: Export Instructions</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcModel-CGMFILEExportInstructions.html">pfcCGMFILEExportInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a>&nbsp;ExportType, <a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a>&nbsp;WhichScale)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new instructions object used to export a drawing in CGM format.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a></tt></td><td class="func-signature"><tt><a class="method" href="#ExportType">GetExportType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ExportType">SetExportType</a>
+ (<a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a></b></tt></b></tt> object that specifies ASCII or binary</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a></tt></td><td class="func-signature"><tt><a class="method" href="#WhichScale">GetWhichScale</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#WhichScale">SetWhichScale</a>
+ (<a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a></b></tt></b></tt> object that specifies abstract or metric scale</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-ExportInstructions.html"><tt>pfcExportInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-ExportInstructions.html#GetFileType"><tt>GetFileType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="ExportType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a></tt></td><td class="func-name"><tt>GetExportType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetExportType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a></b></tt></b></tt> object that specifies ASCII or binary<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="WhichScale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a></tt></td><td class="func-name"><tt>GetWhichScale</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetWhichScale</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a></b></tt></b></tt> object that specifies abstract or metric scale<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcModel-CGMFILEExportInstructions.html">pfcCGMFILEExportInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a>&nbsp;ExportType, <a class="type" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a>&nbsp;WhichScale)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new instructions object used to export a drawing in CGM format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Save As &gt; Export &gt; CGM</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric on-line help.  This argument must be passed to <tt><b><a class="method" href="t-pfcModel-Model.html#Export">pfcModel::Export(xrstring, pfcExportInstructions_ptr)</a></b></tt> to produce an output file. Valid only for solid models.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#21">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExportType</b></tt>
+</dt>
+<dd>A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMExportType.html">pfcCGMExportType</a></b></tt></b></tt> object that specifies ASCII or binary</dd>
+<dt>
+<tt><b>WhichScale</b></tt>
+</dt>
+<dd>A <tt><b><tt><b><a class="enumtype" href="t-pfcModel-CGMScaleType.html">pfcCGMScaleType</a></b></tt></b></tt> object that specifies abstract or metric scale</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,1310 @@
+<!--
+
+  14-MAY-02 J-03-23 Maya  $$1  Created.
+  18-JUN-02 J-03-26 Maya  $$2  Changed some descriptions, added new methods
+  13-AUG-02 J-03-30 Maya  $$3  Removed "Frames/No Frames" 
+  25-FEB-08 L-03-03 Maya  $$4  cString->cStringT, CWString->cWStringT
+ 
+  -->
+
+<html>
+
+<head>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>
+  CIP C++ string Type
+ </title>
+ <link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="frame-entity">
+
+<table class="toolbar" border="0" width="100%" cellspacing="0">
+ <tr>
+  <td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="h-cipxx.html">File</a></td>
+<!-- Removed to work with API Wizd
+  <td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="h-xstring.html">No&nbsp;Frames</a></td>
+-->
+  <td class="toolbar-lib-name"><font size="+2"><b><i>Standard Definitions</i></b></font></td>
+ </tr>
+</table>
+<hr>
+
+<h2>
+CIP string Type
+</h2>
+
+<tt>#&nbsp;include &lt;<b><a href="h-cipxx.html">cipxx.h</a></b>&gt;</tt><br><br>
+
+<table border="0">
+<tr>
+ <td><tt>typedef</tt></td>
+ <td><tt>cStringT</tt></td>
+ <td><tt><b><a name="xrstring">xrstring</a></b></tt></td>
+</tr>
+<tr>
+ <td><tt># define</tt></td>
+ <td><tt><b><a name="xstringnil">xstringnil</a></b></tt></td>
+ <td><tt>((<b><a href="#xrstring">xrstring</a></b>) -1)</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>typedef</tt></td>
+ <td><tt>cWStringT</tt></td>
+ <td><tt><b><a name="xrwstring">xrwstring</a></b></tt></td>
+</tr>
+<tr>
+ <td><tt># define</tt></td>
+ <td><tt><b><a name="xwstringnil">xwstringnil</a></b></tt></td>
+ <td><tt>((<b><a href="#xrwstring">xrwstring</a></b>) -1)</tt></td>
+</tr>
+</table>
+<br><hr><br>
+
+<table border="0">
+<tr>
+ <td colspan="3"><tt><a name="xstring_c">typedef struct <b>__xstring_c</b></tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>{</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt>void</tt></td>
+ <td><tt>*buffer;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt>String</tt></td>
+ <td><tt>mbstr;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt>Wstring</tt></td>
+ <td><tt>wcstr;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td</tr>
+<tr>
+ <td colspan="3"><tt>} <b>xstring_c</b></a>;</tt></td>
+</tr>
+</table>
+<br><hr><br>
+
+<table class="method-summary" border="0">
+<tr>
+ <td colspan="3"><tt>class <b><a name="xstring">xstring</a></b></tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>{</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>public:</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr ()">xstring</a> ()</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (const xstring &)">xstring</a> (const <a class="type" href="#xstring">xstring</a>&nbsp;&str)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (const xstring_c &)">xstring</a> (const&nbsp;<a class="type" href="#xstring_c">xstring_c</a>&nbsp;&str)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cStringT)">xstring</a> (cStringT&nbsp;str)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cWStringT)">xstring</a> (cWStringT&nbsp;str)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cStringT, cStringT)">xstring</a> (cStringT&nbsp;str1, cStringT&nbsp;str2)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cWStringT, cWStringT)">xstring</a> (cWStringT&nbsp;str1, cWStringT&nbsp;str2)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cStringT, int)">xstring</a> (cStringT&nbsp;str, int&nbsp;len)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cWStringT, int)">xstring</a> (cWStringT&nbsp;str, int&nbsp;len)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cStringT, int, int)">xstring</a> (cStringT&nbsp;str, int&nbsp;from, int&nbsp;to)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (cWStringT, int, int)">xstring</a> (cWStringT&nbsp;str, int&nbsp;from, int&nbsp;to)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#xstring-constr (strstream &)">xstring</a> (strstream&nbsp;& stream)</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#operator cStringT">operator&nbsp;cStringT</a> ();</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><a class="method" href="#operator cWStringT">operator&nbsp;cWStringT</a> ();</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring_c">xstring_c</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#getxstring_c">getxstring_c</a> () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator= (cStringT)">operator=</a> (cStringT&nbsp;str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator= (cWStringT)">operator=</a> (cWStringT&nbsp;str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator= (const xstring &)">operator=</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator= (const xstring_c &)">operator=</a> (const&nbsp;<a class="type" href="#xstring_c">xstring_c</a>&nbsp;&str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator= (strstream &)">operator=</a> (strstream&nbsp;&stream);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></b></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator+= (Char)">operator+=</a> (Char&nbsp;ch);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></b></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator+= (WChar)">operator+=</a> (WChar&nbsp;ch);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator+= (cStringT)">operator+=</a> (cStringT&nbsp;str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator+= (cWStringT)">operator+=</a> (cWStringT&nbsp;str);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt>&<a class="method" href="#operator+= (const xstring &)">operator+=</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#IsNull">IsNull</a> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#IsEmpty">IsEmpty</a> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>size_t</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetMBSize">GetMBSize</a> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetLength">GetLength</a> () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#ToInt">ToInt</a> (int&nbsp;*out_val) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#ToDouble">ToDouble</a> (double&nbsp;*out_val) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#ToUpper">ToUpper</a> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#ToLower">ToLower</a> () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Substring">Substring</a> (int&nbsp;from, int&nbsp;to = -1) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetNWords">GetNWords</a> (cStringT&nbsp;seps&nbsp;=&nbsp;"&nbsp;\t\n") const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetNWords">GetNWords</a> (cWStringT&nbsp;seps) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetNWords">GetNWords</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&seps) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetWord">GetWord</a> (int&nbsp;idx, cStringT&nbsp;seps&nbsp;=&nbsp;"&nbsp;\t\n") const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetWord">GetWord</a> (int&nbsp;idx, cWStringT&nbsp;seps) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#GetWord">GetWord</a> (int&nbsp;idx, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&seps) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Pos">Pos</a> (cStringT&nbsp;substring) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Pos">Pos</a> (cWStringT&nbsp;substring) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Pos">Pos</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&substring) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Match">Match</a> (cStringT&nbsp;pattern) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Match">Match</a> (cWStringT&nbsp;pattern) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Match">Match</a> (const &nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&pattern) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr> 
+<tr> 
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td> 
+ <td class="return-type"><tt>void</tt></td> 
+ <td class="func-signature"><tt><a class="method" href="#Substitute">Substitute</a> (cStringT&nbsp;target, cStringT&nbsp;replacement, int&nbsp;firstOccur&nbsp;=&nbsp;1, int&nbsp;maxCount&nbsp;=&nbsp;-1);</tt></td>
+</tr> 
+<tr> 
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td> 
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Substitute">Substitute</a> (cWStringT&nbsp;target, cWStringT&nbsp;replacement, int&nbsp;firstOccur&nbsp;=&nbsp;1, int&nbsp;maxCount&nbsp;=&nbsp;-1);</tt></td>
+</tr> 
+<tr> 
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td> 
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Substitute">Substitute</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&target, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&replacement, int&nbsp;firstOccur&nbsp;=&nbsp;1, int&nbsp;maxCount&nbsp;=&nbsp;-1);</tt></td>
+</tr> 
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static&nbsp;<a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#Printf">Printf</a> (cStringT&nbsp;format, ...);</tt></td>
+<tr>
+ <td colspan="3"><tt>};</tt></td>
+</tr>
+</table>
+<br><hr><br>
+
+<table class="entities" border="0">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator==">operator==</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator==">operator==</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cWStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator==">operator==</a> (cWStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator==">operator==</a> (cStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator==">operator==</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator!=">operator!=</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator!=">operator!=</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cWStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator!=">operator!=</a> (cStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator!=">operator!=</a> (cWStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator!=">operator!=</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator+">operator+</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator+">operator+</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, cWStringT&nbsp;str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator+">operator+</a> (cStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator+">operator+</a> (cWStringT&nbsp;str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="func" href="#operator+">operator+</a> (const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str1, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str2);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr> 
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td> 
+ <td class="func-signature"><tt><a class="func" href="#operator<<">operator<<</a> (ostream&nbsp;&os, const&nbsp;<a class="type" href="#xstring">xstring</a>&nbsp;&str);</tt></td>
+</tr> 
+</table>
+<br><hr><br>
+
+<b>Description</b>
+<br><br>
+Class <tt><b>xstring</b></tt> represents character strings. A string is stored as either a multibyte string or as a wide character string, or as both. Memory is allocated on demand and owned by the <tt><b>xstring</b></tt> object. When an <tt><b>xstring</b></tt> object is assigned to another <tt><b>xstring</b></tt> object, the memory allocated for the string storage does not get duplicated. <tt><b>xstring</b></tt> uses reference counting mechanism for its memory management. <tt><b>xstring</b></tt> object is allowed to have a null value; a null string is not the same as an empty string.
+<br><br>
+<b>Warning</b>:<br><br>
+<tt><b><a href="#xstringnil">xstringnil</a></b></tt>(<tt><b><a href="#xwstringnil">xwstringnil</a></b></tt>) is not the same as a NULL pointer in C/C++.
+Do not pass a C/C++ NULL pointer to xstring methods,
+use <a href="#null converters">these inline functions</a> to convert between C-style and CIP-style optional string pointers.
+<br><br><hr><br>
+
+<b>Constructors</b>
+<br><br>
+
+<a name="xstring-constr ()">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>()</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new null <tt><b>xstring</b></tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (const xstring &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a>&nbsp;&str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Copy constructor. Constructs a new <tt><b>xstring</b></tt> that contains the same sequence of characters as the <tt><b>xstring</b></tt> object passed as parameter. Memory allocated for the string storage does not get duplicated.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (const xstring_c &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring_c">xstring_c</a> &str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object that contains the same sequence of characters as the <tt><b>xstring_c</b></tt> object passed as parameter. Memory allocated for the string storage does not get duplicated.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(cStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from a multibyte string.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cWStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(cWStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from a wide string.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cStringT, cStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(cSring str1, cStringT str2)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object that contains the concatenation of the two given multibyte strings. 
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cWStringT, cWStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(CWSring str1, cWStringT str2)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object that contains the concatenation of the two given wide strings.
+</td></tr>
+</table>
+<br>
+ 
+<a name="xstring-constr (cStringT, int)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(cSring str, int len)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from the source multibyte string truncated to the given length (in characters).
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cWStringT, int)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(CWSring str, int len)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from the source wide string truncated to the given length (in characters).
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cStringT, int, int)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(cSring str1, int from, int to)</tt></td>
+</td></tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from the source multibyte string. The result starts with character with index <tt>from</tt> and ends with character with index <tt>(to-1)</tt>. If index to is <tt>-1</tt>, the source string is copied up to the end.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (cWStringT, int, int)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(CWSring str1, int from, int to)</tt></td>
+</td></tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from the source wide string. The result starts with character with index <tt>from</tt> and ends with character with index <tt>(to-1)</tt>. If index to is <tt>-1</tt>, the source string is copied up to the end.
+</td></tr>
+</table>
+<br>
+
+<a name="xstring-constr (strstream &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>xstring</tt></td>
+ <td class="func-params"><tt>(strstream &steam)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Constructs a new <tt><b>xstring</b></tt> object from the contents of the <tt>strstream</tt>.
+</td></tr>
+</table>
+<br><hr><br>
+
+<b>Operators</b>
+<br><br>
+
+<a name="operator cStringT">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>operator cStringT</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the contents of the <tt><b>xstring</b></tt> object as a multibyte string. For a null string returns <tt><b><a href="#xstringnil">xstringnil</a></b></tt>. The returned string is owned by the <tt><b>xstring</b></tt> object and should not be deallocated by a caller.
+</td></tr>
+</table>
+<br>
+
+<a name="operator cWStringT">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="func-name"><tt>operator cWStringT</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the contents of the <tt><b>xstring</b></tt> object as a wide string. For a null string returns <tt><b><a href="#xwstringnil">xwstringnil</a></b></tt>. The returned string is owned by the <tt><b>xstring</b></tt> object and should not be deallocated by a caller.
+</td></tr>
+</table>
+<br>
+
+<a name="operator= (cStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator=</tt></td>
+ <td class="func-params"><tt>(cStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Assigns a multibyte string to the <tt><b>xstring</b></tt> object. Returns a reference to this <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="operator= (cWStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator=</tt></td>
+ <td class="func-params"><tt>(cWStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Assigns a wide string to the <tt><b>xstring</b></tt> object. Returns a reference to this <tt><b>xstring</b></tt> object.
+</td></tr>
+</table> 
+<br>   
+
+<a name="operator= (const xstring &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Assigns another <tt><b>xstring</b></tt> object to this <tt><b>xstring</b></tt> object. Returns a reference to this <tt><b>xstring</b></tt> object. The memory allocated for the string storage does not get duplicated.
+</td></tr>
+</table>
+<br>
+
+<a name="operator= (const xstring_c &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring_c">xstring_c</a> &str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Assigns a C-style <tt><b>xstring_c</b></tt> object to this <tt><b>xstring</b></tt> object. Returns a reference to this <tt><b>xstring</b></tt> object. The memory allocated for the string storage does not get duplicated.
+</td></tr>
+</table>
+<br>
+
+<a name="operator= (strstream &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator=</tt></td>
+ <td class="func-params"><tt>(strstream &stream)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Assigns contents of the <tt>strstream</tt> to this <tt><b>xstring</b></tt> object. Returns a reference to this <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="operator+= (Char)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator+=</tt></td>
+ <td class="func-params"><tt>(Char ch)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the contents of the <tt><b>xstring</b></tt> object by appending a character to the end of the string. Returns a reference to the modified <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="operator+= (WChar)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator+=</tt></td>
+ <td class="func-params"><tt>(WChar ch)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the contents of the <tt><b>xstring</b></tt> object by appending a wide character to the end of the string. Returns a reference to the modified <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+ 
+<a name="operator+= (cStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator+=</tt></td>
+ <td class="func-params"><tt>(cStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the contents of the <tt><b>xstring</b></tt> object by appending a multibyte string to the end of the string. Returns a reference to the modified <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="operator+= (cWStringT)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator+=</tt></td>
+ <td class="func-params"><tt>(cWStringT str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the contents of the <tt><b>xstring</b></tt> object by appending a wide string to the end of the string. Returns a reference to the modified <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+ 
+<a name="operator+= (const xstring &)">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>&operator+=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the contents of the <tt><b>xstring</b></tt> object by appending a string represented by another <tt><b>xstring</b></tt> object the end of the string. Returns a reference to the modified <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br><hr><br>
+
+<b>Methods</b>
+<br><br>
+
+<a name="getxstring_c">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>xstring_c</tt></td>
+ <td class="func-name"><tt>getxstring_c</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns a C-style <tt><b><a class="type" href="#xstring_c">xstring_c</a></b></tt> object corresponding to the <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="IsNull">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>IsNull</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <tt>true</tt> if this <tt><b>xstring</b></tt> object is a null string, otherwise returns <tt>false</tt>. Null string is not the same as empty string. A string is null if it was created by the <tt><b>xstring</b></tt> default constructor or if it was assigned another null string, <tt><b><a href="#xstringnil">xstringnil</a></b></tt> or <tt><b><a href="#xwstringnil">xwstringnil</a></b></tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="IsEmpty">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>IsEmpty</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <tt>true</tt> if this <tt><b>xstring</b></tt> object is a null string or an empty string (""), otherwise returns <tt>false</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="GetMBSize">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>size_t</tt></td>
+ <td class="func-name"><tt>GetMBSize</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns size in bytes, including the last NULL character, of the multibyte representation contained by this string. This method does not allocate a multibyte representation is not already allocated.
+</td></tr>
+</table>
+<br>
+
+<a name="GetLength">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>GetLength</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the length in characters of the string represented by this <tt><b>xstring</b></tt> object.
+</td></tr>
+</table>
+<br>
+
+<a name="ToInt">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>ToInt</tt></td>
+ <td class="func-params"><tt>(int *out_val) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts the string represented by this <tt><b>xstring</b></tt> object to an integer. If conversion fails returns <tt>false</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="ToDouble">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>ToDouble</tt></td>
+ <td class="func-params"><tt>(double *out_val) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts the string represented by this <tt><b>xstring</b></tt> object to a real number. If conversion fails returns <tt>false</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="ToUpper">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>ToUpper</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts the content of the given <tt><b>xstring</b></tt> object to the upper case. Creates and returns a new <tt><b>xstring</b></tt> object which contains the resulting string consisting of all upper case charaters. The original <tt><b>xstring</b></tt> object does not get modified.
+</td></tr>
+</table>
+<br>
+
+<a name="ToLower">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>ToLower</tt></td>
+ <td class="func-params"><tt>() const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts the content of the given <tt><b>xstring</b></tt> object to the lower case. Creates and returns a new <tt><b>xstring</b></tt> object which contains the resulting string consisting of all lower case charaters. The original <tt><b>xstring</b></tt> object does not get modified.
+</td></tr>
+</table>
+<br>
+
+<a name="Substring">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>Substring</tt></td>
+ <td class="func-params"><tt>(int from, int to = -1) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Creates a new <tt><b>xstring</b></tt> object which contains a substring of the string represented by this <tt><b>xstring</b></tt>. The resulting string starts with character with index <tt>(from)</tt> and ends with the character with index <tt>(to-1)</tt>. If index <tt>(to)</tt> is <tt>-1</tt>, the string is copied up to the end.
+</td></tr>
+</table>
+<br>
+
+<a name="GetNWords">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>GetNWords</tt></td>
+ <td class="func-params"><tt>(cStringT seps = " \t\n") const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>GetNWords</tt></td>
+ <td class="func-params"><tt>(cWStringT seps) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>GetNWords</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &seps) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the number of words in the string represented by this <tt><b>xstring</b></tt> object. Words are considered to be separated by one of the charaters of string <tt>(seps)</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="GetWord">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>GetWord</tt></td>
+ <td class="func-params"><tt>(int idx, cStringT seps = " \t\n") const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>GetWord</tt></td>
+ <td class="func-params"><tt>(int idx, cWStringT seps) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>GetWord</tt></td>
+ <td class="func-params"><tt>(int idx, const <a class="type" href="#xstring">xstring</a> &seps) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the new <tt><b>xstring</b></tt> object which contains the word with index <tt>(idx)</tt> of the string represented by this <tt><b>xstring</b></tt> object. Words are considered to be separated by one of the charaters of string <tt>(seps)</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="Pos">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>Pos</tt></td>
+ <td class="func-params"><tt>(cStringT substring) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>Pos</tt></td>
+ <td class="func-params"><tt>(cWStringT substring) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>int</tt></td>
+ <td class="func-name"><tt>Pos</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &substring) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns position in characters of the first occurence of a substring in the string represented by this <tt><b>xstring</b></tt> object. If the substring is not found returns <tt>-1</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="Match">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>Match</tt></td>
+ <td class="func-params"><tt>(cStringT pattern) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>Match</tt></td>
+ <td class="func-params"><tt>(cWStringT pattern) const</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>Match</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &pattern) const</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Verifies if the string represented by this <tt><b>xstring</b></tt> object matches to a shell style pattern. 
+</td></tr>
+</table>
+<br>
+
+<a name="Substitute">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-name"><tt>Substitute</tt></td>
+ <td class="func-params"><tt>(cStringT target, cStringT replacement, int firstOccur = 1, int maxCount = -1)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-name"><tt>Substitute</tt></td>
+ <td class="func-params"><tt>(cWStringT target, cWStringT replacement, int firstOccur = 1, int maxCount = -1)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-name"><tt>Substitute</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &target, const <a class="type" href="#xstring">xstring</a> &replacement, int firstOccur = 1, int maxCount = -1)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Modifies the string represented by this <tt><b>xstring</b></tt> object by replacing at most <tt>(maxCount)</tt> occurences of substring <tt>(target)</tt> with string <tt>(replacement)</tt> beginning with occurence <tt>(firstOccur)</tt>. If <tt>(maxCount)</tt> is <tt>-1</tt>, substitutes up to the end of the string.
+</td></tr>
+</table>
+<br>
+
+<a name="Printf">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>static <a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>Printf</tt></td>
+ <td class="func-params"><tt>(cStringT format, ...)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns a new <tt><b>xstring</b></tt> object which contains the method arguments converted and formated under control of the first argument <tt>(format)</tt>. For detailed specification refer to the description of function <tt>sprintf</tt> in the standard C I/O library.
+</td></tr>
+</table>
+<br><hr><br>
+
+<b>Global Operators</b>
+<br><br>
+
+<a name="operator==">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator==</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator==</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cWStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator==</tt></td>
+ <td class="func-params"><tt>(const cStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator==</tt></td>
+ <td class="func-params"><tt>(const cWStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator==</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Compares two strings. Returns <tt>true</tt> if the strings are equal.
+</td></tr>
+</table>
+<br>
+
+<a name="operator!=">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator!=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator!=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cWStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator!=</tt></td>
+ <td class="func-params"><tt>(const cStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator!=</tt></td>
+ <td class="func-params"><tt>(const cWStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-name"><tt>operator!=</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Compares two strings. Returns <tt>true</tt> if the strings are not equal.
+</td></tr>
+</table>
+<br>
+
+<a name="operator+">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>operator+</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>operator+</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, cWStringT str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>operator+</tt></td>
+ <td class="func-params"><tt>(cWStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>operator+</tt></td>
+ <td class="func-params"><tt>(cStringT str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>operator+</tt></td>
+ <td class="func-params"><tt>(const <a class="type" href="#xstring">xstring</a> &str1, const <a class="type" href="#xstring">xstring</a> &str2)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Creates a new string by concatenating of string <tt>(str2)</tt> to the end of string <tt>(str1)</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="operator<<">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>ostream</tt></td>
+ <td class="func-name"><tt>&operator<<</tt></td>
+ <td class="func-params"><tt>(ostream &os, const <a class="type" href="#xstring">xstring</a> &str)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Outputs string represented by the <tt><b>xstring</b></tt> object to output stream <tt>(os)</tt>.
+</td></tr>
+</table>
+<br><hr><br>
+
+<a name="null converters">
+<b>Converters between C-Style and CIP-Style Optional String Pointers</b>
+</a>
+<br><br>
+
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>cStringT</tt></td>
+ <td class="func-name"><tt>XOPTCVT_CS2XS</tt></td>
+ <td class="func-params"><tt>(cStringT cs)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>cWStringT</tt></td>
+ <td class="func-name"><tt>XOPTCVT_CS2XS</tt></td>
+ <td class="func-params"><tt>(cWStringT cs)</tt></td>
+</tr>
+</table>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts a C-style optional string pointer to a CIP-style optional string pointer. C NULL pointer is converted to <tt><b><a href="#xstringnil">xstringnil</a></b></tt>/<tt><b><a href="#xwstringnil">xwstringnil</a></b></tt>.
+</td></tr>
+</table>
+<br>
+
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>cStringT</tt></td>
+ <td class="func-name"><tt>XOPTCVT_XS2CS</tt></td>
+ <td class="func-params"><tt>(cStringT cs)</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt>cWStringT</tt></td>
+ <td class="func-name"><tt>XOPTCVT_XS2CS</tt></td>
+ <td class="func-params"><tt>(cWStringT cs)</tt></td>
+</tr>
+</table>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Converts a CIP-style optional string pointer to a C-style optional string pointer. CIP <tt><b><a href="#xstringnil">xstringnil</a></b></tt>/<tt><b><a href="#xwstringnil">xwstringnil</a></b></tt> value is converted to a C NULL pointer.
+</td></tr>
+</table>
+<br>
+
+</body>
+
+</html>

@@ -1,0 +1,1076 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcWindow"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      625
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcWindow.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcWindow-Window.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcWindow</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcWindow.html">pfcWindow.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcWindow</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Child.html">pfcChild</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcWindow</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes the attributes of a window.
+<br>
+<br>The window position refers to the upper, left corner of the window  
+from the upper, left corner of the screen.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="class" href="t-pfcSession-Session.html">pfcSession</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcSession-BaseSession.html#ListWindows">pfcBaseSession::ListWindows()</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-BaseSession.html#GetWindow">pfcBaseSession::GetWindow(xint)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcDisplay-WWindow.html">wfcWWindow</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Activate">Activate</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Activates the window.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Clear">Clear</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Clears the Creo Parametric window.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Close">Close</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Closes the window.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ExportRasterImage">ExportRasterImage</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;ImageFileName, <a class="type" href="t-pfcWindow-RasterImageExportInstructions.html">pfcRasterImageExportInstructions_ptr</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Outputs a standard Creo Parametric raster output file. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetBrowserSize">GetBrowserSize</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the percentage of the graphics window covered by the embedded web browser.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GraphicsAreaHeight">GetGraphicsAreaHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The height of the Creo Parametric graphics window without the border.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GraphicsAreaWidth">GetGraphicsAreaWidth</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The width of the Creo Parametric graphics window without the border</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Height">GetHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The window height. The size is normalized to values from 0 to 1.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetId">GetId</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the current window identifier.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Model">GetModel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The Creo Parametric model that owns the window. This attribute can be <tt>null</tt>, if there no model that currently owns the window.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ScreenTransform">GetScreenTransform</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ScreenTransform">SetScreenTransform</a>
+ (<a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The pan and zoom matrix of the window. When you set a window's <i>ScreenTransform</i>, the window updates immediately. <p></p>
+Currently, the Get() method only retreives the <i>ScreenTransform</i> object for the current Creo Parametric window.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetURL">GetURL</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the URL displayed in the embedded web browser.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Width">GetWidth</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The width of the window. The size is normalized to values from 0 to 1.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#XPos">GetXPos</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The X position of the window. The position is normalized to values from0 to 1.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#YPos">GetYPos</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The Y position of the window. The position is normalized to values from0 to 1.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Refresh">Refresh</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Refreshes the screen. The function does not clear
+highlights.  This is the most efficient function to use if you
+want to clear "temporary" graphics only. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Repaint">Repaint</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Repaints the window. This function enables you to perform several operations
+and update the view when necessary.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetBrowserSize">SetBrowserSize</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;BrowserSize)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the percentage of the graphics window covered by the embedded web browser.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetURL">SetURL</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;URL)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the URL displayed in the embedded web browser.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Height">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The window height. The size is normalized to values from 0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#32">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Width">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetWidth</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The width of the window. The size is normalized to values from 0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#33">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="XPos">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetXPos</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The X position of the window. The position is normalized to values from0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#34">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="YPos">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetYPos</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The Y position of the window. The position is normalized to values from0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#35">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GraphicsAreaHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetGraphicsAreaHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The height of the Creo Parametric graphics window without the border.<br>
+<br>The height is normalized to a value from 0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#36">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GraphicsAreaWidth">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetGraphicsAreaWidth</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The width of the Creo Parametric graphics window without the border<br>
+<br>The width is normalized to a value from 0 to 1.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#37">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ScreenTransform">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a></tt></td><td class="func-name"><tt>GetScreenTransform</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetScreenTransform</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The pan and zoom matrix of the window. When you set a window's <i>ScreenTransform</i>, the window updates immediately. <p></p>
+Currently, the Get() method only retreives the <i>ScreenTransform</i> object for the current Creo Parametric window.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - There is no current window.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#117">Windows and Views: Transformations</a>, <a href="../manual0/JWinView.html#118">Windows and Views: Transformations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Model">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a></tt></td><td class="func-name"><tt>GetModel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The Creo Parametric model that owns the window. This attribute can be <tt>null</tt>, if there no model that currently owns the window.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#11">Models: Getting a Model Object</a>, <a href="../manual0/JModel.html#31">Models: Retrieving Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Clear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Clear</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Clears the Creo Parametric window.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#38">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Repaint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Repaint</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Repaints the window. This function enables you to perform several operations
+and update the view when necessary.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#39">Selection: Controlling Selection Display</a>, <a href="../manual0/JWinView.html#39">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#257">Drawings: Drawing Table Segments</a>, <a href="../manual0/jextobjs.html#18">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Refresh">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Refresh</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Refreshes the screen. The function does not clear
+highlights.  This is the most efficient function to use if you
+want to clear "temporary" graphics only. 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#158">Graphics: Display Lists and Graphics</a>, <a href="../manual0/JSelection.html#39">Selection: Controlling Selection Display</a>, <a href="../manual0/JWinView.html#40">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>, <a href="../manual0/jassembly_drag.html#4">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Close">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Close</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Closes the window.
+<br>
+<br>
+<ul type="disc">
+
+
+<li>
+If the current window is the original window created when
+Creo Parametric started, the function clears the window. Otherwise,
+the function removes the window from the screen.
+</li>
+
+<li>
+Any work done since the last save will be lost.
+</li>
+
+<li>
+This function does not take effect until control returns to
+Creo Parametric.
+</li>
+
+</ul>
+
+
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The window you are trying to delete is the current window. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitDeadLock.html">pfcXToolkitDeadLock</a></b></tt></b></tt> - The Creo Parametric user interface is not prepared to handle this request (because it is blocked by another process such as an OLE container activation). </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#41">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Activate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Activate</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Activates the window.
+<br>
+<br>This method only works in the asynchronous graphics mode. It will throw a
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> exception, if called in
+the non-graphic mode.
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The function was called in RPC input (non-graphic) mode </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#43">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetId</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the current window identifier.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#44">Windows and Views: Window Operations</a>, <a href="../manual0/JWinView.html#45">Windows and Views: Window Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The current window identifier. If the current window is the message area, the method returns -1.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ExportRasterImage">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ExportRasterImage</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;ImageFileName, <a class="type" href="t-pfcWindow-RasterImageExportInstructions.html">pfcRasterImageExportInstructions_ptr</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Outputs a standard Creo Parametric raster output file. 
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoPermission.html">pfcXToolkitNoPermission</a></b></tt></b></tt> - The function does not have permission to operate on this model. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The function is not available in Design Test Mode. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#345">Interface: Window Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ImageFileName</b></tt>
+</dt>
+<dd>An output filename, including the extension</dd>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>An Raster-Export-Instructions object that controls the Raster-Image export operation. All of these objects inherit from <tt><b><tt><b><a class="class" href="t-pfcWindow-RasterImageExportInstructions.html">pfcRasterImageExportInstructions</a></b></tt></b></tt> .</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetURL">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetURL</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;URL)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the URL displayed in the embedded web browser.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcWindow-Window.html#GetBrowserSize">pfcWindow::GetBrowserSize()</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#SetBrowserSize">pfcWindow::SetBrowserSize(xreal)</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#GetURL">pfcWindow::GetURL()</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#48">Windows and Views: Embedded Browser</a>, <a href="../manual0/JWinView.html#56">Windows and Views: Embedded Browser</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>URL</b></tt>
+</dt>
+<dd>The URL to display in the browser.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetURL">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetURL</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the URL displayed in the embedded web browser.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcWindow-Window.html#GetBrowserSize">pfcWindow::GetBrowserSize()</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#SetBrowserSize">pfcWindow::SetBrowserSize(xreal)</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#SetURL">pfcWindow::SetURL(xrstring)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#47">Windows and Views: Embedded Browser</a>, <a href="../manual0/JWinView.html#56">Windows and Views: Embedded Browser</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The URL.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetBrowserSize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetBrowserSize</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the percentage of the graphics window covered by the embedded web browser.
+<br>
+<br>Not applicable if browser is open in separate window.<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcWindow-Window.html#SetBrowserSize">pfcWindow::SetBrowserSize(xreal)</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#GetURL">pfcWindow::GetURL()</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#SetURL">pfcWindow::SetURL(xrstring)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#49">Windows and Views: Embedded Browser</a>, <a href="../manual0/JWinView.html#56">Windows and Views: Embedded Browser</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The percentage of the window covered, from 0.0 (the browser is minimized) to 100.0 (the browser covers the entire window).</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetBrowserSize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetBrowserSize</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;BrowserSize)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the percentage of the graphics window covered by the embedded web browser.
+<br>
+<br>Not applicable if browser is open in separate window.<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcWindow-Window.html#GetBrowserSize">pfcWindow::GetBrowserSize()</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#GetURL">pfcWindow::GetURL()</a></b></tt>, <tt><b><a class="method" href="t-pfcWindow-Window.html#SetURL">pfcWindow::SetURL(xrstring)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#50">Windows and Views: Embedded Browser</a>, <a href="../manual0/JWinView.html#56">Windows and Views: Embedded Browser</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>BrowserSize</b></tt>
+</dt>
+<dd>The percentage of the window to cover, from 0.0 (the browser is minimized) to 100.0 (the browser covers the entire window).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

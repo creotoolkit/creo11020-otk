@@ -1,0 +1,1564 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcSetDatumTag"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      993
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAnnotation.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAnnotation-SetDatumTag.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSetDatumTag</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAnnotation.html">wfcAnnotation.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcSetDatumTag</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcAnnotation-Annotation.html">wfcAnnotation</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcSetDatumTag</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddReferences">AddReferences</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;References)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Add DFS semantic references
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Delete a new datum feature symbol annotation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteReference">DeleteReference</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Delete DFS semantic reference
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EraseFromDrawingView">EraseFromDrawingView</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Sets an set datum tag to be erased from drawing view. 
+   This changes the drawing database to not show the annotation until it is explicitly shown again.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-SetDatumTagAdditionalText.html">wfcSetDatumTagAdditionalText_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAdditionalText">GetAdditionalText</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Gets Additional text and Position to datum feature symbol annotation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAdditionalTextLocation">GetAdditionalTextLocation</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Gets Additional text point of datum feature symbol.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAnnotationPlane">GetAnnotationPlane</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Obtains the annotation plane for a set datum tag. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetASMEDisplay">GetASMEDisplay</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Outputs whether a specified datum feature symbol annotation ASME is set.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAttachment">GetAttachment</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Obtains the item to which the set datum tag is attached. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-SetDatumTagDimGTolDisplay.html">wfcSetDatumTagDimGTolDisplay</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimGTolDisplay">GetDimGTolDisplay</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Returns display type for DFS attached to dimension or gtol.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetElbow">GetElbow</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Outputs whether a specified datum feature symbol annotation Elbow is set.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetLabel">GetLabel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Get label of datum feature symbol annotation</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetPlacement">GetPlacement</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Obtains the item (type,id,owner only) to which the set datum tag is attached (dimension, gtol, or geometry). 
+   This function is useful in cases where it is not possible to construct the selection. 
+   For example ,  Solid owned DFS attached to solid owned dimension created in drawing.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetReferences">GetReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get DFS semantic references
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTextLocation">GetTextLocation</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Gets text point of datum feature symbol.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsShownInDrawingView">IsShownInDrawingView</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Determines if an Set Datum Tag is shown in a particular view of a drawing.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAdditionalText">SetAdditionalText</a>
+ (<a class="type" href="t-wfcAnnotation-SetDatumTagAdditionalText.html">wfcSetDatumTagAdditionalText_ptr</a>&nbsp;AddlText)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Sets Additional text and Position to datum feature symbol annotation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationPlane">SetAnnotationPlane</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Assigns the annotation plane for a set datum tag. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetASMEDisplay">SetASMEDisplay</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;ASME)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Set or unset ASME display of datum feature symbol annotation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAttachment">SetAttachment</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Reference)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Assigns the item to which the set datum tag is attached. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetElbow">SetElbow</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Elbow)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Sets or unset Elbow to datum feature symbol annotation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetLabel">SetLabel</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Label)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Sets label to datum feature symbol annotation</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Show">Show</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcAnnotation-Annotation.html"><tt>wfcAnnotation</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcAnnotation-Annotation.html#ShowInDrawing"><tt>ShowInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#DisplayInDrawing"><tt>DisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay"><tt>Undisplay</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UndisplayInDrawing"><tt>UndisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsShown"><tt>IsShown</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Update"><tt>Update</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyle"><tt>GetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyle"><tt>SetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyleInDrawing"><tt>GetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyleInDrawing"><tt>SetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdateAttachment"><tt>UpdateAttachment</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdatePosition"><tt>UpdatePosition</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsAssociative"><tt>IsAssociative</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAttachmentAssociativity"><tt>GetAttachmentAssociativity</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAnnotationElement"><tt>GetAnnotationElement</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsInactive"><tt>IsInactive</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Rotate"><tt>Rotate</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy"><tt>ConvertLegacy</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#NeedsConversion"><tt>NeedsConversion</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetSecurityMarking"><tt>GetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetSecurityMarking"><tt>SetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsUsingXSecReference"><tt>IsUsingXSecReference</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetAttachment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a></tt></td><td class="func-name"><tt>GetAttachment</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Obtains the item to which the set datum tag is attached. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The set datum tag attachment is to the datum itself. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#163">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The attachment. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAttachment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAttachment</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Reference)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Assigns the item to which the set datum tag is attached. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#164">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>The attachment. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationPlane</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Assigns the annotation plane for a set datum tag. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#166">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Plane</b></tt>
+</dt>
+<dd>The annotation plane. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-name"><tt>GetAnnotationPlane</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Obtains the annotation plane for a set datum tag. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#165">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The annotation plane. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Show">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Show</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is already shown in the target model.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The annotation cannot be shown due to orientation conflicts in the view.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Annotation is present on hidden or blank layer and so can't be shown. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#167">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetLabel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetLabel</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Label)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Sets label to datum feature symbol annotation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#180">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd>Label of datum feature symbol</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetLabel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetLabel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Get label of datum feature symbol annotation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#181">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Label of datum feature symbol</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetASMEDisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetASMEDisplay</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;ASME)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Set or unset ASME display of datum feature symbol annotation.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Datum feature symbol annotation can't be modified.</p>
+   
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#182">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ASME</b></tt>
+</dt>
+<dd>Pass True to set ASME display otherwise False</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetASMEDisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetASMEDisplay</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Outputs whether a specified datum feature symbol annotation ASME is set.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - Datum feature symbol annotation can't be accessed.</p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#183">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>True if symbol has ASME display otherwise False</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetElbow">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetElbow</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Elbow)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Sets or unset Elbow to datum feature symbol annotation.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Datum feature symbol annotation can't be modified.</p>
+   
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#184">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Elbow</b></tt>
+</dt>
+<dd>Leader - Pass True to set Elbow display otherwise False</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetElbow">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetElbow</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Outputs whether a specified datum feature symbol annotation Elbow is set.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - Datum feature symbol annotation can't be accessed.</p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#185">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>True if dfs has Elbow display otherwise False</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetPlacement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem_ptr</a></tt></td><td class="func-name"><tt>GetPlacement</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Obtains the item (type,id,owner only) to which the set datum tag is attached (dimension, gtol, or geometry). 
+   This function is useful in cases where it is not possible to construct the selection. 
+   For example ,  Solid owned DFS attached to solid owned dimension created in drawing.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#186">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The attachment item.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAdditionalText">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-SetDatumTagAdditionalText.html">wfcSetDatumTagAdditionalText_ptr</a></tt></td><td class="func-name"><tt>GetAdditionalText</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Gets Additional text and Position to datum feature symbol annotation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#169">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Label and position where the Additional text Appears.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAdditionalText">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAdditionalText</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-SetDatumTagAdditionalText.html">wfcSetDatumTagAdditionalText_ptr</a>&nbsp;AddlText)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Sets Additional text and Position to datum feature symbol annotation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#170">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AddlText</b></tt>
+</dt>
+<dd>Label and position where the Additional text Appears.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAdditionalTextLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-name"><tt>GetAdditionalTextLocation</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Gets Additional text point of datum feature symbol.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#175">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>Pass drawing for dfs owned by solid and shown in drawing. Pass NULL otherwise.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>Pass view if drw is not NULL. Pass NULL otherwise.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Additional text point</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTextLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-name"><tt>GetTextLocation</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Gets text point of datum feature symbol.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#176">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>Pass drawing for dfs owned by solid and shown in drawing. Pass NULL otherwise.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>View in which DFS is shown if drawing is not NULL.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Text point</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsShownInDrawingView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsShownInDrawingView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Determines if an Set Datum Tag is shown in a particular view of a drawing.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - DFS cannot be shown in specified drawing view.</p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#177">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing that shows the annotation.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>Drawing view. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>True if the set datum tag is shown, False if it is not shown in the target view.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EraseFromDrawingView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>EraseFromDrawingView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Sets an set datum tag to be erased from drawing view. 
+   This changes the drawing database to not show the annotation until it is explicitly shown again.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - DFS cannot be shown in specified drawing view.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is not shown in the target drawing view.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt> - DFS is place on a serface in solid but the view of the DFS is not passed.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#178">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing where dfs needs to be shown.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>Drawing view. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimGTolDisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-SetDatumTagDimGTolDisplay.html">wfcSetDatumTagDimGTolDisplay</a></tt></td><td class="func-name"><tt>GetDimGTolDisplay</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Returns display type for DFS attached to dimension or gtol.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - DFS is not attached to dimension or gtol.</p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#179">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Display type</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Delete a new datum feature symbol annotation.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Cannot delete set datum tag.</p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#168">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;References)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Add DFS semantic references
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#189">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>References</b></tt>
+</dt>
+<dd>Array of DFS references</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a></tt></td><td class="func-name"><tt>GetReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get DFS semantic references
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#188">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of DFS references</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteReference</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Delete DFS semantic reference
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#187">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Index</b></tt>
+</dt>
+<dd>Index number to delete</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

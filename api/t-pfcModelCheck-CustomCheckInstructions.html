@@ -1,0 +1,422 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcCustomCheckInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      91
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelCheck.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelCheck-CustomCheckInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcCustomCheckInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcModelCheck.html">pfcModelCheck.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcCustomCheckInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcCustomCheckInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class provides the details about custom ModelCheck check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcModelCheck-CustomCheckInstructions.html">pfcCustomCheckInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckLabel, <a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a>&nbsp;Listener)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new <tt><b><tt><b><a class="class" href="t-pfcModelCheck-ModelCheckInstructions.html">pfcModelCheckInstructions</a></b></tt></b></tt>
+   object.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#ActionButtonLabel">GetActionButtonLabel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ActionButtonLabel">SetActionButtonLabel</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies label of the action button. Can be <tt>null</tt>,
+   which means no action button will be shown.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#CheckLabel">GetCheckLabel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CheckLabel">SetCheckLabel</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the label of the check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#CheckName">GetCheckName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CheckName">SetCheckName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the name of the check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Listener">GetListener</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Listener">SetListener</a>
+ (<a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The object containing the implementation of the custom check
+   methods.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#UpdateButtonLabel">GetUpdateButtonLabel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UpdateButtonLabel">SetUpdateButtonLabel</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies label of the update button. Can be <tt>null</tt>,
+   which means no update button will be shown.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CheckName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetCheckName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCheckName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the name of the check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#91">Models: Custom Checks</a>, <a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CheckLabel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetCheckLabel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCheckLabel</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the label of the check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#92">Models: Custom Checks</a>, <a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UpdateButtonLabel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetUpdateButtonLabel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetUpdateButtonLabel</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies label of the update button. Can be <tt>null</tt>,
+   which means no update button will be shown.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ActionButtonLabel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetActionButtonLabel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetActionButtonLabel</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies label of the action button. Can be <tt>null</tt>,
+   which means no action button will be shown.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#94">Models: Custom Checks</a>, <a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Listener">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a></tt></td><td class="func-name"><tt>GetListener</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetListener</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The object containing the implementation of the custom check
+   methods.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#93">Models: Custom Checks</a>, <a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcModelCheck-CustomCheckInstructions.html">pfcCustomCheckInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckLabel, <a class="type" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">pfcModelCheckCustomCheckListener_ptr</a>&nbsp;Listener)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new <tt><b><tt><b><a class="class" href="t-pfcModelCheck-ModelCheckInstructions.html">pfcModelCheckInstructions</a></b></tt></b></tt>
+   object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#90">Models: Custom Checks</a>, <a href="../manual0/JModel.html#95">Models: Custom Checks</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd> Name of the check. </dd>
+<dt>
+<tt><b>CheckLabel</b></tt>
+</dt>
+<dd> Label of the check. </dd>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd> The object containing the implementation of
+   the custom check methods.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

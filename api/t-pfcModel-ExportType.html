@@ -1,0 +1,386 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcExportType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      46
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-ExportType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcExportType</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcModel.html">pfcModel.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcExportType</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_RELATION">pfcEXPORT_RELATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_MODEL_INFO">pfcEXPORT_MODEL_INFO</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PROGRAM">pfcEXPORT_PROGRAM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_IGES">pfcEXPORT_IGES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_DXF">pfcEXPORT_DXF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_RENDER">pfcEXPORT_RENDER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_STL_ASCII">pfcEXPORT_STL_ASCII</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_STL_BINARY">pfcEXPORT_STL_BINARY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_BOM">pfcEXPORT_BOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_DWG_SETUP">pfcEXPORT_DWG_SETUP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_FEAT_INFO">pfcEXPORT_FEAT_INFO</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_MFG_OPER_CL">pfcEXPORT_MFG_OPER_CL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_MFG_FEAT_CL">pfcEXPORT_MFG_FEAT_CL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_MATERIAL">pfcEXPORT_MATERIAL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_IGES_3D">pfcEXPORT_IGES_3D</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_STEP">pfcEXPORT_STEP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_VDA">pfcEXPORT_VDA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CGM">pfcEXPORT_CGM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INVENTOR">pfcEXPORT_INVENTOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_FIAT">pfcEXPORT_FIAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CONNECTOR_PARAMS">pfcEXPORT_CONNECTOR_PARAMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CABLE_PARAMS">pfcEXPORT_CABLE_PARAMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIAFACETS">pfcEXPORT_CATIAFACETS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PLOT">pfcEXPORT_PLOT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_VRML">pfcEXPORT_VRML</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIA_MODEL">pfcEXPORT_CATIA_MODEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_ACIS">pfcEXPORT_ACIS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIA_SESSION">pfcEXPORT_CATIA_SESSION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CADDS">pfcEXPORT_CADDS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_STEP_2D">pfcEXPORT_STEP_2D</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_MEDUSA">pfcEXPORT_MEDUSA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_NEUTRAL">pfcEXPORT_NEUTRAL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PRODUCTVIEW">pfcEXPORT_PRODUCTVIEW</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PDF">pfcEXPORT_PDF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_JT">pfcEXPORT_JT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_UG">pfcEXPORT_UG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIA_PART">pfcEXPORT_CATIA_PART</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIA_PRODUCT">pfcEXPORT_CATIA_PRODUCT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_CATIA_CGR">pfcEXPORT_CATIA_CGR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PARASOLID">pfcEXPORT_PARASOLID</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_PRINT">pfcEXPORT_PRINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INTF_DXF">pfcEXPORT_INTF_DXF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INTF_DWG">pfcEXPORT_INTF_DWG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INTF_SW_PART">pfcEXPORT_INTF_SW_PART</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INTF_SW_ASSEM">pfcEXPORT_INTF_SW_ASSEM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#EXPORT_INTF_3MF">pfcEXPORT_INTF_3MF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcExportType_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Enumeration of the available export-instructions classes.
+  <br>
+<br>These enumeration objects are used to indicate the type of export to perform. These enumeration objects are returned by the GetFileType() method of those classes.
+  <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcModel-Model.html#Export">pfcModel::Export(xrstring, pfcExportInstructions_ptr)</a></b></tt>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="EXPORT_RELATION">pfcEXPORT_RELATION</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-RelationExportInstructions.html">pfcRelationExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_MODEL_INFO">pfcEXPORT_MODEL_INFO</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-ModelInfoExportInstructions.html">pfcModelInfoExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PROGRAM">pfcEXPORT_PROGRAM</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-ProgramExportInstructions.html">pfcProgramExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_IGES">pfcEXPORT_IGES</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-IGESFileExportInstructions.html">pfcIGESFileExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_DXF">pfcEXPORT_DXF</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-DXFExportInstructions.html">pfcDXFExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_RENDER">pfcEXPORT_RENDER</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-RenderExportInstructions.html">pfcRenderExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_STL_ASCII">pfcEXPORT_STL_ASCII</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-STLASCIIExportInstructions.html">pfcSTLASCIIExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_STL_BINARY">pfcEXPORT_STL_BINARY</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-STLBinaryExportInstructions.html">pfcSTLBinaryExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_BOM">pfcEXPORT_BOM</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-BOMExportInstructions.html">pfcBOMExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_DWG_SETUP">pfcEXPORT_DWG_SETUP</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-DWGSetupExportInstructions.html">pfcDWGSetupExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_FEAT_INFO">pfcEXPORT_FEAT_INFO</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-FeatInfoExportInstructions.html">pfcFeatInfoExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_MFG_OPER_CL">pfcEXPORT_MFG_OPER_CL</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-MFGOperCLExportInstructions.html">pfcMFGOperCLExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_MFG_FEAT_CL">pfcEXPORT_MFG_FEAT_CL</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-MFGFeatCLExportInstructions.html">pfcMFGFeatCLExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_MATERIAL">pfcEXPORT_MATERIAL</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-MaterialExportInstructions.html">pfcMaterialExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_IGES_3D">pfcEXPORT_IGES_3D</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-IGES3DNewExportInstructions.html">pfcIGES3DNewExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_STEP">pfcEXPORT_STEP</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-STEP3DExportInstructions.html">pfcSTEP3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_VDA">pfcEXPORT_VDA</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-VDA3DExportInstructions.html">pfcVDA3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CGM">pfcEXPORT_CGM</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-CGMFILEExportInstructions.html">pfcCGMFILEExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INVENTOR">pfcEXPORT_INVENTOR</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-InventorExportInstructions.html">pfcInventorExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_FIAT">pfcEXPORT_FIAT</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-FIATExportInstructions.html">pfcFIATExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CONNECTOR_PARAMS">pfcEXPORT_CONNECTOR_PARAMS</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-ConnectorParamExportInstructions.html">pfcConnectorParamExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CABLE_PARAMS">pfcEXPORT_CABLE_PARAMS</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-CableParamsFileInstructions.html">pfcCableParamsFileInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIAFACETS">pfcEXPORT_CATIAFACETS</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-CATIAFacetsExportInstructions.html">pfcCATIAFacetsExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PLOT">pfcEXPORT_PLOT</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-PlotInstructions.html">pfcPlotInstructions</a></b></tt></b></tt> objects.
+   This export-instructions class has been superseeded by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-PrinterInstructions.html">pfcPrinterInstructions</a></b></tt></b></tt> objects.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_VRML">pfcEXPORT_VRML</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-VRMLExportInstructions.html">pfcVRMLExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIA_MODEL">pfcEXPORT_CATIA_MODEL</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-CATIAModel3DExportInstructions.html">pfcCATIAModel3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_ACIS">pfcEXPORT_ACIS</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-ACIS3DExportInstructions.html">pfcACIS3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIA_SESSION">pfcEXPORT_CATIA_SESSION</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-CATIASession3DExportInstructions.html">pfcCATIASession3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CADDS">pfcEXPORT_CADDS</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-CADDSExportInstructions.html">pfcCADDSExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_STEP_2D">pfcEXPORT_STEP_2D</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-STEP2DExportInstructions.html">pfcSTEP2DExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_MEDUSA">pfcEXPORT_MEDUSA</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcModel-MedusaExportInstructions.html">pfcMedusaExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_NEUTRAL">pfcEXPORT_NEUTRAL</a></b></tt>
+</dt>
+<dd>Returned by <tt><b><tt><b><a class="class" href="t-pfcExport-NEUTRALFileExportInstructions.html">pfcNEUTRALFileExportInstructions</a></b></tt></b></tt> objects.<br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PRODUCTVIEW">pfcEXPORT_PRODUCTVIEW</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-ProductViewExportInstructions.html">pfcProductViewExportInstructions</a></b></tt></b></tt> objects.
+   <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PDF">pfcEXPORT_PDF</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-PDFExportInstructions.html">pfcPDFExportInstructions</a></b></tt></b></tt> objects.
+   <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_JT">pfcEXPORT_JT</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-JT3DExportInstructions.html">pfcJT3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_UG">pfcEXPORT_UG</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-UG3DExportInstructions.html">pfcUG3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIA_PART">pfcEXPORT_CATIA_PART</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-CatiaPart3DExportInstructions.html">pfcCatiaPart3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIA_PRODUCT">pfcEXPORT_CATIA_PRODUCT</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-CatiaProduct3DExportInstructions.html">pfcCatiaProduct3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_CATIA_CGR">pfcEXPORT_CATIA_CGR</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-CatiaCGR3DExportInstructions.html">pfcCatiaCGR3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PARASOLID">pfcEXPORT_PARASOLID</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-ParaSolid3DExportInstructions.html">pfcParaSolid3DExportInstructions</a></b></tt></b></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_PRINT">pfcEXPORT_PRINT</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-PrinterInstructions.html">pfcPrinterInstructions</a></b></tt></b></tt> objects.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INTF_DXF">pfcEXPORT_INTF_DXF</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-DXF3DExportInstructions.html">pfcDXF3DExportInstructions</a></b></tt></b></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+   <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INTF_DWG">pfcEXPORT_INTF_DWG</a></b></tt>
+</dt>
+<dd>Returned by 
+   <tt><b><tt><b><a class="class" href="t-pfcExport-DWG3DExportInstructions.html">pfcDWG3DExportInstructions</a></b></tt></b></tt> objects.
+      <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+    <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INTF_SW_PART">pfcEXPORT_INTF_SW_PART</a></b></tt>
+</dt>
+<dd>
+     Returned by
+     <tt><b><tt><b><a class="class" href="t-pfcExport-SWPart3DExportInstructions.html">pfcSWPart3DExportInstructions</a></b></tt></b></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+   <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INTF_SW_ASSEM">pfcEXPORT_INTF_SW_ASSEM</a></b></tt>
+</dt>
+<dd>
+     Returned by
+     <tt><b><tt><b><a class="class" href="t-pfcExport-SWAsm3DExportInstructions.html">pfcSWAsm3DExportInstructions</a></b></tt></b></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcModel::ExportIntf3D&gt;
+  </b></tt></b></tt> to export this type.
+   <br>
+</dd>
+<dt>
+<tt><b><a name="EXPORT_INTF_3MF">pfcEXPORT_INTF_3MF</a></b></tt>
+</dt>
+<dd>
+   
+<br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcExportType_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

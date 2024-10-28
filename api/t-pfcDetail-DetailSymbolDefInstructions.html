@@ -1,0 +1,642 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDetailSymbolDefInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      156
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailSymbolDefInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDetailSymbolDefInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDetail.html">pfcDetail.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDetailSymbolDefInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcDetail-DetailCreateInstructions.html">pfcDetailCreateInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcDetailSymbolDefInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a symbol definition.
+It may be used when creating symbol definition (<tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt>), or accessing existing entities (<tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#Modify">pfcDetailSymbolDefItem::Modify(pfcDetailSymbolDefInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#GetInstructions">pfcDetailSymbolDefItem::GetInstructions()</a></b></tt>).
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcDetail-SymbolDefAttachment.html#Create">pfcSymbolDefAttachment::Create(pfcSymbolDefAttachmentType, pfcPoint3D_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcDetail-TextReference.html#Create">pfcTextReference::Create(pfcDetailNoteItem_ptr, xint, xint)</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailSymbolDefInstructions.html">pfcDetailSymbolDefInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inFullPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an instructions object used to create a symbol definition.  Pass this object to <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#Modify">pfcDetailSymbolDefItem::Modify(pfcDetailSymbolDefInstructions_ptr)</a></b></tt>.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefAttachments.html">pfcSymbolDefAttachments_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Attachments">GetAttachments</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Attachments">SetAttachments</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefAttachments.html">pfcSymbolDefAttachments_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sequence of possible instance attachment points for the symbol definition.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#FullPath">GetFullPath</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FullPath">SetFullPath</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The full path to the symbol definition file.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#HasElbow">GetHasElbow</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#HasElbow">SetHasElbow</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt>null</tt> or <tt>true</tt> if the symbol definition includes an elbow, <tt>false</tt> if not.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Height">GetHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Height">SetHeight</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The height value of the symbol definition.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsTextAngleFixed">GetIsTextAngleFixed</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsTextAngleFixed">SetIsTextAngleFixed</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt>null</tt> or <tt>true</tt> if the text angle is fixed, <tt>false</tt> if not.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Name">GetName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The name of the symbol defintion.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-TextReference.html">pfcTextReference_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Reference">GetReference</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Reference">SetReference</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-TextReference.html">pfcTextReference_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The text reference information, or <tt>null</tt> if unused.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#ScaledHeight">GetScaledHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The symbol definition height in inches. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefHeight.html">pfcSymbolDefHeight</a></tt></td><td class="func-signature"><tt><a class="method" href="#SymbolHeight">GetSymbolHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SymbolHeight">SetSymbolHeight</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefHeight.html">pfcSymbolDefHeight</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The height type for the symbol definition.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailCreateInstructions.html"><tt>pfcDetailCreateInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="SymbolHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefHeight.html">pfcSymbolDefHeight</a></tt></td><td class="func-name"><tt>GetSymbolHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSymbolHeight</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefHeight.html">pfcSymbolDefHeight</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The height type for the symbol definition.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Invalid symbol definition height type. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#522">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#523">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="HasElbow">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetHasElbow</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHasElbow</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<tt>null</tt> or <tt>true</tt> if the symbol definition includes an elbow, <tt>false</tt> if not.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#524">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#525">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsTextAngleFixed">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsTextAngleFixed</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsTextAngleFixed</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<tt>null</tt> or <tt>true</tt> if the text angle is fixed, <tt>false</tt> if not.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#526">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#527">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Height">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHeight</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The height value of the symbol definition.<br>
+<br> This property does not consistently contain a value capable of being
+   related mathematically to the symbol definition height in inches.  Use
+   <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefInstructions.html#ScaledHeight">pfcDetailSymbolDefInstructions::GetScaledHeight()</a></b></tt>
+    instead.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ScaledHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetScaledHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The symbol definition height in inches. <br>
+<br>(Inches are always used for the units in the symbol definition).
+ <p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The symbol definition assigned to this data was not yet initialized so the scaled value cannot be accurately retrieved. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#528">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Attachments">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefAttachments.html">pfcSymbolDefAttachments_ptr</a></tt></td><td class="func-name"><tt>GetAttachments</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAttachments</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-SymbolDefAttachments.html">pfcSymbolDefAttachments_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sequence of possible instance attachment points for the symbol definition.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Number of attachments more than PRODTL_SYM_DEF_MAX_ATTACHES </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No attachments were found. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#529">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#530">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FullPath">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetFullPath</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFullPath</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The full path to the symbol definition file.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - Symbol not found in session.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#531">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#532">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The name of the symbol defintion.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - Symbol not found in session. </p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Reference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-TextReference.html">pfcTextReference_ptr</a></tt></td><td class="func-name"><tt>GetReference</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetReference</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-TextReference.html">pfcTextReference_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The text reference information, or <tt>null</tt> if unused.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#533">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailSymbolDefInstructions.html">pfcDetailSymbolDefInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inFullPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an instructions object used to create a symbol definition.  Pass this object to <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailSymbolDefItem.html#Modify">pfcDetailSymbolDefItem::Modify(pfcDetailSymbolDefInstructions_ptr)</a></b></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#521">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inFullPath</b></tt>
+</dt>
+<dd>Path and name for the symbol definition.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

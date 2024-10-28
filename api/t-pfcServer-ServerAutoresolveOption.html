@@ -1,0 +1,89 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcServerAutoresolveOption"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      112
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcServer.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcServer-ServerAutoresolveOption.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcServerAutoresolveOption</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcServer.html">pfcServer.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcServerAutoresolveOption</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SERVER_DONT_AUTORESOLVE">pfcSERVER_DONT_AUTORESOLVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SERVER_AUTORESOLVE_IGNORE">pfcSERVER_AUTORESOLVE_IGNORE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SERVER_AUTORESOLVE_UPDATE_IGNORE">pfcSERVER_AUTORESOLVE_UPDATE_IGNORE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcServerAutoresolveOption_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Specifies the options for auto-resolving 
+ missing references during checkin. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#56">Windchill Connectivity APIs: CheckIn</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="SERVER_DONT_AUTORESOLVE">pfcSERVER_DONT_AUTORESOLVE</a></b></tt>
+</dt>
+<dd>
+ Don't autoresolve references to models missing from the workspace,
+ which may result in a conflict.
+ <br>
+</dd>
+<dt>
+<tt><b><a name="SERVER_AUTORESOLVE_IGNORE">pfcSERVER_AUTORESOLVE_IGNORE</a></b></tt>
+</dt>
+<dd>
+ Autoresolve missing references by ignoring them completely. 
+ <br>
+</dd>
+<dt>
+<tt><b><a name="SERVER_AUTORESOLVE_UPDATE_IGNORE">pfcSERVER_AUTORESOLVE_UPDATE_IGNORE</a></b></tt>
+</dt>
+<dd>
+ Autoresolve missing references by updating from the database and ignoring them if not found in the database. 
+ <br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcServerAutoresolveOption_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

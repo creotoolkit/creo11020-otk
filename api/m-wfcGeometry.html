@@ -1,0 +1,998 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "wfcGeometry.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      119
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-wfcGeometry.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "wfcGeometry.h"</h2>
+<b>Description</b>
+<br>
+<br> Provides info of Geometry.<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The enum of Surface tessellation projection.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-EntityType.html">wfcEntityType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The enum of Entity type.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The enum of edge direction.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-EdgeEndType.html">wfcEdgeEndType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The enum of edge end type.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-DatumObjectType.html">wfcDatumObjectType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The datum object type.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcGeometry-CurveDirection.html">wfcCurveDirection</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-ContourDescriptor.html">wfcContourDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Provides Contour info.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-CsysDatumObject.html">wfcCsysDatumObject</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The csys datum object.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-CurveDatumObject.html">wfcCurveDatumObject</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The curve datum object.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-CurveTessellation.html">wfcCurveTessellation</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Represents the curve tessellation</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-DatumData.html">wfcDatumData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The datum data.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-DatumObject.html">wfcDatumObject</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The datum object.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeDescriptor.html">wfcEdgeDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The edge descriptor. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeDisplay.html">wfcEdgeDisplay</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeSurfaceData.html">wfcEdgeSurfaceData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The Edge surface data. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeTessellation.html">wfcEdgeTessellation</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Represents the edge tessellation</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeVertexData.html">wfcEdgeVertexData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The data of edge vertex.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-FacetVertexIndex.html">wfcFacetVertexIndex</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Added for FacetVertex Index Ids</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-PlaneDatumObject.html">wfcPlaneDatumObject</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The plane datum object.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-QuiltData.html">wfcQuiltData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Provides the Quilt data info. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-SurfacePeriodicity.html">wfcSurfacePeriodicity</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-SurfaceTessellationData.html">wfcSurfaceTessellationData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for surface tessellation data</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for surface tessellation input</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-Tessellation.html">wfcTessellation</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for the tessellation data</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WArc.html">wfcWArc</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Arc.html">pfcArc</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WArrow.html">wfcWArrow</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Arrow.html">pfcArrow</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WAxis.html">wfcWAxis</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for Axis</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WBSpline.html">wfcWBSpline</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-BSpline.html">pfcBSpline</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCircle.html">wfcWCircle</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Circle.html">pfcCircle</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCompositeCurve.html">wfcWCompositeCurve</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-wfcGeometry-WCurve.html">wfcWCurve</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-pfcGeometry-CompositeCurve.html">pfcCompositeCurve</a></b></tt></b></tt>
+      </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCompositeCurveDescriptor.html">wfcWCompositeCurveDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-CompositeCurveDescriptor.html">pfcCompositeCurveDescriptor</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCone.html">wfcWCone</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Cone.html">pfcCone</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WConeDescriptor.html">wfcWConeDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The cone descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WContour.html">wfcWContour</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for WContour</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCoonsPatch.html">wfcWCoonsPatch</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-CoonsPatch.html">pfcCoonsPatch</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCoonsPatchDescriptor.html">wfcWCoonsPatchDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The coons patch descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCsys.html">wfcWCsys</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for coordinate system</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCsysData.html">wfcWCsysData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The csys data.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCurve.html">wfcWCurve</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for WCurve.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCylinder.html">wfcWCylinder</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Cylinder.html">pfcCylinder</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCylinderDescriptor.html">wfcWCylinderDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The cylinder descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCylindricalSplineSurface.html">wfcWCylindricalSplineSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-CylindricalSplineSurface.html">pfcCylindricalSplineSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCylindricalSplineSurfaceDescriptor.html">wfcWCylindricalSplineSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The cylindrical spline surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WEdge.html">wfcWEdge</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents the edge. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WEllipse.html">wfcWEllipse</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Ellipse.html">pfcEllipse</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WFilletSurface.html">wfcWFilletSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-FilletSurface.html">pfcFilletSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WFilletSurfaceDescriptor.html">wfcWFilletSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The fillet surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WForeignSurface.html">wfcWForeignSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-ForeignSurface.html">pfcForeignSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WForeignSurfaceDescriptor.html">wfcWForeignSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The foreign surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WLine.html">wfcWLine</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Line.html">pfcLine</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WNURBSSurface.html">wfcWNURBSSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-NURBSSurface.html">pfcNURBSSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WNURBSSurfaceDescriptor.html">wfcWNURBSSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The Nurbs surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPlane.html">wfcWPlane</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Plane.html">pfcPlane</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPlaneData.html">wfcWPlaneData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The plane data.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPlaneDescriptor.html">wfcWPlaneDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The Plane descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPoint.html">wfcWPoint</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents a point</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPointTolerance.html">wfcWPointTolerance</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface for WPointTolerance</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPolygon.html">wfcWPolygon</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Polygon.html">pfcPolygon</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WQuilt.html">wfcWQuilt</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents a quilt </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WRevolvedSurface.html">wfcWRevolvedSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-RevolvedSurface.html">pfcRevolvedSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WRevolvedSurfaceDescriptor.html">wfcWRevolvedSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The revolve surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WRuledSurface.html">wfcWRuledSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-RuledSurface.html">pfcRuledSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WRuledSurfaceDescriptor.html">wfcWRuledSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The ruled surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSpline.html">wfcWSpline</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Spline.html">pfcSpline</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSpline2DerSurface.html">wfcWSpline2DerSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+     Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Spline2DerSurface.html">pfcSpline2DerSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+   </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSplineSurface.html">wfcWSplineSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-SplineSurface.html">pfcSplineSurface</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSplineSurfaceDescriptor.html">wfcWSplineSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The spline surface descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Surface.html">pfcSurface</a></b></tt></b></tt></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSurfaceDescriptor.html">wfcWSurfaceDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Provides surface info.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WTabulatedCylinder.html">wfcWTabulatedCylinder</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-TabulatedCylinder.html">pfcTabulatedCylinder</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WTabulatedCylinderDescriptor.html">wfcWTabulatedCylinderDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">  The tabulated cylinder descriptor.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WText.html">wfcWText</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Text.html">pfcText</a></b></tt></b></tt>
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WTorus.html">wfcWTorus</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Torus.html">pfcTorus</a></b></tt></b></tt> and <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WTorusDescriptor.html">wfcWTorusDescriptor</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The torus descriptor.</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-ContourDescriptors.html">wfcContourDescriptors</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Array of Contour descriptor. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-CurveDirections.html">wfcCurveDirections</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Curve direction in composite curve</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-DatumDatas.html">wfcDatumDatas</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Array of datum data.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeDescriptors.html">wfcEdgeDescriptors</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Array of edge descriptors.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-EdgeEndTypes.html">wfcEdgeEndTypes</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The sequence of Edge end type.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-FacetVertexIndices.html">wfcFacetVertexIndices</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Sequence of FacetVertexIndex</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-QuiltDatas.html">wfcQuiltDatas</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> The Array of Quilt data. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-SurfaceTessellationDataSeq.html">wfcSurfaceTessellationDataSeq</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WContours.html">wfcWContours</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Sequence of WContour</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCsyses.html">wfcWCsyses</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Sequence of coordinate system</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WCurves.html">wfcWCurves</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents a sequence of curves.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WEdges.html">wfcWEdges</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents an array of edges</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WPoints.html">wfcWPoints</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents an array of points</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WQuilts.html">wfcWQuilts</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> This represents an array of quilts</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSurfaceDescriptors.html">wfcWSurfaceDescriptors</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Array of Surface descriptors. </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcGeometry-WSurfaces.html">wfcWSurfaces</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The sequence of WSurface.</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

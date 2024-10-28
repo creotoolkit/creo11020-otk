@@ -1,0 +1,926 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcElement"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      856
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcElementTree.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcElementTree-Element.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcElement</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcElementTree.html">wfcElementTree.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcElement</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcElement</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#1">Feature Element Tree: Overview of Feature Creation</a>, <a href="../manual0/OTK_elem_tree.html#29">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcElementTree-Element.html">wfcElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Id, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a>&nbsp;Value, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Level)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Creates a new <tt><b><tt><b><a class="class" href="t-wfcElementTree-Element.html">wfcElement</a></b></tt></b></tt> object.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-Elements.html">wfcElements_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Children">GetChildren</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of child elements.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#Decimals">GetDecimals</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Decimals">SetDecimals</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-ElementDiagnostics.html">wfcElementDiagnostics_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Diagnostics">GetDiagnostics</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">A list of the element diagnostics for the element. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcModel-Ray.html">wfcRay_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Direction">GetDirection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Direction specified by the element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ElemCollection">GetElemCollection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ElemCollection">SetElemCollection</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The <tt><b><tt><b><a class="class" href="t-wfcCollection-Collection.html">wfcCollection</a></b></tt></b></tt> object.
+    </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#Id">GetId</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Id">SetId</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Identifier of the Element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#IdAsString">GetIdAsString</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       String representation of element Id.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsArray">GetIsArray</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Determines whether the specified element contains an array of elements.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsCompound">GetIsCompound</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Determines whether the specified element is compound.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsMultival">GetIsMultival</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Determines whether the specified element is multivalued.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#Level">GetLevel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Level">SetLevel</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The level at which the element is located in the element tree with respect to the root element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Selections">GetSelections</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Selections">SetSelections</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-SpecialValue.html">wfcSpecialValue_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#SpecialValueElem">GetSpecialValueElem</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SpecialValueElem">SetSpecialValueElem</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-SpecialValue.html">wfcSpecialValue_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The special value element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Value">SetValue</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Value of the element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#ValueAsString">GetValueAsString</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ValueAsString">SetValueAsString</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       String representation of value of double and integer elements.
+       You must set compatible options using <tt><b><tt><b><a class="class" href="t-wfcSession-ElementWstringOption.html">wfcElementWstringOption</a></b></tt></b></tt> object
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Value">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td class="func-name"><tt>GetValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetValue</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Value of the element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#6">Feature Element Tree: Feature Element Values</a>, <a href="../manual0/OTK_elem_tree.html#7">Feature Element Tree: Feature Element Values</a>, <a href="../manual0/OTK_elem_tree.html#7">Feature Element Tree: Feature Element Values</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Id">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetId</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetId</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Identifier of the Element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#54">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#55">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Level">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetLevel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetLevel</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The level at which the element is located in the element tree with respect to the root element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#56">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#57">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Decimals">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetDecimals</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDecimals</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#58">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#59">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SpecialValueElem">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-SpecialValue.html">wfcSpecialValue_ptr</a></tt></td><td class="func-name"><tt>GetSpecialValueElem</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSpecialValueElem</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-SpecialValue.html">wfcSpecialValue_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The special value element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#60">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#61">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ElemCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-name"><tt>GetElemCollection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetElemCollection</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The <tt><b><tt><b><a class="class" href="t-wfcCollection-Collection.html">wfcCollection</a></b></tt></b></tt> object.
+    <br>
+<br>
+        This will be populated only if the element is a collection.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#62">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Selections">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-name"><tt>GetSelections</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSelections</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Diagnostics">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-ElementDiagnostics.html">wfcElementDiagnostics_ptr</a></tt></td><td class="func-name"><tt>GetDiagnostics</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>A list of the element diagnostics for the element. <br>
+<br>
+        These contain warnings and errors regarding the value of the element, within the context of the feature and remainder of the element tree.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#72">Feature Element Tree: Element Diagnostics</a>, <a href="../manual0/OTK_elem_tree.html#77">Feature Element Tree: Element Diagnostics</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ValueAsString">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetValueAsString</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetValueAsString</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       String representation of value of double and integer elements.
+       You must set compatible options using <tt><b><tt><b><a class="class" href="t-wfcSession-ElementWstringOption.html">wfcElementWstringOption</a></b></tt></b></tt> object
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#52">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#53">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IdAsString">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetIdAsString</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       String representation of element Id.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#47">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsArray">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsArray</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Determines whether the specified element contains an array of elements.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#48">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsCompound">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsCompound</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Determines whether the specified element is compound.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#49">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsMultival">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsMultival</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Determines whether the specified element is multivalued.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#50">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Children">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcElementTree-Elements.html">wfcElements_ptr</a></tt></td><td class="func-name"><tt>GetChildren</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of child elements.
+      <br>
+<br>
+        This will be populated only if the element is a compound element or an array.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#51">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Direction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcModel-Ray.html">wfcRay_ptr</a></tt></td><td class="func-name"><tt>GetDirection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Direction specified by the element.
+      <br>
+<br>
+        This will be populated only if the element is a PRO_E_DIRECTION_COMPOUND element.
+      <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcElementTree-Element.html">wfcElement_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Id, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a>&nbsp;Value, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Level)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Creates a new <tt><b><tt><b><a class="class" href="t-wfcElementTree-Element.html">wfcElement</a></b></tt></b></tt> object.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="func" href="f-pfcArgument-CreateBoolArgValue.html">pfcCreateBoolArgValue(xbool)</a></b></tt></b></tt>, <tt><b><tt><b><a class="func" href="f-pfcArgument-CreateDoubleArgValue.html">pfcCreateDoubleArgValue(xreal)</a></b></tt></b></tt>, <tt><b><tt><b><a class="func" href="f-pfcArgument-CreateIntArgValue.html">pfcCreateIntArgValue(xint)</a></b></tt></b></tt>, <tt><b><tt><b><a class="func" href="f-pfcArgument-CreateSelectionArgValue.html">pfcCreateSelectionArgValue(pfcSelection_ptr)</a></b></tt></b></tt>, <tt><b><tt><b><a class="func" href="f-pfcArgument-CreateStringArgValue.html">pfcCreateStringArgValue(xrstring)</a></b></tt></b></tt>, <tt><b><tt><b><a class="func" href="f-pfcArgument-CreateTransformArgValue.html">pfcCreateTransformArgValue(pfcTransform3D_ptr)</a></b></tt></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#46">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>
+       
+<notes>
+        Identifier of the element.<br>
+        
+           To define the Feature Element Id, use values described in Creo Parametric TOOLKIT headers.
+        
+        
+       </notes>
+      
+</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>
+       
+<notes>
+        Value of the element.<br>
+        For Compound and Array elements pass <t>null</t>.<br>
+        For Collection elements pass <t>null</t> value and then use method SetElemCollection()<br>
+        For all other elements depending upon type use methods described in the section <b>See Also</b>
+       
+</notes>
+      
+</dd>
+<dt>
+<tt><b>Level</b></tt>
+</dt>
+<dd>
+          Level at which the element is located in the element tree with respect to the root element.
+          Level starts from 0.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

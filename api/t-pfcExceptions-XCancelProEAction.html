@@ -1,0 +1,147 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcXCancelProEAction"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      4,
+      6
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcExceptions.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcExceptions-XCancelProEAction.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcXCancelProEAction</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcExceptions.html">pfcExceptions.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcXCancelProEAction</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcExceptions-XPFC.html">pfcXPFC</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcXCancelProEAction</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This exception should be thrown by the application during a <tt><b><tt><b><a class="class" href="t-pfcBase-ActionListener.html">pfcActionListener</a></b></tt></b></tt> method in order to cancel a Creo Parametric event.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelCopy">pfcSessionActionListener::OnBeforeModelCopy(pfcDescriptorContainer2_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelDelete">pfcSessionActionListener::OnBeforeModelDelete()</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelErase">pfcSessionActionListener::OnBeforeModelErase()</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelPurge">pfcSessionActionListener::OnBeforeModelPurge(pfcDescriptorContainer_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelRename">pfcSessionActionListener::OnBeforeModelRename(pfcDescriptorContainer2_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelSave">pfcSessionActionListener::OnBeforeModelSave(pfcDescriptorContainer_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterCreate">pfcModelActionListener::OnBeforeParameterCreate(pfcModel_ptr, xrstring, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterDelete">pfcModelActionListener::OnBeforeParameterDelete(pfcParameter_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterModify">pfcModelActionListener::OnBeforeParameterModify(pfcParameter_ptr, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeDelete">pfcFeatureActionListener::OnBeforeDelete(pfcFeature_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeParameterCreate">pfcFeatureActionListener::OnBeforeParameterCreate(pfcFeature_ptr, xrstring, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeParameterDelete">pfcFeatureActionListener::OnBeforeParameterDelete(pfcParameter_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeRedefine">pfcFeatureActionListener::OnBeforeRedefine(pfcFeature_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeSuppress">pfcFeatureActionListener::OnBeforeSuppress(pfcFeature_ptr)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#95">Overview of Creo Object TOOLKIT C++: Exception Handling</a>, <a href="../manual0/menus_jlink.html#16">Menus, Commands, and Pop-up Menus: Bracket Listeners for Commands</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;void</tt></td><td class="func-signature"><tt><a class="method" href="#Throw">Throw</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Call this method from the body of an appropriate <tt><b><tt><b><a class="class" href="t-pfcBase-ActionListener.html">pfcActionListener</a></b></tt></b></tt> method to cancel the impending Creo Parametric operation. 
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcExceptions-XPFC.html"><tt>pfcXPFC</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcExceptions-XPFC.html#Message"><tt>GetMessage</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Throw">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;void</tt></td><td class="func-name"><tt>Throw</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Call this method from the body of an appropriate <tt><b><tt><b><a class="class" href="t-pfcBase-ActionListener.html">pfcActionListener</a></b></tt></b></tt> method to cancel the impending Creo Parametric operation. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelCopy">pfcSessionActionListener::OnBeforeModelCopy(pfcDescriptorContainer2_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelDelete">pfcSessionActionListener::OnBeforeModelDelete()</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelErase">pfcSessionActionListener::OnBeforeModelErase()</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelPurge">pfcSessionActionListener::OnBeforeModelPurge(pfcDescriptorContainer_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelRename">pfcSessionActionListener::OnBeforeModelRename(pfcDescriptorContainer2_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcSession-SessionActionListener.html#OnBeforeModelSave">pfcSessionActionListener::OnBeforeModelSave(pfcDescriptorContainer_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterCreate">pfcModelActionListener::OnBeforeParameterCreate(pfcModel_ptr, xrstring, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterDelete">pfcModelActionListener::OnBeforeParameterDelete(pfcParameter_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel-ModelActionListener.html#OnBeforeParameterModify">pfcModelActionListener::OnBeforeParameterModify(pfcParameter_ptr, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeDelete">pfcFeatureActionListener::OnBeforeDelete(pfcFeature_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeParameterCreate">pfcFeatureActionListener::OnBeforeParameterCreate(pfcFeature_ptr, xrstring, pfcParamValue_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeParameterDelete">pfcFeatureActionListener::OnBeforeParameterDelete(pfcParameter_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeRedefine">pfcFeatureActionListener::OnBeforeRedefine(pfcFeature_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcFeature-FeatureActionListener.html#OnBeforeSuppress">pfcFeatureActionListener::OnBeforeSuppress(pfcFeature_ptr)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>, <a href="../manual0/Jinterface.html#154">Interface: Importing 3D Geometry</a>, <a href="../manual0/menus_jlink.html#16">Menus, Commands, and Pop-up Menus: Bracket Listeners for Commands</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

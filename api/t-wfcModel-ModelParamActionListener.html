@@ -1,0 +1,374 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcModelParamActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      943
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcModel.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcModel-ModelParamActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcModelParamActionListener</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcModel.html">wfcModel.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcModelParamActionListener</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcBase-ActionListener.html">pfcActionListener</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcModelParamActionListener</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      This class defines an action listener for features.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterParameterDelete">OnAfterParameterDelete</a>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;Units, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        This is the listener method called after deleting a parameter.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnAfterParameterModify">OnAfterParameterModify</a>
+ (<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter_ptr</a>&nbsp;Param, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;NewUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;NewValue, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;OldUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        This is the notification function called after a parameter is modified.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeParameterCreate">OnBeforeParameterCreate</a>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;Units, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        This is the notification function called before a parameter is created.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnBeforeParameterModify">OnBeforeParameterModify</a>
+ (<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter_ptr</a>&nbsp;Param, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;NewUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;NewValue, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;OldUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        This is the notification function called before a parameter is modified.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="OnBeforeParameterCreate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnBeforeParameterCreate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;Units, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        This is the notification function called before a parameter is created.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#56">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>Owner of the parameter being created. </dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Parameter name. </dd>
+<dt>
+<tt><b>Units</b></tt>
+</dt>
+<dd>Parameter Units.</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Parameter Value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnBeforeParameterModify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnBeforeParameterModify</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter_ptr</a>&nbsp;Param, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;NewUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;NewValue, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;OldUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        This is the notification function called before a parameter is modified.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#57">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Parameter which is being modified. </dd>
+<dt>
+<tt><b>NewUnits</b></tt>
+</dt>
+<dd>New units of the parameter. </dd>
+<dt>
+<tt><b>NewValue</b></tt>
+</dt>
+<dd>New value of the parameter. </dd>
+<dt>
+<tt><b>OldUnits</b></tt>
+</dt>
+<dd>Old units of the parameter. </dd>
+<dt>
+<tt><b>OldValue</b></tt>
+</dt>
+<dd>Old value of the parameter. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterParameterModify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnAfterParameterModify</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-Parameter.html">pfcParameter_ptr</a>&nbsp;Param, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;NewUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;NewValue, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;OldUnits, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        This is the notification function called after a parameter is modified.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#58">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Parameter which is being modified. </dd>
+<dt>
+<tt><b>NewUnits</b></tt>
+</dt>
+<dd>New units of the parameter. </dd>
+<dt>
+<tt><b>NewValue</b></tt>
+</dt>
+<dd>New value of the parameter. </dd>
+<dt>
+<tt><b>OldUnits</b></tt>
+</dt>
+<dd>Old units of the parameter. </dd>
+<dt>
+<tt><b>OldValue</b></tt>
+</dt>
+<dd>Old value of the parameter. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnAfterParameterDelete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnAfterParameterDelete</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="t-pfcUnits-Unit.html">pfcUnit_ptr</a>&nbsp;Units, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;OldValue)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        This is the listener method called after deleting a parameter.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#59">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>Owner of the parameter being deleted.</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Parameter name. </dd>
+<dt>
+<tt><b>Units</b></tt>
+</dt>
+<dd>Parameter Units.</dd>
+<dt>
+<tt><b>OldValue</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

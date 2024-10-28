@@ -1,0 +1,322 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDetailGroupInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      144
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDetail.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDetail-DetailGroupInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDetailGroupInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDetail.html">pfcDetail.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDetailGroupInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcDetail-DetailCreateInstructions.html">pfcDetailCreateInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcDetailGroupInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a detail group item.
+It may be used when creating detail groups (<tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt>), or accessing existing groups (<tt><b><a class="method" href="t-pfcDetail-DetailGroupItem.html#Modify">pfcDetailGroupItem::Modify(pfcDetailGroupInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailGroupItem.html#GetInstructions">pfcDetailGroupItem::GetInstructions()</a></b></tt>).
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailGroupInstructions.html">pfcDetailGroupInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inName, <a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a>&nbsp;inElements)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an instructions data object used to describe the construction of a detail group, for use in the methods <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailGroupItem.html#Modify">pfcDetailGroupItem::Modify(pfcDetailGroupInstructions_ptr)</a></b></tt>.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Elements">GetElements</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Elements">SetElements</a>
+ (<a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sequence of detail items contained in the group.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDisplayed">GetIsDisplayed</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsDisplayed">SetIsDisplayed</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt>true</tt> if the group is displayed in the drawing, otherwise <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Name">GetName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Name">SetName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The name of the detail group.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailCreateInstructions.html"><tt>pfcDetailCreateInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The name of the detail group.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#507">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#508">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Elements">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a></tt></td><td class="func-name"><tt>GetElements</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetElements</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sequence of detail items contained in the group.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Invalid type of one of item.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Not enough memory. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The group does not contain any items. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#509">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#510">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDisplayed">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsDisplayed</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsDisplayed</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<tt>true</tt> if the group is displayed in the drawing, otherwise <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#511">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDetail-DetailGroupInstructions.html">pfcDetailGroupInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;inName, <a class="type" href="t-pfcDetail-DetailItems.html">pfcDetailItems_ptr</a>&nbsp;inElements)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an instructions data object used to describe the construction of a detail group, for use in the methods <tt><b><a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem">pfcDetailItemOwner::CreateDetailItem(pfcDetailCreateInstructions_ptr)</a></b></tt> and <tt><b><a class="method" href="t-pfcDetail-DetailGroupItem.html#Modify">pfcDetailGroupItem::Modify(pfcDetailGroupInstructions_ptr)</a></b></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#418">Drawings: Creating, Modifying and Reading Detail Items</a>, <a href="../manual0/jdrawfns.html#419">Drawings: Creating, Modifying and Reading Detail Items</a>, <a href="../manual0/jdrawfns.html#506">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#512">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inName</b></tt>
+</dt>
+<dd>The name of the group to create.</dd>
+<dt>
+<tt><b>inElements</b></tt>
+</dt>
+<dd>Sequence of detail items (these must be entities, groups or notes).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

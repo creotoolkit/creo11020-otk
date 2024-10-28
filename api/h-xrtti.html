@@ -1,0 +1,106 @@
+<!--
+
+  14-MAY-02 J-03-23 Maya  $$1  Created.
+  13-AUG-02 J-03-30 Maya  $$2  Removed "Frames/No Frames"
+ 
+  -->
+
+<html>
+
+<head>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>
+  CIP C++ Run-time Type Information
+ </title>
+ <link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="frame-entity">
+
+<table class="toolbar" border="0" width="100%" cellspacing="0">
+ <tr>
+  <td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="h-cipxx.html">File</a></td>
+<!-- Removed to work with API Wizard
+  <td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="h-xrtti.html">No&nbsp;Frames</a></td>
+-->
+  <td class="toolbar-lib-name"><font size="+2"><b><i>Standard Definitions</i></b></font></td>
+ </tr>
+</table>
+<hr>
+
+<h2>
+CIP Run-time Type Information (RTTI)
+</h2>
+
+<tt># include &lt;<b><a href="h-cipxx.html">cipxx.h</a></b>&gt;</tt><br><br>
+
+<b>Class Hierarchy</b>
+<br><br>
+
+<tt>
+
+class <b><a name="xrtti">xrtti</a></b> : public virtual <a class="type" href="h-xobject.html#xobject">xobject</a>
+<br><br>
+
+class <b><a name="xrttibasic">xrttibasic</a></b> : public virtual <a class="type" href="#xrtti">xrtti</a>
+<br><br>
+
+class <b><a name="xrttienum">xrttienum</a></b> : public virtual <a class="type" href="#xrtti">xrtti</a>
+<br><br>
+
+class <b><a name="xrttiobject">xrttiobject</a></b> : public virtual <a class="type" href="#xrtti">xrtti</a>
+<br><br>
+
+</tt>
+
+<hr><br>
+
+<b>Description</b>
+<br><br>
+Run-time type information represents a CIP type in a running application. It is used to access information about CIP types and objects, to compare CIP types, to dynamically cast CIP objects to their parent types, to print CIP objects, etc. Run-time type information is generated for CIP types from their CIPL definitions by the CIPL compiler. 
+
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="class" href="h-xobject.html">xobject</a></tt>,
+<tt><a class="class" href="h-xdeclare.html">xdeclare</a></tt>
+</dd>
+</dl>
+
+<hr><br>
+
+<b>Predefined RTTI's for built-in CIP types</b>
+<br><br>
+
+<table class="method-summary" border="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttibasic">xrttibasic</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_bool</b> ();</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttibasic">xrttibasic</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_int</b> ();</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttibasic">xrttibasic</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_real</b> ();</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttibasic">xrttibasic</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_string</b> ();</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttibasic">xrttibasic</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_any</b> ();</tt></td>
+</tr>
+<tr>
+ <td class="return-type"><tt><a class="type" href="#xrttiobject">xrttiobject</a></tt></td>
+ <td class="func-signature"><tt>*<b>cipGetRtti_object</b> ();</tt></td>
+</tr>
+</table>
+
+</body>
+
+</html>

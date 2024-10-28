@@ -1,0 +1,228 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDisplayList2D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      192
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDisplay.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDisplay-DisplayList2D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDisplayList2D</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDisplay.html">pfcDisplay.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDisplayList2D</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcBase-ActionSource.html">pfcActionSource</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Child.html">pfcChild</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcDisplayList2D</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The two-dimensional Display List
+<br>
+<br>To make your 2D graphics permanent create this object and place your graphics calls in its listener.
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes the DisplayList2D from the session, causing not to update with further repaints.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Display">Display</a>
+ (<a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a>&nbsp;Transform)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Forces the display of the DisplayList2D using the specified transformation matrix
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Display">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Display</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-ScreenTransform.html">pfcScreenTransform_ptr</a>&nbsp;Transform)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Forces the display of the DisplayList2D using the specified transformation matrix
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The display list is empty.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The function could not find a display list with the specified identifier. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantOpen.html">pfcXToolkitCantOpen</a></b></tt></b></tt> - The use of display lists is disabled.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt> - The display was aborted.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - The specified display list is invalid.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - There is an invalid item in the display list.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#155">Graphics: Display Lists and Graphics</a>, <a href="../manual0/JGraphics.html#158">Graphics: Display Lists and Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Transform</b></tt>
+</dt>
+<dd>The transformation matrix to be used with the display list</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes the DisplayList2D from the session, causing not to update with further repaints.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The function could not find a display list with the specified identifier. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#157">Graphics: Display Lists and Graphics</a>, <a href="../manual0/JGraphics.html#158">Graphics: Display Lists and Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

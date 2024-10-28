@@ -1,0 +1,129 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcCollectCurvesFilter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      813
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcCollection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcCollection-CollectCurvesFilter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcCollectCurvesFilter</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcCollection.html">wfcCollection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcCollectCurvesFilter</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcBase-ApplicationCallback.html">pfcApplicationCallback</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcCollectCurvesFilter</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      Base class for classes to filter selections collected using <tt><b><a class="method" href="t-wfcSolid-WSolid.html#CollectCurves">wfcWSolid::CollectCurves(wfcChainCollectionUIControls_ptr, optional wfcCollectCurvesFilter_ptr, optional xany, optional wfcCurveCollection_ptr)</a></b></tt>
+    
+<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#FilterSelections">FilterSelections</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Sel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xany.html">xany</a>&nbsp;AppData)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="FilterSelections">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>FilterSelections</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Sel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xany.html">xany</a>&nbsp;AppData)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#6">Curve and Surface Collection: Interactive Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sel</b></tt>
+</dt>
+<dd>Current selection.Filter method determines whether this is accepted or not.</dd>
+<dt>
+<tt><b>AppData</b></tt>
+</dt>
+<dd>Application data passed from <tt><b><a class="method" href="t-wfcSolid-WSolid.html#CollectCurves">wfcWSolid::CollectCurves(wfcChainCollectionUIControls_ptr, optional wfcCollectCurvesFilter_ptr, optional xany, optional wfcCurveCollection_ptr)</a></b></tt>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Accept selection if this method returns <tt>true</tt> otherwise reject the selection </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

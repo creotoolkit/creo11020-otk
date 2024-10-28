@@ -1,0 +1,1702 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWFeature"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1095
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcFeature.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcFeature-WFeature.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWFeature</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcFeature.html">wfcFeature.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWFeature</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcModelItem-WModelItem.html">wfcWModelItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-wfcLayerState-LayerItem.html">wfcLayerItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcFeature-Feature.html">pfcFeature</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWFeature</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Adds more functionality to <tt><b><tt><b><a class="class" href="t-pfcFeature-Feature.html">pfcFeature</a></b></tt></b></tt>. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#0">Features</a>, <a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcFeature-WHoleFeature.html">wfcWHoleFeature</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WCoordSysFeat.html">wfcWCoordSysFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WCurveFeat.html">wfcWCurveFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WDatumAxisFeat.html">wfcWDatumAxisFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WDatumPlaneFeat.html">wfcWDatumPlaneFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WDatumPointFeat.html">wfcWDatumPointFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WRoundFeat.html">wfcWRoundFeat</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-AnnotationFeature.html">wfcAnnotationFeature</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcComponentFeat-WComponentFeat.html">wfcWComponentFeat</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreatePattern">CreatePattern</a>
+ (<a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeature-PatternType.html">wfcPatternType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a pattern of the feature with the element tree provided.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionId">GetDimensionId</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the Dimension identifier for the specified element.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetElementTree">GetElementTree</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;Path, <a class="type" href="t-wfcFeature-FeatureElemTreeExtractOptions.html">wfcFeatureElemTreeExtractOptions</a>&nbsp;Option)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a copy of the feature element tree.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcExternalObject-ExternalReferenceInfos.html">wfcExternalReferenceInfos_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetExternalParents">GetExternalParents</a>
+ (<a class="type" href="t-wfcExternalObject-ExternalReferenceType.html">wfcExternalReferenceType</a>&nbsp;type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Retrieves data on external (and local) parents according to the specified reference type.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ImportFeatureIdMaps.html">wfcImportFeatureIdMaps_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetIdMap">GetIdMap</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Gets an array of maps between the item_id and user_id.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ImportFeatureData.html">wfcImportFeatureData_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetImportFeatureData">GetImportFeatureData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the current parameters of the specified import feature.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetItemIds">GetItemIds</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;UserId, <a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;ItemType)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Converts a user_id to item_id.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSection-Sections.html">wfcSections_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSections">GetSections</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns sections present in the feature</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSolid">GetSolid</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Retrieves the solid in which the feature is placed.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-FeatureStatusFlag.html">wfcFeatureStatusFlag_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetStatusFlag">GetStatusFlag</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the status flag object of the feature.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetUserIds">GetUserIds</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ItemId, <a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;ItemType)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Converts a item_id to user_id.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3Ds.html">pfcTransform3Ds_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetZoneFeaturePlaneData">GetZoneFeaturePlaneData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Returns information about zone reference planes used to create a zone feature</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ZoneFeatureReferences.html">wfcZoneFeatureReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetZoneFeatureReferences">GetZoneFeatureReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns references used to create a zone feature</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcXSection-ZoneXSectionGeometries.html">wfcZoneXSectionGeometries_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetZoneXSectionGeometry">GetZoneXSectionGeometry</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns cross section geometry used to create a zone feature</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsCableCosmetic">IsCableCosmetic</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> check if the feature is a cabling cosmetic feature.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsElementIncomplete">IsElementIncomplete</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Determines whether the  specified element is incomplete.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsElementVisible">IsElementVisible</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Determines whether the specified element is visible.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsInFooter">IsInFooter</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListVariedItems">ListVariedItems</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+			Lists the variant items (dimensions, features, annotations) owned by an inheritance feature or flexible component.
+		</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-Parameters.html">pfcParameters_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListVariedParameters">ListVariedParameters</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+			Lists only the variant parameters owned by an inheritance feature or flexible component.
+		</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#MoveFromFooter">MoveFromFooter</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#MoveToFooter">MoveToFooter</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#RedefineFeature">RedefineFeature</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;Path, <a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeatureInstructions-FeatCreateOptions.html">wfcFeatCreateOptions_ptr</a>&nbsp;Options, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a>&nbsp;Instrs)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Redefines the feature from the element tree</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#RedefineImportFeature">RedefineImportFeature</a>
+ (<a class="type" href="t-wfcFeature-ImportFeatureRedefSource.html">wfcImportFeatureRedefSource_ptr</a>&nbsp;Source)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Redefines an existing import feature from the data source.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcClient-Status.html">wfcStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#VisitItems">VisitItems</a>
+ (<a class="type" href="t-wfcClient-VisitingClient.html">wfcVisitingClient_ptr</a>&nbsp;visitingClient, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;itemType)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Visits all items of a given type.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFeature-Feature.html"><tt>pfcFeature</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFeature-Feature.html#FeatType"><tt>GetFeatType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatTypeName"><tt>GetFeatTypeName</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatSubType"><tt>GetFeatSubType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Status"><tt>GetStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Group"><tt>GetGroup</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Pattern"><tt>GetPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPattern"><tt>GetGroupPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GetPatternByType"><tt>GetPatternByType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#PatternStatus"><tt>GetPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupStatus"><tt>GetGroupStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPatternStatus"><tt>GetGroupPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsVisible"><tt>GetIsVisible</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsReadonly"><tt>GetIsReadonly</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Number"><tt>GetNumber</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsGroupMember"><tt>GetIsGroupMember</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsEmbedded"><tt>GetIsEmbedded</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateSuppressOp"><tt>CreateSuppressOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateResumeOp"><tt>CreateResumeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateDeleteOp"><tt>CreateDeleteOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderBeforeOp"><tt>CreateReorderBeforeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderAfterOp"><tt>CreateReorderAfterOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListChildren"><tt>ListChildren</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListParents"><tt>ListParents</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListSubItems"><tt>ListSubItems</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupDirectHeader"><tt>GetGroupDirectHeader</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetElementTree">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a></tt></td><td class="func-name"><tt>GetElementTree</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;Path, <a class="type" href="t-wfcFeature-FeatureElemTreeExtractOptions.html">wfcFeatureElemTreeExtractOptions</a>&nbsp;Option)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a copy of the feature element tree.<br>
+<br>
+        The feature can be a regular feature or a pattern.
+      <p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Extraction of the element tree is not supported for this feature type. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#29">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/Sketched_features_create.html#5">Element Trees: Sketched Features: To Create Sketched Features Element Trees</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Option</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsElementVisible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsElementVisible</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Determines whether the specified element is visible.<br>
+<br> Invisible elements are those which are added to the tree by Creo Parametric
+        for internal reasons only, and are neither defined as
+        needed for creation of that type of feature, nor otherwise documented.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#38">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsElementIncomplete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsElementIncomplete</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Determines whether the  specified element is incomplete.<br>
+<br>
+        If a feature is incomplete, this method can be used to find out which element in its tree is
+        at fault. An incomplete feature can arise by using the option
+        PRO_FEAT_CR_INCOMPLETE_FEAT from <tt><b><tt><b><a class="enumtype" href="t-wfcFeatureInstructions-FeatCreateOption.html">wfcFeatCreateOption</a></b></tt></b></tt>
+        when calling <tt><b><a class="method" href="t-wfcSolid-WSolid.html#WCreateFeature">wfcWSolid::WCreateFeature(wfcElementTree_ptr, wfcFeatCreateOptions_ptr, optional wfcWRegenInstructions_ptr)</a></b></tt>, and does not give rise to geometry
+        until completed.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#39">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetStatusFlag">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-FeatureStatusFlag.html">wfcFeatureStatusFlag_ptr</a></tt></td><td class="func-name"><tt>GetStatusFlag</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the status flag object of the feature.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#40">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RedefineFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-name"><tt>RedefineFeature</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;Path, <a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeatureInstructions-FeatCreateOptions.html">wfcFeatCreateOptions_ptr</a>&nbsp;Options, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a>&nbsp;Instrs)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Redefines the feature from the element tree<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#69">Feature Element Tree: Redefining Features</a>, <a href="../manual0/Sketched_features_create.html#4">Element Trees: Sketched Features: Creating Features Containing Sections</a>, <a href="../manual0/Sketched_features_create.html#5">Element Trees: Sketched Features: To Create Sketched Features Element Trees</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Tree</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Instrs</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreatePattern">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-name"><tt>CreatePattern</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeature-PatternType.html">wfcPatternType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a pattern of the feature with the element tree provided.<br>
+<br>
+        The pattern can be of type <tt><b><tt><b><a class="enumtype" href="t-wfcFeature-PatternType.html">wfcPatternType</a></b></tt></b></tt>
+      
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">pfcXToolkitUnsupported</a></b></tt></b></tt> - Unsupported model. For instance, models which come from Multi-CAD assemblies are not supported in this release. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#66">Feature Element Tree: Creating Patterns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Tree</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetDimensionId</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the Dimension identifier for the specified element.<br>
+<br>
+        The element cannot be a compound element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#36">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#63">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSections">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSection-Sections.html">wfcSections_ptr</a></tt></td><td class="func-name"><tt>GetSections</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns sections present in the feature<br>
+<br>
+        Method do not return sections which are unavailable for use. For example, Selected trajectory for Sweep feature will not be returned
+      <p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnavailableSection.html">pfcXToolkitUnavailableSection</a></b></tt></b></tt> - The section is not available for use.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#115">Element Trees: Sections: Retrieving a Section</a>, <a href="../manual0/Sections_create.html#118">Element Trees: Sections: Retrieving a Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetImportFeatureData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ImportFeatureData.html">wfcImportFeatureData_ptr</a></tt></td><td class="func-name"><tt>GetImportFeatureData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the current parameters of the specified import feature.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#172">Interface: Import Feature Properties</a>, <a href="../manual0/Jinterface.html#176">Interface: Import Feature Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The import feature data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetIdMap">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ImportFeatureIdMaps.html">wfcImportFeatureIdMaps_ptr</a></tt></td><td class="func-name"><tt>GetIdMap</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Gets an array of maps between the item_id and user_id.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Insufficient memory.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#163">Interface: Import Feature Properties</a>, <a href="../manual0/Jinterface.html#176">Interface: Import Feature Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetItemIds">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a></tt></td><td class="func-name"><tt>GetItemIds</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;UserId, <a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;ItemType)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Converts a user_id to item_id.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The identifiers of the geometry items were not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - You specified an invalid type of geometry item.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#165">Interface: Import Feature Properties</a>, <a href="../manual0/Jinterface.html#176">Interface: Import Feature Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>UserId</b></tt>
+</dt>
+<dd> The user identifier.</dd>
+<dt>
+<tt><b>ItemType</b></tt>
+</dt>
+<dd> The type of geometry item (pfcITEM_SURFACE, pfcITEM_EDGE or pfcITEM_QUILT).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetUserIds">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a></tt></td><td class="func-name"><tt>GetUserIds</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ItemId, <a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;ItemType)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Converts a item_id to user_id.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The user identifiers was not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - You specified an invalid type of geometry item.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#164">Interface: Import Feature Properties</a>, <a href="../manual0/Jinterface.html#176">Interface: Import Feature Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ItemId</b></tt>
+</dt>
+<dd> The item identifier.</dd>
+<dt>
+<tt><b>ItemType</b></tt>
+</dt>
+<dd> The type of geometry item (pfcITEM_SURFACE, pfcITEM_EDGE or pfcITEM_QUILT).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RedefineImportFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-name"><tt>RedefineImportFeature</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcFeature-ImportFeatureRedefSource.html">wfcImportFeatureRedefSource_ptr</a>&nbsp;Source)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Redefines an existing import feature from the data source.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotImplemented.html">pfcXToolkitNotImplemented</a></b></tt></b></tt> - Not implemented.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - no redefine could be done for ATB feature.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#192">Interface: Redefining the Import Feature</a>, <a href="../manual0/Jinterface.html#194">Interface: Redefining the Import Feature</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Source</b></tt>
+</dt>
+<dd> The data source to be used for the redefinition.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetZoneFeatureReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-ZoneFeatureReferences.html">wfcZoneFeatureReferences_ptr</a></tt></td><td class="func-name"><tt>GetZoneFeatureReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns references used to create a zone feature<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#51">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A zone reference object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetZoneXSectionGeometry">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcXSection-ZoneXSectionGeometries.html">wfcZoneXSectionGeometries_ptr</a></tt></td><td class="func-name"><tt>GetZoneXSectionGeometry</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns cross section geometry used to create a zone feature<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#53">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A Sequence of zone cross section geometry </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetZoneFeaturePlaneData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3Ds.html">pfcTransform3Ds_ptr</a></tt></td><td class="func-name"><tt>GetZoneFeaturePlaneData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Returns information about zone reference planes used to create a zone feature<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#52">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSolid">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a></tt></td><td class="func-name"><tt>GetSolid</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Retrieves the solid in which the feature is placed.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The solid model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsCableCosmetic">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsCableCosmetic</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> check if the feature is a cabling cosmetic feature.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<t>true</t> if feature is a cabling cosmetic feature, <t>false</t> if not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetExternalParents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcExternalObject-ExternalReferenceInfos.html">wfcExternalReferenceInfos_ptr</a></tt></td><td class="func-name"><tt>GetExternalParents</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcExternalObject-ExternalReferenceType.html">wfcExternalReferenceType</a>&nbsp;type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Retrieves data on external (and local) parents according to the specified reference type.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found.</p>
+	  
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No parents of parent_type are found.</p>
+	  
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - There are too many references in model. Some references will be excluded.</p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInUse.html">pfcXToolkitInUse</a></b></tt></b></tt> - The external parents is not NULL.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>type</b></tt>
+</dt>
+<dd> Type of external reference for which to retrieve parents </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The external parents.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VisitItems">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcClient-Status.html">wfcStatus</a></tt></td><td class="func-name"><tt>VisitItems</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcClient-VisitingClient.html">wfcVisitingClient_ptr</a>&nbsp;visitingClient, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItemType.html">pfcModelItemType</a>&nbsp;itemType)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Visits all items of a given type.<br>
+<br>
+       The following types are supported for all users: SURFACE, QUILT, EDGE, AXIS, CURVE, POINT, CSYS, DIMENSION.
+       <p>The following type is supported of licenced users: ANNOTATION_ELEM.</p>
+       
+<p>If ApplyAction of the visiting client returns a value other than TK_NO_ERROR, this method returns.</p>
+       
+<p>If ApplyFilter returns TK_CONTINUE, the item is skipped (not passed to ApplyAction).</p>
+       
+<p>In C++ Object Toolkit, use wfcStatusToPro and wfcStatusFromPro to convert the returned status to ProError and back.</p>
+       
+<p>
+         To facilitate the implementation of the visiting client, a default visiting client class is provided.
+         The application can subclass it and override only those methods which it needs.
+       </p>
+       
+<p>In ApplyAction &amp; ApplyFilter of the visiting client, pfcObject pointer must be cast to the correct visiting type as follows:</p>
+       
+<p>SURFACE         -          pfcSurface</p>
+       
+<p>QUILT           -          pfcQuilt</p>
+       
+<p>EDGE            -          pfcEdge</p>
+       
+<p>AXIS            -          pfcAxis</p>
+       
+<p>CURVE           -          pfcCurve</p>
+       
+<p>POINT           -          pfcPoint</p>
+       
+<p>CSYS            -          pfcCsys</p>
+       
+<p>DIMENSION       -          pfcDimension</p>
+       
+<p>ANNOTATION_ELEM -          wfcAnnotationElement</p>
+       
+<p>Casting as other types may lead to unexpected behaviour.</p>
+       
+<p>
+         
+<b>Warning: </b>After this method returns, the visiting client stays alive
+         (that is, will not be subject to memory release), to make its data and its methods
+         available for the application. After the applicatoin finishes using the client, it should call
+         <tt><b><a class="method" href="t-wfcSession-WSession.html#ReleaseVisitor">wfcWSession::ReleaseVisitor(wfcVisitingClient_ptr)</a></b></tt> on it.
+       </p>
+     
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No annotation elements were found in the feature.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#116">Overview of Creo Object TOOLKIT C++: Visit Methods</a>, <a href="../manual0/OTKOverview.html#117">Overview of Creo Object TOOLKIT C++: Visit Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>The visiting client. </dd>
+<dt>
+<tt><b>itemType</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsInFooter">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsInFooter</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#54">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="MoveToFooter">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>MoveToFooter</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The specified feature is not permitted to be moved to footer.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The specified feature is already in the footer.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#55">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="MoveFromFooter">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>MoveFromFooter</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The specified feature is already outside the footer.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The specified feature is not permitted to be moved from footer.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListVariedItems">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a></tt></td><td class="func-name"><tt>ListVariedItems</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+			Lists the variant items (dimensions, features, annotations) owned by an inheritance feature or flexible component.
+		<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#161">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of the varied items.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListVariedParameters">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-Parameters.html">pfcParameters_ptr</a></tt></td><td class="func-name"><tt>ListVariedParameters</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+			Lists only the variant parameters owned by an inheritance feature or flexible component.
+		<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#161">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of the varied parameters.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

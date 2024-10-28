@@ -1,0 +1,4921 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWDimension"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1081
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcDimension.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcDimension-WDimension.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWDimension</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcDimension.html">wfcDimension.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWDimension</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcAnnotation-Annotation.html">wfcAnnotation</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcDimension-Dimension.html">pfcDimension</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWDimension</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Extends the functionality of<tt><b><tt><b><a class="class" href="t-pfcDimension-Dimension.html">pfcDimension</a></b></tt></b></tt>
+<br>
+<br>This is the actual type of Dimension Items in Object Toolkit.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddAdditionalReferences">AddAdditionalReferences</a>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType, <a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;Refs)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Add dimension references.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#CanRegenerate">CanRegenerate</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateAnnotationElement">CreateAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CreateJog">CreateJog</a>
+ (<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a>&nbsp;JogPoints, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CreateSimpleBreak">CreateSimpleBreak</a>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;BreakStart, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;BreakEnd, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteAdditionalReferences">DeleteAdditionalReferences</a>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Delete dimension reference.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteAnnotationElement">DeleteAnnotationElement</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DisplayValueAsRounded">DisplayValueAsRounded</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EraseWitnessLine">EraseWitnessLine</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAdditionalReferences">GetAdditionalReferences</a>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Get dimension references.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAnnotationPlane">GetAnnotationPlane</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetBaselineDimension">GetBaselineDimension</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimBound.html">wfcDimBound</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetBound">GetBound</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDimension-DimChamferLeaderStyle.html">wfcDimChamferLeaderStyle</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetChamferLeaderStyle">GetChamferLeaderStyle</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDimension-DimChamferStyle.html">wfcDimChamferStyle</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetChamferStyle">GetChamferStyle</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimLeaderConfig.html">wfcDimLeaderConfig</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetConfiguration">GetConfiguration</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Obtains the dimension configuration.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDenominator">GetDenominator</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionAttachPoints">GetDimensionAttachPoints</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionSenses">GetDimensionSenses</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimLocation.html">wfcDimLocation_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimLocation">GetDimLocation</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDisplayedLowerLimitTolerance">GetDisplayedLowerLimitTolerance</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDisplayedUpperLimitTolerance">GetDisplayedUpperLimitTolerance</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDisplayedValue">GetDisplayedValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimValueDisplay.html">wfcDimValueDisplay</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDisplayedValueType">GetDisplayedValueType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimensionDisplayFormat.html">wfcDimensionDisplayFormat</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDisplayFormat">GetDisplayFormat</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Get display format of dimension.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DualDimensionInstructions.html">wfcDualDimensionInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDualOptions">GetDualOptions</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Gets the dual dimension display options.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-Envelope3D.html">wfcEnvelope3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetEnvelope">GetEnvelope</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Line)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get the envelope of a line in a specified dimension. For getting coordinates of dimension displayed in solid and same dimension is displayed in drawing then drawing should not be active.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetFirstDimArrowType">GetFirstDimArrowType</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Returns the arrow type used for first dimension arrow.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetNominalValue">GetNominalValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimOrdinateStandard.html">wfcDimOrdinateStandard</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetOrdinateStandard">GetOrdinateStandard</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetOrientationHint">GetOrientationHint</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetOriginSide">GetOriginSide</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Identify if dimension has an origin side
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetOverrideValue">GetOverrideValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetOwnerFeature">GetOwnerFeature</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetParentDimension">GetParentDimension</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Retrieves the parent dimension of the value dependent dimension.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetPrefix">GetPrefix</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSecondDimArrowType">GetSecondDimArrowType</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Returns the arrow type used for second dimension arrow.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSignificantDigits">GetSignificantDigits</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSuffix">GetSuffix</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-stringseq.html">xstringsequence_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSymbolModeText">GetSymbolModeText</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsAccessibleInModel">IsAccessibleInModel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsBaseline">IsBaseline</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsBasic">IsBasic</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDisplayedValueRounded">IsDisplayedValueRounded</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDriving">IsDriving</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsFractional">IsFractional</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsInspection">IsInspection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsOrdinate">IsOrdinate</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsSignDriven">IsSignDriven</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Identifies if the dimension always uses a true sign.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsToleranceDisplayed">IsToleranceDisplayed</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#LinearDimensionToOrdinate">LinearDimensionToOrdinate</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dimension)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Move">Move</a>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;Location)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OrdinateDimensionToLinear">OrdinateDimensionToLinear</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationPlane">SetAnnotationPlane</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAsBasic">SetAsBasic</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Basic)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAsInspection">SetAsInspection</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Inspection)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetBound">SetBound</a>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Model, <a class="type" href="t-wfcDimension-DimBound.html">wfcDimBound</a>&nbsp;DimBound)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetChamferLeaderStyle">SetChamferLeaderStyle</a>
+ (<a class="type" href="t-wfcDimension-DimChamferLeaderStyle.html">wfcDimChamferLeaderStyle</a>&nbsp;ChamferLeaderStyle, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetChamferStyle">SetChamferStyle</a>
+ (<a class="type" href="t-wfcDimension-DimChamferStyle.html">wfcDimChamferStyle</a>&nbsp;ChamferStyle, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetConfiguration">SetConfiguration</a>
+ (<a class="type" href="t-wfcDimension-DimLeaderConfig.html">wfcDimLeaderConfig</a>&nbsp;Config, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Assigns the dimension configuration.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDenominator">SetDenominator</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Denominator, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDimensionArrowType">SetDimensionArrowType</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ArrowIndex, <a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a>&nbsp;ArrowType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDimensionAttachPoints">SetDimensionAttachPoints</a>
+ (<a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a>&nbsp;DimAttachments, <a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a>&nbsp;DimSenses, <a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a>&nbsp;OrientHint, <a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDisplayedValueType">SetDisplayedValueType</a>
+ (<a class="type" href="t-wfcDimension-DimValueDisplay.html">wfcDimValueDisplay</a>&nbsp;DisplayValueType)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDisplayFormat">SetDisplayFormat</a>
+ (<a class="type" href="t-wfcDimension-DimensionDisplayFormat.html">wfcDimensionDisplayFormat</a>&nbsp;Format)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Set display format of dimension.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDualOptions">SetDualOptions</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw, <a class="type" href="t-wfcDimension-DualDimensionInstructions.html">wfcDualDimensionInstructions_ptr</a>&nbsp;DDInst)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Sets the dual dimension display using specified options.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetElbowLength">SetElbowLength</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;ElbowLength, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetOrdinateReferences">SetOrdinateReferences</a>
+ (<a class="type" href="t-pfcSelect-DimensionAttachment.html">pfcDimensionAttachment_ptr</a>&nbsp;DimAttachment, <a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a>&nbsp;DimSenses, <a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a>&nbsp;OrientHint)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetOrdinateStandard">SetOrdinateStandard</a>
+ (<a class="type" href="t-wfcDimension-DimOrdinateStandard.html">wfcDimOrdinateStandard</a>&nbsp;Standard)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetOriginSide">SetOriginSide</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+    Sets origin side to dimension.
+			</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetOverrideValue">SetOverrideValue</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetPrefix">SetPrefix</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Prefix)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSignificantDigits">SetSignificantDigits</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Digits, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSuffix">SetSuffix</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Suffix)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ShowWitnessLine">ShowWitnessLine</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcAnnotation-Annotation.html"><tt>wfcAnnotation</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcAnnotation-Annotation.html#ShowInDrawing"><tt>ShowInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#DisplayInDrawing"><tt>DisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay"><tt>Undisplay</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UndisplayInDrawing"><tt>UndisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsShown"><tt>IsShown</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Update"><tt>Update</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyle"><tt>GetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyle"><tt>SetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyleInDrawing"><tt>GetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyleInDrawing"><tt>SetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdateAttachment"><tt>UpdateAttachment</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdatePosition"><tt>UpdatePosition</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsAssociative"><tt>IsAssociative</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAttachmentAssociativity"><tt>GetAttachmentAssociativity</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAnnotationElement"><tt>GetAnnotationElement</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsInactive"><tt>IsInactive</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Rotate"><tt>Rotate</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy"><tt>ConvertLegacy</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#NeedsConversion"><tt>NeedsConversion</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetSecurityMarking"><tt>GetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetSecurityMarking"><tt>SetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsUsingXSecReference"><tt>IsUsingXSecReference</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-BaseParameter.html"><tt>pfcBaseParameter</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-BaseParameter.html#Value"><tt>GetValue</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#Value"><tt>SetValue</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#IsDesignated"><tt>GetIsDesignated</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#IsDesignated"><tt>SetIsDesignated</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#IsRelationDriven"><tt>GetIsRelationDriven</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#IsModified"><tt>GetIsModified</tt></a>,
+     <a class="method" href="t-pfcModelItem-BaseParameter.html#ResetFromBackup"><tt>ResetFromBackup</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDimension-BaseDimension.html"><tt>pfcBaseDimension</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDimension-BaseDimension.html#DimValue"><tt>GetDimValue</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#DimValue"><tt>SetDimValue</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#DimType"><tt>GetDimType</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Symbol"><tt>GetSymbol</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Symbol"><tt>SetSymbol</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Texts"><tt>GetTexts</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Texts"><tt>SetTexts</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#ExtendsInNegativeDirection"><tt>GetExtendsInNegativeDirection</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Show"><tt>Show</tt></a>,
+     <a class="method" href="t-pfcDimension-BaseDimension.html#Erase"><tt>Erase</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDimension-Dimension.html"><tt>pfcDimension</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDimension-Dimension.html#Tolerance"><tt>GetTolerance</tt></a>,
+     <a class="method" href="t-pfcDimension-Dimension.html#Tolerance"><tt>SetTolerance</tt></a>,
+     <a class="method" href="t-pfcDimension-Dimension.html#IsReference"><tt>IsReference</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetNominalValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetNominalValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#112">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetBound">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetBound</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Model, <a class="type" href="t-wfcDimension-DimBound.html">wfcDimBound</a>&nbsp;DimBound)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The dimension's owner model or the TableModel are read-only.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- cannot set bound for this dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#130">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>DimBound</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetBound">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimBound.html">wfcDimBound</a></tt></td><td class="func-name"><tt>GetBound</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#111">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSymbolModeText">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-stringseq.html">xstringsequence_ptr</a></tt></td><td class="func-name"><tt>GetSymbolModeText</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#113">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsFractional">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsFractional</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#114">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSignificantDigits">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetSignificantDigits</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The number of decimals is driven by the number of decimals for the dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- The dimension is fractional.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#125">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Tolerance</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSignificantDigits">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSignificantDigits</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Digits, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- The dimension is fractional, so this value cannot be set.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt>- The input "decimals" argument is out-of-range .</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#140">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Digits</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Tolerance</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDenominator">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetDenominator</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The denominator is driven by the denominator for the dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- The dimension is not fractional.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Tolerance</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDenominator">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDenominator</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Denominator, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Tolerance)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- The dimension is not fractional.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#141">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Denominator</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Tolerance</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CanRegenerate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>CanRegenerate</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#196">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetPrefix">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetPrefix</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension type is invalid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension or prefix is not found.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#170">Dimensions and Parameters: Dimension Prefix and Suffix</a>, <a href="../manual0/JDims.html#173">Dimensions and Parameters: Dimension Prefix and Suffix</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetPrefix">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetPrefix</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Prefix)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension type is invalid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension isn't found.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The dimension isn't modifiable.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#171">Dimensions and Parameters: Dimension Prefix and Suffix</a>, <a href="../manual0/JDims.html#173">Dimensions and Parameters: Dimension Prefix and Suffix</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Prefix</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSuffix">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetSuffix</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension type is invalid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension or suffix is not found.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#172">Dimensions and Parameters: Dimension Prefix and Suffix</a>, <a href="../manual0/JDims.html#173">Dimensions and Parameters: Dimension Prefix and Suffix</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSuffix">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSuffix</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Suffix)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension type is invalid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension isn't found.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The dimension isn't modifiable.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#173">Dimensions and Parameters: Dimension Prefix and Suffix</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Suffix</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsToleranceDisplayed">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsToleranceDisplayed</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#162">Dimensions and Parameters: Dimension Tolerances</a>, <a href="../manual0/JDims.html#164">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsBasic">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsBasic</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#115">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsInspection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsInspection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#116">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAsInspection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAsInspection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Inspection)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#132">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Inspection</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAsBasic">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAsBasic</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Basic)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#131">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Basic</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetOwnerFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-name"><tt>GetOwnerFeature</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension is not owned by a particular feature.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#117">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDisplayedValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetDisplayedValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt>- The displayed format is not decimal</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#120">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDisplayedUpperLimitTolerance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetDisplayedUpperLimitTolerance</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt>- The displayed format is not decimal</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#163">Dimensions and Parameters: Dimension Tolerances</a>, <a href="../manual0/JDims.html#164">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDisplayedLowerLimitTolerance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetDisplayedLowerLimitTolerance</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt>- The displayed format is not decimal</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#164">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DisplayValueAsRounded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DisplayValueAsRounded</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt>- The input attribute is the same as an existing one</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- Modification of the attribute is not allowed</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#119">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDisplayedValueRounded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsDisplayedValueRounded</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- Option is set, but the display is not decimal</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#118">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetOverrideValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetOverrideValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The override value is not set.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#121">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetOverrideValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetOverrideValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#133">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDisplayedValueType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimValueDisplay.html">wfcDimValueDisplay</a></tt></td><td class="func-name"><tt>GetDisplayedValueType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#122">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDisplayedValueType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDisplayedValueType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimValueDisplay.html">wfcDimValueDisplay</a>&nbsp;DisplayValueType)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#134">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DisplayValueType</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetElbowLength">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetElbowLength</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;ElbowLength, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension is not a chamfer dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#135">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ElbowLength</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetChamferLeaderStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDimension-DimChamferLeaderStyle.html">wfcDimChamferLeaderStyle</a></tt></td><td class="func-name"><tt>GetChamferLeaderStyle</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension is not a chamfer dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#204">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>, <a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetChamferLeaderStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetChamferLeaderStyle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimChamferLeaderStyle.html">wfcDimChamferLeaderStyle</a>&nbsp;ChamferLeaderStyle, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension style is not chamfer.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#205">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>, <a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ChamferLeaderStyle</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetConfiguration">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimLeaderConfig.html">wfcDimLeaderConfig</a></tt></td><td class="func-name"><tt>GetConfiguration</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Obtains the dimension configuration.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- Dimension not found.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#206">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>, <a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd>Optional - The Drawing if dimension belongs to a drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>wfcDimLeaderConfig - Dimension leader configuration</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetConfiguration">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetConfiguration</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimLeaderConfig.html">wfcDimLeaderConfig</a>&nbsp;Config, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Assigns the dimension configuration.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#207">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>, <a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Config</b></tt>
+</dt>
+<dd>Dimension leader configuration to assign.</dd>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd>Optional - The Drawing if dimension belongs to a drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsSignDriven">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsSignDriven</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Identifies if the dimension always uses a true sign.<br>
+<br>
+				
+<p>
+<b>Note:</b>for dimensions which use the sign to flip the
+        direction, this behavior can be overridden by setting the config
+        option 'show_dim_sign' to 'yes'.  By default it is set to 'no'.
+				</p>
+			
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#123">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xbool - boolean indicating if dimension is sign driven or not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateSimpleBreak">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CreateSimpleBreak</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;BreakStart, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;BreakEnd, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The object or cosmetic model can't be modified.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The dimension is not valid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension can't have a witness line break.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt>- The dimension witness line couldn't be broken.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#136">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>BreakStart</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>BreakEnd</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>WitnessLineIndex</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateJog">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CreateJog</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a>&nbsp;JogPoints, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The object or cosmetic model can't be modified.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The dimension is not valid for this operation.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension can't have a witness line jog.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt>- The dimension witness line couldn't be jogged.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#137">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>JogPoints</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>WitnessLineIndex</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimLocation.html">wfcDimLocation_ptr</a></tt></td><td class="func-name"><tt>GetDimLocation</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt>- The function succeeded, but only after internally selecting a default orientation where one was not supplied, for a dimension which could have different locations given different views. This error can only occur if both drawing and view are NULL.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- This dimension is not displayable.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt>- A drawing view was passed with a drawing.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetFirstDimArrowType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a></tt></td><td class="func-name"><tt>GetFirstDimArrowType</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Returns the arrow type used for first dimension arrow.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing handle. Pass<tt>null</tt>if not using a drawing.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>The orientation of the model that will be applied before determining the arrow type. 
+    Pass				<tt>null</tt>to use the current model view, if the model is current, or a default model orientation otherwise.
+    Pass				<tt>null</tt>if using a drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The arrow type for first dimension arrow.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSecondDimArrowType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a></tt></td><td class="func-name"><tt>GetSecondDimArrowType</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Returns the arrow type used for second dimension arrow.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing handle. Pass<tt>null</tt>if not using a drawing.</dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>The orientation of the model that will be applied before determining the arrow type. 
+    Pass				<tt>null</tt>to use the current model view, if the model is current, or a default model orientation otherwise.
+    Pass				<tt>null</tt>if using a drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The arrow type for second dimension arrow.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not delete the given item because it has read-only access.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The input dimension is invalid (non-driven).</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#197">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDriving">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsDriving</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#198">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationPlane</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt>- The orientation cannot be used for the input dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt>- For a driving dimension annotation element, the annotation orientation provided is not frozen.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt>- The driving dimension is not in an annotation element.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#190">Dimensions and Parameters: Dimension Orientation</a>, <a href="../manual0/JDims.html#191">Dimensions and Parameters: Dimension Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Plane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-name"><tt>GetAnnotationPlane</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#191">Dimensions and Parameters: Dimension Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Move">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Move</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#75">Annotations: Annotation Features and Annotations: Automatic Propagation of Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsBaseline">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsBaseline</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#142">Annotations: Annotation Features and Annotations: Baseline Dimensions</a>, <a href="../manual0/JAnnot.html#144">Annotations: Annotation Features and Annotations: Baseline Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsAccessibleInModel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsAccessibleInModel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#124">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#126">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetOrdinateStandard">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetOrdinateStandard</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimOrdinateStandard.html">wfcDimOrdinateStandard</a>&nbsp;Standard)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The input ordinate dimension is not a baseline dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#148">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>, <a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Standard</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetOrdinateStandard">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimOrdinateStandard.html">wfcDimOrdinateStandard</a></tt></td><td class="func-name"><tt>GetOrdinateStandard</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#147">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>, <a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsOrdinate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsOrdinate</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#146">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>, <a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetBaselineDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-name"><tt>GetBaselineDimension</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#143">Annotations: Annotation Features and Annotations: Baseline Dimensions</a>, <a href="../manual0/JAnnot.html#144">Annotations: Annotation Features and Annotations: Baseline Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-name"><tt>CreateAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension is not a driving dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- This type of driving dimension is not suitable for incorporation into a driving dimension annotation element.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt>- The dimension already has an annotation element.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt>- The orientation provided cannot be used for this dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#193">Dimensions and Parameters: Driving Dimension Annotation Elements</a>, <a href="../manual0/JDims.html#194">Dimensions and Parameters: Driving Dimension Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Plane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteAnnotationElement</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension does not have an annotation element.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#194">Dimensions and Parameters: Driving Dimension Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetChamferStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDimension-DimChamferStyle.html">wfcDimChamferStyle</a></tt></td><td class="func-name"><tt>GetChamferStyle</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension is not a chamfer dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#208">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>, <a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetChamferStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetChamferStyle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimChamferStyle.html">wfcDimChamferStyle</a>&nbsp;ChamferStyle, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension style is not chamfer.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#209">Dimensions and Parameters: 45 Degree Chamfer Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ChamferStyle</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionAttachPoints">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a></tt></td><td class="func-name"><tt>GetDimensionAttachPoints</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The input dimension is invalid (non-driven).</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#199">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionSenses">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a></tt></td><td class="func-name"><tt>GetDimensionSenses</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The input dimension is invalid (non-driven).</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#200">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetOrientationHint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-name"><tt>GetOrientationHint</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt>- The input dimension is invalid (non-driven).</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#201">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDimensionAttachPoints">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDimensionAttachPoints</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a>&nbsp;DimAttachments, <a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a>&nbsp;DimSenses, <a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a>&nbsp;OrientHint, <a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadDimAttach.html">pfcXToolkitBadDimAttach</a></b></tt></b></tt>- A dimension could not be created with the attachments and sense specified.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DimAttachments</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>DimSenses</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>OrientHint</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>AnnotPlane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EraseWitnessLine">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>EraseWitnessLine</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt>- The dimension witnessline could not be erased.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#138">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WitnessLineIndex</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ShowWitnessLine">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ShowWitnessLine</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt>- The dimension witnessline could not be shown or input dimension does not have erased witnessline.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#139">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetOrdinateReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetOrdinateReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-DimensionAttachment.html">pfcDimensionAttachment_ptr</a>&nbsp;DimAttachment, <a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a>&nbsp;DimSenses, <a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a>&nbsp;OrientHint)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadDimAttach.html">pfcXToolkitBadDimAttach</a></b></tt></b></tt>- Invalid attachment geometry for this ordinate dimension.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt>- The dimension is not an ordinate dimension.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#149">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>, <a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DimAttachment</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>DimSenses</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>OrientHint</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OrdinateDimensionToLinear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OrdinateDimensionToLinear</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#151">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>, <a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="LinearDimensionToOrdinate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>LinearDimensionToOrdinate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dimension)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt>- Could not modify the given item because it has read-only access.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#152">Annotations: Annotation Features and Annotations: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dimension</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDimensionArrowType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDimensionArrowType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ArrowIndex, <a class="type" href="t-wfcAnnotation-LeaderArrowType.html">wfcLeaderArrowType</a>&nbsp;ArrowType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The dimension does not exist.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt>- The dimension owner is invalid.</p>
+					
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt>- The dimension cannot be modified.</p>
+				
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#142">Dimensions and Parameters: Modifying Dimensions</a>, <a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ArrowIndex</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>ArrowType</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetParentDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-name"><tt>GetParentDimension</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Retrieves the parent dimension of the value dependent dimension.
+			<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    The parent dimension.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetOriginSide">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetOriginSide</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Identify if dimension has an origin side
+			<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    The witness line index: 1 or 2. Returns -1 if dimension has no origin side.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetOriginSide">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetOriginSide</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;WitnessLineIndex)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Sets origin side to dimension.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WitnessLineIndex</b></tt>
+</dt>
+<dd>
+    The witness line index: 1 or 2. Pass -1 to remove origin set on either side.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDualOptions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DualDimensionInstructions.html">wfcDualDimensionInstructions_ptr</a></tt></td><td class="func-name"><tt>GetDualOptions</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Gets the dual dimension display options.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd>
+    The drawing handle. Pass				<tt>null</tt>if not using a drawing.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    The dual dimension instructions object.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDualOptions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDualOptions</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drw, <a class="type" href="t-wfcDimension-DualDimensionInstructions.html">wfcDualDimensionInstructions_ptr</a>&nbsp;DDInst)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Sets the dual dimension display using specified options.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drw</b></tt>
+</dt>
+<dd>
+    The drawing handle. Pass				<tt>null</tt>if not using a drawing.
+			</dd>
+<dt>
+<tt><b>DDInst</b></tt>
+</dt>
+<dd>
+    The dual dimension instructions object.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDisplayFormat">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDimension-DimensionDisplayFormat.html">wfcDimensionDisplayFormat</a></tt></td><td class="func-name"><tt>GetDisplayFormat</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Get display format of dimension.
+			<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    The dimension display format type.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDisplayFormat">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDisplayFormat</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimensionDisplayFormat.html">wfcDimensionDisplayFormat</a>&nbsp;Format)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Set display format of dimension.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd>
+    The dimension display format type.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAdditionalReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a></tt></td><td class="func-name"><tt>GetAdditionalReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Get dimension references.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RefType</b></tt>
+</dt>
+<dd>
+    The type of dimension reference.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    Sequence of additional references.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddAdditionalReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddAdditionalReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType, <a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;Refs)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Add dimension references.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RefType</b></tt>
+</dt>
+<dd>
+    The type of dimension reference.
+			</dd>
+<dt>
+<tt><b>Refs</b></tt>
+</dt>
+<dd>
+    Sequence of additional references to add. 
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteAdditionalReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteAdditionalReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDimension-DimensionReferenceType.html">wfcDimensionReferenceType</a>&nbsp;RefType, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+    Delete dimension reference.
+			<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RefType</b></tt>
+</dt>
+<dd>
+    The type of dimension reference.
+			</dd>
+<dt>
+<tt><b>Index</b></tt>
+</dt>
+<dd>
+    The index of reference to delete. Indices start from 0. 
+    Get additional references using				<tt><b><a class="method" href="t-wfcDimension-WDimension.html#GetAdditionalReferences">wfcWDimension::GetAdditionalReferences(wfcDimensionReferenceType)</a></b></tt>.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetEnvelope">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-Envelope3D.html">wfcEnvelope3D_ptr</a></tt></td><td class="func-name"><tt>GetEnvelope</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Line)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get the envelope of a line in a specified dimension. For getting coordinates of dimension displayed in solid and same dimension is displayed in drawing then drawing should not be active.
+			<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+			
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt>- The indicated line does not exist.</p>
+			
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#143">Dimensions and Parameters: Modifying Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>
+	 Pass only for solid dim shown in drawing. Otherwise pass NULL.
+			</dd>
+<dt>
+<tt><b>Line</b></tt>
+</dt>
+<dd>
+	  The line number of the dimension.
+			</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+	  The envelope surrounding the text line, in the model's coordinate system. For drawing it is in the screen coordinates.
+			</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,1420 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWAssembly"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1043
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAssembly.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAssembly-WAssembly.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWAssembly</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAssembly.html">wfcAssembly.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWAssembly</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcSolid-WSolid.html">wfcWSolid</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcAssembly-Assembly.html">pfcAssembly</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWAssembly</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      The interface <tt><b><tt><b><a class="class" href="t-wfcAssembly-WAssembly.html">wfcWAssembly</a></b></tt></b></tt> combines
+      methods from both <tt><b><tt><b><a class="class" href="t-pfcAssembly-Assembly.html">pfcAssembly</a></b></tt></b></tt> and
+      <tt><b><tt><b><a class="class" href="t-wfcSolid-WSolid.html">wfcWSolid</a></b></tt></b></tt>.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AutoInterchange">AutoInterchange</a>
+ (<a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a>&nbsp;ComponentIDs, <a class="type" href="t-wfcSolid-WSolid.html">wfcWSolid_ptr</a>&nbsp;ReplacementModel)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Performs the automatic replacement of assembly member(s).</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcComponentFeat-AssemblyItem.html">wfcAssemblyItem_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateAssemblyItem">CreateAssemblyItem</a>
+ (<a class="type" href="t-wfcComponentFeat-AssemblyItemInstructions.html">wfcAssemblyItemInstructions_ptr</a>&nbsp;AsmItemInstrs)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Create an 'assembly item' for defining flexible components</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateExplodedState">CreateExplodedState</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveInstructions.html">wfcExplodedAnimationMoveInstructions_ptr</a>&nbsp;AnimMoveInstructions)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an explode state</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteExplodedState">DeleteExplodedState</a>
+ (<a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a>&nbsp;ExplodedState)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes an explode state</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ExpandLightweightGraphicsSimprep">ExpandLightweightGraphicsSimprep</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;TreeItem, <a class="type" href="t-wfcAssembly-LightweightGraphicsSimprepLevel.html">wfcLightweightGraphicsSimprepLevel</a>&nbsp;LWG_Level)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Expands the light weight graphics representation to the specified level.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Connectors.html">wfcConnectors_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetConnectors">GetConnectors</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the Connectors in the Assembly.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetExplodeStateFromId">GetExplodeStateFromId</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ExplodedStateId)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the exploded state having given ID</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetExplodeStateFromName">GetExplodeStateFromName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;ExplodedStateName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the exploded state having given name</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Harnesses.html">wfcHarnesses_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetHarnesses">GetHarnesses</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the Harnesses in the Assembly.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-LineStocks.html">wfcLineStocks_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetLinestocks">GetLinestocks</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the Linestocks in the Assembly.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Spools.html">wfcSpools_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSpools">GetSpools</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the Spools in the Assembly.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WComponentPaths.html">wfcWComponentPaths_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListComponentsByAssemblyRule">ListComponentsByAssemblyRule</a>
+ (<a class="type" href="t-wfcAssembly-AssemblyRule.html">wfcAssemblyRule_ptr</a>&nbsp;AsmRule)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a list of components that satisfy the specified rule.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAssembly-WComponentPaths.html">wfcWComponentPaths_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListDisplayedComponents">ListDisplayedComponents</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a list of all displayed components in the solid.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelectExplodedState">SelectExplodedState</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Enables the user to select an explode state</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcClient-Status.html">wfcStatus</a></tt></td><td class="func-signature"><tt><a class="method" href="#VisitComponents">VisitComponents</a>
+ (<a class="type" href="t-wfcClient-VisitingClient.html">wfcVisitingClient_ptr</a>&nbsp;visitingClient)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Visits components of an assembly</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItemOwner.html"><tt>pfcModelItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcView-ViewOwner.html"><tt>pfcViewOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-Model.html"><tt>pfcModel</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModel-WModel.html"><tt>wfcWModel</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModel-WModel.html#VerifyATB"><tt>VerifyATB</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#MarkATBModelAsOutOfDate"><tt>MarkATBModelAsOutOfDate</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#UpdateATB"><tt>UpdateATB</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#RelinkATB"><tt>RelinkATB</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetAnnotationPlanesFromGallery"><tt>GetAnnotationPlanesFromGallery</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetAnnotationPlanes"><tt>GetAnnotationPlanes</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetAnnotationPlaneByName"><tt>GetAnnotationPlaneByName</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#AddAnnotationPlaneToGallery"><tt>AddAnnotationPlaneToGallery</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#RemoveAnnotationPlaneFromGallery"><tt>RemoveAnnotationPlaneFromGallery</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetActiveAnnotationPlane"><tt>GetActiveAnnotationPlane</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetTIMInfo"><tt>GetTIMInfo</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#ConvertOldXSectionsToNew"><tt>ConvertOldXSectionsToNew</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CanCreateSectionFeature"><tt>CanCreateSectionFeature</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#ListLayers"><tt>ListLayers</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#SaveLayerDisplayStatus"><tt>SaveLayerDisplayStatus</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetLayerItem"><tt>GetLayerItem</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetSubType"><tt>GetSubType</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetDefaultName"><tt>GetDefaultName</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#IsVariantFeatModel"><tt>IsVariantFeatModel</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CreateUnitByExpression"><tt>CreateUnitByExpression</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#ComputeRayIntersections"><tt>ComputeRayIntersections</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CollectParamTablesets"><tt>CollectParamTablesets</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GenerateSelectionsFromCollection"><tt>GenerateSelectionsFromCollection</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#MarkForSaving"><tt>MarkForSaving</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#RefreshMdlTree"><tt>RefreshMdlTree</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#GetMdlfileDescriptor"><tt>GetMdlfileDescriptor</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#IsStandardLocation"><tt>IsStandardLocation</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#DesignateSymbol"><tt>DesignateSymbol</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#UndesignateSymbol"><tt>UndesignateSymbol</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#IsDesignatedSymbol"><tt>IsDesignatedSymbol</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#VisitItems"><tt>VisitItems</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#VisitDetailItems"><tt>VisitDetailItems</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CreateSurfaceFinish"><tt>CreateSurfaceFinish</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CreateGTol"><tt>CreateGTol</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CreateSetDatumTag"><tt>CreateSetDatumTag</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#MatchLayerRules"><tt>MatchLayerRules</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#CopyLayerRules"><tt>CopyLayerRules</tt></a>,
+     <a class="method" href="t-wfcModel-WModel.html#ExecuteLayerRules"><tt>ExecuteLayerRules</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFamily-FamilyMember.html"><tt>pfcFamilyMember</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFamily-FamilyMember.html#Parent"><tt>GetParent</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetImmediateGenericInfo"><tt>GetImmediateGenericInfo</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetTopGenericInfo"><tt>GetTopGenericInfo</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#ListColumns"><tt>ListColumns</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#ListRows"><tt>ListRows</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetCell"><tt>GetCell</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#SetCell"><tt>SetCell</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetCellIsDefault"><tt>GetCellIsDefault</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#AddRow"><tt>AddRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetRow"><tt>GetRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#RemoveRow"><tt>RemoveRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#AddColumn"><tt>AddColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#RemoveColumn"><tt>RemoveColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetColumn"><tt>GetColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateColumn"><tt>CreateColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateParamColumn"><tt>CreateParamColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateDimensionColumn"><tt>CreateDimensionColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateFeatureColumn"><tt>CreateFeatureColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateComponentColumn"><tt>CreateComponentColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateCompModelColumn"><tt>CreateCompModelColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateGroupColumn"><tt>CreateGroupColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateMergePartColumn"><tt>CreateMergePartColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolPlusColumn"><tt>CreateTolPlusColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolMinusColumn"><tt>CreateTolMinusColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolPlusMinusColumn"><tt>CreateTolPlusMinusColumn</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcFamily-WFamilyMember.html"><tt>wfcWFamilyMember</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcFamily-WFamilyMember.html#SelectRows"><tt>SelectRows</tt></a>,
+     <a class="method" href="t-wfcFamily-WFamilyMember.html#GetFamilyTableStatus"><tt>GetFamilyTableStatus</tt></a>,
+     <a class="method" href="t-wfcFamily-WFamilyMember.html#IsModifiable"><tt>IsModifiable</tt></a>,
+     <a class="method" href="t-wfcFamily-WFamilyMember.html#EditFamilyTable"><tt>EditFamilyTable</tt></a>,
+     <a class="method" href="t-wfcFamily-WFamilyMember.html#EraseFamilyTable"><tt>EraseFamilyTable</tt></a>,
+     <a class="method" href="t-wfcFamily-WFamilyMember.html#ShowFamilyTable"><tt>ShowFamilyTable</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSolid-Solid.html"><tt>pfcSolid</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSolid-Solid.html#GetDefaultBody"><tt>GetDefaultBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetSurfaceSolidBody"><tt>GetSurfaceSolidBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetEdgeSolidBody"><tt>GetEdgeSolidBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GeomOutline"><tt>GetGeomOutline</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#RelativeAccuracy"><tt>GetRelativeAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#RelativeAccuracy"><tt>SetRelativeAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#AbsoluteAccuracy"><tt>GetAbsoluteAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#AbsoluteAccuracy"><tt>SetAbsoluteAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#Regenerate"><tt>Regenerate</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps"><tt>ExecuteFeatureOps</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#EvalOutline"><tt>EvalOutline</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateLocalGroup"><tt>CreateLocalGroup</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateNote"><tt>CreateNote</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListFailedFeatures"><tt>ListFailedFeatures</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListFeaturesByType"><tt>ListFeaturesByType</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListCrossSections"><tt>ListCrossSections</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetCrossSection"><tt>GetCrossSection</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#IsSkeleton"><tt>GetIsSkeleton</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#HasRetrievalErrors"><tt>HasRetrievalErrors</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetFeatureByName"><tt>GetFeatureByName</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetFeatureById"><tt>GetFeatureById</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateImportFeat"><tt>CreateImportFeat</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ActivateSimpRep"><tt>ActivateSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetActiveSimpRep"><tt>GetActiveSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateSimpRep"><tt>CreateSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#SelectSimpRep"><tt>SelectSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetSimpRep"><tt>GetSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMasterRep"><tt>GetMasterRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetGraphicsRep"><tt>GetGraphicsRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetGeomRep"><tt>GetGeomRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#DeleteSimpRep"><tt>DeleteSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMassProperty"><tt>GetMassProperty</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMassPropertyWithDensity"><tt>GetMassPropertyWithDensity</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListGroups"><tt>ListGroups</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateFeature"><tt>CreateFeature</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateUDFGroup"><tt>CreateUDFGroup</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ExportShrinkwrap"><tt>ExportShrinkwrap</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetPrincipalUnits"><tt>GetPrincipalUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#SetPrincipalUnits"><tt>SetPrincipalUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListUnits"><tt>ListUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListUnitSystems"><tt>ListUnitSystems</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetUnit"><tt>GetUnit</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateCustomUnit"><tt>CreateCustomUnit</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateUnitSystem"><tt>CreateUnitSystem</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcSolid-WSolid.html"><tt>wfcWSolid</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcSolid-WSolid.html#CreateBody"><tt>CreateBody</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#DeleteBody"><tt>DeleteBody</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#IsNoResolveMode"><tt>GetIsNoResolveMode</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#WRegenerate"><tt>WRegenerate</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListChildOfFailedFeatures"><tt>ListChildOfFailedFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListChildOfExternalFailedFeatures"><tt>ListChildOfExternalFailedFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetSolidFeatureStatusFlags"><tt>GetSolidFeatureStatusFlags</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#WCreateFeature"><tt>WCreateFeature</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#DeleteFeatures"><tt>DeleteFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#SuppressFeatures"><tt>SuppressFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ResumeFeatures"><tt>ResumeFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ReorderFeatures"><tt>ReorderFeatures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ImportAsFeat"><tt>ImportAsFeat</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#QuickPrint"><tt>QuickPrint</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CollectCurves"><tt>CollectCurves</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CollectSurfaces"><tt>CollectSurfaces</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreatePlanarXSection"><tt>CreatePlanarXSection</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreatePlanarXSectionWithOptions"><tt>CreatePlanarXSectionWithOptions</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListDetailItems"><tt>ListDetailItems</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#UpdateActiveLayerState"><tt>UpdateActiveLayerState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateParallelXSection"><tt>CreateParallelXSection</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListCombStates"><tt>ListCombStates</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetActiveCombState"><tt>GetActiveCombState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ActivateCombState"><tt>ActivateCombState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateCombState"><tt>CreateCombState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#DeleteCombState"><tt>DeleteCombState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetAnnotationsOfActiveState"><tt>GetAnnotationsOfActiveState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetStyleStateFromName"><tt>GetStyleStateFromName</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetStyleStateFromId"><tt>GetStyleStateFromId</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetActiveStyleState"><tt>GetActiveStyleState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ActivateStyleState"><tt>ActivateStyleState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListStyleStateItems"><tt>ListStyleStateItems</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ListLayerStates"><tt>ListLayerStates</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateLayerState"><tt>CreateLayerState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetActiveLayerState"><tt>GetActiveLayerState</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetTolerance"><tt>GetTolerance</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#SetTolerance"><tt>SetTolerance</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#LoadToleranceClass"><tt>LoadToleranceClass</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetModelClass"><tt>GetModelClass</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#SetModelClass"><tt>SetModelClass</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CheckFamilyTable"><tt>CheckFamilyTable</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#DisplaySolid"><tt>DisplaySolid</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetDefaultTextHeight"><tt>GetDefaultTextHeight</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#FindShellsAndVoids"><tt>FindShellsAndVoids</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ProjectPoint"><tt>ProjectPoint</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetDisplayOutline"><tt>GetDisplayOutline</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetAxis"><tt>GetAxis</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetCurve"><tt>GetCurve</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetCsys"><tt>GetCsys</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetEdge"><tt>GetEdge</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetPoint"><tt>GetPoint</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetQuilt"><tt>GetQuilt</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateZoneSectionFeature"><tt>CreateZoneSectionFeature</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#GetAllAppearancesAndTextures"><tt>GetAllAppearancesAndTextures</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateDimension"><tt>CreateDimension</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateRefDimension"><tt>CreateRefDimension</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#RefreshDetailTree"><tt>RefreshDetailTree</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ExpandDetailTree"><tt>ExpandDetailTree</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CollapseDetailTree"><tt>CollapseDetailTree</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateFlatToScreenPlane"><tt>CreateFlatToScreenPlane</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateAnnotationPlaneFromView"><tt>CreateAnnotationPlaneFromView</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateFreeNote"><tt>CreateFreeNote</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateOnItemNote"><tt>CreateOnItemNote</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateLeaderNote"><tt>CreateLeaderNote</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateLeaderWithArrowTypeNote"><tt>CreateLeaderWithArrowTypeNote</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#RetrieveSymbolDefItem"><tt>RetrieveSymbolDefItem</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateAnnotationFeature"><tt>CreateAnnotationFeature</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateSymbolDefinition"><tt>CreateSymbolDefinition</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateSymbolInstance"><tt>CreateSymbolInstance</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateOrdinateDimension"><tt>CreateOrdinateDimension</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#Tessellate"><tt>Tessellate</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#CreateCustomFeature"><tt>CreateCustomFeature</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ActivateAutomaticSimpRep"><tt>ActivateAutomaticSimpRep</tt></a>,
+     <a class="method" href="t-wfcSolid-WSolid.html#ConvertAutomaticSimpRep"><tt>ConvertAutomaticSimpRep</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcAssembly-Assembly.html"><tt>pfcAssembly</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcAssembly-Assembly.html#IsExploded"><tt>GetIsExploded</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#DynamicPositioning"><tt>GetDynamicPositioning</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#DynamicPositioning"><tt>SetDynamicPositioning</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#Explode"><tt>Explode</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#UnExplode"><tt>UnExplode</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#GetDefaultExplodedState"><tt>GetDefaultExplodedState</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#GetActiveExplodedState"><tt>GetActiveExplodedState</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#AssembleComponent"><tt>AssembleComponent</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#AssembleByCopy"><tt>AssembleByCopy</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#AssembleSkeleton"><tt>AssembleSkeleton</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#AssembleSkeletonByCopy"><tt>AssembleSkeletonByCopy</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#GetSkeleton"><tt>GetSkeleton</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#DeleteSkeleton"><tt>DeleteSkeleton</tt></a>,
+     <a class="method" href="t-pfcAssembly-Assembly.html#GetMassPropertyByCompPath"><tt>GetMassPropertyByCompPath</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="AutoInterchange">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AutoInterchange</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-stdcols-intseq.html">xintsequence_ptr</a>&nbsp;ComponentIDs, <a class="type" href="t-wfcSolid-WSolid.html">wfcWSolid_ptr</a>&nbsp;ReplacementModel)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Performs the automatic replacement of assembly member(s).<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#50">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ComponentIDs</b></tt>
+</dt>
+<dd>The component identifiers from the node assembly
+      that identifies the replaced members.</dd>
+<dt>
+<tt><b>ReplacementModel</b></tt>
+</dt>
+<dd>The replacement component. 
+      This can be a part or subassembly.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetConnectors">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Connectors.html">wfcConnectors_ptr</a></tt></td><td class="func-name"><tt>GetConnectors</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the Connectors in the Assembly.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#52">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of connectors in the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetHarnesses">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Harnesses.html">wfcHarnesses_ptr</a></tt></td><td class="func-name"><tt>GetHarnesses</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the Harnesses in the Assembly.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - Harness not found in assembly.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#53">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of harnesses in the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetLinestocks">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-LineStocks.html">wfcLineStocks_ptr</a></tt></td><td class="func-name"><tt>GetLinestocks</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the Linestocks in the Assembly.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No linestock found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#54">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of linestocks in the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSpools">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-Spools.html">wfcSpools_ptr</a></tt></td><td class="func-name"><tt>GetSpools</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the Spools in the Assembly.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No spool found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#57">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of spools in the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateAssemblyItem">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcComponentFeat-AssemblyItem.html">wfcAssemblyItem_ptr</a></tt></td><td class="func-name"><tt>CreateAssemblyItem</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcComponentFeat-AssemblyItemInstructions.html">wfcAssemblyItemInstructions_ptr</a>&nbsp;AsmItemInstrs)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Create an 'assembly item' for defining flexible components<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#51">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AsmItemInstrs</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The Assembly Item.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ExpandLightweightGraphicsSimprep">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ExpandLightweightGraphicsSimprep</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;TreeItem, <a class="type" href="t-wfcAssembly-LightweightGraphicsSimprepLevel.html">wfcLightweightGraphicsSimprepLevel</a>&nbsp;LWG_Level)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Expands the light weight graphics representation to the specified level.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The expand already exists till the selected level.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#71">Simplified Representations: Expanding Light Weight Graphics Simplified Representations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TreeItem</b></tt>
+</dt>
+<dd>The model feature whose light weight graphic representation is to be expanded.</dd>
+<dt>
+<tt><b>LWG_Level</b></tt>
+</dt>
+<dd>The level up to which expand should take place.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListComponentsByAssemblyRule">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WComponentPaths.html">wfcWComponentPaths_ptr</a></tt></td><td class="func-name"><tt>ListComponentsByAssemblyRule</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-AssemblyRule.html">wfcAssemblyRule_ptr</a>&nbsp;AsmRule)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a list of components that satisfy the specified rule.<br>
+<br> 
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - The Rule is invalid.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#199">Assemblies and Components: Listing Components By Rule</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AsmRule</b></tt>
+</dt>
+<dd>The rule to evaluate.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of components.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListDisplayedComponents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAssembly-WComponentPaths.html">wfcWComponentPaths_ptr</a></tt></td><td class="func-name"><tt>ListDisplayedComponents</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a list of all displayed components in the solid.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#60">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>List of components.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SelectExplodedState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-name"><tt>SelectExplodedState</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Enables the user to select an explode state<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#111">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Exploded State</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetExplodeStateFromName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-name"><tt>GetExplodeStateFromName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;ExplodedStateName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the exploded state having given name<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The function found the explode state in the solid. </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The function did not find the explode state in the solid. </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - p_solid is not a correct ProSolid pointer.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#109">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExplodedStateName</b></tt>
+</dt>
+<dd>The name of the specified explode state in the solid</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Exploded State</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetExplodeStateFromId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-name"><tt>GetExplodeStateFromId</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ExplodedStateId)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the exploded state having given ID<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The function found the explode state in the solid. </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The function did not find the explode state in the solid. </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - p_solid is not a correct ProSolid pointer.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#110">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExplodedStateId</b></tt>
+</dt>
+<dd>The identifier of the explode state</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Exploded State</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateExplodedState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a></tt></td><td class="func-name"><tt>CreateExplodedState</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveInstructions.html">wfcExplodedAnimationMoveInstructions_ptr</a>&nbsp;AnimMoveInstructions)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an explode state<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidName.html">pfcXToolkitInvalidName</a></b></tt></b></tt> - The explode state with given name cannot be created (there is an explode state with such name; or name contains invalid characters) </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - Some ProAsmcomppath in comp_set for some moves do not correspond to any component (this error may be also returned for other non-specified cases). </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#132">Assemblies and Components: Manipulating Exploded States</a>, <a href="../manual0/jassembly.html#133">Assemblies and Components: Manipulating Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the state. Cannot be NULL</dd>
+<dt>
+<tt><b>AnimMoveInstructions</b></tt>
+</dt>
+<dd>Array of <tt><b><tt><b><a class="class" href="t-wfcAssembly-ExplodedAnimationMoveInstruction.html">wfcExplodedAnimationMoveInstruction</a></b></tt></b></tt>
+    
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Exploded State</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteExplodedState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteExplodedState</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-WExplodedState.html">wfcWExplodedState_ptr</a>&nbsp;ExplodedState)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes an explode state<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+		   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - explode state was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#133">Assemblies and Components: Manipulating Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExplodedState</b></tt>
+</dt>
+<dd>The explode state to delete. Cannot be NULL</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VisitComponents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcClient-Status.html">wfcStatus</a></tt></td><td class="func-name"><tt>VisitComponents</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcClient-VisitingClient.html">wfcVisitingClient_ptr</a>&nbsp;visitingClient)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Visits components of an assembly<br>
+<br>
+				If ApplyAction of the visiting client returns a value other than TK_NO_ERROR, this method returns.
+				<p>If ApplyFilter returns TK_CONTINUE, the item is skipped (not passed to ApplyAction).</p>
+				
+<p>In C++ Object Toolkit, use wfcStatusToPro and wfcStatusFromPro to convert the returned status to ProError and back.</p>
+				
+<p>In ApplyAction &amp; ApplyFilter of the visiting client, pfcObject pointer must be cast as wfcWComponentFeat.</p>
+				
+<p>Casting as other types may lead to unexpected behaviour</p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+		  
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - Either no features exist, or they were all filtered out by the filter function. </p>
+		  
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#113">Overview of Creo Object TOOLKIT C++: Visit Methods</a>, <a href="../manual0/OTKOverview.html#117">Overview of Creo Object TOOLKIT C++: Visit Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>The visiting client implemented by the application.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Visit status</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

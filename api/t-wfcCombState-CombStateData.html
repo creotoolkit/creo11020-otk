@@ -1,0 +1,347 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcCombStateData"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      819
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcCombState.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcCombState-CombStateData.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcCombStateData</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcCombState.html">wfcCombState.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcCombStateData</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcCombStateData</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Represent Combined State data in the combined state<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCombState-CombStateData.html">wfcCombStateData_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a>&nbsp;References, <a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a>&nbsp;ClipOption, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;IsExploded)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates CombStateData</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a></tt></td><td class="func-signature"><tt><a class="method" href="#ClipOption">GetClipOption</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ClipOption">SetClipOption</a>
+ (<a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Cross section clip option. Not used if pfcITEM_XSEC reference is not passed
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#CombStateName">GetCombStateName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Name of Combined state</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsExploded">GetIsExploded</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#IsExploded">SetIsExploded</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Is state exploded or not. Not relevant in Part</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#References">GetReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#References">SetReferences</a>
+ (<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Array of references. Must be non empty array</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CombStateName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetCombStateName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Name of Combined state<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#80">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="References">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a></tt></td><td class="func-name"><tt>GetReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Array of references. Must be non empty array<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#81">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#82">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ClipOption">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a></tt></td><td class="func-name"><tt>GetClipOption</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetClipOption</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Cross section clip option. Not used if pfcITEM_XSEC reference is not passed
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#83">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#84">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsExploded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsExploded</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIsExploded</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Is state exploded or not. Not relevant in Part<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#85">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#86">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCombState-CombStateData.html">wfcCombStateData_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-ModelItems.html">pfcModelItems_ptr</a>&nbsp;References, <a class="type" href="t-wfcCombState-CrossSectionClipOption.html">wfcCrossSectionClipOption</a>&nbsp;ClipOption, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;IsExploded)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates CombStateData<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#79">Solid: Combined States of a Solid</a>, <a href="../manual0/JSolid.html#115">Solid: Combined States of a Solid</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>References</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>ClipOption</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>IsExploded</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>handle to <tt><b><tt><b><a class="class" href="t-wfcCombState-CombStateData.html">wfcCombStateData</a></b></tt></b></tt>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

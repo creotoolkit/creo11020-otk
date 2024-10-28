@@ -1,0 +1,875 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcSurfaceFinish"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1016
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAnnotation.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAnnotation-SurfaceFinish.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSurfaceFinish</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAnnotation.html">wfcAnnotation.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcSurfaceFinish</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcAnnotation-Annotation.html">wfcAnnotation</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcSurfaceFinish</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAnnotationPlane">GetAnnotationPlane</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetReferences">GetReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Retrieve the surfaces referenced by a surface finish annotation. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSurfaceCollection">GetSurfaceCollection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailSymbolInstInstructions.html">pfcDetailSymbolInstInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSymbolInstructions">GetSymbolInstructions</a>
+ (<a class="type" href="t-pfcBase-DimDisplayMode.html">pfcDimDisplayMode</a>&nbsp;DisplayMode)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Retrieve the symbol instructions from a surface finish. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetValue">GetValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieve the value of a surface finish annotation. If getting the value of a surface finish based on a symbol, this gets the value of the variable text "roughness_height". Retrieve other values using wfcSurfaceFinish::GetSymbolInstructions. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Modify">Modify</a>
+ (<a class="type" href="t-pfcDetail-DetailSymbolInstInstructions.html">pfcDetailSymbolInstInstructions_ptr</a>&nbsp;SymbolInstructions, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Modify a surface finish. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSurfaceCollection">SetSurfaceCollection</a>
+ (<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a>&nbsp;Collection)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetValue">SetValue</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set the value of a surface finish annotation. If setting the value of a surface finish based on a symbol, this sets the value of the variable text "roughness_height". Modify other values using wfcSurfaceFinish::Modify(). </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Show">Show</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcAnnotation-Annotation.html"><tt>wfcAnnotation</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcAnnotation-Annotation.html#ShowInDrawing"><tt>ShowInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#DisplayInDrawing"><tt>DisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay"><tt>Undisplay</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UndisplayInDrawing"><tt>UndisplayInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsShown"><tt>IsShown</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Update"><tt>Update</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyle"><tt>GetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyle"><tt>SetTextStyle</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetTextStyleInDrawing"><tt>GetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetTextStyleInDrawing"><tt>SetTextStyleInDrawing</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdateAttachment"><tt>UpdateAttachment</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#UpdatePosition"><tt>UpdatePosition</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsAssociative"><tt>IsAssociative</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAttachmentAssociativity"><tt>GetAttachmentAssociativity</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetAnnotationElement"><tt>GetAnnotationElement</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsInactive"><tt>IsInactive</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#Rotate"><tt>Rotate</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy"><tt>ConvertLegacy</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#NeedsConversion"><tt>NeedsConversion</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#GetSecurityMarking"><tt>GetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#SetSecurityMarking"><tt>SetSecurityMarking</tt></a>,
+     <a class="method" href="t-wfcAnnotation-Annotation.html#IsUsingXSecReference"><tt>IsUsingXSecReference</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="SetValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set the value of a surface finish annotation. If setting the value of a surface finish based on a symbol, this sets the value of the variable text "roughness_height". Modify other values using wfcSurfaceFinish::Modify(). <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish does not have a value named 'roughness_height' (for symbol based surface finishes). </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The surface finish roughness height is not a numeric value. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#198">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The value of the surface finish. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieve the value of a surface finish annotation. If getting the value of a surface finish based on a symbol, this gets the value of the variable text "roughness_height". Retrieve other values using wfcSurfaceFinish::GetSymbolInstructions. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish does not have a value named 'roughness_height' (for symbol based surface finishes). </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The surface finish roughness height is not a numeric value. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#197">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The value of the surface finish. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSurfaceCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a></tt></td><td class="func-name"><tt>GetSurfaceCollection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish is not in an annotation element and cannot use a surface collection reference. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#200">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-name"><tt>GetReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Retrieve the surfaces referenced by a surface finish annotation. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#199">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of surfaces referenced by the surface finish. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSurfaceCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSurfaceCollection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a>&nbsp;Collection)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish is not in an annotation element and cannot use a surface collection reference. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#201">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Collection</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-name"><tt>GetAnnotationPlane</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Modify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Modify</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-DetailSymbolInstInstructions.html">pfcDetailSymbolInstInstructions_ptr</a>&nbsp;SymbolInstructions, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Modify a surface finish. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Invalid type of leader or attachment for creation of a surface finish. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - Leader or attachment to surface which already has a surface finish other than the one being modified. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish is not based on a symbol (and cannot be modified using symbol data). </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#202">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SymbolInstructions</b></tt>
+</dt>
+<dd>The symbol instructions that govern the surface finish. </dd>
+<dt>
+<tt><b>AnnotPlane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSymbolInstructions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDetail-DetailSymbolInstInstructions.html">pfcDetailSymbolInstInstructions_ptr</a></tt></td><td class="func-name"><tt>GetSymbolInstructions</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-DimDisplayMode.html">pfcDimDisplayMode</a>&nbsp;DisplayMode)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Retrieve the symbol instructions from a surface finish. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The surface finish is not based on a symbol (and cannot be represented using symbol data). </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#203">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DisplayMode</b></tt>
+</dt>
+<dd>The display mode for the symbol retrieval. 
+   <p>pfcDISPMODE_NUMERIC - callouts will be represented by their values.</p>
+   
+<p>pfcDISPMODE_SYMBOLIC - callouts will contain the names of the referenced parameters.</p>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The symbol instructions that govern the surface finish. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Delete">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Delete</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not delete the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#204">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Show">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Show</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is already shown in the target model.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The annotation cannot be shown due to orientation conflicts in the view.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Annotation is present on hidden or blank layer and so can't be shown. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#205">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

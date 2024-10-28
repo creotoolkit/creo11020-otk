@@ -1,0 +1,377 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcCurveCollectionInstruction"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      832
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcCollection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcCollection-CurveCollectionInstruction.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcCurveCollectionInstruction</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcCollection.html">wfcCollection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcCurveCollectionInstruction</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcCurveCollectionInstruction</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Class for instruction in curve collection  <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-CurveCollectionInstruction.html">wfcCurveCollectionInstruction_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a>&nbsp;Type, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;References)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Creates a curve collection instruction object.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CrvCollectionInstrAttributes.html">wfcCrvCollectionInstrAttributes_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Attributes">GetAttributes</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Attributes">SetAttributes</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CrvCollectionInstrAttributes.html">wfcCrvCollectionInstrAttributes_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The instruction attributes
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#References">GetReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#References">SetReferences</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The references in a curve collection instruction
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a></tt></td><td class="func-signature"><tt><a class="method" href="#Type">GetType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Type">SetType</a>
+ (<a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The curve collection instruction type
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Value">SetValue</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The curve collection instruction value
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Type">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a></tt></td><td class="func-name"><tt>GetType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The curve collection instruction type
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#24">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#25">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Value">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The curve collection instruction value
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#26">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#27">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="References">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a></tt></td><td class="func-name"><tt>GetReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetReferences</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The references in a curve collection instruction
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#22">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#23">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Attributes">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CrvCollectionInstrAttributes.html">wfcCrvCollectionInstrAttributes_ptr</a></tt></td><td class="func-name"><tt>GetAttributes</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAttributes</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CrvCollectionInstrAttributes.html">wfcCrvCollectionInstrAttributes_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The instruction attributes
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#20">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#21">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-CurveCollectionInstruction.html">wfcCurveCollectionInstruction_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCollection-CurveCollectionInstrType.html">wfcCurveCollectionInstrType</a>&nbsp;Type, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;References)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Creates a curve collection instruction object.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#19">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>References</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A curve collection instruction object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

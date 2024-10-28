@@ -1,0 +1,490 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcElementTree"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      860
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcElementTree.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcElementTree-ElementTree.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcElementTree</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcElementTree.html">wfcElementTree.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcElementTree</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Object.html">pfcObject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcElementTree</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp;<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CreateDtmCsysElemTreeFromFile">CreateDtmCsysElemTreeFromFile</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FileName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-Element.html">wfcElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetElement">GetElement</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+      Obtains the element from the element tree based on the element path.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsElementArray">IsElementArray</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Returns true if the element is of array type.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsElementCompound">IsElementCompound</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Returns true if the element is a compound element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsElementMultiVal">IsElementMultiVal</a>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Returns true if the element is a multi-valued element.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-Elements.html">wfcElements_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListTreeElements">ListTreeElements</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Returns a sequence of elements.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#WriteElementTreeToFile">WriteElementTreeToFile</a>
+ (<a class="type" href="t-wfcElementTree-ElementTreeFormat.html">wfcElementTreeFormat</a>&nbsp;Format, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FileName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Writes the element tree in the specified format
+	   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="WriteElementTreeToFile">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>WriteElementTreeToFile</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementTreeFormat.html">wfcElementTreeFormat</a>&nbsp;Format, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Writes the element tree in the specified format
+	   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#26">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/OTK_elem_tree.html#29">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListTreeElements">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-Elements.html">wfcElements_ptr</a></tt></td><td class="func-name"><tt>ListTreeElements</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Returns a sequence of elements.
+      <br>
+<br>
+        The elements are listed in the sequence as they appear in the element tree.
+      <p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#20">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateDtmCsysElemTreeFromFile">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CreateDtmCsysElemTreeFromFile</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#25">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/OTK_elem_tree.html#29">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcElementTree-Element.html">wfcElement_ptr</a></tt></td><td class="func-name"><tt>GetElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+      Obtains the element from the element tree based on the element path.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#21">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsElementCompound">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsElementCompound</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Returns true if the element is a compound element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#23">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsElementMultiVal">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsElementMultiVal</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Returns true if the element is a multi-valued element.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#24">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsElementArray">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsElementArray</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementPath.html">wfcElementPath_ptr</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Returns true if the element is of array type.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#22">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

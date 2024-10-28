@@ -1,0 +1,83 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcUDFScaleType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      138
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUDFCreate.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUDFCreate-UDFScaleType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcUDFScaleType</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcUDFCreate.html">pfcUDFCreate.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcUDFScaleType</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#UDFSCALE_SAME_SIZE">pfcUDFSCALE_SAME_SIZE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#UDFSCALE_SAME_DIMS">pfcUDFSCALE_SAME_DIMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#UDFSCALE_CUSTOM">pfcUDFSCALE_CUSTOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcUDFScaleType_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Specifies what should happen if the UDF used different length 
+units than the model to which it is being applied.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#147">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="UDFSCALE_SAME_SIZE">pfcUDFSCALE_SAME_SIZE</a></b></tt>
+</dt>
+<dd>Scale the dimension values so that the UDF becomes the same size as in the definition.<br>
+</dd>
+<dt>
+<tt><b><a name="UDFSCALE_SAME_DIMS">pfcUDFSCALE_SAME_DIMS</a></b></tt>
+</dt>
+<dd>Use the values of the dimensions defined in the UDF.<br>
+</dd>
+<dt>
+<tt><b><a name="UDFSCALE_CUSTOM">pfcUDFSCALE_CUSTOM</a></b></tt>
+</dt>
+<dd>Use the scale field in the <tt><b><tt><b><a class="class" href="t-pfcUDFCreate-UDFCustomCreateInstructions.html">pfcUDFCustomCreateInstructions</a></b></tt></b></tt> .<br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcUDFScaleType_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

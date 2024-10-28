@@ -1,0 +1,166 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "pfcInterference.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      26
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-pfcInterference.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "pfcInterference.h"</h2>
+<b>Description</b>
+<br>
+<br>Contains interfaces related to interface functionality.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#156">Geometry Evaluation: Interference</a>
+</dd>
+</dl>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-ClearanceData.html">pfcClearanceData</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class defines clearance data.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-CriticalDistanceData.html">pfcCriticalDistanceData</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class defines critical distance data. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-GlobalEvaluator.html">pfcGlobalEvaluator</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class defines a global evaluator object which enables 
+users to compute the interferences on an assembly.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-GlobalInterference.html">pfcGlobalInterference</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class defines a global interference object.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-InterferenceVolume.html">pfcInterferenceVolume</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class corresponds to an interference between two solid models.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-SelectionEvaluator.html">pfcSelectionEvaluator</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class allows the computation of clearances and inteferences between two selected objects.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcInterference-GlobalInterferences.html">pfcGlobalInterferences</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">The array of GlobalInterference objects.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcInterference-GlobalEvaluator.html">pfcGlobalEvaluator_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcInterference-CreateGlobalEvaluator.html">pfcCreateGlobalEvaluator</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcAssembly-Assembly.html">pfcAssembly_ptr</a>&nbsp;Assem)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Used to create a <tt><b><tt><b><a class="class" href="t-pfcInterference-GlobalEvaluator.html">pfcGlobalEvaluator</a></b></tt></b></tt> object, that 
+enables users to compute all of the interferences within the assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcInterference-SelectionEvaluator.html">pfcSelectionEvaluator_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcInterference-CreateSelectionEvaluator.html">pfcCreateSelectionEvaluator</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-SelectionPair.html">pfcSelectionPair_ptr</a>&nbsp;Selections)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Used to create a <tt><b><tt><b><a class="class" href="t-pfcInterference-SelectionEvaluator.html">pfcSelectionEvaluator</a></b></tt></b></tt> object, that represents the data necessary to call several methods related to the interface and clearance between the two selections.
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

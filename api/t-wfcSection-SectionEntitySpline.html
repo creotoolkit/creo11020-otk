@@ -1,0 +1,386 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcSectionEntitySpline"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      984
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcSection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcSection-SectionEntitySpline.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSectionEntitySpline</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcSection.html">wfcSection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcSectionEntitySpline</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcSection-SectionEntity.html">wfcSectionEntity</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcSectionEntitySpline</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+    This interface represents Spline entity used in sections
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#43">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSection-SectionEntitySpline.html">wfcSectionEntitySpline_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a>&nbsp;Tantype, <a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a>&nbsp;Pnts, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;StartTangAngle, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;EndTangAngle)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#EndTangentAngle">GetEndTangentAngle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EndTangentAngle">SetEndTangentAngle</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">End angle of the tangent.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Points">GetPoints</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Points">SetPoints</a>
+ (<a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Array of points.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#StartTangentAngle">GetStartTangentAngle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#StartTangentAngle">SetStartTangentAngle</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Start angle of the tangent.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a></tt></td><td class="func-signature"><tt><a class="method" href="#TangentType">GetTangentType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TangentType">SetTangentType</a>
+ (<a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Type of spline tangent.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcSection-SectionEntity.html"><tt>wfcSectionEntity</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcSection-SectionEntity.html#SectionEntityType"><tt>GetSectionEntityType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="TangentType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a></tt></td><td class="func-name"><tt>GetTangentType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTangentType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Type of spline tangent.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+		  
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#95">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#96">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Points">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a></tt></td><td class="func-name"><tt>GetPoints</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetPoints</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Array of points.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#97">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#98">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="StartTangentAngle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetStartTangentAngle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetStartTangentAngle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Start angle of the tangent.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#99">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#100">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EndTangentAngle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetEndTangentAngle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEndTangentAngle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>End angle of the tangent.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#101">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSection-SectionEntitySpline.html">wfcSectionEntitySpline_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSection-SplineTangentType.html">wfcSplineTangentType</a>&nbsp;Tantype, <a class="type" href="t-pfcBase-Point2Ds.html">pfcPoint2Ds_ptr</a>&nbsp;Pnts, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;StartTangAngle, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;EndTangAngle)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#94">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#102">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Tantype</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Pnts</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>StartTangAngle</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>EndTangAngle</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,1641 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcFeatureType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      53
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcFeature.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcFeature-FeatureType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcFeatureType</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcFeature.html">pfcFeature.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcFeatureType</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FIRST">pfcFEATTYPE_FIRST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HOLE">pfcFEATTYPE_HOLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHAFT">pfcFEATTYPE_SHAFT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ROUND">pfcFEATTYPE_ROUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CHAMFER">pfcFEATTYPE_CHAMFER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SLOT">pfcFEATTYPE_SLOT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CUT">pfcFEATTYPE_CUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PROTRUSION">pfcFEATTYPE_PROTRUSION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_NECK">pfcFEATTYPE_NECK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLANGE">pfcFEATTYPE_FLANGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIB">pfcFEATTYPE_RIB</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EAR">pfcFEATTYPE_EAR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DOME">pfcFEATTYPE_DOME</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DATUM_PLANE">pfcFEATTYPE_DATUM_PLANE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_LOC_PUSH">pfcFEATTYPE_LOC_PUSH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDF">pfcFEATTYPE_UDF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DATUM_AXIS">pfcFEATTYPE_DATUM_AXIS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRAFT">pfcFEATTYPE_DRAFT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHELL">pfcFEATTYPE_SHELL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DOME2">pfcFEATTYPE_DOME2</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CORNER_CHAMFER">pfcFEATTYPE_CORNER_CHAMFER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DATUM_POINT">pfcFEATTYPE_DATUM_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_IMPORT">pfcFEATTYPE_IMPORT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_COSMETIC">pfcFEATTYPE_COSMETIC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ETCH">pfcFEATTYPE_ETCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MERGE">pfcFEATTYPE_MERGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOLD">pfcFEATTYPE_MOLD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SAW">pfcFEATTYPE_SAW</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_TURN">pfcFEATTYPE_TURN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MILL">pfcFEATTYPE_MILL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRILL">pfcFEATTYPE_DRILL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_OFFSET">pfcFEATTYPE_OFFSET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DATUM_SURFACE">pfcFEATTYPE_DATUM_SURFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_REPLACE_SURFACE">pfcFEATTYPE_REPLACE_SURFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GROOVE">pfcFEATTYPE_GROOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE">pfcFEATTYPE_PIPE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DATUM_QUILT">pfcFEATTYPE_DATUM_QUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ASSEMBLY_CUT">pfcFEATTYPE_ASSEMBLY_CUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFTHREAD">pfcFEATTYPE_UDFTHREAD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CURVE">pfcFEATTYPE_CURVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SURFACE_MODEL">pfcFEATTYPE_SURFACE_MODEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WALL">pfcFEATTYPE_WALL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_BEND">pfcFEATTYPE_BEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UNBEND">pfcFEATTYPE_UNBEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_CUT">pfcFEATTYPE_SHEETMETAL_CUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FORM">pfcFEATTYPE_FORM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_THICKEN">pfcFEATTYPE_THICKEN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_BEND_BACK">pfcFEATTYPE_BEND_BACK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFNOTCH">pfcFEATTYPE_UDFNOTCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFPUNCH">pfcFEATTYPE_UDFPUNCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_INTERNAL_UDF">pfcFEATTYPE_INTERNAL_UDF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPLIT_SURFACE">pfcFEATTYPE_SPLIT_SURFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GRAPH">pfcFEATTYPE_GRAPH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGPUNCH">pfcFEATTYPE_SMMFGPUNCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGCUT">pfcFEATTYPE_SMMFGCUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLATTEN">pfcFEATTYPE_FLATTEN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SET">pfcFEATTYPE_SET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_VDA">pfcFEATTYPE_VDA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGFORM">pfcFEATTYPE_SMMFGFORM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_PUNCH_POINT">pfcFEATTYPE_SHEETMETAL_PUNCH_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_LIP">pfcFEATTYPE_LIP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MANUAL_MILL">pfcFEATTYPE_MANUAL_MILL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGGATHER">pfcFEATTYPE_MFGGATHER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGTRIM">pfcFEATTYPE_MFGTRIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGUSE_VOLUME">pfcFEATTYPE_MFGUSE_VOLUME</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CABLE_LOCATION">pfcFEATTYPE_CABLE_LOCATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CABLE_SEGMENT">pfcFEATTYPE_CABLE_SEGMENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CABLE">pfcFEATTYPE_CABLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_COORD_SYS">pfcFEATTYPE_COORD_SYS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CHANNEL">pfcFEATTYPE_CHANNEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_AREA_NIBBLE">pfcFEATTYPE_AREA_NIBBLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PATCH">pfcFEATTYPE_PATCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PLY">pfcFEATTYPE_PLY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CORE">pfcFEATTYPE_CORE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EXTRACT">pfcFEATTYPE_EXTRACT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGREFINE">pfcFEATTYPE_MFGREFINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SILHOUETTE_TRIM">pfcFEATTYPE_SILHOUETTE_TRIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPLIT">pfcFEATTYPE_SPLIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EXTEND">pfcFEATTYPE_EXTEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SOLIDIFY">pfcFEATTYPE_SOLIDIFY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_INTERSECT">pfcFEATTYPE_INTERSECT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ATTACH">pfcFEATTYPE_ATTACH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CROSS_SECTION">pfcFEATTYPE_CROSS_SECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFZONE">pfcFEATTYPE_UDFZONE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFCLAMP">pfcFEATTYPE_UDFCLAMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRILL_GROUP">pfcFEATTYPE_DRILL_GROUP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ISEGMENT">pfcFEATTYPE_ISEGMENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CABLE_COSMETIC">pfcFEATTYPE_CABLE_COSMETIC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPOOL">pfcFEATTYPE_SPOOL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_COMPONENT">pfcFEATTYPE_COMPONENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGMERGE">pfcFEATTYPE_MFGMERGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FIXTURE_SETUP">pfcFEATTYPE_FIXTURE_SETUP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLAT_PAT">pfcFEATTYPE_FLAT_PAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CONT_MAP">pfcFEATTYPE_CONT_MAP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EXP_RATIO">pfcFEATTYPE_EXP_RATIO</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIP">pfcFEATTYPE_RIP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_OPERATION">pfcFEATTYPE_OPERATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WORKCELL">pfcFEATTYPE_WORKCELL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CUT_MOTION">pfcFEATTYPE_CUT_MOTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CUSTOMIZE">pfcFEATTYPE_CUSTOMIZE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_SKETCH">pfcFEATTYPE_DRV_TOOL_SKETCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_EDGE">pfcFEATTYPE_DRV_TOOL_EDGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_CURVE">pfcFEATTYPE_DRV_TOOL_CURVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_SURF">pfcFEATTYPE_DRV_TOOL_SURF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MATERIAL_REMOVAL">pfcFEATTYPE_MATERIAL_REMOVAL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_TORUS">pfcFEATTYPE_TORUS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_SET_START">pfcFEATTYPE_PIPE_SET_START</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_POINT_TO_POINT">pfcFEATTYPE_PIPE_POINT_TO_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_EXTEND">pfcFEATTYPE_PIPE_EXTEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_TRIM">pfcFEATTYPE_PIPE_TRIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_FOLLOW">pfcFEATTYPE_PIPE_FOLLOW</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_JOIN">pfcFEATTYPE_PIPE_JOIN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_AUXILIARY">pfcFEATTYPE_AUXILIARY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_LINE">pfcFEATTYPE_PIPE_LINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_LINE_STOCK">pfcFEATTYPE_LINE_STOCK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SOLID_PIPE">pfcFEATTYPE_SOLID_PIPE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_BULK_OBJECT">pfcFEATTYPE_BULK_OBJECT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHRINKAGE">pfcFEATTYPE_SHRINKAGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_JOINT">pfcFEATTYPE_PIPE_JOINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PIPE_BRANCH">pfcFEATTYPE_PIPE_BRANCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_TWO_CNTR">pfcFEATTYPE_DRV_TOOL_TWO_CNTR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SUB_HARNESS">pfcFEATTYPE_SUB_HARNESS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_OPTIMIZE">pfcFEATTYPE_SHEETMETAL_OPTIMIZE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DECLARE">pfcFEATTYPE_DECLARE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_POPULATE">pfcFEATTYPE_SHEETMETAL_POPULATE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_OPERATION_COMPONENT">pfcFEATTYPE_OPERATION_COMPONENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MEASURE">pfcFEATTYPE_MEASURE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRAFT_LINE">pfcFEATTYPE_DRAFT_LINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_REMOVE_SURFACES">pfcFEATTYPE_REMOVE_SURFACES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIBBON_CABLE">pfcFEATTYPE_RIBBON_CABLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ATTACH_VOLUME">pfcFEATTYPE_ATTACH_VOLUME</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_BLD_OPERATION">pfcFEATTYPE_BLD_OPERATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFWORK_REGION">pfcFEATTYPE_UDFWORK_REGION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPINAL_BEND">pfcFEATTYPE_SPINAL_BEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_TWIST">pfcFEATTYPE_TWIST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FREE_FORM">pfcFEATTYPE_FREE_FORM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ZONE">pfcFEATTYPE_ZONE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELDING_ROD">pfcFEATTYPE_WELDING_ROD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_FILLET">pfcFEATTYPE_WELD_FILLET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_GROOVE">pfcFEATTYPE_WELD_GROOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_PLUG_SLOT">pfcFEATTYPE_WELD_PLUG_SLOT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_SPOT">pfcFEATTYPE_WELD_SPOT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_SHEAR">pfcFEATTYPE_SHEETMETAL_SHEAR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIBBON_PATH">pfcFEATTYPE_RIBBON_PATH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIBBON_EXTEND">pfcFEATTYPE_RIBBON_EXTEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ASSEMBLY_CUT_COPY">pfcFEATTYPE_ASSEMBLY_CUT_COPY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DEFORM_AREA">pfcFEATTYPE_DEFORM_AREA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RIBBON_SOLID">pfcFEATTYPE_RIBBON_SOLID</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLAT_RIBBON_SEGMENT">pfcFEATTYPE_FLAT_RIBBON_SEGMENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_POSITION_FOLD">pfcFEATTYPE_POSITION_FOLD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPRING_BACK">pfcFEATTYPE_SPRING_BACK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_BEAM_SECTION">pfcFEATTYPE_BEAM_SECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHRINK_DIM">pfcFEATTYPE_SHRINK_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_THREAD">pfcFEATTYPE_THREAD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_CONVERSION">pfcFEATTYPE_SHEETMETAL_CONVERSION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CMMMEASURE_STEP">pfcFEATTYPE_CMMMEASURE_STEP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CMMCONSTR">pfcFEATTYPE_CMMCONSTR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CMMVERIFY">pfcFEATTYPE_CMMVERIFY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CAV_SCAN_SET">pfcFEATTYPE_CAV_SCAN_SET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CAV_FIT">pfcFEATTYPE_CAV_FIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CAV_DEVIATION">pfcFEATTYPE_CAV_DEVIATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_ZONE">pfcFEATTYPE_SHEETMETAL_ZONE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHEETMETAL_CLAMP">pfcFEATTYPE_SHEETMETAL_CLAMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PROCESS_STEP">pfcFEATTYPE_PROCESS_STEP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EDGE_BEND">pfcFEATTYPE_EDGE_BEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_PROFILE">pfcFEATTYPE_DRV_TOOL_PROFILE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_EXPLODE_LINE">pfcFEATTYPE_EXPLODE_LINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GEOM_COPY">pfcFEATTYPE_GEOM_COPY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ANALYSIS">pfcFEATTYPE_ANALYSIS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WATER_LINE">pfcFEATTYPE_WATER_LINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UDFRMDT">pfcFEATTYPE_UDFRMDT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_VOL_SPLIT">pfcFEATTYPE_VOL_SPLIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_EDGE_PREP">pfcFEATTYPE_WELD_EDGE_PREP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGOFFSET">pfcFEATTYPE_SMMFGOFFSET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGMATERIAL_REMOVE">pfcFEATTYPE_SMMFGMATERIAL_REMOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGCOSMETIC">pfcFEATTYPE_SMMFGCOSMETIC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGAPPROACH">pfcFEATTYPE_SMMFGAPPROACH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGSLOT">pfcFEATTYPE_SMMFGSLOT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMMFGSHAPE">pfcFEATTYPE_SMMFGSHAPE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_IPMQUILT">pfcFEATTYPE_IPMQUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_USER">pfcFEATTYPE_USER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GROUP_HEAD">pfcFEATTYPE_GROUP_HEAD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRVD">pfcFEATTYPE_DRVD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMT_CRN_REL">pfcFEATTYPE_SMT_CRN_REL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SLDBEND">pfcFEATTYPE_SLDBEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLATQLT">pfcFEATTYPE_FLATQLT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DRV_TOOL_TURN">pfcFEATTYPE_DRV_TOOL_TURN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_PLATE">pfcFEATTYPE_HULL_PLATE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_HOLE">pfcFEATTYPE_HULL_HOLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_CUTOUT">pfcFEATTYPE_HULL_CUTOUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_STIFFENER">pfcFEATTYPE_HULL_STIFFENER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_BEAM">pfcFEATTYPE_HULL_BEAM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_ENDCUT">pfcFEATTYPE_HULL_ENDCUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_WLD_FLANGE">pfcFEATTYPE_HULL_WLD_FLANGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_COLLAR">pfcFEATTYPE_HULL_COLLAR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_DRAW">pfcFEATTYPE_HULL_DRAW</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_BRACKET">pfcFEATTYPE_HULL_BRACKET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_FOLDED_FLG">pfcFEATTYPE_HULL_FOLDED_FLG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FR_SYS">pfcFEATTYPE_FR_SYS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_COMPT">pfcFEATTYPE_HULL_COMPT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_REFERENCE">pfcFEATTYPE_REFERENCE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SHELL_EXP">pfcFEATTYPE_SHELL_EXP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FREEFORM">pfcFEATTYPE_FREEFORM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_KERNEL">pfcFEATTYPE_KERNEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_PROCESS">pfcFEATTYPE_WELD_PROCESS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_REP_TMP">pfcFEATTYPE_HULL_REP_TMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_INSULATION">pfcFEATTYPE_INSULATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SLD_PIP_INSUL">pfcFEATTYPE_SLD_PIP_INSUL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMT_EXTRACT">pfcFEATTYPE_SMT_EXTRACT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ASSY_MERGE">pfcFEATTYPE_ASSY_MERGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DS_OPTIMIZE">pfcFEATTYPE_DS_OPTIMIZE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_COMP_INTERFACE">pfcFEATTYPE_COMP_INTERFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_OLE">pfcFEATTYPE_OLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_TERMINATOR">pfcFEATTYPE_TERMINATOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_NOTCH">pfcFEATTYPE_WELD_NOTCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ASSY_WELD_NOTCH">pfcFEATTYPE_ASSY_WELD_NOTCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ROUTE_MANAGER">pfcFEATTYPE_ROUTE_MANAGER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_WELD_NOTCH">pfcFEATTYPE_HULL_WELD_NOTCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMM_SLIT">pfcFEATTYPE_SMM_SLIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMM_HOLE">pfcFEATTYPE_SMM_HOLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMM_NEST">pfcFEATTYPE_SMM_NEST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMM_GROOVE">pfcFEATTYPE_SMM_GROOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMM_ETCH">pfcFEATTYPE_SMM_ETCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ROUTE_PATH">pfcFEATTYPE_ROUTE_PATH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_SPLIT_BOUND">pfcFEATTYPE_HULL_SPLIT_BOUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SUPERQUILT">pfcFEATTYPE_SUPERQUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOLD_SLIDER">pfcFEATTYPE_MOLD_SLIDER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_PAD">pfcFEATTYPE_HULL_PAD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ROUTE_SPOOL">pfcFEATTYPE_ROUTE_SPOOL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GLOBAL_MODEL">pfcFEATTYPE_GLOBAL_MODEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_MITRE">pfcFEATTYPE_HULL_MITRE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_HULL_SLOTCUT">pfcFEATTYPE_HULL_SLOTCUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PATTERN">pfcFEATTYPE_PATTERN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PATTERN_HEAD">pfcFEATTYPE_PATTERN_HEAD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLEX_MUTATOR">pfcFEATTYPE_FLEX_MUTATOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ANNOTATION">pfcFEATTYPE_ANNOTATION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GRANITE_REMOVE_SRFS">pfcFEATTYPE_GRANITE_REMOVE_SRFS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GRANITE_TAPER_EXTR">pfcFEATTYPE_GRANITE_TAPER_EXTR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GRANITE_TOOL_COMP">pfcFEATTYPE_GRANITE_TOOL_COMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_STYLE">pfcFEATTYPE_STYLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_GENERAL_MERGE">pfcFEATTYPE_GENERAL_MERGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DAMPER">pfcFEATTYPE_DAMPER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPRING">pfcFEATTYPE_SPRING</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_AUTO_ROUND">pfcFEATTYPE_AUTO_ROUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DESIGNATED_AREA">pfcFEATTYPE_DESIGNATED_AREA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_REMOVE_SURFACE">pfcFEATTYPE_REMOVE_SURFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ARTWORK">pfcFEATTYPE_ARTWORK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_WELD_COMBINE">pfcFEATTYPE_WELD_COMBINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CONTACT3D">pfcFEATTYPE_CONTACT3D</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RS_GENERATOR">pfcFEATTYPE_RS_GENERATOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RS_TRJ_MOVE">pfcFEATTYPE_RS_TRJ_MOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PLASTIC_RIB">pfcFEATTYPE_PLASTIC_RIB</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PM_BELT_CURVE">pfcFEATTYPE_PM_BELT_CURVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_VPDD">pfcFEATTYPE_VPDD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SUBDIVISION">pfcFEATTYPE_SUBDIVISION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLEXMOVE">pfcFEATTYPE_FLEXMOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_PM_BUSHING_LD">pfcFEATTYPE_PM_BUSHING_LD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLXATTACH">pfcFEATTYPE_FLXATTACH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLEXSUBST">pfcFEATTYPE_FLEXSUBST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOD_ROUND">pfcFEATTYPE_MOD_ROUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CE_GEOM">pfcFEATTYPE_CE_GEOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ANALYT_GEOM">pfcFEATTYPE_ANALYT_GEOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_STAMPED_AREA">pfcFEATTYPE_STAMPED_AREA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLX_OGF">pfcFEATTYPE_FLX_OGF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CE_COMP">pfcFEATTYPE_CE_COMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MFGPTM_MATREM">pfcFEATTYPE_MFGPTM_MATREM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SPLIT_SRF_RGN">pfcFEATTYPE_SPLIT_SRF_RGN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_DERIVED_MEMBER">pfcFEATTYPE_DERIVED_MEMBER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_ACCEPT_CRITERIA">pfcFEATTYPE_ACCEPT_CRITERIA</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOLD_SHUTOFF_SRF">pfcFEATTYPE_MOLD_SHUTOFF_SRF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_SMT_SKETCH_FORM">pfcFEATTYPE_SMT_SKETCH_FORM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_JOIN_WALLS">pfcFEATTYPE_JOIN_WALLS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_FLX_SOLVER">pfcFEATTYPE_FLX_SOLVER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_CE_SKET">pfcFEATTYPE_CE_SKET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOLD_SKIRT_EXT_FEAT">pfcFEATTYPE_MOLD_SKIRT_EXT_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOLD_SKIRT_FILL_FEAT">pfcFEATTYPE_MOLD_SKIRT_FILL_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_MOD_CHAMFER">pfcFEATTYPE_MOD_CHAMFER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RCG_ROUND">pfcFEATTYPE_RCG_ROUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_RCG_CHAMFER">pfcFEATTYPE_RCG_CHAMFER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEATTYPE_UNRCG_ROUND">pfcFEATTYPE_UNRCG_ROUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_UNRCG_CHAMFER">pfcFEAT_UNRCG_CHAMFER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_ECAD_CU_AREAS">pfcFEAT_ECAD_CU_AREAS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_CUSTOM">pfcFEAT_CUSTOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_CUSTOM_GRANITE">pfcFEAT_CUSTOM_GRANITE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PUNCH_QUILT">pfcFEAT_PUNCH_QUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_REFPART_CUTOUT">pfcFEAT_REFPART_CUTOUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PM_MOTOR">pfcFEAT_PM_MOTOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PRTSPLIT">pfcFEAT_PRTSPLIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_ECAD_CUTS">pfcFEAT_ECAD_CUTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SMT_RECOGNITION">pfcFEAT_SMT_RECOGNITION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_LATTICE">pfcFEAT_LATTICE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_EDIT_BEND">pfcFEAT_EDIT_BEND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_EDIT_BEND_RELIEF">pfcFEAT_EDIT_BEND_RELIEF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_EDIT_CORNER_RELIEF">pfcFEAT_EDIT_CORNER_RELIEF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_MOLD_INSERT">pfcFEAT_MOLD_INSERT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_EDIT_CORNER_SEAM">pfcFEAT_EDIT_CORNER_SEAM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SENSOR">pfcFEAT_SENSOR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PART_COMP">pfcFEAT_PART_COMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PULL_WALL">pfcFEAT_PULL_WALL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_HULL_BLOCK">pfcFEAT_HULL_BLOCK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_HULL_BLOCK_DEF">pfcFEAT_HULL_BLOCK_DEF</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_PM_BELT">pfcFEAT_PM_BELT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_MOVE_COMP">pfcFEAT_MOVE_COMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SPLIT_BODY">pfcFEAT_SPLIT_BODY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_NEWBODY">pfcFEAT_NEWBODY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_MERGEBODIES">pfcFEAT_MERGEBODIES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_INTERSECTBODIES">pfcFEAT_INTERSECTBODIES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUBTRACTBODIES">pfcFEAT_SUBTRACTBODIES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SPLIT_OUT">pfcFEAT_SPLIT_OUT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_REMOVEBODY">pfcFEAT_REMOVEBODY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_BOOLEANBODIES">pfcFEAT_BOOLEANBODIES</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_BODY_COPY">pfcFEAT_BODY_COPY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_COMPOSITE">pfcFEAT_COMPOSITE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcFeatureType_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This enumerated type lists the possible feature types.
+<br>
+<br>Please contact Creo Parametric TOOLKIT support for more information on undocumented feature types.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#23">Features: Access to Features</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="FEATTYPE_FIRST">pfcFEATTYPE_FIRST</a></b></tt>
+</dt>
+<dd>This feature type is used for the first feature in a model.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HOLE">pfcFEATTYPE_HOLE</a></b></tt>
+</dt>
+<dd>This feature type is used for hole features.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHAFT">pfcFEATTYPE_SHAFT</a></b></tt>
+</dt>
+<dd>This feature type specifies a shaft.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ROUND">pfcFEATTYPE_ROUND</a></b></tt>
+</dt>
+<dd>This feature type specifies a round feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CHAMFER">pfcFEATTYPE_CHAMFER</a></b></tt>
+</dt>
+<dd>This feature type specifies a chamfer.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SLOT">pfcFEATTYPE_SLOT</a></b></tt>
+</dt>
+<dd>This feature type specifies a slot.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CUT">pfcFEATTYPE_CUT</a></b></tt>
+</dt>
+<dd>This feature type specifies a cut feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PROTRUSION">pfcFEATTYPE_PROTRUSION</a></b></tt>
+</dt>
+<dd>This feature type specifies a protrusion.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_NECK">pfcFEATTYPE_NECK</a></b></tt>
+</dt>
+<dd>This feature type specifies a neck feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLANGE">pfcFEATTYPE_FLANGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a flange.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIB">pfcFEATTYPE_RIB</a></b></tt>
+</dt>
+<dd>This feature type specifies a rib feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EAR">pfcFEATTYPE_EAR</a></b></tt>
+</dt>
+<dd>This feature type specifies an ear feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DOME">pfcFEATTYPE_DOME</a></b></tt>
+</dt>
+<dd>This feature type specifies a radius dome.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DATUM_PLANE">pfcFEATTYPE_DATUM_PLANE</a></b></tt>
+</dt>
+<dd>This feature type specifies a datum plane.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_LOC_PUSH">pfcFEATTYPE_LOC_PUSH</a></b></tt>
+</dt>
+<dd>This feature type specifies a local push feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDF">pfcFEATTYPE_UDF</a></b></tt>
+</dt>
+<dd>This feature type specifies a user-defined feature (UDF).<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DATUM_AXIS">pfcFEATTYPE_DATUM_AXIS</a></b></tt>
+</dt>
+<dd>This feature type specifies a datum axis feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRAFT">pfcFEATTYPE_DRAFT</a></b></tt>
+</dt>
+<dd>This feature type specifies a draft.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHELL">pfcFEATTYPE_SHELL</a></b></tt>
+</dt>
+<dd>This feature type specifies a shell feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DOME2">pfcFEATTYPE_DOME2</a></b></tt>
+</dt>
+<dd>This feature type specifies a section dome.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CORNER_CHAMFER">pfcFEATTYPE_CORNER_CHAMFER</a></b></tt>
+</dt>
+<dd>This feature type specifies a corner chamfer.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DATUM_POINT">pfcFEATTYPE_DATUM_POINT</a></b></tt>
+</dt>
+<dd>This feature type specifies a datum point.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_IMPORT">pfcFEATTYPE_IMPORT</a></b></tt>
+</dt>
+<dd>This feature type specifies an import feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_COSMETIC">pfcFEATTYPE_COSMETIC</a></b></tt>
+</dt>
+<dd>This feature type specifies a cosmetic feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ETCH">pfcFEATTYPE_ETCH</a></b></tt>
+</dt>
+<dd>This feature type specifies an etched feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MERGE">pfcFEATTYPE_MERGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a merge feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOLD">pfcFEATTYPE_MOLD</a></b></tt>
+</dt>
+<dd>This feature type specifies a mold feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SAW">pfcFEATTYPE_SAW</a></b></tt>
+</dt>
+<dd>This feature type specifies a saw feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_TURN">pfcFEATTYPE_TURN</a></b></tt>
+</dt>
+<dd>This feature type specifies a turn feature, which is used in themanufacturing module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MILL">pfcFEATTYPE_MILL</a></b></tt>
+</dt>
+<dd>This feature type specifies a milling feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRILL">pfcFEATTYPE_DRILL</a></b></tt>
+</dt>
+<dd>This feature type specifies a drill, which is used with thePro/NC module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_OFFSET">pfcFEATTYPE_OFFSET</a></b></tt>
+</dt>
+<dd>This feature type specifies an offset feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DATUM_SURFACE">pfcFEATTYPE_DATUM_SURFACE</a></b></tt>
+</dt>
+<dd>This feature type specifies a datum surface.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_REPLACE_SURFACE">pfcFEATTYPE_REPLACE_SURFACE</a></b></tt>
+</dt>
+<dd>This feature type specifies a replaced surface feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GROOVE">pfcFEATTYPE_GROOVE</a></b></tt>
+</dt>
+<dd>This feature type specifies a groove.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE">pfcFEATTYPE_PIPE</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipe feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DATUM_QUILT">pfcFEATTYPE_DATUM_QUILT</a></b></tt>
+</dt>
+<dd>This feature type specifies a datum quilt.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ASSEMBLY_CUT">pfcFEATTYPE_ASSEMBLY_CUT</a></b></tt>
+</dt>
+<dd>This feature type specifies a cutout feature, which is usedin the Pro/ASSEMBLY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFTHREAD">pfcFEATTYPE_UDFTHREAD</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF thread feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CURVE">pfcFEATTYPE_CURVE</a></b></tt>
+</dt>
+<dd>This feature type specifies a curve feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SURFACE_MODEL">pfcFEATTYPE_SURFACE_MODEL</a></b></tt>
+</dt>
+<dd>This feature type specifies a surface model.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WALL">pfcFEATTYPE_WALL</a></b></tt>
+</dt>
+<dd>This feature type specifies a wall, which is used in the Pro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_BEND">pfcFEATTYPE_BEND</a></b></tt>
+</dt>
+<dd>This feature type specifies a bend feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UNBEND">pfcFEATTYPE_UNBEND</a></b></tt>
+</dt>
+<dd>This feature type specifies an unbend feature, which is used inthe Pro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_CUT">pfcFEATTYPE_SHEETMETAL_CUT</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal cut feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FORM">pfcFEATTYPE_FORM</a></b></tt>
+</dt>
+<dd>This feature type specifies a form feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_THICKEN">pfcFEATTYPE_THICKEN</a></b></tt>
+</dt>
+<dd>This feature type specifies a thicken feature, which is used in thePro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_BEND_BACK">pfcFEATTYPE_BEND_BACK</a></b></tt>
+</dt>
+<dd>This feature type specifies a bend back feature, which is used in thePro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFNOTCH">pfcFEATTYPE_UDFNOTCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF notch feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFPUNCH">pfcFEATTYPE_UDFPUNCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF punch feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_INTERNAL_UDF">pfcFEATTYPE_INTERNAL_UDF</a></b></tt>
+</dt>
+<dd>This feature type is for internal use only.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPLIT_SURFACE">pfcFEATTYPE_SPLIT_SURFACE</a></b></tt>
+</dt>
+<dd>This feature type specifies a split-surface feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GRAPH">pfcFEATTYPE_GRAPH</a></b></tt>
+</dt>
+<dd>This feature type specifies a graph.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGPUNCH">pfcFEATTYPE_SMMFGPUNCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal punch feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGCUT">pfcFEATTYPE_SMMFGCUT</a></b></tt>
+</dt>
+<dd>This feature type specifies a cut feature forsheetmetal manufacturing.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLATTEN">pfcFEATTYPE_FLATTEN</a></b></tt>
+</dt>
+<dd>This feature type specifies a flattened-harness feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SET">pfcFEATTYPE_SET</a></b></tt>
+</dt>
+<dd>This feature type specifies a SET file.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_VDA">pfcFEATTYPE_VDA</a></b></tt>
+</dt>
+<dd>This feature type specifies a VDA file.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGFORM">pfcFEATTYPE_SMMFGFORM</a></b></tt>
+</dt>
+<dd>This feature type specifies a form feature used insheetmetal manufacturing.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_PUNCH_POINT">pfcFEATTYPE_SHEETMETAL_PUNCH_POINT</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal punch feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_LIP">pfcFEATTYPE_LIP</a></b></tt>
+</dt>
+<dd>This feature type specifies a lip feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MANUAL_MILL">pfcFEATTYPE_MANUAL_MILL</a></b></tt>
+</dt>
+<dd>This feature type specifies a manual-mill feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGGATHER">pfcFEATTYPE_MFGGATHER</a></b></tt>
+</dt>
+<dd>This feature type specifies a gather feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGTRIM">pfcFEATTYPE_MFGTRIM</a></b></tt>
+</dt>
+<dd>This feature type specifies a manufacturing trim feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGUSE_VOLUME">pfcFEATTYPE_MFGUSE_VOLUME</a></b></tt>
+</dt>
+<dd>This feature type specifies a manufacturing use volume feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CABLE_LOCATION">pfcFEATTYPE_CABLE_LOCATION</a></b></tt>
+</dt>
+<dd>This feature type specifies a cable location.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CABLE_SEGMENT">pfcFEATTYPE_CABLE_SEGMENT</a></b></tt>
+</dt>
+<dd>This feature type specifies a cable segment.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CABLE">pfcFEATTYPE_CABLE</a></b></tt>
+</dt>
+<dd>This feature type specifies a cabling feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_COORD_SYS">pfcFEATTYPE_COORD_SYS</a></b></tt>
+</dt>
+<dd>Describes a coordinate system feature, including constraintand translation information.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CHANNEL">pfcFEATTYPE_CHANNEL</a></b></tt>
+</dt>
+<dd>This feature type specifies a channel.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_AREA_NIBBLE">pfcFEATTYPE_AREA_NIBBLE</a></b></tt>
+</dt>
+<dd>This feature type specifies a nibble area. This feature typeis used in sheetmetal applications.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PATCH">pfcFEATTYPE_PATCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a patch.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PLY">pfcFEATTYPE_PLY</a></b></tt>
+</dt>
+<dd>This feature type specifies a ply feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CORE">pfcFEATTYPE_CORE</a></b></tt>
+</dt>
+<dd>This feature type specifies a core feature, which is usedin the Pro/COMPOSITE module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EXTRACT">pfcFEATTYPE_EXTRACT</a></b></tt>
+</dt>
+<dd>This feature type specifies an extraction.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGREFINE">pfcFEATTYPE_MFGREFINE</a></b></tt>
+</dt>
+<dd>This feature type specifies a manufacturing refine feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SILHOUETTE_TRIM">pfcFEATTYPE_SILHOUETTE_TRIM</a></b></tt>
+</dt>
+<dd>This feature type specifies a silhouette trim feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPLIT">pfcFEATTYPE_SPLIT</a></b></tt>
+</dt>
+<dd>This feature type specifies a split feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EXTEND">pfcFEATTYPE_EXTEND</a></b></tt>
+</dt>
+<dd>This feature type specifies an extend feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SOLIDIFY">pfcFEATTYPE_SOLIDIFY</a></b></tt>
+</dt>
+<dd>This feature type specifies a solidify feature, which is used in thePro/COMPOSITE module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_INTERSECT">pfcFEATTYPE_INTERSECT</a></b></tt>
+</dt>
+<dd>This feature type specifies an intersection.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ATTACH">pfcFEATTYPE_ATTACH</a></b></tt>
+</dt>
+<dd>This feature type specifies an attached feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CROSS_SECTION">pfcFEATTYPE_CROSS_SECTION</a></b></tt>
+</dt>
+<dd>This feature type specifies a cross section.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFZONE">pfcFEATTYPE_UDFZONE</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF zone feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFCLAMP">pfcFEATTYPE_UDFCLAMP</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF clamp.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRILL_GROUP">pfcFEATTYPE_DRILL_GROUP</a></b></tt>
+</dt>
+<dd>This feature type specifies a drill group, which is used in the Pro/NC module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ISEGMENT">pfcFEATTYPE_ISEGMENT</a></b></tt>
+</dt>
+<dd>This feature type specifies an ideal segment.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CABLE_COSMETIC">pfcFEATTYPE_CABLE_COSMETIC</a></b></tt>
+</dt>
+<dd>This feature type specifies a cosmetic feature used withthe Pro/CABLING module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPOOL">pfcFEATTYPE_SPOOL</a></b></tt>
+</dt>
+<dd>This feature type specifies a spool.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_COMPONENT">pfcFEATTYPE_COMPONENT</a></b></tt>
+</dt>
+<dd>This feature type specifies a component.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGMERGE">pfcFEATTYPE_MFGMERGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a manufacturing merge feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FIXTURE_SETUP">pfcFEATTYPE_FIXTURE_SETUP</a></b></tt>
+</dt>
+<dd>This feature type specifies a fixture setup.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLAT_PAT">pfcFEATTYPE_FLAT_PAT</a></b></tt>
+</dt>
+<dd>This feature type specifies a flat pattern.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CONT_MAP">pfcFEATTYPE_CONT_MAP</a></b></tt>
+</dt>
+<dd>This feature type specifies a contour map, which is used in thePro/DIEFACE module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EXP_RATIO">pfcFEATTYPE_EXP_RATIO</a></b></tt>
+</dt>
+<dd>This feature type specifies an exponential-ratio feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIP">pfcFEATTYPE_RIP</a></b></tt>
+</dt>
+<dd>This feature type specifies a rip feature, which is used inthe Pro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_OPERATION">pfcFEATTYPE_OPERATION</a></b></tt>
+</dt>
+<dd>This feature type specifies an operation feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WORKCELL">pfcFEATTYPE_WORKCELL</a></b></tt>
+</dt>
+<dd>This feature type specifies a workcell.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CUT_MOTION">pfcFEATTYPE_CUT_MOTION</a></b></tt>
+</dt>
+<dd>This feature type specifies a cut motion feature, which is used in thePro/NC module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CUSTOMIZE">pfcFEATTYPE_CUSTOMIZE</a></b></tt>
+</dt>
+<dd>This feature type specifies a customized feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_SKETCH">pfcFEATTYPE_DRV_TOOL_SKETCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a driven-tool sketch.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_EDGE">pfcFEATTYPE_DRV_TOOL_EDGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a driven-tool edge, which is used in thePro/NC module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_CURVE">pfcFEATTYPE_DRV_TOOL_CURVE</a></b></tt>
+</dt>
+<dd>This feature type specifies a driven-tool curve, which is used in thePro/NC module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_SURF">pfcFEATTYPE_DRV_TOOL_SURF</a></b></tt>
+</dt>
+<dd>This feature type specifies a driven-tool surface.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MATERIAL_REMOVAL">pfcFEATTYPE_MATERIAL_REMOVAL</a></b></tt>
+</dt>
+<dd>This feature type specifies a material removal feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_TORUS">pfcFEATTYPE_TORUS</a></b></tt>
+</dt>
+<dd>This feature type is used for a torus.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_SET_START">pfcFEATTYPE_PIPE_SET_START</a></b></tt>
+</dt>
+<dd>This feature type specifies a start feature, which is used in thePro/PIPING module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_POINT_TO_POINT">pfcFEATTYPE_PIPE_POINT_TO_POINT</a></b></tt>
+</dt>
+<dd>This feature type specifies a point-to-point pipe feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_EXTEND">pfcFEATTYPE_PIPE_EXTEND</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipe extension.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_TRIM">pfcFEATTYPE_PIPE_TRIM</a></b></tt>
+</dt>
+<dd>This feature type specifies a trim feature, which is used in thePro/PIPING module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_FOLLOW">pfcFEATTYPE_PIPE_FOLLOW</a></b></tt>
+</dt>
+<dd>This feature type specifies a follow feature, which is used in piperouting.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_JOIN">pfcFEATTYPE_PIPE_JOIN</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipe join feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_AUXILIARY">pfcFEATTYPE_AUXILIARY</a></b></tt>
+</dt>
+<dd>This feature type specifies an auxiliary feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_LINE">pfcFEATTYPE_PIPE_LINE</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipeline feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_LINE_STOCK">pfcFEATTYPE_LINE_STOCK</a></b></tt>
+</dt>
+<dd>This feature type specifies a line stock, which is used in the Pro/PIPINGmodule.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SOLID_PIPE">pfcFEATTYPE_SOLID_PIPE</a></b></tt>
+</dt>
+<dd>This feature type specifies a solid pipe feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_BULK_OBJECT">pfcFEATTYPE_BULK_OBJECT</a></b></tt>
+</dt>
+<dd>This feature type specifies a bulk object.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHRINKAGE">pfcFEATTYPE_SHRINKAGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a shrinkage feature, which is used in thePro/MOLD and Pro/CAST modules.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_JOINT">pfcFEATTYPE_PIPE_JOINT</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipe joint.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PIPE_BRANCH">pfcFEATTYPE_PIPE_BRANCH</a></b></tt>
+</dt>
+<dd>This feature type specifies a pipe branch.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_TWO_CNTR">pfcFEATTYPE_DRV_TOOL_TWO_CNTR</a></b></tt>
+</dt>
+<dd>This feature type specifies a tool with two centers.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SUB_HARNESS">pfcFEATTYPE_SUB_HARNESS</a></b></tt>
+</dt>
+<dd>This feature type specifies a subharness.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_OPTIMIZE">pfcFEATTYPE_SHEETMETAL_OPTIMIZE</a></b></tt>
+</dt>
+<dd>This feature type specifies an optimize feature, used in thePro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DECLARE">pfcFEATTYPE_DECLARE</a></b></tt>
+</dt>
+<dd>This feature type specifies a declared feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_POPULATE">pfcFEATTYPE_SHEETMETAL_POPULATE</a></b></tt>
+</dt>
+<dd>This feature type specifies a populate feature, which is used in thePro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_OPERATION_COMPONENT">pfcFEATTYPE_OPERATION_COMPONENT</a></b></tt>
+</dt>
+<dd>This feature type specifies an operation component feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MEASURE">pfcFEATTYPE_MEASURE</a></b></tt>
+</dt>
+<dd>This feature type specifies a measure feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRAFT_LINE">pfcFEATTYPE_DRAFT_LINE</a></b></tt>
+</dt>
+<dd>This feature type specifies a line draft, which is used with thePro/LEGACY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_REMOVE_SURFACES">pfcFEATTYPE_REMOVE_SURFACES</a></b></tt>
+</dt>
+<dd>This feature type specifies a removed-surface feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIBBON_CABLE">pfcFEATTYPE_RIBBON_CABLE</a></b></tt>
+</dt>
+<dd>This feature type specifies a ribbon cable.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ATTACH_VOLUME">pfcFEATTYPE_ATTACH_VOLUME</a></b></tt>
+</dt>
+<dd>This feature type specifies an attached volume.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_BLD_OPERATION">pfcFEATTYPE_BLD_OPERATION</a></b></tt>
+</dt>
+<dd>This feature type specifies a build operation.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFWORK_REGION">pfcFEATTYPE_UDFWORK_REGION</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF work region feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPINAL_BEND">pfcFEATTYPE_SPINAL_BEND</a></b></tt>
+</dt>
+<dd>This feature type specifies a spinal bend.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_TWIST">pfcFEATTYPE_TWIST</a></b></tt>
+</dt>
+<dd>This feature type specifies a twist feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FREE_FORM">pfcFEATTYPE_FREE_FORM</a></b></tt>
+</dt>
+<dd>This feature type specifies a free-form feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ZONE">pfcFEATTYPE_ZONE</a></b></tt>
+</dt>
+<dd>This feature type specifies a zone feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELDING_ROD">pfcFEATTYPE_WELDING_ROD</a></b></tt>
+</dt>
+<dd>This feature type specifies a welding rod.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_FILLET">pfcFEATTYPE_WELD_FILLET</a></b></tt>
+</dt>
+<dd>This feature type specifies a welding fillet.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_GROOVE">pfcFEATTYPE_WELD_GROOVE</a></b></tt>
+</dt>
+<dd>This feature type specifies a weld groove.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_PLUG_SLOT">pfcFEATTYPE_WELD_PLUG_SLOT</a></b></tt>
+</dt>
+<dd>This feature type specifies a plug-slot feature, which is used in thePro/WELDING module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_SPOT">pfcFEATTYPE_WELD_SPOT</a></b></tt>
+</dt>
+<dd>This feature type specifies a welding spot.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_SHEAR">pfcFEATTYPE_SHEETMETAL_SHEAR</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal shear feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIBBON_PATH">pfcFEATTYPE_RIBBON_PATH</a></b></tt>
+</dt>
+<dd>This feature type specifies a ribbon path feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIBBON_EXTEND">pfcFEATTYPE_RIBBON_EXTEND</a></b></tt>
+</dt>
+<dd>This feature type specifies a ribbon extension.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ASSEMBLY_CUT_COPY">pfcFEATTYPE_ASSEMBLY_CUT_COPY</a></b></tt>
+</dt>
+<dd>This feature type specifies a cut and copied feature, which is usedin the Pro/ASSEMBLY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DEFORM_AREA">pfcFEATTYPE_DEFORM_AREA</a></b></tt>
+</dt>
+<dd>This feature type specifies a deformed area.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RIBBON_SOLID">pfcFEATTYPE_RIBBON_SOLID</a></b></tt>
+</dt>
+<dd>This feature type specifies a solid ribbon.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLAT_RIBBON_SEGMENT">pfcFEATTYPE_FLAT_RIBBON_SEGMENT</a></b></tt>
+</dt>
+<dd>This feature type is for flat ribbon segments.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_POSITION_FOLD">pfcFEATTYPE_POSITION_FOLD</a></b></tt>
+</dt>
+<dd>This feature type specifies a position fold feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPRING_BACK">pfcFEATTYPE_SPRING_BACK</a></b></tt>
+</dt>
+<dd>This feature type specifies a spring-back feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_BEAM_SECTION">pfcFEATTYPE_BEAM_SECTION</a></b></tt>
+</dt>
+<dd>This feature type specifies a beam section.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHRINK_DIM">pfcFEATTYPE_SHRINK_DIM</a></b></tt>
+</dt>
+<dd>This feature type specifies a shrink dimension feature, which is used in thePro/MOLD and Pro/CAST modules.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_THREAD">pfcFEATTYPE_THREAD</a></b></tt>
+</dt>
+<dd>This feature type specifies a thread.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_CONVERSION">pfcFEATTYPE_SHEETMETAL_CONVERSION</a></b></tt>
+</dt>
+<dd>This feature type specifies a conversion feature, which is used in thePro/NC-SHEETMETAL module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CMMMEASURE_STEP">pfcFEATTYPE_CMMMEASURE_STEP</a></b></tt>
+</dt>
+<dd>This feature type specifies a measured step feature, which isused in the Pro/CMM module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CMMCONSTR">pfcFEATTYPE_CMMCONSTR</a></b></tt>
+</dt>
+<dd>This feature type specifies a construction feature used inthe Pro/CMM module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CMMVERIFY">pfcFEATTYPE_CMMVERIFY</a></b></tt>
+</dt>
+<dd>This feature type specifies a verify feature, which is used in thePro/CMM module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CAV_SCAN_SET">pfcFEATTYPE_CAV_SCAN_SET</a></b></tt>
+</dt>
+<dd>This feature type specifies a scanset feature, which is used inthe Pro/VERIFY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CAV_FIT">pfcFEATTYPE_CAV_FIT</a></b></tt>
+</dt>
+<dd>This feature type specifies a fit feature, which is used in the Pro/VERIFY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CAV_DEVIATION">pfcFEATTYPE_CAV_DEVIATION</a></b></tt>
+</dt>
+<dd>This feature type specifies a deviation feature, which is used in thePro/VERIFY module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_ZONE">pfcFEATTYPE_SHEETMETAL_ZONE</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal zone.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHEETMETAL_CLAMP">pfcFEATTYPE_SHEETMETAL_CLAMP</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal clamp.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PROCESS_STEP">pfcFEATTYPE_PROCESS_STEP</a></b></tt>
+</dt>
+<dd>This feature type specifies a process step feature, which is used in thePro/PROCESS for ASSEMBLIES module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EDGE_BEND">pfcFEATTYPE_EDGE_BEND</a></b></tt>
+</dt>
+<dd>This feature type specifies an edge bend.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_PROFILE">pfcFEATTYPE_DRV_TOOL_PROFILE</a></b></tt>
+</dt>
+<dd>This feature type specifies a driven-tool profile.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_EXPLODE_LINE">pfcFEATTYPE_EXPLODE_LINE</a></b></tt>
+</dt>
+<dd>This feature type specifies an explode line.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GEOM_COPY">pfcFEATTYPE_GEOM_COPY</a></b></tt>
+</dt>
+<dd>This feature type specifies a geometric copy feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ANALYSIS">pfcFEATTYPE_ANALYSIS</a></b></tt>
+</dt>
+<dd>This is the feature type for an analysis feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WATER_LINE">pfcFEATTYPE_WATER_LINE</a></b></tt>
+</dt>
+<dd>This feature type specifies a waterline feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UDFRMDT">pfcFEATTYPE_UDFRMDT</a></b></tt>
+</dt>
+<dd>This feature type specifies a UDF for rapid mold design.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_VOL_SPLIT">pfcFEATTYPE_VOL_SPLIT</a></b></tt>
+</dt>
+<dd>This feature type specifies a split-volume feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_EDGE_PREP">pfcFEATTYPE_WELD_EDGE_PREP</a></b></tt>
+</dt>
+<dd>This feature type specifies a preparation edge, which is used in thePro/WELDING module.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGOFFSET">pfcFEATTYPE_SMMFGOFFSET</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal offset feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGMATERIAL_REMOVE">pfcFEATTYPE_SMMFGMATERIAL_REMOVE</a></b></tt>
+</dt>
+<dd>This feature type specifies a material removal feature, which is used insheetmetal manufacturing.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGCOSMETIC">pfcFEATTYPE_SMMFGCOSMETIC</a></b></tt>
+</dt>
+<dd>This feature type specifies a cosmetic feature used in sheetmetalmanufacturing.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGAPPROACH">pfcFEATTYPE_SMMFGAPPROACH</a></b></tt>
+</dt>
+<dd>This feature type specifies an approach feature, which is used insheetmetal manufacturing.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGSLOT">pfcFEATTYPE_SMMFGSLOT</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal slot.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMMFGSHAPE">pfcFEATTYPE_SMMFGSHAPE</a></b></tt>
+</dt>
+<dd>This feature type specifies a sheetmetal shape feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_IPMQUILT">pfcFEATTYPE_IPMQUILT</a></b></tt>
+</dt>
+<dd>This feature type specifies an IPM quilt.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_USER">pfcFEATTYPE_USER</a></b></tt>
+</dt>
+<dd>This feature type specifies a user-defined feature (UDF).<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GROUP_HEAD">pfcFEATTYPE_GROUP_HEAD</a></b></tt>
+</dt>
+<dd>This feature type specifies a feature group.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRVD">pfcFEATTYPE_DRVD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMT_CRN_REL">pfcFEATTYPE_SMT_CRN_REL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SLDBEND">pfcFEATTYPE_SLDBEND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLATQLT">pfcFEATTYPE_FLATQLT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DRV_TOOL_TURN">pfcFEATTYPE_DRV_TOOL_TURN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_PLATE">pfcFEATTYPE_HULL_PLATE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_HOLE">pfcFEATTYPE_HULL_HOLE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_CUTOUT">pfcFEATTYPE_HULL_CUTOUT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_STIFFENER">pfcFEATTYPE_HULL_STIFFENER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_BEAM">pfcFEATTYPE_HULL_BEAM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_ENDCUT">pfcFEATTYPE_HULL_ENDCUT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_WLD_FLANGE">pfcFEATTYPE_HULL_WLD_FLANGE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_COLLAR">pfcFEATTYPE_HULL_COLLAR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_DRAW">pfcFEATTYPE_HULL_DRAW</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_BRACKET">pfcFEATTYPE_HULL_BRACKET</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_FOLDED_FLG">pfcFEATTYPE_HULL_FOLDED_FLG</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FR_SYS">pfcFEATTYPE_FR_SYS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_COMPT">pfcFEATTYPE_HULL_COMPT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_REFERENCE">pfcFEATTYPE_REFERENCE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SHELL_EXP">pfcFEATTYPE_SHELL_EXP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FREEFORM">pfcFEATTYPE_FREEFORM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_KERNEL">pfcFEATTYPE_KERNEL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_PROCESS">pfcFEATTYPE_WELD_PROCESS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_REP_TMP">pfcFEATTYPE_HULL_REP_TMP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_INSULATION">pfcFEATTYPE_INSULATION</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SLD_PIP_INSUL">pfcFEATTYPE_SLD_PIP_INSUL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMT_EXTRACT">pfcFEATTYPE_SMT_EXTRACT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ASSY_MERGE">pfcFEATTYPE_ASSY_MERGE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DS_OPTIMIZE">pfcFEATTYPE_DS_OPTIMIZE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_COMP_INTERFACE">pfcFEATTYPE_COMP_INTERFACE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_OLE">pfcFEATTYPE_OLE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_TERMINATOR">pfcFEATTYPE_TERMINATOR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_NOTCH">pfcFEATTYPE_WELD_NOTCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ASSY_WELD_NOTCH">pfcFEATTYPE_ASSY_WELD_NOTCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ROUTE_MANAGER">pfcFEATTYPE_ROUTE_MANAGER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_WELD_NOTCH">pfcFEATTYPE_HULL_WELD_NOTCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMM_SLIT">pfcFEATTYPE_SMM_SLIT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMM_HOLE">pfcFEATTYPE_SMM_HOLE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMM_NEST">pfcFEATTYPE_SMM_NEST</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMM_GROOVE">pfcFEATTYPE_SMM_GROOVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMM_ETCH">pfcFEATTYPE_SMM_ETCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ROUTE_PATH">pfcFEATTYPE_ROUTE_PATH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_SPLIT_BOUND">pfcFEATTYPE_HULL_SPLIT_BOUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SUPERQUILT">pfcFEATTYPE_SUPERQUILT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOLD_SLIDER">pfcFEATTYPE_MOLD_SLIDER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_PAD">pfcFEATTYPE_HULL_PAD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ROUTE_SPOOL">pfcFEATTYPE_ROUTE_SPOOL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GLOBAL_MODEL">pfcFEATTYPE_GLOBAL_MODEL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_MITRE">pfcFEATTYPE_HULL_MITRE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_HULL_SLOTCUT">pfcFEATTYPE_HULL_SLOTCUT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PATTERN">pfcFEATTYPE_PATTERN</a></b></tt>
+</dt>
+<dd>This feature type specifies a pattern.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PATTERN_HEAD">pfcFEATTYPE_PATTERN_HEAD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLEX_MUTATOR">pfcFEATTYPE_FLEX_MUTATOR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ANNOTATION">pfcFEATTYPE_ANNOTATION</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GRANITE_REMOVE_SRFS">pfcFEATTYPE_GRANITE_REMOVE_SRFS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GRANITE_TAPER_EXTR">pfcFEATTYPE_GRANITE_TAPER_EXTR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GRANITE_TOOL_COMP">pfcFEATTYPE_GRANITE_TOOL_COMP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_STYLE">pfcFEATTYPE_STYLE</a></b></tt>
+</dt>
+<dd>This feature type specifies a style feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_GENERAL_MERGE">pfcFEATTYPE_GENERAL_MERGE</a></b></tt>
+</dt>
+<dd>This feature type specifies a general
+   merge (Merge, Cutout, Shrinkwrap) feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DAMPER">pfcFEATTYPE_DAMPER</a></b></tt>
+</dt>
+<dd>This feature type specifies a damper 
+  feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPRING">pfcFEATTYPE_SPRING</a></b></tt>
+</dt>
+<dd>This feature type specifies a spring 
+  feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_AUTO_ROUND">pfcFEATTYPE_AUTO_ROUND</a></b></tt>
+</dt>
+<dd>This feature type specifies an 
+  auto round feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DESIGNATED_AREA">pfcFEATTYPE_DESIGNATED_AREA</a></b></tt>
+</dt>
+<dd>This feature type specifies 
+  a designated area feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_REMOVE_SURFACE">pfcFEATTYPE_REMOVE_SURFACE</a></b></tt>
+</dt>
+<dd>This feature type specifies a 
+  removed surface feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ARTWORK">pfcFEATTYPE_ARTWORK</a></b></tt>
+</dt>
+<dd>This feature type specifies an 
+  artwork feature.<br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_WELD_COMBINE">pfcFEATTYPE_WELD_COMBINE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CONTACT3D">pfcFEATTYPE_CONTACT3D</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RS_GENERATOR">pfcFEATTYPE_RS_GENERATOR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RS_TRJ_MOVE">pfcFEATTYPE_RS_TRJ_MOVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PLASTIC_RIB">pfcFEATTYPE_PLASTIC_RIB</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PM_BELT_CURVE">pfcFEATTYPE_PM_BELT_CURVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_VPDD">pfcFEATTYPE_VPDD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SUBDIVISION">pfcFEATTYPE_SUBDIVISION</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLEXMOVE">pfcFEATTYPE_FLEXMOVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_PM_BUSHING_LD">pfcFEATTYPE_PM_BUSHING_LD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLXATTACH">pfcFEATTYPE_FLXATTACH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLEXSUBST">pfcFEATTYPE_FLEXSUBST</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOD_ROUND">pfcFEATTYPE_MOD_ROUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CE_GEOM">pfcFEATTYPE_CE_GEOM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ANALYT_GEOM">pfcFEATTYPE_ANALYT_GEOM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_STAMPED_AREA">pfcFEATTYPE_STAMPED_AREA</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLX_OGF">pfcFEATTYPE_FLX_OGF</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CE_COMP">pfcFEATTYPE_CE_COMP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MFGPTM_MATREM">pfcFEATTYPE_MFGPTM_MATREM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SPLIT_SRF_RGN">pfcFEATTYPE_SPLIT_SRF_RGN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_DERIVED_MEMBER">pfcFEATTYPE_DERIVED_MEMBER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_ACCEPT_CRITERIA">pfcFEATTYPE_ACCEPT_CRITERIA</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOLD_SHUTOFF_SRF">pfcFEATTYPE_MOLD_SHUTOFF_SRF</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_SMT_SKETCH_FORM">pfcFEATTYPE_SMT_SKETCH_FORM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_JOIN_WALLS">pfcFEATTYPE_JOIN_WALLS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_FLX_SOLVER">pfcFEATTYPE_FLX_SOLVER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_CE_SKET">pfcFEATTYPE_CE_SKET</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOLD_SKIRT_EXT_FEAT">pfcFEATTYPE_MOLD_SKIRT_EXT_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOLD_SKIRT_FILL_FEAT">pfcFEATTYPE_MOLD_SKIRT_FILL_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_MOD_CHAMFER">pfcFEATTYPE_MOD_CHAMFER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RCG_ROUND">pfcFEATTYPE_RCG_ROUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_RCG_CHAMFER">pfcFEATTYPE_RCG_CHAMFER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEATTYPE_UNRCG_ROUND">pfcFEATTYPE_UNRCG_ROUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_UNRCG_CHAMFER">pfcFEAT_UNRCG_CHAMFER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_ECAD_CU_AREAS">pfcFEAT_ECAD_CU_AREAS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_CUSTOM">pfcFEAT_CUSTOM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_CUSTOM_GRANITE">pfcFEAT_CUSTOM_GRANITE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PUNCH_QUILT">pfcFEAT_PUNCH_QUILT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_REFPART_CUTOUT">pfcFEAT_REFPART_CUTOUT</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PM_MOTOR">pfcFEAT_PM_MOTOR</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PRTSPLIT">pfcFEAT_PRTSPLIT</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_ECAD_CUTS">pfcFEAT_ECAD_CUTS</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SMT_RECOGNITION">pfcFEAT_SMT_RECOGNITION</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_LATTICE">pfcFEAT_LATTICE</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_EDIT_BEND">pfcFEAT_EDIT_BEND</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_EDIT_BEND_RELIEF">pfcFEAT_EDIT_BEND_RELIEF</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_EDIT_CORNER_RELIEF">pfcFEAT_EDIT_CORNER_RELIEF</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_MOLD_INSERT">pfcFEAT_MOLD_INSERT</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_EDIT_CORNER_SEAM">pfcFEAT_EDIT_CORNER_SEAM</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SENSOR">pfcFEAT_SENSOR</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PART_COMP">pfcFEAT_PART_COMP</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PULL_WALL">pfcFEAT_PULL_WALL</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_HULL_BLOCK">pfcFEAT_HULL_BLOCK</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_HULL_BLOCK_DEF">pfcFEAT_HULL_BLOCK_DEF</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_PM_BELT">pfcFEAT_PM_BELT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_MOVE_COMP">pfcFEAT_MOVE_COMP</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SPLIT_BODY">pfcFEAT_SPLIT_BODY</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_NEWBODY">pfcFEAT_NEWBODY</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_MERGEBODIES">pfcFEAT_MERGEBODIES</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_INTERSECTBODIES">pfcFEAT_INTERSECTBODIES</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUBTRACTBODIES">pfcFEAT_SUBTRACTBODIES</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SPLIT_OUT">pfcFEAT_SPLIT_OUT</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_REMOVEBODY">pfcFEAT_REMOVEBODY</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_BOOLEANBODIES">pfcFEAT_BOOLEANBODIES</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_BODY_COPY">pfcFEAT_BODY_COPY</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_COMPOSITE">pfcFEAT_COMPOSITE</a></b></tt>
+</dt>
+<dd> Reserved for internal use <br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcFeatureType_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

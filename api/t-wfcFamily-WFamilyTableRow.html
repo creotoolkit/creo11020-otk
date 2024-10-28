@@ -1,0 +1,310 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWFamilyTableRow"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1093
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcFamily.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcFamily-WFamilyTableRow.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWFamilyTableRow</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcFamily.html">wfcFamily.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWFamilyTableRow</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcFamily-FamilyTableRow.html">pfcFamilyTableRow</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWFamilyTableRow</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface <tt><b><tt><b><a class="class" href="t-wfcFamily-WFamilyTableRow.html">wfcWFamilyTableRow</a></b></tt></b></tt> adds more functionality 
+  to <tt><b><tt><b><a class="class" href="t-pfcFamily-FamilyTableRow.html">pfcFamilyTableRow</a></b></tt></b></tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcModel-WModel.html">wfcWModel_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetModelFromDisk">GetModelFromDisk</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves an instance of a model from disk.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcModel-WModel.html">wfcWModel_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetModelFromSession">GetModelFromSession</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Retrieves the handle to the instance model, if it is in session.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsFlatState">IsFlatState</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if the family table instance is a sheetmetal flat state instance or not.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsModifiable">IsModifiable</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;ShowUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Check if a given instance is modifiable.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFamily-FamilyTableRow.html"><tt>pfcFamilyTableRow</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFamily-FamilyTableRow.html#InstanceName"><tt>GetInstanceName</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#IsLocked"><tt>GetIsLocked</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#IsLocked"><tt>SetIsLocked</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#IsVerified"><tt>GetIsVerified</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#IsExtLocked"><tt>GetIsExtLocked</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#CreateInstance"><tt>CreateInstance</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyTableRow.html#Erase"><tt>Erase</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="IsFlatState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsFlatState</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if the family table instance is a sheetmetal flat state instance or not.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The instance is not of flat state type, but normal family table instance </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#61">Family Tables: Operations on Family Table Instances</a>, <a href="../manual0/JFamily.html#63">Family Tables: Operations on Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if it is a flat state instance and <tt>false</tt> if not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsModifiable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsModifiable</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;ShowUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Check if a given instance is modifiable.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#62">Family Tables: Operations on Family Table Instances</a>, <a href="../manual0/JFamily.html#63">Family Tables: Operations on Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ShowUI</b></tt>
+</dt>
+<dd>Indicates whether the Conflicts dialog should be shown to
+    user to resolve conflicts (if they are detected); when set
+    to <tt>false</tt> no UI is enabled and the instance is
+    considered as modifiable if there are no conflicts that
+    could not be overridden or resolved by default resolution
+    actions. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if modifiable and <tt>false</tt> if not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetModelFromSession">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcModel-WModel.html">wfcWModel_ptr</a></tt></td><td class="func-name"><tt>GetModelFromSession</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves the handle to the instance model, if it is in session.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified instance model is not in session. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#60">Family Tables: Operations on Family Table Instances</a>, <a href="../manual0/JFamily.html#63">Family Tables: Operations on Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model from session.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetModelFromDisk">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcModel-WModel.html">wfcWModel_ptr</a></tt></td><td class="func-name"><tt>GetModelFromDisk</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Retrieves an instance of a model from disk.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified instance model was not found on disk. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#59">Family Tables: Operations on Family Table Instances</a>, <a href="../manual0/JFamily.html#63">Family Tables: Operations on Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model from disk.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

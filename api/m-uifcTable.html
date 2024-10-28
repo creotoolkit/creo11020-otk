@@ -1,0 +1,288 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "uifcTable.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      95
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-uifcTable.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "uifcTable.h"</h2>
+<b>Description</b>
+<br>
+<br>A Table contains cells. Each cell is either a text label (using symbols as
+well of course) OR a component, but never both. The application can switch
+between displaying text or component on a per cell basis.
+<br>The size of a cell is based on the maximum of
+<br>a) the size of the component, if any
+<br>
+b) the width of the column of the cell
+<br>The width of all cells in a column is the same.
+<br>The height of all cells in a row is the same.
+<br>The height of all rows is the same.
+<br>The components in the cells could be anything except for a few container
+classes:
+<br>Dialog
+<br>
+MenuBar
+<br>
+Sash
+<br>The Table allows components to be created in the resource file and then
+either assigned to a cell or copied into multiple cells. Each time a
+new component is created the application code specifies the name so the
+Table will not run into trouble by automatically choosing a name which may
+not be unique.
+<br>The cell location is determined by the name of the row and the name of the
+column, so there are 2 arrays, one for row names and one for column names.
+<br>If a cell is displaying text (instead of the component) then the cell can be
+selected by the user.
+<br>There is the option of both column and row headers.
+The column headers can be dragged as sashes to change the sizes of the
+columns. The row headers are not be draggable sashes as all rows are the
+same height.
+<br>The rows of a Table do NOT resize. When the Table grows vertically in size
+the Table will simply allow more rows to be shown.
+<br>The columns of a Table DO resize, based on the resizeability of the
+columns. The default resizeability for a column will be 0, indicating no
+resizing. If a Table grows horizontally only the
+resizeable columns will stretch, each taking a fraction of the resizing
+space, just like in the UI. For example, 2 resizeable columns means that
+each column will get 1/2 the amount of resizing space.
+<br>Any number of rows and columns may be locked from scrolling at any time.
+<br>Position and visibility of the scrollbars can be controlled.
+<br>There is the option to have an entire row be highlighted if any cell in that
+row is selected.
+  <br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-uifcTable-TableAction.html">uifcTableAction</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-Table.html">uifcTable</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableCell.html">uifcTableCell</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableColumn.html">uifcTableColumn</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableListener.html">uifcTableListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableRow.html">uifcTableRow</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableTimer.html">uifcTableTimer</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableCells.html">uifcTableCells</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableColumns.html">uifcTableColumns</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcTable-TableRows.html">uifcTableRows</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableCell.html">uifcTableCell_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableCellFind.html">uifcTableCellFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name1)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableCell.html">uifcTableCell_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableCellLookup.html">uifcTableCellLookup</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx1)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableColumn.html">uifcTableColumn_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableColumnDefine.html">uifcTableColumnDefine</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableColumn.html">uifcTableColumn_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableColumnFind.html">uifcTableColumnFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableColumn.html">uifcTableColumn_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableColumnLookup.html">uifcTableColumnLookup</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-Table.html">uifcTable_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableDefine.html">uifcTableDefine</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-Table.html">uifcTable_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableFind.html">uifcTableFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableRow.html">uifcTableRow_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableRowDefine.html">uifcTableRowDefine</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableRow.html">uifcTableRow_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableRowFind.html">uifcTableRowFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcTable-TableRow.html">uifcTableRow_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcTable-TableRowLookup.html">uifcTableRowLookup</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

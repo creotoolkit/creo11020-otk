@@ -1,0 +1,74 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcUnitDimensionConversion"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      140
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUnits.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUnits-UnitDimensionConversion.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcUnitDimensionConversion</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcUnits.html">pfcUnits.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcUnitDimensionConversion</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#UNITCONVERT_SAME_DIMS">pfcUNITCONVERT_SAME_DIMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#UNITCONVERT_SAME_SIZE">pfcUNITCONVERT_SAME_SIZE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcUnitDimensionConversion_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This enumerated type lists different options for conversion of
+dimensions while changing the principal unit system of a
+model.<br>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="UNITCONVERT_SAME_DIMS">pfcUNITCONVERT_SAME_DIMS</a></b></tt>
+</dt>
+<dd>
+ This specifies that unit conversion will occur by interpreting the unit value
+ in the new unit system. e.g. 1 inch = 1 mm<br>
+</dd>
+<dt>
+<tt><b><a name="UNITCONVERT_SAME_SIZE">pfcUNITCONVERT_SAME_SIZE</a></b></tt>
+</dt>
+<dd>
+ This specifies that unit conversion will occur by converting the unit value
+ in the new unit system. e.g. 1 inch = 25.4 mm<br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcUnitDimensionConversion_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

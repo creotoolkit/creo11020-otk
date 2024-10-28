@@ -1,0 +1,217 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWSelectionOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1142
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcSelect.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcSelect-WSelectionOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWSelectionOptions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcSelect.html">wfcSelect.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWSelectionOptions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcSelect-SelectionOptions.html">pfcSelectionOptions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcWSelectionOptions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Adds more functionality to <tt><b><tt><b><a class="class" href="t-pfcSelect-SelectionOptions.html">pfcSelectionOptions</a></b></tt></b></tt> 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSelect-WSelectionOptions.html">wfcWSelectionOptions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;OptionKeywords, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;MaxNumSels, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a>&nbsp;SelEnvOpts)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates selection options required for <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt> </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#SelEnvOptions">GetSelEnvOptions</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SelEnvOptions">SetSelEnvOptions</a>
+ (<a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Options to set selection environment </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSelect-SelectionOptions.html"><tt>pfcSelectionOptions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSelect-SelectionOptions.html#OptionKeywords"><tt>GetOptionKeywords</tt></a>,
+     <a class="method" href="t-pfcSelect-SelectionOptions.html#OptionKeywords"><tt>SetOptionKeywords</tt></a>,
+     <a class="method" href="t-pfcSelect-SelectionOptions.html#MaxNumSels"><tt>GetMaxNumSels</tt></a>,
+     <a class="method" href="t-pfcSelect-SelectionOptions.html#MaxNumSels"><tt>SetMaxNumSels</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="SelEnvOptions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a></tt></td><td class="func-name"><tt>GetSelEnvOptions</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSelEnvOptions</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Options to set selection environment <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#9">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#17">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#10">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#17">Selection: Interactive Selection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSelect-WSelectionOptions.html">wfcWSelectionOptions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;OptionKeywords, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;MaxNumSels, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSelect-SelectionEnvironmentOptions.html">wfcSelectionEnvironmentOptions_ptr</a>&nbsp;SelEnvOpts)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates selection options required for <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt> 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#8">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#17">Selection: Interactive Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>OptionKeywords</b></tt>
+</dt>
+<dd> The selection filter </dd>
+<dt>
+<tt><b>MaxNumSels</b></tt>
+</dt>
+<dd> Maximum number of selections allowed </dd>
+<dt>
+<tt><b>SelEnvOpts</b></tt>
+</dt>
+<dd> Selection environment options </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

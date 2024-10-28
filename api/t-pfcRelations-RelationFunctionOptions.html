@@ -1,0 +1,414 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcRelationFunctionOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      442
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcRelations.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcRelations-RelationFunctionOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcRelationFunctionOptions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcRelations.html">pfcRelations.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcRelationFunctionOptions</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcRelationFunctionOptions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Options to enable/disable various relation function related 
+ features.<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionOptions.html">pfcRelationFunctionOptions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Create a 
+ <tt><b><tt><b><a class="class" href="t-pfcRelations-RelationFunctionOptions.html">pfcRelationFunctionOptions</a></b></tt></b></tt> object.
+ </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionArguments.html">pfcRelationFunctionArguments_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ArgumentTypes">GetArgumentTypes</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ArgumentTypes">SetArgumentTypes</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionArguments.html">pfcRelationFunctionArguments_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#EnableArgumentCheckMethod">GetEnableArgumentCheckMethod</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EnableArgumentCheckMethod">SetEnableArgumentCheckMethod</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#CheckArguments">pfcRelationFunctionListener::CheckArguments(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr)</a></b></tt>) 
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#EnableExpressionEvaluationMethod">GetEnableExpressionEvaluationMethod</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EnableExpressionEvaluationMethod">SetEnableExpressionEvaluationMethod</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#EvaluateFunction">pfcRelationFunctionListener::EvaluateFunction(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr)</a></b></tt>)
+ on/off. Default is <tt>true</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#EnableTypeChecking">GetEnableTypeChecking</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EnableTypeChecking">SetEnableTypeChecking</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Turn argument type 
+ checking (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">pfcRelationFunctionOptions::GetArgumentTypes(optional pfcRelationFunctionArguments_ptr)</a></b></tt>) 
+ on/off.  Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#EnableValueAssignmentMethod">GetEnableValueAssignmentMethod</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EnableValueAssignmentMethod">SetEnableValueAssignmentMethod</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+ Turn <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#AssignValue">pfcRelationFunctionListener::AssignValue(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr, pfcParamValue_ptr)</a></b></tt>
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="ArgumentTypes">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionArguments.html">pfcRelationFunctionArguments_ptr</a></tt></td><td class="func-name"><tt>GetArgumentTypes</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetArgumentTypes</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionArguments.html">pfcRelationFunctionArguments_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#18">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableTypeChecking">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetEnableTypeChecking</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEnableTypeChecking</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Turn argument type 
+ checking (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">pfcRelationFunctionOptions::GetArgumentTypes(optional pfcRelationFunctionArguments_ptr)</a></b></tt>) 
+ on/off.  Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#22">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableArgumentCheckMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetEnableArgumentCheckMethod</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEnableArgumentCheckMethod</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#CheckArguments">pfcRelationFunctionListener::CheckArguments(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr)</a></b></tt>) 
+ on/off. Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#23">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableExpressionEvaluationMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetEnableExpressionEvaluationMethod</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEnableExpressionEvaluationMethod</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn the method (using 
+ <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#EvaluateFunction">pfcRelationFunctionListener::EvaluateFunction(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr)</a></b></tt>)
+ on/off. Default is <tt>true</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#24">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EnableValueAssignmentMethod">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetEnableValueAssignmentMethod</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEnableValueAssignmentMethod</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+ Turn <tt><b><a class="method" href="t-pfcRelations-RelationFunctionListener.html#AssignValue">pfcRelationFunctionListener::AssignValue(pfcRelationOwner_ptr, xrstring, pfcParamValues_ptr, pfcParamValue_ptr)</a></b></tt>
+ on/off. Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#25">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcRelations-RelationFunctionOptions.html">pfcRelationFunctionOptions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Create a 
+ <tt><b><tt><b><a class="class" href="t-pfcRelations-RelationFunctionOptions.html">pfcRelationFunctionOptions</a></b></tt></b></tt> object.
+ <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#17">Relations: Relation Function Options</a>, <a href="../manual0/JRelations.html#25">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

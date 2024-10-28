@@ -1,0 +1,835 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWComponentFeat"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1048
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcComponentFeat.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcComponentFeat-WComponentFeat.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWComponentFeat</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcComponentFeat.html">wfcComponentFeat.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWComponentFeat</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcFeature-WFeature.html">wfcWFeature</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcComponentFeat-ComponentFeat.html">pfcComponentFeat</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWComponentFeat</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      The interface <tt><b><tt><b><a class="class" href="t-wfcComponentFeat-WComponentFeat.html">wfcWComponentFeat</a></b></tt></b></tt> combines
+      methods from both <tt><b><tt><b><a class="class" href="t-pfcComponentFeat-ComponentFeat.html">pfcComponentFeat</a></b></tt></b></tt> and
+      <tt><b><tt><b><a class="class" href="t-wfcFeature-WFeature.html">wfcWFeature</a></b></tt></b></tt>.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>, <a href="../manual0/OTKOverview.html#117">Overview of Creo Object TOOLKIT C++: Visit Methods</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateFlexibleModel">CreateFlexibleModel</a>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;FlexModelPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a flexible model from the specified model 
+      of the flexible component.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CreatePredefinedFlexibilityComponent">CreatePredefinedFlexibilityComponent</a>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;SourceModel, <a class="type" href="t-wfcComponentFeat-AssemblyItems.html">wfcAssemblyItems_ptr</a>&nbsp;AsmItems)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Convert the specified component to flexible one using the 
+      predefined flexibility varied items defined on its component model.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsFlexible">IsFlexible</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Determines whether the specified component is a 
+      flexible component. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsUnplaced">IsUnplaced</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Determine if the specified component is unplaced.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#MakeUniqueSubAssembly">MakeUniqueSubAssembly</a>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;PathToSubAsm)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Make new instance of a sub-assembly, given its path.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveConstraint">RemoveConstraint</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes a component constraint, given index of the constraint 
+      to remove.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveUniqueSubAssembly">RemoveUniqueSubAssembly</a>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;PathToSubAsm)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Remove the run-time instance of a unique sub-assembly, 
+      given its path.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAsFlexible">SetAsFlexible</a>
+ (<a class="type" href="t-wfcComponentFeat-AssemblyItems.html">wfcAssemblyItems_ptr</a>&nbsp;AsmItems)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Convert the component to flexible one using the 
+      specified variant items</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UnsetAsFlexible">UnsetAsFlexible</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Convert a flexible component to the regular one</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFeature-Feature.html"><tt>pfcFeature</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFeature-Feature.html#FeatType"><tt>GetFeatType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatTypeName"><tt>GetFeatTypeName</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatSubType"><tt>GetFeatSubType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Status"><tt>GetStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Group"><tt>GetGroup</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Pattern"><tt>GetPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPattern"><tt>GetGroupPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GetPatternByType"><tt>GetPatternByType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#PatternStatus"><tt>GetPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupStatus"><tt>GetGroupStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPatternStatus"><tt>GetGroupPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsVisible"><tt>GetIsVisible</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsReadonly"><tt>GetIsReadonly</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Number"><tt>GetNumber</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsGroupMember"><tt>GetIsGroupMember</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsEmbedded"><tt>GetIsEmbedded</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateSuppressOp"><tt>CreateSuppressOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateResumeOp"><tt>CreateResumeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateDeleteOp"><tt>CreateDeleteOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderBeforeOp"><tt>CreateReorderBeforeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderAfterOp"><tt>CreateReorderAfterOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListChildren"><tt>ListChildren</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListParents"><tt>ListParents</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListSubItems"><tt>ListSubItems</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupDirectHeader"><tt>GetGroupDirectHeader</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcFeature-WFeature.html"><tt>wfcWFeature</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcFeature-WFeature.html#GetElementTree"><tt>GetElementTree</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#IsElementVisible"><tt>IsElementVisible</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#IsElementIncomplete"><tt>IsElementIncomplete</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetStatusFlag"><tt>GetStatusFlag</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#RedefineFeature"><tt>RedefineFeature</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#CreatePattern"><tt>CreatePattern</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetDimensionId"><tt>GetDimensionId</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetSections"><tt>GetSections</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetImportFeatureData"><tt>GetImportFeatureData</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetIdMap"><tt>GetIdMap</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetItemIds"><tt>GetItemIds</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetUserIds"><tt>GetUserIds</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#RedefineImportFeature"><tt>RedefineImportFeature</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetZoneFeatureReferences"><tt>GetZoneFeatureReferences</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetZoneXSectionGeometry"><tt>GetZoneXSectionGeometry</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetZoneFeaturePlaneData"><tt>GetZoneFeaturePlaneData</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetSolid"><tt>GetSolid</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#IsCableCosmetic"><tt>IsCableCosmetic</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#GetExternalParents"><tt>GetExternalParents</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#VisitItems"><tt>VisitItems</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#IsInFooter"><tt>IsInFooter</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#MoveToFooter"><tt>MoveToFooter</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#MoveFromFooter"><tt>MoveFromFooter</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#ListVariedItems"><tt>ListVariedItems</tt></a>,
+     <a class="method" href="t-wfcFeature-WFeature.html#ListVariedParameters"><tt>ListVariedParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcComponentFeat-ComponentFeat.html"><tt>pfcComponentFeat</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcComponentFeat-ComponentFeat.html#ModelDescr"><tt>GetModelDescr</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#CreateReplaceOp"><tt>CreateReplaceOp</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsBulkitem"><tt>GetIsBulkitem</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#CopyTemplateContents"><tt>CopyTemplateContents</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsSubstitute"><tt>GetIsSubstitute</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#CompType"><tt>GetCompType</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#CompType"><tt>SetCompType</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#RedefineThroughUI"><tt>RedefineThroughUI</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#MoveThroughUI"><tt>MoveThroughUI</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsPlaced"><tt>GetIsPlaced</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsPlaced"><tt>SetIsPlaced</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsPackaged"><tt>GetIsPackaged</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsUnderconstrained"><tt>GetIsUnderconstrained</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#IsFrozen"><tt>GetIsFrozen</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#GetConstraints"><tt>GetConstraints</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#GetConstraintsWithCompPath"><tt>GetConstraintsWithCompPath</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#SetConstraints"><tt>SetConstraints</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#Regenerate"><tt>Regenerate</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#Position"><tt>GetPosition</tt></a>,
+     <a class="method" href="t-pfcComponentFeat-ComponentFeat.html#Position"><tt>SetPosition</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="RemoveConstraint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RemoveConstraint</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Index)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes a component constraint, given index of the constraint 
+      to remove.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified constraint does not exist.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#49">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Index</b></tt>
+</dt>
+<dd>
+        The index of the constraint to remove.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsUnplaced">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsUnplaced</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Determine if the specified component is unplaced.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#20">Assemblies and Components: Assembly Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt>true</tt> if component is unplaced, <tt>false</tt> otherwise.
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="MakeUniqueSubAssembly">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>MakeUniqueSubAssembly</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;PathToSubAsm)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Make new instance of a sub-assembly, given its path.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#18">Assemblies and Components: Assembly Components</a>, <a href="../manual0/jassembly.html#20">Assemblies and Components: Assembly Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PathToSubAsm</b></tt>
+</dt>
+<dd>The path from the top level assembly 
+      to the specified unique sub-assembly.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RemoveUniqueSubAssembly">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RemoveUniqueSubAssembly</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;PathToSubAsm)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Remove the run-time instance of a unique sub-assembly, 
+      given its path.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#19">Assemblies and Components: Assembly Components</a>, <a href="../manual0/jassembly.html#20">Assemblies and Components: Assembly Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PathToSubAsm</b></tt>
+</dt>
+<dd>The path from top level assembly to 
+      the unique sub-assembly which is to be removed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAsFlexible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAsFlexible</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcComponentFeat-AssemblyItems.html">wfcAssemblyItems_ptr</a>&nbsp;AsmItems)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Convert the component to flexible one using the 
+      specified variant items<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#144">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>, <a href="../manual0/jassembly.html#145">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AsmItems</b></tt>
+</dt>
+<dd>The variant items.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UnsetAsFlexible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UnsetAsFlexible</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Convert a flexible component to the regular one<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#145">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsFlexible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsFlexible</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Determines whether the specified component is a 
+      flexible component. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#143">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>, <a href="../manual0/jassembly.html#145">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt>true</tt> if component is flexible, <tt>false</tt> otherwise.
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateFlexibleModel">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a></tt></td><td class="func-name"><tt>CreateFlexibleModel</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-WComponentPath.html">wfcWComponentPath_ptr</a>&nbsp;FlexModelPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a flexible model from the specified model 
+      of the flexible component.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#141">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>, <a href="../manual0/jassembly.html#145">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FlexModelPath</b></tt>
+</dt>
+<dd>Relative path to flexible model from
+      the top model of the flexible component</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created flexible model</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreatePredefinedFlexibilityComponent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CreatePredefinedFlexibilityComponent</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;SourceModel, <a class="type" href="t-wfcComponentFeat-AssemblyItems.html">wfcAssemblyItems_ptr</a>&nbsp;AsmItems)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Convert the specified component to flexible one using the 
+      predefined flexibility varied items defined on its component model.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#142">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>, <a href="../manual0/jassembly.html#145">Assemblies and Components: Flexible Components and Inheritance Features in an Assembly</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SourceModel</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>AsmItems</b></tt>
+</dt>
+<dd>
+        Variant items to be added as predefined flexibility
+        for the specified model. Path of varied items should start 
+        from 'SourceModel'.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

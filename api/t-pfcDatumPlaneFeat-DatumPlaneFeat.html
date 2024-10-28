@@ -1,0 +1,268 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDatumPlaneFeat"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      121
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDatumPlaneFeat.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDatumPlaneFeat-DatumPlaneFeat.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDatumPlaneFeat</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDatumPlaneFeat.html">pfcDatumPlaneFeat.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDatumPlaneFeat</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcFeature-Feature.html">pfcFeature</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcDatumPlaneFeat</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This specifies a datum plane feature.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcFeature-WDatumPlaneFeat.html">wfcWDatumPlaneFeat</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDatumPlaneFeat-DatumPlaneConstraints.html">pfcDatumPlaneConstraints_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Constraints">GetConstraints</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The constraints applying to the datum plane feature.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#Flip">GetFlip</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies whether datum plane was flipped during creation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFeature-Feature.html"><tt>pfcFeature</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFeature-Feature.html#FeatType"><tt>GetFeatType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatTypeName"><tt>GetFeatTypeName</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#FeatSubType"><tt>GetFeatSubType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Status"><tt>GetStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Group"><tt>GetGroup</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Pattern"><tt>GetPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPattern"><tt>GetGroupPattern</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GetPatternByType"><tt>GetPatternByType</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#PatternStatus"><tt>GetPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupStatus"><tt>GetGroupStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupPatternStatus"><tt>GetGroupPatternStatus</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsVisible"><tt>GetIsVisible</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsReadonly"><tt>GetIsReadonly</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#Number"><tt>GetNumber</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsGroupMember"><tt>GetIsGroupMember</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#IsEmbedded"><tt>GetIsEmbedded</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateSuppressOp"><tt>CreateSuppressOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateResumeOp"><tt>CreateResumeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateDeleteOp"><tt>CreateDeleteOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderBeforeOp"><tt>CreateReorderBeforeOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#CreateReorderAfterOp"><tt>CreateReorderAfterOp</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListChildren"><tt>ListChildren</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListParents"><tt>ListParents</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#ListSubItems"><tt>ListSubItems</tt></a>,
+     <a class="method" href="t-pfcFeature-Feature.html#GroupDirectHeader"><tt>GetGroupDirectHeader</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Constraints">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDatumPlaneFeat-DatumPlaneConstraints.html">pfcDatumPlaneConstraints_ptr</a></tt></td><td class="func-name"><tt>GetConstraints</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The constraints applying to the datum plane feature.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#3">Datum Features: Datum Plane Features</a>, <a href="../manual0/datum_features.html#15">Datum Features: Datum Plane Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Flip">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetFlip</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies whether datum plane was flipped during creation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#2">Datum Features: Datum Plane Features</a>, <a href="../manual0/datum_features.html#15">Datum Features: Datum Plane Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcTransformedSurfaceDescriptor"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      570
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcGeometry-TransformedSurfaceDescriptor.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcTransformedSurfaceDescriptor</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcGeometry.html">pfcGeometry.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcTransformedSurfaceDescriptor</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcGeometry-SurfaceDescriptor.html">pfcSurfaceDescriptor</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcTransformedSurfaceDescriptor</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>A data object representing a the geometry of a surface with a defined origin and unit vectors.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-pfcGeometry-PlaneDescriptor.html">pfcPlaneDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-CylinderDescriptor.html">pfcCylinderDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-ConeDescriptor.html">pfcConeDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-TorusDescriptor.html">pfcTorusDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-RevolvedSurfaceDescriptor.html">pfcRevolvedSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-RuledSurfaceDescriptor.html">pfcRuledSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-TabulatedCylinderDescriptor.html">pfcTabulatedCylinderDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-CylindricalSplineSurfaceDescriptor.html">pfcCylindricalSplineSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-SphericalSplineSurfaceDescriptor.html">pfcSphericalSplineSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcGeometry-ForeignSurfaceDescriptor.html">pfcForeignSurfaceDescriptor</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CoordSys">GetCoordSys</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CoordSys">SetCoordSys</a>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The origin and unit vectors of the surface object</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcGeometry-SurfaceDescriptor.html"><tt>pfcSurfaceDescriptor</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#GetSurfaceType"><tt>GetSurfaceType</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>GetExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>SetExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>GetOrientation</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>SetOrientation</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CoordSys">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a></tt></td><td class="func-name"><tt>GetCoordSys</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCoordSys</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The origin and unit vectors of the surface object<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

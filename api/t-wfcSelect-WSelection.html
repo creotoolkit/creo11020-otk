@@ -1,0 +1,2416 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWSelection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1141
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcSelect.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcSelect-WSelection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWSelection</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcSelect.html">wfcSelect.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWSelection</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcSelect-Selection.html">pfcSelection</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWSelection</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Selection related methods <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JGeom.html#296">Geometry Evaluation: Measurement</a>, <a href="../manual0/JModelitem.html#16">ModelItem: Getting ModelItem Objects</a>, <a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AddAnnotationElement">AddAnnotationElement</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddAnnotationReferenceInAnnotationElement">AddAnnotationReferenceInAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElements.html">wfcAnnotationElements_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AddElementsInAnnotationFeature">AddElementsInAnnotationFeature</a>
+ (<a class="type" href="t-wfcAnnotation-Annotations.html">wfcAnnotations_ptr</a>&nbsp;Annotations, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CopyAnnotationElement">CopyAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a>&nbsp;AnnotElem)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateAnnotationFeatBaseline">CreateAnnotationFeatBaseline</a>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Reference, <a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;DirReference)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp;</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateAnnotationPlane">CreateAnnotationPlane</a>
+ (<a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;NormalVector)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CreateFeature">CreateFeature</a>
+ (<a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeatureInstructions-FeatCreateOptions.html">wfcFeatCreateOptions_ptr</a>&nbsp;Options, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a>&nbsp;Instrs)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a feature from the Feature Element Tree</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteAnnotationElement">DeleteAnnotationElement</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteElementsInAnnotationFeature">DeleteElementsInAnnotationFeature</a>
+ (<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;AnnotElements, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#EvaluateAngle">EvaluateAngle</a>
+ (<a class="type" href="t-wfcSelect-WSelection.html">wfcWSelection_ptr</a>&nbsp;Selection)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Evaluates angle between this and specified selection. Selections must represents straight edges </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#EvaluateDiameter">EvaluateDiameter</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+       Finds the geometry item (surface) diameter.
+       Only revolved surfaces (cylinder, cone, and so on) are valid.
+     </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAutoPropagateFlagInAnnotationElement">GetAutoPropagateFlagInAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetCollection">GetCollection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Get collection object containing selection </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDrawingTable">GetDrawingTable</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get drawing table object from its selection </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetPipelineFeature">GetPipelineFeature</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Get pipeline feature from its selection </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetVisibleAppearance">GetVisibleAppearance</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Gets the appearance properties </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Textures.html">wfcTextures_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetVisibleTextures">GetVisibleTextures</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Gets the texture properties</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-WWindow.html">wfcWWindow_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetWindow">GetWindow</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Retrieves the window in which selection was made. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RecordExternalSelection">RecordExternalSelection</a>
+ (<a class="type" href="t-wfcSelect-SelectionRecordAction.html">wfcSelectionRecordAction</a>&nbsp;RecordAction)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Places external selection into <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt> buffer.
+     Together with <tt><b><a class="method" href="t-wfcSession-WSession.html#RegisterExternalSelectionHighlight">wfcWSession::RegisterExternalSelectionHighlight(wfcExternalSelectionHighlight_ptr)</a></b></tt> provides
+     interaction between external application media (like a tree) and  <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt>.
+     Upon an object selection in their media, applications should create <tt><b><tt><b><a class="class" href="t-wfcSelect-WSelection.html">wfcWSelection</a></b></tt></b></tt> and
+     use this method to pass it to <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt>.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveAnnotationReferenceInAnnotationElement">RemoveAnnotationReferenceInAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationElementReferences">SetAnnotationElementReferences</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationElements.html">wfcAnnotationElements_ptr</a>&nbsp;Elements, <a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray_ptr</a>&nbsp;References, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Replaces all of the each of the annotation elements' user-defined references with the indicated sets.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationInAnnotationElement">SetAnnotationInAnnotationElement</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-Annotation.html">wfcAnnotation_ptr</a>&nbsp;Annotation)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAnnotationReferencesInAnnotationElement">SetAnnotationReferencesInAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;References, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetAutoPropagateFlagInAnnotationElement">SetAutoPropagateFlagInAnnotationElement</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;AutoPropagateFlag)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetCopyFlagInAnnotationElement">SetCopyFlagInAnnotationElement</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;CopyFlag, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDependencyFlag">SetDependencyFlag</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;DependencyFlag, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetVisibleAppearance">SetVisibleAppearance</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a>&nbsp;AppearProps)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Set the appearance properties</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetVisibleTextures">SetVisibleTextures</a>
+ (<a class="type" href="t-wfcDisplay-Textures.html">wfcTextures_ptr</a>&nbsp;TextureProps)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Sets the texture properties</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ShowAnnotations">ShowAnnotations</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a class="type" href="t-wfcAnnotation-AnnotationType.html">wfcAnnotationType</a>&nbsp;AnnotType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ShowAxes">ShowAxes</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ShowDatumTargets">ShowDatumTargets</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#StrengthenAnnotationElementReference">StrengthenAnnotationElementReference</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#Verify">Verify</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Verifies the validity of the <tt><b><tt><b><a class="class" href="t-wfcSelect-WSelection.html">wfcWSelection</a></b></tt></b></tt>. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#WeakenAnnotationElementReference">WeakenAnnotationElementReference</a>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSelect-Selection.html"><tt>pfcSelection</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSelect-Selection.html#SelModel"><tt>GetSelModel</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelItem"><tt>GetSelItem</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelItem"><tt>SetSelItem</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelTableCell"><tt>GetSelTableCell</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelTableCell"><tt>SetSelTableCell</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelView2D"><tt>GetSelView2D</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelView2D"><tt>SetSelView2D</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelTableSegment"><tt>GetSelTableSegment</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Path"><tt>GetPath</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Path"><tt>SetPath</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Params"><tt>GetParams</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Params"><tt>SetParams</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#TParam"><tt>GetTParam</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#TParam"><tt>SetTParam</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Point"><tt>GetPoint</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Point"><tt>SetPoint</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Depth"><tt>GetDepth</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SelectionString"><tt>GetSelectionString</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Highlight"><tt>Highlight</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#UnHighlight"><tt>UnHighlight</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcSelect-Selection.html#SetIntf3DCsys"><tt>SetIntf3DCsys</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="RecordExternalSelection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RecordExternalSelection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSelect-SelectionRecordAction.html">wfcSelectionRecordAction</a>&nbsp;RecordAction)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Places external selection into <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt> buffer.
+     Together with <tt><b><a class="method" href="t-wfcSession-WSession.html#RegisterExternalSelectionHighlight">wfcWSession::RegisterExternalSelectionHighlight(wfcExternalSelectionHighlight_ptr)</a></b></tt> provides
+     interaction between external application media (like a tree) and  <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt>.
+     Upon an object selection in their media, applications should create <tt><b><tt><b><a class="class" href="t-wfcSelect-WSelection.html">wfcWSelection</a></b></tt></b></tt> and
+     use this method to pass it to <tt><b><a class="method" href="t-pfcSession-BaseSession.html#Select">pfcBaseSession::Select(pfcSelectionOptions_ptr, optional pfcSelections_ptr)</a></b></tt>.
+   <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - Rejected by ProSelect() filters.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#30">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RecordAction</b></tt>
+</dt>
+<dd> Selection record action </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-name"><tt>GetCollection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Get collection object containing selection <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The selection object does not contain a collection.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - The selection object contains a chain, but this chain reference is no longer valid. Chain references contained in ProSelections are only valid for as long as the chain is selected in the selection buffer. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#62">Selection: Adding Items to the Selection Buffer</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A collection object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDrawingTable">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcTable-Table.html">pfcTable_ptr</a></tt></td><td class="func-name"><tt>GetDrawingTable</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get drawing table object from its selection <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#31">Selection: Accessing Selection Data</a>, <a href="../manual0/JSelection.html#32">Selection: Accessing Selection Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A drawing table object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetPipelineFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-name"><tt>GetPipelineFeature</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Get pipeline feature from its selection <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#32">Selection: Accessing Selection Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A feature object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Verify">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>Verify</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Verifies the validity of the <tt><b><tt><b><a class="class" href="t-wfcSelect-WSelection.html">wfcWSelection</a></b></tt></b></tt>. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Selection is invalid.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#16">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#17">Selection: Interactive Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    Returns <t>true</t> if selection is valid
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetWindow">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-WWindow.html">wfcWWindow_ptr</a></tt></td><td class="func-name"><tt>GetWindow</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Retrieves the window in which selection was made. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidPtr.html">pfcXToolkitInvalidPtr</a></b></tt></b></tt> - The selection argument is an invalid pointer.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#17">Selection: Interactive Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A <tt><b><tt><b><a class="class" href="t-wfcDisplay-WWindow.html">wfcWWindow</a></b></tt></b></tt> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EvaluateAngle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>EvaluateAngle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSelect-WSelection.html">wfcWSelection_ptr</a>&nbsp;Selection)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Evaluates angle between this and specified selection. Selections must represents straight edges <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#294">Geometry Evaluation: Measurement</a>, <a href="../manual0/JGeom.html#296">Geometry Evaluation: Measurement</a>, <a href="../manual0/JModelitem.html#16">ModelItem: Getting ModelItem Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selection</b></tt>
+</dt>
+<dd> Edge selection with which angle to be evaluated </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Value of the angle </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EvaluateDiameter">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>EvaluateDiameter</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+       Finds the geometry item (surface) diameter.
+       Only revolved surfaces (cylinder, cone, and so on) are valid.
+     <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#296">Geometry Evaluation: Measurement</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The diameter</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetVisibleAppearance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVisibleAppearance</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a>&nbsp;AppearProps)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Set the appearance properties<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#10">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JMultibody.html#19">Solid Bodies: To set the appearance of bodies</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AppearProps</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetVisibleAppearance">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a></tt></td><td class="func-name"><tt>GetVisibleAppearance</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Gets the appearance properties <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The property does not exists.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#9">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetVisibleTextures">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVisibleTextures</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDisplay-Textures.html">wfcTextures_ptr</a>&nbsp;TextureProps)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Sets the texture properties<br>
+<br>
+<b>Note</b> Call SetVisibleAppearance method before this else the method will throw an exception.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#37">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextureProps</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetVisibleTextures">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcDisplay-Textures.html">wfcTextures_ptr</a></tt></td><td class="func-name"><tt>GetVisibleTextures</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Gets the texture properties<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - Properties does not exist on item. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#38">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ShowAnnotations">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ShowAnnotations</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a class="type" href="t-wfcAnnotation-AnnotationType.html">wfcAnnotationType</a>&nbsp;AnnotType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Drawing in which annotation will be shown is not displayed in the current session. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Input annotation type not supported.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#20">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>AnnotType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ShowAxes">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ShowAxes</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Drawing in which annotation will be shown is not displayed in the current session. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Input annotation type not supported.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#21">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ShowDatumTargets">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ShowDatumTargets</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Drawing in which annotation will be shown is not displayed in the current session. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Input annotation type not supported.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#22">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateAnnotationPlane">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a></tt></td><td class="func-name"><tt>CreateAnnotationPlane</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;NormalVector)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - Invalid combination of the planar surface and the direction vector. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#117">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/JAnnot.html#139">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NormalVector</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-name"><tt>AddAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Datum Target annotation feature cannot be modified.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#5">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>, <a href="../manual0/JAnnot.html#9">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationElementReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationElementReferences</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationElements.html">wfcAnnotationElements_ptr</a>&nbsp;Elements, <a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray_ptr</a>&nbsp;References, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Replaces all of the each of the annotation elements' user-defined references with the indicated sets.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The reference array contains the same reference more than once. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Reference modification was aborted due to regeneration failure. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - User defined references are not permitted for driving dimension annotation elements.  </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt> - The number of reference sets does not match the number of elements supplied. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - One or more annotation elements do not belong to the owner feature. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#51">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Elements</b></tt>
+</dt>
+<dd> Annotation elements array. All of these elements must belong to the same feature</dd>
+<dt>
+<tt><b>References</b></tt>
+</dt>
+<dd> Annotation reference sets array. The number of sets should match the number of elements to be modified.</dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>True to bring up the Fix Model UI in the event of regeneration failure; False to abort the reference setting.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CopyAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>CopyAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a>&nbsp;AnnotElem)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#7">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>, <a href="../manual0/JAnnot.html#9">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotElem</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The annotation element is readonly and cannot be deleted. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Deletion was aborted due to regeneration failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The data sharing feature's parent model is not in memory; </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - The element is owned by an independent feature.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoPermission.html">pfcXToolkitNoPermission</a></b></tt></b></tt> - Deletion of set datum tag from datum target annotation feature is not allowed. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#8">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>, <a href="../manual0/JAnnot.html#9">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>, <a href="../manual0/JDims.html#202">Dimensions and Parameters: Accessing Reference and Driven Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddElementsInAnnotationFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElements.html">wfcAnnotationElements_ptr</a></tt></td><td class="func-name"><tt>AddElementsInAnnotationFeature</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-Annotations.html">wfcAnnotations_ptr</a>&nbsp;Annotations, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - Only one set datum tag can exist in Datum Target annotation feature </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#6">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>, <a href="../manual0/JAnnot.html#9">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Annotations</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteElementsInAnnotationFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteElementsInAnnotationFeature</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selections.html">pfcSelections_ptr</a>&nbsp;AnnotElements, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - Feature is invalid for this operation.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The annotation element is readonly and cannot be deleted. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Deletion was aborted due to regeneration failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The data sharing feature's parent model is not in memory; </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - The element is owned by an independent feature.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoPermission.html">pfcXToolkitNoPermission</a></b></tt></b></tt> - Deletion of set datum tag from datum target annotation feature is not allowed. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#9">Annotations: Annotation Features and Annotations: Redefining Annotation Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotElements</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetCopyFlagInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCopyFlagInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;CopyFlag, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The input flag is the same as the current value.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Reference modification was aborted due to regeneration failure. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#35">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CopyFlag</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDependencyFlag">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDependencyFlag</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;DependencyFlag, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The input flag is the same as the current value.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - The element is not owned by a data sharing feature.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The data sharing feature's parent model is not in memory. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - The element is owned by an independent feature. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#37">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DependencyFlag</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-Annotation.html">wfcAnnotation_ptr</a>&nbsp;Annotation)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is already contained in this element. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Modification was aborted due to regeneration failure. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - You cannot assign this type of annotation to the annotation element </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - datum target annotation element or annotation are not permitted for this function </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#45">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Annotation</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="WeakenAnnotationElementReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>WeakenAnnotationElementReference</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation element doesn't contain this strong reference. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - This strong reference may not be weakened due to the rules for the individual annotation. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#62">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="StrengthenAnnotationElementReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>StrengthenAnnotationElementReference</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation element doesn't contain this weak reference. </p>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - This weak reference may not be strengthened due to the rules for the individual annotation. </p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#61">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAnnotationReferencesInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAnnotationReferencesInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReferences.html">wfcAnnotationReferences_ptr</a>&nbsp;References, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The reference array contains the same reference more than once. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Reference modification was aborted due to regeneration failure. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - User defined references are not permitted for driving dimension annotation elements. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#49">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>References</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RemoveAnnotationReferenceInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RemoveAnnotationReferenceInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation element does not contain this reference. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - This reference is provided from the annotation and cannot be removed. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnattachedFeats.html">pfcXToolkitUnattachedFeats</a></b></tt></b></tt> - Removal was aborted due to regeneration failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#50">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddAnnotationReferenceInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddAnnotationReferenceInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;InvokeUI)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - The annotation element already has a reference to this item. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - User defined references are not permitted for driving dimension annotation elements. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#48">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>InvokeUI</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetAutoPropagateFlagInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAutoPropagateFlagInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;AutoPropagateFlag)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The element is not owned by an annotation feature.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation element doesn't contain this reference</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - Reference autopropagate flag is already set to the input value. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - This type of reference does not have an autopropagate flag. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#47">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>AutoPropagateFlag</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAutoPropagateFlagInAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetAutoPropagateFlagInAnnotationElement</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAnnotation-AnnotationReference.html">wfcAnnotationReference_ptr</a>&nbsp;Reference)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The element is not owned by an annotation feature.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation element doesn't contain this reference</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - This type of reference does not have an autopropagate flag. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#46">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateAnnotationFeatBaseline">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-name"><tt>CreateAnnotationFeatBaseline</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Reference, <a class="type" href="t-wfcAnnotation-AnnotationPlane.html">wfcAnnotationPlane_ptr</a>&nbsp;Plane, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;DirReference)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#144">Annotations: Annotation Features and Annotations: Baseline Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Plane</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>DirReference</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CreateFeature">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcFeature-WFeature.html">wfcWFeature_ptr</a></tt></td><td class="func-name"><tt>CreateFeature</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcElementTree-ElementTree.html">wfcElementTree_ptr</a>&nbsp;Tree, <a class="type" href="t-wfcFeatureInstructions-FeatCreateOptions.html">wfcFeatCreateOptions_ptr</a>&nbsp;Options, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a>&nbsp;Instrs)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a feature from the Feature Element Tree<br>
+<br>
+        Refer to the Release Notes for more information on restrictions of
+        using this function with Multi-CAD models.
+      
+       Use <tt><b><tt><b><a class="func" href="f-pfcSelect-CreateModelSelection.html">pfcCreateModelSelection(pfcModel_ptr)</a></b></tt></b></tt> to get selection of part or top assembly.
+	   Use <tt><b><tt><b><a class="func" href="f-pfcSelect-CreateComponentSelection.html">pfcCreateComponentSelection(pfcComponentPath_ptr)</a></b></tt></b></tt> to get selection component in an assembly.
+		<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#33">Feature Element Tree: Creating FET Using WCreateFeature</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Tree</b></tt>
+</dt>
+<dd>The Feature Element Tree object.</dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>Options to create the feature.</dd>
+<dt>
+<tt><b>Instrs</b></tt>
+</dt>
+<dd>Regeneration instructions to be used.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The object representing the feature.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

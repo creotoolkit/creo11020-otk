@@ -1,0 +1,254 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcCollection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      815
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcCollection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcCollection-Collection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcCollection</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcCollection.html">wfcCollection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcCollection</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcCollection</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Class for collection object used in feature creation using element tree <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> 
+        Creates a collection object.<br>
+        
+<b>Note:</b> Any collection object must contain either <tt><b><tt><b><a class="class" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection</a></b></tt></b></tt> or <tt><b><tt><b><a class="class" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection</a></b></tt></b></tt>
+        It should not contain both objects at the same time.      
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CrvCollection">GetCrvCollection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CrvCollection">SetCrvCollection</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The curve collection.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#SurfCollection">GetSurfCollection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SurfCollection">SetSurfCollection</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The surface collection.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CrvCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection_ptr</a></tt></td><td class="func-name"><tt>GetCrvCollection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCrvCollection</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The curve collection.
+      <br>
+<br>
+        Is applicable only for element PRO_E_STD_CURVE_COLLECTION_APPL
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#14">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#15">Curve and Surface Collection: Curve Collection</a>, <a href="../manual0/otk_Collection.html#31">Curve and Surface Collection: Curve Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SurfCollection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a></tt></td><td class="func-name"><tt>GetSurfCollection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSurfCollection</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The surface collection.
+      <br>
+<br>
+        Is applicable only for element PRO_E_STD_SURF_COLLECTION_APPL
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#34">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#35">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-Collection.html">wfcCollection_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> 
+        Creates a collection object.<br>
+        
+<b>Note:</b> Any collection object must contain either <tt><b><tt><b><a class="class" href="t-wfcCollection-CurveCollection.html">wfcCurveCollection</a></b></tt></b></tt> or <tt><b><tt><b><a class="class" href="t-wfcCollection-SurfaceCollection.html">wfcSurfaceCollection</a></b></tt></b></tt>
+        It should not contain both objects at the same time.      
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+         
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#10">Curve and Surface Collection: The wfcCollection Interface</a>, <a href="../manual0/otk_Collection.html#11">Curve and Surface Collection: The wfcCollection Interface</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A collection object representing surface or curve collection </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

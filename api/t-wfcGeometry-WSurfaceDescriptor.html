@@ -1,0 +1,218 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWSurfaceDescriptor"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1156
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcGeometry-WSurfaceDescriptor.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWSurfaceDescriptor</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcGeometry.html">wfcGeometry.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWSurfaceDescriptor</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcGeometry-SurfaceDescriptor.html">pfcSurfaceDescriptor</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcWSurfaceDescriptor</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Provides surface info.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcGeometry-WPlaneDescriptor.html">wfcWPlaneDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCylinderDescriptor.html">wfcWCylinderDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WConeDescriptor.html">wfcWConeDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WTorusDescriptor.html">wfcWTorusDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WRevolvedSurfaceDescriptor.html">wfcWRevolvedSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WRuledSurfaceDescriptor.html">wfcWRuledSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WTabulatedCylinderDescriptor.html">wfcWTabulatedCylinderDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCoonsPatchDescriptor.html">wfcWCoonsPatchDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WFilletSurfaceDescriptor.html">wfcWFilletSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WSplineSurfaceDescriptor.html">wfcWSplineSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WNURBSSurfaceDescriptor.html">wfcWNURBSSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCylindricalSplineSurfaceDescriptor.html">wfcWCylindricalSplineSurfaceDescriptor</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WForeignSurfaceDescriptor.html">wfcWForeignSurfaceDescriptor</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-ContourDescriptors.html">wfcContourDescriptors_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ContourData">GetContourData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ContourData">SetContourData</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-ContourDescriptors.html">wfcContourDescriptors_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The contour data. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#SurfaceId">GetSurfaceId</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SurfaceId">SetSurfaceId</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The surface id. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcGeometry-SurfaceDescriptor.html"><tt>pfcSurfaceDescriptor</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#GetSurfaceType"><tt>GetSurfaceType</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>GetExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>SetExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>GetOrientation</tt></a>,
+     <a class="method" href="t-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>SetOrientation</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="SurfaceId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetSurfaceId</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSurfaceId</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The surface id. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#137">Geometry Evaluation: Surface Descriptors</a>, <a href="../manual0/JGeom.html#136">Geometry Evaluation: Surface Descriptors</a>, <a href="../manual0/JGeom.html#137">Geometry Evaluation: Surface Descriptors</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ContourData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-ContourDescriptors.html">wfcContourDescriptors_ptr</a></tt></td><td class="func-name"><tt>GetContourData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetContourData</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-ContourDescriptors.html">wfcContourDescriptors_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The contour data. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#135">Geometry Evaluation: Surface Descriptors</a>, <a href="../manual0/JGeom.html#137">Geometry Evaluation: Surface Descriptors</a>, <a href="../manual0/JGeom.html#134">Geometry Evaluation: Surface Descriptors</a>, <a href="../manual0/JGeom.html#137">Geometry Evaluation: Surface Descriptors</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

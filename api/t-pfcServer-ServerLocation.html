@@ -1,0 +1,448 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcServerLocation"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      475
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcServer.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcServer-ServerLocation.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcServerLocation</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcServer.html">pfcServer.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcServerLocation</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Child.html">pfcChild</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcServerLocation</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes server location.<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-pfcServer-NonRegisteredServer.html">pfcNonRegisteredServer</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcServer-Server.html">pfcServer</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcServer-WorkspaceDefinitions.html">pfcWorkspaceDefinitions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CollectWorkspaces">CollectWorkspaces</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the list of the workspaces .</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteWorkspace">DeleteWorkspace</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;WorkspaceName)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes a workspace.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Class">GetClass</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the class of the server . The values of the server class are "Windchill" and  
+  "ProjectLink." "Windchill" denotes either a Windchill Classic PDM or a Windchill PDMLink server,  
+  while "ProjectLink" denotes Windchill ProjectLink type of servers.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Location">GetLocation</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the codebase URL . </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Version">GetVersion</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies the version of Windchill that is configured on the server, for example, "7.0" or "8.0."  
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-stringseq.html">xstringsequence_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ListContexts">ListContexts</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the list of the contexts</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Location">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetLocation</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the codebase URL . <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The server was not registered.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#7">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#10">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Version">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetVersion</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the version of Windchill that is configured on the server, for example, "7.0" or "8.0."  
+  <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The server couldn't be found at the given location. </p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">pfcXToolkitUnsupported</a></b></tt></b></tt> - The server is not a Windchill server </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#8">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#10">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Class">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetClass</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies the class of the server . The values of the server class are "Windchill" and  
+  "ProjectLink." "Windchill" denotes either a Windchill Classic PDM or a Windchill PDMLink server,  
+  while "ProjectLink" denotes Windchill ProjectLink type of servers.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The server couldn't be found at the given location. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#6">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#10">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CollectWorkspaces">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcServer-WorkspaceDefinitions.html">pfcWorkspaceDefinitions_ptr</a></tt></td><td class="func-name"><tt>CollectWorkspaces</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the list of the workspaces .<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - This means either: 
+    <ul>
+       
+<li>No context was found (the server was from WC 6.2.6), OR</li> 
+	   
+<li>The server was not registered or couldn't be found at the given location.</li> 
+	
+</ul>   
+   
+</p>    
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitEmpty.html">pfcXToolkitEmpty</a></b></tt></b></tt> - The server does not have any workspaces</p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - Server communication error, or user lacks permission to view workspaces on this server. </p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The server version is not supported</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#10">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#29">Windchill Connectivity APIs: Accessing Workspaces</a>, <a href="../manual0/wc_apis.html#36">Windchill Connectivity APIs: To Register a Server with an Existing Workspace</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of <tt><b><tt><b><a class="class" href="t-pfcServer-WorkspaceDefinitions.html">pfcWorkspaceDefinitions</a></b></tt></b></tt> objects</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteWorkspace">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteWorkspace</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;WorkspaceName)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes a workspace.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The server is not registered.</p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidDir.html">pfcXToolkitInvalidDir</a></b></tt></b></tt> - The workspace does not exist.</p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCheckoutConflict.html">pfcXToolkitCheckoutConflict</a></b></tt></b></tt> - The workspace cannot be deleted due to checked out objects in its contents. </p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInUse.html">pfcXToolkitInUse</a></b></tt></b></tt> - The workspace is active</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCheckoutConflict.html">pfcXToolkitCheckoutConflict</a></b></tt></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#34">Windchill Connectivity APIs: Creating and Modifying the Workspace</a>, <a href="../manual0/wc_apis.html#97">Windchill Connectivity APIs: Conflicts During Server Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WorkspaceName</b></tt>
+</dt>
+<dd>The workspace name.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ListContexts">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-stdcols-stringseq.html">xstringsequence_ptr</a></tt></td><td class="func-name"><tt>ListContexts</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the list of the contexts<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The server was not registered or couldn't be found at the given location. </p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitEmpty.html">pfcXToolkitEmpty</a></b></tt></b></tt> - The server does not have any contexts.</p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - Server communication error, or user lacks permission to view workspaces on this server. </p>
+   
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - The server version is not supported</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/wc_apis.html#9">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#10">Windchill Connectivity APIs: Accessing Information Before Registering a Server</a>, <a href="../manual0/wc_apis.html#37">Windchill Connectivity APIs: To Register a Server with a New Workspace</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of context strings</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

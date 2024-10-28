@@ -1,0 +1,108 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "wfcSurfaceTessellationProjection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      311
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcGeometry-SurfaceTessellationProjection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;wfcSurfaceTessellationProjection</h2>
+<tt>
+     # include &lt;<b><a href="m-wfcGeometry.html">wfcGeometry.h</a></b>&gt;<br>
+<br>
+     enum <b>wfcSurfaceTessellationProjection</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SRFTESS_DEFAULT_PROJECTION">wfcSRFTESS_DEFAULT_PROJECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SRFTESS_PLANAR_PROJECTION">wfcSRFTESS_PLANAR_PROJECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SRFTESS_CYLINDRICAL_PROJECTION">wfcSRFTESS_CYLINDRICAL_PROJECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SRFTESS_SPHERICAL_PROJECTION">wfcSRFTESS_SPHERICAL_PROJECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#SRFTESS_NO_PROJECTION">wfcSRFTESS_NO_PROJECTION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">wfcSurfaceTessellationProjection_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The enum of Surface tessellation projection.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="SRFTESS_DEFAULT_PROJECTION">wfcSRFTESS_DEFAULT_PROJECTION</a></b></tt>
+</dt>
+<dd>
+    Default projection; this will provide UV params for the 
+    tessellation points which map to a plane whose U and V extents are each [0,1] 
+  <br>
+</dd>
+<dt>
+<tt><b><a name="SRFTESS_PLANAR_PROJECTION">wfcSRFTESS_PLANAR_PROJECTION</a></b></tt>
+</dt>
+<dd>
+    Project the UV params using a planar transform, where 
+    u = x, v = y, z is ignored. 
+  <br>
+</dd>
+<dt>
+<tt><b><a name="SRFTESS_CYLINDRICAL_PROJECTION">wfcSRFTESS_CYLINDRICAL_PROJECTION</a></b></tt>
+</dt>
+<dd> 
+    Project the UV params using a cylindrical transform, 
+    where where x = r*cos(theta) and y = r*sin(theta);
+    u = theta, v = z, r is ignored 
+  <br>
+</dd>
+<dt>
+<tt><b><a name="SRFTESS_SPHERICAL_PROJECTION">wfcSRFTESS_SPHERICAL_PROJECTION</a></b></tt>
+</dt>
+<dd> 
+    Project the UV params onto a sphere,
+    where x = r*cos(theta)*sin(phi), y = r*sin(theta)*sin(phi),
+    z = r*cos(phi); u = theta, v = phi, r is ignored 
+  <br>
+</dd>
+<dt>
+<tt><b><a name="SRFTESS_NO_PROJECTION">wfcSRFTESS_NO_PROJECTION</a></b></tt>
+</dt>
+<dd> 
+    No projection; this will provide unmodified UV params 
+    for the tessellation points.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="null">wfcSurfaceTessellationProjection_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

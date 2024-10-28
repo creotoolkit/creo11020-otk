@@ -1,0 +1,424 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcSurfaceTessellationInput"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1020
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcGeometry-SurfaceTessellationInput.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSurfaceTessellationInput</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcGeometry.html">wfcGeometry.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcSurfaceTessellationInput</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcSurfaceTessellationInput</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface for surface tessellation input<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;AngleControl, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;StepSize, <a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a>&nbsp;Projection, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a>&nbsp;CsysData, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;ChordHeight)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates surface tessellation input</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#AngleControl">GetAngleControl</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AngleControl">SetAngleControl</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Angle control value used for the tessellation</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#ChordHeight">GetChordHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ChordHeight">SetChordHeight</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Chord height used for the surface tessellation</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#CsysData">GetCsysData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CsysData">SetCsysData</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The csys data of surface tessellation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a></tt></td><td class="func-signature"><tt><a class="method" href="#Projection">GetProjection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Projection">SetProjection</a>
+ (<a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The projection for the tessellation points input.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#StepSize">GetStepSize</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#StepSize">SetStepSize</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Maximum step size value used for the tessellation</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="AngleControl">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetAngleControl</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAngleControl</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Angle control value used for the tessellation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#178">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#179">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="StepSize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetStepSize</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetStepSize</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Maximum step size value used for the tessellation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#180">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#181">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Projection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a></tt></td><td class="func-name"><tt>GetProjection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetProjection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The projection for the tessellation points input.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#182">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#183">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="CsysData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a></tt></td><td class="func-name"><tt>GetCsysData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCsysData</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The csys data of surface tessellation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#184">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#185">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ChordHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetChordHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetChordHeight</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Chord height used for the surface tessellation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#186">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#187">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;AngleControl, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;StepSize, <a class="type" href="t-wfcGeometry-SurfaceTessellationProjection.html">wfcSurfaceTessellationProjection</a>&nbsp;Projection, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CoordSystem.html">pfcCoordSystem_ptr</a>&nbsp;CsysData, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;ChordHeight)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates surface tessellation input<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#177">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AngleControl</b></tt>
+</dt>
+<dd>Angle control value used for the tessellation</dd>
+<dt>
+<tt><b>StepSize</b></tt>
+</dt>
+<dd>Maximum step size value used for the tessellation</dd>
+<dt>
+<tt><b>Projection</b></tt>
+</dt>
+<dd>The type of projection to use for the UV calculations</dd>
+<dt>
+<tt><b>CsysData</b></tt>
+</dt>
+<dd>Csys data to use for the projection if applicable. Pass NULL for default projection</dd>
+<dt>
+<tt><b>ChordHeight</b></tt>
+</dt>
+<dd>Chord height used for the surface tessellation</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+      Handle to <tt><b><tt><b><a class="class" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput</a></b></tt></b></tt>
+    
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

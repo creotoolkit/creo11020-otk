@@ -1,0 +1,431 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWSurface"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1155
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcGeometry-WSurface.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWSurface</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcGeometry.html">wfcGeometry.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWSurface</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcGeometry-Surface.html">pfcSurface</a>,<br>&nbsp;: public virtual <a class="bold" href="t-wfcLayerState-LayerItem.html">wfcLayerItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-wfcModelItem-WModelItem.html">wfcWModelItem</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWSurface</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface inherited from <tt><b><tt><b><a class="class" href="t-pfcGeometry-Surface.html">pfcSurface</a></b></tt></b></tt>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcGeometry-WPlane.html">wfcWPlane</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCylinder.html">wfcWCylinder</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCone.html">wfcWCone</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WTorus.html">wfcWTorus</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WRuledSurface.html">wfcWRuledSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WRevolvedSurface.html">wfcWRevolvedSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WTabulatedCylinder.html">wfcWTabulatedCylinder</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WForeignSurface.html">wfcWForeignSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCylindricalSplineSurface.html">wfcWCylindricalSplineSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WSplineSurface.html">wfcWSplineSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCoonsPatch.html">wfcWCoonsPatch</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WNURBSSurface.html">wfcWNURBSSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WFilletSurface.html">wfcWFilletSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WSpline2DerSurface.html">wfcWSpline2DerSurface</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-WSurface.html">wfcWSurface_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetNextSurface">GetNextSurface</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Returns the next surface in the surface list (or NULL, if there is no next surface).
+     If the model geometry has changed, the next surface must be obtained again.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-SurfacePeriodicity.html">wfcSurfacePeriodicity_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetPeriodicity">GetPeriodicity</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-Tessellation.html">wfcTessellation_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTessellation">GetTessellation</a>
+ (<a class="type" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput_ptr</a>&nbsp;Input)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Calculates the tessellation of a given surface</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcGeometry-Surface.html"><tt>pfcSurface</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcGeometry-Surface.html#IsVisible"><tt>GetIsVisible</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetFeature"><tt>GetFeature</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#OwnerQuilt"><tt>GetOwnerQuilt</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalClosestPointOnSurface"><tt>EvalClosestPointOnSurface</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalClosestPoint"><tt>EvalClosestPoint</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#Eval3DData"><tt>Eval3DData</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalParameters"><tt>EvalParameters</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalArea"><tt>EvalArea</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalPrincipalCurv"><tt>EvalPrincipalCurv</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#VerifyUV"><tt>VerifyUV</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalDiameter"><tt>EvalDiameter</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalMaximum"><tt>EvalMaximum</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#EvalMinimum"><tt>EvalMinimum</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#ListContours"><tt>ListContours</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#ListSameSurfaces"><tt>ListSameSurfaces</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetSurfaceType"><tt>GetSurfaceType</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetXYZExtents"><tt>GetXYZExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetUVExtents"><tt>GetUVExtents</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetOrientation"><tt>GetOrientation</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetSurfaceDescriptor"><tt>GetSurfaceDescriptor</tt></a>,
+     <a class="method" href="t-pfcGeometry-Surface.html#GetNURBSRepresentation"><tt>GetNURBSRepresentation</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetNextSurface">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcGeometry-WSurface.html">wfcWSurface_ptr</a></tt></td><td class="func-name"><tt>GetNextSurface</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Returns the next surface in the surface list (or NULL, if there is no next surface).
+     If the model geometry has changed, the next surface must be obtained again.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#130">Geometry Evaluation: Evaluation of Surfaces</a>, <a href="../manual0/JGraphics.html#36">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+      Handle to next surface <tt><b><tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt></b></tt>
+    
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTessellation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-Tessellation.html">wfcTessellation_ptr</a></tt></td><td class="func-name"><tt>GetTessellation</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcGeometry-SurfaceTessellationInput.html">wfcSurfaceTessellationInput_ptr</a>&nbsp;Input)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Calculates the tessellation of a given surface<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitOutOfMemory.html">pfcXToolkitOutOfMemory</a></b></tt></b></tt> - Creo Parametric could not allocate memory for the output. </p>
+	
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitIncompleteTessellation.html">pfcXToolkitIncompleteTessellation</a></b></tt></b></tt> - The tessellation was incomplete. 
+	<br>If incomplete tessellation is acceptable, set <tt><b><tt><b>
+   &lt;reference 4 to unknown entity wfcWSession::SetIncompleteSurfaceTessellationAllowed&gt;
+  </b></tt></b></tt> to <tt>true</tt>. 
+		The default value for this setting is <tt>false</tt>.</p>
+	
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#188">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#192">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Input</b></tt>
+</dt>
+<dd>
+     Input instructions for the tessellation
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+     returns tessellation data <tt><b><tt><b><a class="class" href="t-wfcGeometry-Tessellation.html">wfcTessellation</a></b></tt></b></tt>
+   
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetPeriodicity">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-SurfacePeriodicity.html">wfcSurfacePeriodicity_ptr</a></tt></td><td class="func-name"><tt>GetPeriodicity</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

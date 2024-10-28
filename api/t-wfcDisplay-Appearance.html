@@ -1,0 +1,894 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcAppearance"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      784
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcDisplay.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcDisplay-Appearance.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcAppearance</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcDisplay.html">wfcDisplay.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcAppearance</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcAppearance</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Describes appearance related properties <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#74">Graphics: Item Properties</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Ambient, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Diffuse, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Highlight, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Shininess, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Transparency, <a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;RGBColor, <a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;HighlightColor, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Reflection, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Label, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Description, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Keywords)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Creates the Appearance properties</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Ambient">GetAmbient</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Ambient">SetAmbient</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The ambient value </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Description">GetDescription</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Description">SetDescription</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Description of the appearance</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Diffuse">GetDiffuse</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Diffuse">SetDiffuse</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The diffusion value</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Highlight">GetHighlight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Highlight">SetHighlight</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The highlight value </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#HighlightColor">GetHighlightColor</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#HighlightColor">SetHighlightColor</a>
+ (<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The highlight color in RGB</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Keywords">GetKeywords</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Keywords">SetKeywords</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Keyword for the appearance</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Label">GetLabel</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Label">SetLabel</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Label for the appearance </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Name">GetName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Name">SetName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The name of the appearance </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Reflection">GetReflection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Reflection">SetReflection</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The value of reflection </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#RGBColor">GetRGBColor</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RGBColor">SetRGBColor</a>
+ (<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Appearance color in RGB</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Shininess">GetShininess</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Shininess">SetShininess</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The value of shininess </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Transparency">GetTransparency</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Transparency">SetTransparency</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> The transparency value </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Ambient">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetAmbient</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAmbient</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The ambient value <br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#12">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#13">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Diffuse">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetDiffuse</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDiffuse</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The diffusion value<br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#16">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#17">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Highlight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHighlight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHighlight</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The highlight value <br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#18">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#19">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Shininess">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetShininess</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetShininess</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The value of shininess <br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#32">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#33">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Transparency">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetTransparency</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTransparency</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The transparency value <br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#34">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#35">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RGBColor">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-name"><tt>GetRGBColor</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetRGBColor</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Appearance color in RGB<br>
+<br>
+<b>Note</b> Valid values for each of RGB is from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#28">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#29">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="HighlightColor">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a></tt></td><td class="func-name"><tt>GetHighlightColor</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHighlightColor</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The highlight color in RGB<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#20">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#21">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Reflection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetReflection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetReflection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The value of reflection <br>
+<br>
+<b>Note</b> Valid values are from 0.00 to 1.00.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#30">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#31">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> The name of the appearance <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#26">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#27">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Label">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetLabel</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetLabel</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Label for the appearance <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#24">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#25">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Description">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetDescription</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDescription</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Description of the appearance<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#14">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#15">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Keywords">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetKeywords</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetKeywords</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Keyword for the appearance<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#22">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#23">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcDisplay-Appearance.html">wfcAppearance_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Ambient, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Diffuse, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Highlight, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Shininess, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Transparency, <a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;RGBColor, <a class="type" href="t-pfcBase-ColorRGB.html">pfcColorRGB_ptr</a>&nbsp;HighlightColor, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Reflection, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Label, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Description, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Keywords)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Creates the Appearance properties<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#11">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Ambient</b></tt>
+</dt>
+<dd>
+   
+<purpose>Ambient Color component</purpose>
+    
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Diffuse</b></tt>
+</dt>
+<dd>
+<purpose>Diffuse value</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Highlight</b></tt>
+</dt>
+<dd>
+<purpose>Highlight intensity</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Shininess</b></tt>
+</dt>
+<dd> 
+<purpose>Shininess</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Transparency</b></tt>
+</dt>
+<dd> 
+<purpose>Transparency of selected appearance</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>RGBColor</b></tt>
+</dt>
+<dd>
+<purpose>Appearance color</purpose>
+   	
+<notes>
+<b>Note</b> Valid values for each of RGB is from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>HighlightColor</b></tt>
+</dt>
+<dd>
+<purpose>Highlight color</purpose> 
+</dd>
+<dt>
+<tt><b>Reflection</b></tt>
+</dt>
+<dd> 
+<purpose>Reflective property of selected appearance</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance name</purpose>
+</dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance label</purpose>
+</dd>
+<dt>
+<tt><b>Description</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance description</purpose>
+</dd>
+<dt>
+<tt><b>Keywords</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance keywords</purpose>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Handle to appearance properties</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

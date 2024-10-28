@@ -1,0 +1,1271 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcDrawing"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      197
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDrawing.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDrawing-Drawing.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDrawing</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDrawing.html">pfcDrawing.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcDrawing</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcModel2D-Model2D.html">pfcModel2D</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcDrawing</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a drawing. 
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcDrawing-WDrawing.html">wfcWDrawing</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ConvertLinearDimensionToBaseline">ConvertLinearDimensionToBaseline</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Vector2D.html">pfcVector2D_ptr</a>&nbsp;Location)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing linear dimension to ordinate baseline. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ConvertLinearDimensionToOrdinate">ConvertLinearDimensionToOrdinate</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;BaselineDimension)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing linear dimension to ordinate. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ConvertOrdinateDimensionToLinear">ConvertOrdinateDimensionToLinear</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Converts an existing ordinate dimension to linear. To use this method drawing must be displayed. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EraseDimension">EraseDimension</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Erase dimension from specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetBaselineDimension">GetBaselineDimension</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if dimension is an ordinate dimension and if it is ordinate then returns baseline dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionAttachPoints">GetDimensionAttachPoints</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets attachment information of dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionLocation">GetDimensionLocation</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get location of dimension text in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionOrientHint">GetDimensionOrientHint</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets orientation of dimension </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionSenses">GetDimensionSenses</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets sense information of dimension. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDimensionView">GetDimensionView</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get drawing view of dimension.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionAssociative">IsDimensionAssociative</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if solid dimension shown in drawing is associative.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionShown">IsDimensionShown</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if dimension is shown in a specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsDimensionToleranceDisplayed">IsDimensionToleranceDisplayed</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Indicates whether a drawing dimension's tolerance is visible or not. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetDimensionLocation">SetDimensionLocation</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;ToLocation)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Changes location of dimension text. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SwitchDimensionView">SwitchDimensionView</a>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Change view of the dimension in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSheet-SheetOwner.html"><tt>pfcSheetOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSheet-SheetOwner.html#NumberOfSheets"><tt>GetNumberOfSheets</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>GetCurrentSheetNumber</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>SetCurrentSheetNumber</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#AddSheet"><tt>AddSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#ReorderSheet"><tt>ReorderSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetData"><tt>GetSheetData</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetInfo"><tt>GetSheetInfo</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetTransform"><tt>GetSheetTransform</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#RegenerateSheet"><tt>RegenerateSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#DeleteSheet"><tt>DeleteSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetScale"><tt>GetSheetScale</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#SetSheetScale"><tt>SetSheetScale</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetFormat"><tt>GetSheetFormat</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#SetSheetFormat"><tt>SetSheetFormat</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetBackgroundView"><tt>GetSheetBackgroundView</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetUnits"><tt>GetSheetUnits</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetFormatDescr"><tt>GetSheetFormatDescr</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailItemOwner.html"><tt>pfcDetailItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailItemOwner.html#ListDetailItems"><tt>ListDetailItems</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#GetDetailItem"><tt>GetDetailItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem"><tt>CreateDetailItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateFreeNote"><tt>CreateFreeNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateOffsetNote"><tt>CreateOffsetNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateOnItemNote"><tt>CreateOnItemNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateLeaderNote"><tt>CreateLeaderNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition"><tt>RetrieveSymbolDefinition</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem"><tt>RetrieveSymbolDefItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#AllowReadonlyNoteSelection"><tt>AllowReadonlyNoteSelection</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcTable-TableOwner.html"><tt>pfcTableOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcTable-TableOwner.html#ListTables"><tt>ListTables</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#GetTable"><tt>GetTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#CreateTable"><tt>CreateTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#RetrieveTable"><tt>RetrieveTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#RetrieveTableByOrigin"><tt>RetrieveTableByOrigin</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#UpdateTables"><tt>UpdateTables</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#DeleteTable"><tt>DeleteTable</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItemOwner.html"><tt>pfcModelItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcView-ViewOwner.html"><tt>pfcViewOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-Model.html"><tt>pfcModel</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel2D-Model2D.html"><tt>pfcModel2D</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel2D-Model2D.html#TextHeight"><tt>GetTextHeight</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#TextHeight"><tt>SetTextHeight</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#List2DViews"><tt>List2DViews</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetViewByName"><tt>GetViewByName</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetViewDisplaying"><tt>GetViewDisplaying</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateView"><tt>CreateView</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#SetViewDisplaying"><tt>SetViewDisplaying</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetCurrentSolid"><tt>GetCurrentSolid</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#SetCurrentSolid"><tt>SetCurrentSolid</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListModels"><tt>ListModels</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#AddModel"><tt>AddModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#DeleteModel"><tt>DeleteModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#Regenerate"><tt>Regenerate</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ReplaceModel"><tt>ReplaceModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateDrawingDimension"><tt>CreateDrawingDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListShownDimensions"><tt>ListShownDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateDimension"><tt>CreateDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateRefDimension"><tt>CreateRefDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CollectShownDimensions"><tt>CollectShownDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CollectShownRefDimensions"><tt>CollectShownRefDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListSimplifiedReps"><tt>ListSimplifiedReps</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#AddSimplifiedRep"><tt>AddSimplifiedRep</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#DeleteSimplifiedRep"><tt>DeleteSimplifiedRep</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="IsDimensionAssociative">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsDimensionAssociative</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if solid dimension shown in drawing is associative.  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#163">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd> Solid dimension shown in the drawing. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if dimension is associative. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDimensionToleranceDisplayed">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsDimensionToleranceDisplayed</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Indicates whether a drawing dimension's tolerance is visible or not. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if dimension's tolerance is visible. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetBaselineDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-name"><tt>GetBaselineDimension</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if dimension is an ordinate dimension and if it is ordinate then returns baseline dimension. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#169">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>NULL value means dimension is not ordinate. For ordinate dimension returns its baseline. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionSenses">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimSenses.html">pfcDimSenses_ptr</a></tt></td><td class="func-name"><tt>GetDimensionSenses</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets sense information of dimension. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#167">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Array of sense.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionAttachPoints">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSelect-DimensionAttachments.html">pfcDimensionAttachments_ptr</a></tt></td><td class="func-name"><tt>GetDimensionAttachPoints</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets attachment information of dimension. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#166">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Attachment information </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionOrientHint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-DimOrientationHint.html">pfcDimOrientationHint</a></tt></td><td class="func-name"><tt>GetDimensionOrientHint</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets orientation of dimension <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidItem.html">pfcXToolkitInvalidItem</a></b></tt></b></tt> - the dimension specified is not a valid dimension created in drawing mode. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - the dimension sense type is not supported with this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#168">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>orientation</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertOrdinateDimensionToLinear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ConvertOrdinateDimensionToLinear</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing ordinate dimension to linear. To use this method drawing must be displayed. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#180">Drawings: Drawing Dimensions Operations</a>, <a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertLinearDimensionToOrdinate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ConvertLinearDimensionToOrdinate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;BaselineDimension)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing linear dimension to ordinate. To use this method drawing must be displayed. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#181">Drawings: Drawing Dimensions Operations</a>, <a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Linear dimension. </dd>
+<dt>
+<tt><b>BaselineDimension</b></tt>
+</dt>
+<dd>Baseline dimension.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertLinearDimensionToBaseline">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a></tt></td><td class="func-name"><tt>ConvertLinearDimensionToBaseline</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Vector2D.html">pfcVector2D_ptr</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Converts an existing linear dimension to ordinate baseline. To use this method drawing must be displayed. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Linear dimension. </dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>A point on one of the extension lines of the linear dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetDimensionLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDimensionLocation</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;ToLocation)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Changes location of dimension text. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension to be moved.</dd>
+<dt>
+<tt><b>ToLocation</b></tt>
+</dt>
+<dd>New location. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionLocation">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-name"><tt>GetDimensionLocation</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get location of dimension text in specified drawing. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#170">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Location. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDimensionView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a></tt></td><td class="func-name"><tt>GetDimensionView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get drawing view of dimension.  <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - The dimension is not displayed in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#171">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A drawing view. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SwitchDimensionView">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SwitchDimensionView</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim, <a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Change view of the dimension in specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not delete the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#183">Drawings: Drawing Dimensions Operations</a>, <a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>New drawing view. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsDimensionShown">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsDimensionShown</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if dimension is shown in a specified drawing. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>xtrue if it is shown. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EraseDimension">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>EraseDimension</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDimension-Dimension.html">pfcDimension_ptr</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Erase dimension from specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is not shown in the target model. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#184">Drawings: Drawing Dimensions Operations</a>, <a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>Dimension </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

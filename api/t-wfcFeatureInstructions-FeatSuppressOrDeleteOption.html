@@ -1,0 +1,112 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "wfcFeatSuppressOrDeleteOption"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      261
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcFeatureInstructions.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcFeatureInstructions-FeatSuppressOrDeleteOption.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;wfcFeatSuppressOrDeleteOption</h2>
+<tt>
+     # include &lt;<b><a href="m-wfcFeatureInstructions.html">wfcFeatureInstructions.h</a></b>&gt;<br>
+<br>
+     enum <b>wfcFeatSuppressOrDeleteOption</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_NO_OPTS">wfcFEAT_SUPP_OR_DEL_NO_OPTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_CLIP">wfcFEAT_SUPP_OR_DEL_CLIP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_FIX">wfcFEAT_SUPP_OR_DEL_FIX</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_RELATION_DELETE">wfcFEAT_SUPP_OR_DEL_RELATION_DELETE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_RELATION_COMMENT">wfcFEAT_SUPP_OR_DEL_RELATION_COMMENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_CLIP_ALL">wfcFEAT_SUPP_OR_DEL_CLIP_ALL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_INDIV_GP_MEMBERS">wfcFEAT_SUPP_OR_DEL_INDIV_GP_MEMBERS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_CLIP_INDIV_GP_MEMBERS">wfcFEAT_SUPP_OR_DEL_CLIP_INDIV_GP_MEMBERS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FEAT_SUPP_OR_DEL_KEEP_EMBED_DATUMS">wfcFEAT_SUPP_OR_DEL_KEEP_EMBED_DATUMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">wfcFeatSuppressOrDeleteOption_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Various options used while deleting or suppressing the feature <br>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_NO_OPTS">wfcFEAT_SUPP_OR_DEL_NO_OPTS</a></b></tt>
+</dt>
+<dd>Delete or Suppress features without deleting or suppressing their dependent children features.<br>
+    Please note that this may result in regeneration failures.<br>
+    PTC recommends using the option FEAT_SUPP_OR_DEL_FIX or one of the CLIP options 
+    unless your application deals with the feature's dependent children in another way before regeneration takes place.<br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_CLIP">wfcFEAT_SUPP_OR_DEL_CLIP</a></b></tt>
+</dt>
+<dd>Delete or Suppress features along with deleting or suppressing their dependent children features.  <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_FIX">wfcFEAT_SUPP_OR_DEL_FIX</a></b></tt>
+</dt>
+<dd>Delete or Suppress features without deleting/suppressing their dependent children features.<br>
+    The fix model user interface will be prompted in case of regeneration failure.  <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_RELATION_DELETE">wfcFEAT_SUPP_OR_DEL_RELATION_DELETE</a></b></tt>
+</dt>
+<dd>Delete relations with obsolete dimensions.<br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_RELATION_COMMENT">wfcFEAT_SUPP_OR_DEL_RELATION_COMMENT</a></b></tt>
+</dt>
+<dd>Change relations with obsolete dimensions into comments.<br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_CLIP_ALL">wfcFEAT_SUPP_OR_DEL_CLIP_ALL</a></b></tt>
+</dt>
+<dd>Delete or Suppress features along with deleting or suppressing all the following features.<br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_INDIV_GP_MEMBERS">wfcFEAT_SUPP_OR_DEL_INDIV_GP_MEMBERS</a></b></tt>
+</dt>
+<dd>If this option is included,features to be deleted or suppressed, if they are members of groups, will be individually deleted out of the groups they belong to.<br>
+  If this option is not included, the entire group containing the feature will be deleted.<br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_CLIP_INDIV_GP_MEMBERS">wfcFEAT_SUPP_OR_DEL_CLIP_INDIV_GP_MEMBERS</a></b></tt>
+</dt>
+<dd>If this option is included children of features to be deleted or suppressed, if they are members of groups, will be individually deleted out of the groups they belong to.<br> 
+   If this option is not included, the entire group containing the child will be deleted.  <br>
+</dd>
+<dt>
+<tt><b><a name="FEAT_SUPP_OR_DEL_KEEP_EMBED_DATUMS">wfcFEAT_SUPP_OR_DEL_KEEP_EMBED_DATUMS</a></b></tt>
+</dt>
+<dd>
+    This option will cause Creo Parametric to keep the embedded datums stored in a feature when using <tt><b><a class="method" href="t-wfcSolid-WSolid.html#DeleteFeatures">wfcWSolid::DeleteFeatures(xintsequence_ptr, wfcFeatSuppressOrDeleteOptions_ptr, optional wfcWRegenInstructions_ptr)</a></b></tt> to delete the feature.<br> 
+    If not used, embedded datums will be deleted along with the parent feature.
+  <br>
+</dd>
+<dt>
+<tt><b><a name="null">wfcFeatSuppressOrDeleteOption_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

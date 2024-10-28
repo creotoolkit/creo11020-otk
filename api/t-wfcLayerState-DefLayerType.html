@@ -1,0 +1,447 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "wfcDefLayerType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      226
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcLayerState.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcLayerState-DefLayerType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;wfcDefLayerType</h2>
+<tt>
+     # include &lt;<b><a href="m-wfcLayerState.html">wfcLayerState.h</a></b>&gt;<br>
+<br>
+     enum <b>wfcDefLayerType</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_NONE">wfcDEFLAYER_NONE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_ASSEM_MEMBER">wfcDEFLAYER_ASSEM_MEMBER</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COMP_DESIGN_MODEL">wfcDEFLAYER_COMP_DESIGN_MODEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COMP_WORKPIECE">wfcDEFLAYER_COMP_WORKPIECE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COMP_FIXTURE">wfcDEFLAYER_COMP_FIXTURE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_GEOM_FEAT">wfcDEFLAYER_GEOM_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_NOGEOM_FEAT">wfcDEFLAYER_NOGEOM_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COSM_SKETCH">wfcDEFLAYER_COSM_SKETCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_AXIS">wfcDEFLAYER_AXIS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SURFACE">wfcDEFLAYER_SURFACE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DATUM">wfcDEFLAYER_DATUM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_POINT">wfcDEFLAYER_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CURVE">wfcDEFLAYER_CURVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CSYS">wfcDEFLAYER_CSYS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_FEATURE">wfcDEFLAYER_FEATURE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_HOLE_FEAT">wfcDEFLAYER_HOLE_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_ROUND_FEAT">wfcDEFLAYER_ROUND_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CHAMFER_FEAT">wfcDEFLAYER_CHAMFER_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SLOT_FEAT">wfcDEFLAYER_SLOT_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CUT_FEAT">wfcDEFLAYER_CUT_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_PROTRUSION_FEAT">wfcDEFLAYER_PROTRUSION_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_RIB_FEAT">wfcDEFLAYER_RIB_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_FEAT">wfcDEFLAYER_DRAFT_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SHELL_FEAT">wfcDEFLAYER_SHELL_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CORN_CHAMF_FEAT">wfcDEFLAYER_CORN_CHAMF_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_ASSY_CUT_FEAT">wfcDEFLAYER_ASSY_CUT_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_TRIM_LINE_FEAT">wfcDEFLAYER_TRIM_LINE_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COSM_ROUND_FEAT">wfcDEFLAYER_COSM_ROUND_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_COPY_GEOM_FEAT">wfcDEFLAYER_COPY_GEOM_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_WELD">wfcDEFLAYER_WELD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DIM">wfcDEFLAYER_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_PARAMETER_DIM">wfcDEFLAYER_PARAMETER_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRIVEN_DIM">wfcDEFLAYER_DRIVEN_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_DIM">wfcDEFLAYER_DRAFT_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_REFDIM">wfcDEFLAYER_REFDIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_PART_REFDIM">wfcDEFLAYER_PART_REFDIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_REFDIM">wfcDEFLAYER_DRAFT_REFDIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CURVE_ENT">wfcDEFLAYER_CURVE_ENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_NOTE">wfcDEFLAYER_NOTE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_GTOL">wfcDEFLAYER_GTOL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SYMBOL">wfcDEFLAYER_SYMBOL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SFIN">wfcDEFLAYER_SFIN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_ENTITY">wfcDEFLAYER_DRAFT_ENTITY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_CONSTR">wfcDEFLAYER_DRAFT_CONSTR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_GEOM">wfcDEFLAYER_DRAFT_GEOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_HIDDEN">wfcDEFLAYER_DRAFT_HIDDEN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_OTHERS">wfcDEFLAYER_DRAFT_OTHERS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_GRP">wfcDEFLAYER_DRAFT_GRP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_DTM">wfcDEFLAYER_DRAFT_DTM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_QUILT">wfcDEFLAYER_QUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DGM_WIRE">wfcDEFLAYER_DGM_WIRE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DGM_CONN_COMP">wfcDEFLAYER_DGM_CONN_COMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DGM_RAIL">wfcDEFLAYER_DGM_RAIL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DGM_HIGHWAY">wfcDEFLAYER_DGM_HIGHWAY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DETAIL_ITEM">wfcDEFLAYER_DETAIL_ITEM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DATUM_POINT">wfcDEFLAYER_DATUM_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DATUM_PLANE">wfcDEFLAYER_DATUM_PLANE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SNAP_LINE">wfcDEFLAYER_SNAP_LINE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DWG_TABLE">wfcDEFLAYER_DWG_TABLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_THREAD_FEAT">wfcDEFLAYER_THREAD_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SOLID_GEOM">wfcDEFLAYER_SOLID_GEOM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_EXT_GCPY_FEAT">wfcDEFLAYER_EXT_GCPY_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SKELETON">wfcDEFLAYER_SKELETON</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_RIBBON_FEAT">wfcDEFLAYER_RIBBON_FEAT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_INTCHG_FUNCT">wfcDEFLAYER_INTCHG_FUNCT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_INTCHG_SIMP">wfcDEFLAYER_INTCHG_SIMP</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_ALL_2D_ITEMS">wfcDEFLAYER_ALL_2D_ITEMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_ANNOT_ELEM">wfcDEFLAYER_ANNOT_ELEM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_AXIS_ENT">wfcDEFLAYER_AXIS_ENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_CSYS_ENT">wfcDEFLAYER_CSYS_ENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_3D_ITEMS">wfcDEFLAYER_3D_ITEMS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_SET_DATUM_TAG">wfcDEFLAYER_SET_DATUM_TAG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_HOLE_QUILT">wfcDEFLAYER_HOLE_QUILT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_AE_DRIVING_DIM">wfcDEFLAYER_AE_DRIVING_DIM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_DRAFT_XSEC">wfcDEFLAYER_DRAFT_XSEC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DEFLAYER_BODY">wfcDEFLAYER_BODY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">wfcDefLayerType_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> This enumerated type lists the default layer types.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#90">ModelItem: Layer State</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="DEFLAYER_NONE">wfcDEFLAYER_NONE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_ASSEM_MEMBER">wfcDEFLAYER_ASSEM_MEMBER</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COMP_DESIGN_MODEL">wfcDEFLAYER_COMP_DESIGN_MODEL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COMP_WORKPIECE">wfcDEFLAYER_COMP_WORKPIECE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COMP_FIXTURE">wfcDEFLAYER_COMP_FIXTURE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_GEOM_FEAT">wfcDEFLAYER_GEOM_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_NOGEOM_FEAT">wfcDEFLAYER_NOGEOM_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COSM_SKETCH">wfcDEFLAYER_COSM_SKETCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_AXIS">wfcDEFLAYER_AXIS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SURFACE">wfcDEFLAYER_SURFACE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DATUM">wfcDEFLAYER_DATUM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_POINT">wfcDEFLAYER_POINT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CURVE">wfcDEFLAYER_CURVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CSYS">wfcDEFLAYER_CSYS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_FEATURE">wfcDEFLAYER_FEATURE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_HOLE_FEAT">wfcDEFLAYER_HOLE_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_ROUND_FEAT">wfcDEFLAYER_ROUND_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CHAMFER_FEAT">wfcDEFLAYER_CHAMFER_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SLOT_FEAT">wfcDEFLAYER_SLOT_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CUT_FEAT">wfcDEFLAYER_CUT_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_PROTRUSION_FEAT">wfcDEFLAYER_PROTRUSION_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_RIB_FEAT">wfcDEFLAYER_RIB_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_FEAT">wfcDEFLAYER_DRAFT_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SHELL_FEAT">wfcDEFLAYER_SHELL_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CORN_CHAMF_FEAT">wfcDEFLAYER_CORN_CHAMF_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_ASSY_CUT_FEAT">wfcDEFLAYER_ASSY_CUT_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_TRIM_LINE_FEAT">wfcDEFLAYER_TRIM_LINE_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COSM_ROUND_FEAT">wfcDEFLAYER_COSM_ROUND_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_COPY_GEOM_FEAT">wfcDEFLAYER_COPY_GEOM_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_WELD">wfcDEFLAYER_WELD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DIM">wfcDEFLAYER_DIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_PARAMETER_DIM">wfcDEFLAYER_PARAMETER_DIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRIVEN_DIM">wfcDEFLAYER_DRIVEN_DIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_DIM">wfcDEFLAYER_DRAFT_DIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_REFDIM">wfcDEFLAYER_REFDIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_PART_REFDIM">wfcDEFLAYER_PART_REFDIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_REFDIM">wfcDEFLAYER_DRAFT_REFDIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CURVE_ENT">wfcDEFLAYER_CURVE_ENT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_NOTE">wfcDEFLAYER_NOTE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_GTOL">wfcDEFLAYER_GTOL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SYMBOL">wfcDEFLAYER_SYMBOL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SFIN">wfcDEFLAYER_SFIN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_ENTITY">wfcDEFLAYER_DRAFT_ENTITY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_CONSTR">wfcDEFLAYER_DRAFT_CONSTR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_GEOM">wfcDEFLAYER_DRAFT_GEOM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_HIDDEN">wfcDEFLAYER_DRAFT_HIDDEN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_OTHERS">wfcDEFLAYER_DRAFT_OTHERS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_GRP">wfcDEFLAYER_DRAFT_GRP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_DTM">wfcDEFLAYER_DRAFT_DTM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_QUILT">wfcDEFLAYER_QUILT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DGM_WIRE">wfcDEFLAYER_DGM_WIRE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DGM_CONN_COMP">wfcDEFLAYER_DGM_CONN_COMP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DGM_RAIL">wfcDEFLAYER_DGM_RAIL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DGM_HIGHWAY">wfcDEFLAYER_DGM_HIGHWAY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DETAIL_ITEM">wfcDEFLAYER_DETAIL_ITEM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DATUM_POINT">wfcDEFLAYER_DATUM_POINT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DATUM_PLANE">wfcDEFLAYER_DATUM_PLANE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SNAP_LINE">wfcDEFLAYER_SNAP_LINE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DWG_TABLE">wfcDEFLAYER_DWG_TABLE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_THREAD_FEAT">wfcDEFLAYER_THREAD_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SOLID_GEOM">wfcDEFLAYER_SOLID_GEOM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_EXT_GCPY_FEAT">wfcDEFLAYER_EXT_GCPY_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SKELETON">wfcDEFLAYER_SKELETON</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_RIBBON_FEAT">wfcDEFLAYER_RIBBON_FEAT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_INTCHG_FUNCT">wfcDEFLAYER_INTCHG_FUNCT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_INTCHG_SIMP">wfcDEFLAYER_INTCHG_SIMP</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_ALL_2D_ITEMS">wfcDEFLAYER_ALL_2D_ITEMS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_ANNOT_ELEM">wfcDEFLAYER_ANNOT_ELEM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_AXIS_ENT">wfcDEFLAYER_AXIS_ENT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_CSYS_ENT">wfcDEFLAYER_CSYS_ENT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_3D_ITEMS">wfcDEFLAYER_3D_ITEMS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_SET_DATUM_TAG">wfcDEFLAYER_SET_DATUM_TAG</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_HOLE_QUILT">wfcDEFLAYER_HOLE_QUILT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_AE_DRIVING_DIM">wfcDEFLAYER_AE_DRIVING_DIM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_DRAFT_XSEC">wfcDEFLAYER_DRAFT_XSEC</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="DEFLAYER_BODY">wfcDEFLAYER_BODY</a></b></tt>
+</dt>
+<dd>
+<br>
+</dd>
+<dt>
+<tt><b><a name="null">wfcDefLayerType_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

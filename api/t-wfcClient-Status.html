@@ -1,0 +1,467 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "wfcStatus"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      305
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcClient.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcClient-Status.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;wfcStatus</h2>
+<tt>
+     # include &lt;<b><a href="m-wfcClient.html">wfcClient.h</a></b>&gt;<br>
+<br>
+     enum <b>wfcStatus</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NO_ERROR">wfcTK_NO_ERROR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_GENERAL_ERROR">wfcTK_GENERAL_ERROR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BAD_INPUTS">wfcTK_BAD_INPUTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_USER_ABORT">wfcTK_USER_ABORT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_NOT_FOUND">wfcTK_E_NOT_FOUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_FOUND">wfcTK_E_FOUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_LINE_TOO_LONG">wfcTK_LINE_TOO_LONG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CONTINUE">wfcTK_CONTINUE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BAD_CONTEXT">wfcTK_BAD_CONTEXT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NOT_IMPLEMENTED">wfcTK_NOT_IMPLEMENTED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_OUT_OF_MEMORY">wfcTK_OUT_OF_MEMORY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_COMM_ERROR">wfcTK_COMM_ERROR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NO_CHANGE">wfcTK_NO_CHANGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_SUPP_PARENTS">wfcTK_SUPP_PARENTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_PICK_ABOVE">wfcTK_PICK_ABOVE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_DIR">wfcTK_INVALID_DIR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_FILE">wfcTK_INVALID_FILE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CANT_WRITE">wfcTK_CANT_WRITE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_TYPE">wfcTK_INVALID_TYPE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_PTR">wfcTK_INVALID_PTR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_UNAV_SEC">wfcTK_UNAV_SEC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_MATRIX">wfcTK_INVALID_MATRIX</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_NAME">wfcTK_INVALID_NAME</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NOT_EXIST">wfcTK_NOT_EXIST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CANT_OPEN">wfcTK_CANT_OPEN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_ABORT">wfcTK_ABORT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NOT_VALID">wfcTK_NOT_VALID</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INVALID_ITEM">wfcTK_INVALID_ITEM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MSG_NOT_FOUND">wfcTK_MSG_NOT_FOUND</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MSG_NO_TRANS">wfcTK_MSG_NO_TRANS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MSG_FMT_ERROR">wfcTK_MSG_FMT_ERROR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MSG_USER_QUIT">wfcTK_MSG_USER_QUIT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MSG_TOO_LONG">wfcTK_MSG_TOO_LONG</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CANT_ACCESS">wfcTK_CANT_ACCESS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_OBSOLETE_FUNC">wfcTK_OBSOLETE_FUNC</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NO_COORD_SYSTEM">wfcTK_NO_COORD_SYSTEM</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_AMBIGUOUS">wfcTK_E_AMBIGUOUS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_DEADLOCK">wfcTK_E_DEADLOCK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_BUSY">wfcTK_E_BUSY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_E_IN_USE">wfcTK_E_IN_USE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NO_LICENSE">wfcTK_NO_LICENSE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BSPL_UNSUITABLE_DEGREE">wfcTK_BSPL_UNSUITABLE_DEGREE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BSPL_NON_STD_END_KNOTS">wfcTK_BSPL_NON_STD_END_KNOTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BSPL_MULTI_INNER_KNOTS">wfcTK_BSPL_MULTI_INNER_KNOTS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BAD_SRF_CRV">wfcTK_BAD_SRF_CRV</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_EMPTY">wfcTK_EMPTY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_BAD_DIM_ATTACH">wfcTK_BAD_DIM_ATTACH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NOT_DISPLAYED">wfcTK_NOT_DISPLAYED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CANT_MODIFY">wfcTK_CANT_MODIFY</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CHECKOUT_CONFLICT">wfcTK_CHECKOUT_CONFLICT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CRE_VIEW_BAD_SHEET">wfcTK_CRE_VIEW_BAD_SHEET</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CRE_VIEW_BAD_MODEL">wfcTK_CRE_VIEW_BAD_MODEL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CRE_VIEW_BAD_PARENT">wfcTK_CRE_VIEW_BAD_PARENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CRE_VIEW_BAD_TYPE">wfcTK_CRE_VIEW_BAD_TYPE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CRE_VIEW_BAD_EXPLODE">wfcTK_CRE_VIEW_BAD_EXPLODE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_UNATTACHED_FEATS">wfcTK_UNATTACHED_FEATS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_REGEN_AGAIN">wfcTK_REGEN_AGAIN</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_DWGCREATE_ERRORS">wfcTK_DWGCREATE_ERRORS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_UNSUPPORTED">wfcTK_UNSUPPORTED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_NO_PERMISSION">wfcTK_NO_PERMISSION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_AUTHENTICATION_FAILURE">wfcTK_AUTHENTICATION_FAILURE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_OUTDATED">wfcTK_OUTDATED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_INCOMPLETE">wfcTK_INCOMPLETE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CHECK_OMITTED">wfcTK_CHECK_OMITTED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MAX_LIMIT_REACHED">wfcTK_MAX_LIMIT_REACHED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_OUT_OF_RANGE">wfcTK_OUT_OF_RANGE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_CREO_BARRED">wfcTK_APP_CREO_BARRED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_TOO_OLD">wfcTK_APP_TOO_OLD</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_BAD_DATAPATH">wfcTK_APP_BAD_DATAPATH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_BAD_ENCODING">wfcTK_APP_BAD_ENCODING</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_NO_LICENSE">wfcTK_APP_NO_LICENSE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_XS_CALLBACKS">wfcTK_APP_XS_CALLBACKS</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_STARTUP_FAIL">wfcTK_APP_STARTUP_FAIL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_INIT_FAIL">wfcTK_APP_INIT_FAIL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_VERSION_MISMATCH">wfcTK_APP_VERSION_MISMATCH</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_COMM_FAILURE">wfcTK_APP_COMM_FAILURE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_NEW_VERSION">wfcTK_APP_NEW_VERSION</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_APP_UNLOCK">wfcTK_APP_UNLOCK</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_CHECK_LAST_ERROR">wfcTK_CHECK_LAST_ERROR</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#TK_MULTIBODY_UNSUPPORTED">wfcTK_MULTIBODY_UNSUPPORTED</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">wfcStatus_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#117">Overview of Creo Object TOOLKIT C++: Visit Methods</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="TK_NO_ERROR">wfcTK_NO_ERROR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_GENERAL_ERROR">wfcTK_GENERAL_ERROR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BAD_INPUTS">wfcTK_BAD_INPUTS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_USER_ABORT">wfcTK_USER_ABORT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_NOT_FOUND">wfcTK_E_NOT_FOUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_FOUND">wfcTK_E_FOUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_LINE_TOO_LONG">wfcTK_LINE_TOO_LONG</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CONTINUE">wfcTK_CONTINUE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BAD_CONTEXT">wfcTK_BAD_CONTEXT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NOT_IMPLEMENTED">wfcTK_NOT_IMPLEMENTED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_OUT_OF_MEMORY">wfcTK_OUT_OF_MEMORY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_COMM_ERROR">wfcTK_COMM_ERROR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NO_CHANGE">wfcTK_NO_CHANGE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_SUPP_PARENTS">wfcTK_SUPP_PARENTS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_PICK_ABOVE">wfcTK_PICK_ABOVE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_DIR">wfcTK_INVALID_DIR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_FILE">wfcTK_INVALID_FILE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CANT_WRITE">wfcTK_CANT_WRITE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_TYPE">wfcTK_INVALID_TYPE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_PTR">wfcTK_INVALID_PTR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_UNAV_SEC">wfcTK_UNAV_SEC</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_MATRIX">wfcTK_INVALID_MATRIX</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_NAME">wfcTK_INVALID_NAME</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NOT_EXIST">wfcTK_NOT_EXIST</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CANT_OPEN">wfcTK_CANT_OPEN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_ABORT">wfcTK_ABORT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NOT_VALID">wfcTK_NOT_VALID</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INVALID_ITEM">wfcTK_INVALID_ITEM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MSG_NOT_FOUND">wfcTK_MSG_NOT_FOUND</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MSG_NO_TRANS">wfcTK_MSG_NO_TRANS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MSG_FMT_ERROR">wfcTK_MSG_FMT_ERROR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MSG_USER_QUIT">wfcTK_MSG_USER_QUIT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MSG_TOO_LONG">wfcTK_MSG_TOO_LONG</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CANT_ACCESS">wfcTK_CANT_ACCESS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_OBSOLETE_FUNC">wfcTK_OBSOLETE_FUNC</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NO_COORD_SYSTEM">wfcTK_NO_COORD_SYSTEM</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_AMBIGUOUS">wfcTK_E_AMBIGUOUS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_DEADLOCK">wfcTK_E_DEADLOCK</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_BUSY">wfcTK_E_BUSY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_E_IN_USE">wfcTK_E_IN_USE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NO_LICENSE">wfcTK_NO_LICENSE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BSPL_UNSUITABLE_DEGREE">wfcTK_BSPL_UNSUITABLE_DEGREE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BSPL_NON_STD_END_KNOTS">wfcTK_BSPL_NON_STD_END_KNOTS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BSPL_MULTI_INNER_KNOTS">wfcTK_BSPL_MULTI_INNER_KNOTS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BAD_SRF_CRV">wfcTK_BAD_SRF_CRV</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_EMPTY">wfcTK_EMPTY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_BAD_DIM_ATTACH">wfcTK_BAD_DIM_ATTACH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NOT_DISPLAYED">wfcTK_NOT_DISPLAYED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CANT_MODIFY">wfcTK_CANT_MODIFY</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CHECKOUT_CONFLICT">wfcTK_CHECKOUT_CONFLICT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CRE_VIEW_BAD_SHEET">wfcTK_CRE_VIEW_BAD_SHEET</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CRE_VIEW_BAD_MODEL">wfcTK_CRE_VIEW_BAD_MODEL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CRE_VIEW_BAD_PARENT">wfcTK_CRE_VIEW_BAD_PARENT</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CRE_VIEW_BAD_TYPE">wfcTK_CRE_VIEW_BAD_TYPE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CRE_VIEW_BAD_EXPLODE">wfcTK_CRE_VIEW_BAD_EXPLODE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_UNATTACHED_FEATS">wfcTK_UNATTACHED_FEATS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_REGEN_AGAIN">wfcTK_REGEN_AGAIN</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_DWGCREATE_ERRORS">wfcTK_DWGCREATE_ERRORS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_UNSUPPORTED">wfcTK_UNSUPPORTED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_NO_PERMISSION">wfcTK_NO_PERMISSION</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_AUTHENTICATION_FAILURE">wfcTK_AUTHENTICATION_FAILURE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_OUTDATED">wfcTK_OUTDATED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_INCOMPLETE">wfcTK_INCOMPLETE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CHECK_OMITTED">wfcTK_CHECK_OMITTED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MAX_LIMIT_REACHED">wfcTK_MAX_LIMIT_REACHED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_OUT_OF_RANGE">wfcTK_OUT_OF_RANGE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_CREO_BARRED">wfcTK_APP_CREO_BARRED</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_TOO_OLD">wfcTK_APP_TOO_OLD</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_BAD_DATAPATH">wfcTK_APP_BAD_DATAPATH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_BAD_ENCODING">wfcTK_APP_BAD_ENCODING</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_NO_LICENSE">wfcTK_APP_NO_LICENSE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_XS_CALLBACKS">wfcTK_APP_XS_CALLBACKS</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_STARTUP_FAIL">wfcTK_APP_STARTUP_FAIL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_INIT_FAIL">wfcTK_APP_INIT_FAIL</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_VERSION_MISMATCH">wfcTK_APP_VERSION_MISMATCH</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_COMM_FAILURE">wfcTK_APP_COMM_FAILURE</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_NEW_VERSION">wfcTK_APP_NEW_VERSION</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_APP_UNLOCK">wfcTK_APP_UNLOCK</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_CHECK_LAST_ERROR">wfcTK_CHECK_LAST_ERROR</a></b></tt>
+</dt>
+<dd>&nbsp; <br>
+</dd>
+<dt>
+<tt><b><a name="TK_MULTIBODY_UNSUPPORTED">wfcTK_MULTIBODY_UNSUPPORTED</a></b></tt>
+</dt>
+<dd>
+<br>
+</dd>
+<dt>
+<tt><b><a name="null">wfcStatus_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

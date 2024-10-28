@@ -1,0 +1,178 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "pfcExternal.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      20
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-pfcExternal.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "pfcExternal.h"</h2>
+<b>Description</b>
+<br>
+<br>Contains the functionality for the external data
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcExternal-ExternalDataType.html">pfcExternalDataType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Represents possible types of external data
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalData.html">pfcExternalData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">A union class that represents a single data value that may be stored in external data.
+The type of the value is identified by the dicsriminator.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalDataAccess.html">pfcExternalDataAccess</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Object that represents a conduit to the external data stored in the Creo Parametric file.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalDataClass.html">pfcExternalDataClass</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">A class that represents a named "bin" for external data so other applications
+will not use the data by mistake. An application usually needs one class.
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalDataSlot.html">pfcExternalDataSlot</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Represents a single data item stored in external data
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalDataClasses.html">pfcExternalDataClasses</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">A sequence of ExternalDataClass objects
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcExternal-ExternalDataSlots.html">pfcExternalDataSlots</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Sequence of slots
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalData.html">pfcExternalData_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcExternal-CreateDoubleExternalData.html">pfcCreateDoubleExternalData</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates ExternalData object of type pfcExternalData.EXTDATA_DOUBLE
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalData.html">pfcExternalData_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcExternal-CreateIntExternalData.html">pfcCreateIntExternalData</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates ExternalData object of type pfcExternalData.EXTDATA_INTEGER
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcExternal-ExternalData.html">pfcExternalData_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcExternal-CreateStringExternalData.html">pfcCreateStringExternalData</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates ExternalData object of type pfcExternalData.EXTDATA_String
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

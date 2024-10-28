@@ -1,0 +1,1723 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcAnnotation"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      766
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAnnotation.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAnnotation-Annotation.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcAnnotation</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAnnotation.html">wfcAnnotation.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcAnnotation</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcLayerState-LayerItem.html">wfcLayerItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-wfcModelItem-WModelItem.html">wfcWModelItem</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcAnnotation</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represent various type of annotations such as Dimension,Note,Symbols,SetDatumTag,Surface Finish.<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcAnnotation-SetDatumTag.html">wfcSetDatumTag</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcAnnotation-SurfaceFinish.html">wfcSurfaceFinish</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGTol-GTol.html">wfcGTol</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDimension-WDimension.html">wfcWDimension</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDetail-WDetailNoteItem.html">wfcWDetailNoteItem</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDetail-WDetailSymbolInstItem.html">wfcWDetailSymbolInstItem</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ConvertLegacy">ConvertLegacy</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+		Converts annotation created before Creo 4.0 or created using deprecated APIs ProGtolCreate or ProSetdatumtagCreate.
+    </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Display">Display</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Displays annotation which is temporarily undisplayed by <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay">wfcAnnotation::Undisplay()</a></b></tt>.
+     This method must be called after making changes in an annotation.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DisplayInDrawing">DisplayInDrawing</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Displays annotation owned by solid and shown in drawing which is temporarily undisplayed by <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay">wfcAnnotation::Undisplay()</a></b></tt>.
+     This method must be called after making changes in an annotation.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAnnotationElement">GetAnnotationElement</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationAttachmentAssociativity.html">wfcAnnotationAttachmentAssociativity</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetAttachmentAssociativity">GetAttachmentAssociativity</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSecurityMarking">GetSecurityMarking</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets Security Marking option for Notes and Symbols
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTextStyle">GetTextStyle</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Get textstyle information of annotation. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetTextStyleInDrawing">GetTextStyleInDrawing</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Get textstyle information of annotation in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsAssociative">IsAssociative</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsInactive">IsInactive</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsShown">IsShown</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Checks if annotation is shown in owner or specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsUsingXSecReference">IsUsingXSecReference</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Identifies if the annotation is created on or attached to a cross-sectional edge.
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#NeedsConversion">NeedsConversion</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns if the annotation is created before Creo 4.0 or is created using deprecated APIs ProGtolCreate or ProSetdatumtagCreate and needs conversion. 
+	Call <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy">wfcAnnotation::ConvertLegacy()</a></b></tt> only if this API returns true.
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Rotate">Rotate</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Angle)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>&nbsp; </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSecurityMarking">SetSecurityMarking</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Marking)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets Security Marking option for Notes and Symbols
+  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetTextStyle">SetTextStyle</a>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Get textstyle information of annotation. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetTextStyleInDrawing">SetTextStyleInDrawing</a>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle, <a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Set textstyle information of annotation in specified drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ShowInDrawing">ShowInDrawing</a>
+ (<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Show annotation owned by solid in a drawing. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Undisplay">Undisplay</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Undisplays annotation temporarily.
+     This method must be called before making any changes in an annotation.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UndisplayInDrawing">UndisplayInDrawing</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+     Undisplays annotation owned by solid and shown in drawing temporarily.
+     This method must be called before making any changes in an annotation.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Update">Update</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Updates the display of the annotation, but does not actually
+    display it anywhere. If the annotation is not currently displayed
+    (because its hidden by layer status or inactive geometry) the text
+    extracted from the annotation with mode pfcDIM_DISPLAY_NUMERIC may
+    include callout symbols instead of the text shown to the user.
+    This method will tell Creo Parametric to update the contents of the
+    annotation to cross-reference these callout values.
+    </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UpdateAttachment">UpdateAttachment</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Updates the attachment of the drawing annotation and makes it
+    associative to the attachment of the annotation in the 3D model.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UpdatePosition">UpdatePosition</a>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><b>LICENSE: </b>222<br>Updates the position of the drawing annotation and makes it
+    associative to the position of the annotation in the 3D model.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="ShowInDrawing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ShowInDrawing</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Show annotation owned by solid in a drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is already shown in the target model.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The annotation cannot be shown due to orientation conflicts in the view.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Annotation is present on hidden or blank layer and so can't be shown. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#11">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#191">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/JAnnot.html#206">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>, <a href="../manual0/jdrawfns.html#187">Drawings: Ordinate Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>A drawing view where annotation will be shown. </dd>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>Component path for solid owner.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Display">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Display</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Displays annotation which is temporarily undisplayed by <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay">wfcAnnotation::Undisplay()</a></b></tt>.
+     This method must be called after making changes in an annotation.
+   <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The annotation cannot be shown due to orientation conflicts in theview. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Annotation is present on hidden or blank layer and so can't be shown.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#12">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DisplayInDrawing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DisplayInDrawing</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;DrawingView, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Displays annotation owned by solid and shown in drawing which is temporarily undisplayed by <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#Undisplay">wfcAnnotation::Undisplay()</a></b></tt>.
+     This method must be called after making changes in an annotation.
+   <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidMatrix.html">pfcXToolkitInvalidMatrix</a></b></tt></b></tt> - The annotation cannot be shown due to orientation conflicts in theview. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotDisplayed.html">pfcXToolkitNotDisplayed</a></b></tt></b></tt> - Annotation is present on hidden or blank layer and so can't be shown.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#13">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>Drawing where annotation is shown. </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>Drawing view where annotation is temporarily displayed. Pass <tt>null</tt> to toggle in existing view.</dd>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>Component path of solid owner. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Undisplay">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Undisplay</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Undisplays annotation temporarily.
+     This method must be called before making any changes in an annotation.
+   <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#14">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UndisplayInDrawing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UndisplayInDrawing</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+     Undisplays annotation owned by solid and shown in drawing temporarily.
+     This method must be called before making any changes in an annotation.
+   <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#15">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>Drawing view where annotation is shown. </dd>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>Component path of solid owner. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsShown">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsShown</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Checks if annotation is shown in owner or specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>Drawing. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Update">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Update</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;DrawingModel)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Updates the display of the annotation, but does not actually
+    display it anywhere. If the annotation is not currently displayed
+    (because its hidden by layer status or inactive geometry) the text
+    extracted from the annotation with mode pfcDIM_DISPLAY_NUMERIC may
+    include callout symbols instead of the text shown to the user.
+    This method will tell Creo Parametric to update the contents of the
+    annotation to cross-reference these callout values.
+    <br>
+<br>This method currently supports '3D model notes' 
+     and 'detail notes' only.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#16">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#215">Annotations: Annotation Features and Annotations: Locating and Collecting 3D Symbols and Symbol Definitions</a>, <a href="../manual0/JModel.html#102">Models: Custom Checks</a>, <a href="../manual0/Jinterface.html#231">Interface: Associative Topology Bus Enabled Models and Features</a>, <a href="../manual0/jdrawfns.html#263">Drawings: Repeat Regions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingModel</b></tt>
+</dt>
+<dd>The drawing where it is to be displayed. 
+     Pass <tt>null</tt> if the owner of the annotation is the same as 
+     the model where it would be displayed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTextStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-name"><tt>GetTextStyle</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Get textstyle information of annotation. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No shown version of annotation was found in the drawing</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt> - Multiple shown versions of the annotation were found with different text styles. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#86">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>, <a href="../manual0/JAnnot.html#114">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>TextStyle. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetTextStyle">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextStyle</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Get textstyle information of annotation. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No shown version of annotation was found in the drawing</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#87">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>, <a href="../manual0/JAnnot.html#114">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextStyle</b></tt>
+</dt>
+<dd>TextStyle </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetTextStyleInDrawing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a></tt></td><td class="func-name"><tt>GetTextStyleInDrawing</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Get textstyle information of annotation in specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No shown version of annotation was found in the drawing</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAmbiguous.html">pfcXToolkitAmbiguous</a></b></tt></b></tt> - Multiple shown versions of the annotation were found with different text styles. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#88">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>, <a href="../manual0/JAnnot.html#114">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>Drawing. </dd>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>Component path of owner solid. </dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>Reserved for future expansion. Pass <tt>null</tt>. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> TextStyle</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetTextStyleInDrawing">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextStyleInDrawing</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDetail-AnnotationTextStyle.html">pfcAnnotationTextStyle_ptr</a>&nbsp;TextStyle, <a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView2D-View2D.html">pfcView2D_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Set textstyle information of annotation in specified drawing. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - No shown version of annotation was found in the drawing</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#89">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>, <a href="../manual0/JAnnot.html#114">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextStyle</b></tt>
+</dt>
+<dd>TextStyle. </dd>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>Drawing. </dd>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>Component path of owner solid. </dd>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>
+     Reserved for future expansion. Pass <tt>null</tt>.
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UpdateAttachment">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UpdateAttachment</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Updates the attachment of the drawing annotation and makes it
+    associative to the attachment of the annotation in the 3D model.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation is not shown in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#157">Annotations: Annotation Features and Annotations: Annotation Associativity</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UpdatePosition">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UpdatePosition</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>Updates the position of the drawing annotation and makes it
+    associative to the position of the annotation in the 3D model.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation is not shown in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#156">Annotations: Annotation Features and Annotations: Annotation Associativity</a>, <a href="../manual0/JAnnot.html#157">Annotations: Annotation Features and Annotations: Annotation Associativity</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>The drawing</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsAssociative">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsAssociative</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation is not shown in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#154">Annotations: Annotation Features and Annotations: Annotation Associativity</a>, <a href="../manual0/JAnnot.html#157">Annotations: Annotation Features and Annotations: Annotation Associativity</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAttachmentAssociativity">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAnnotation-AnnotationAttachmentAssociativity.html">wfcAnnotationAttachmentAssociativity</a></tt></td><td class="func-name"><tt>GetAttachmentAssociativity</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation is not shown in the drawing. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#155">Annotations: Annotation Features and Annotations: Annotation Associativity</a>, <a href="../manual0/JAnnot.html#157">Annotations: Annotation Features and Annotations: Annotation Associativity</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetAnnotationElement">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement_ptr</a></tt></td><td class="func-name"><tt>GetAnnotationElement</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The annotation is not contained in any annotation element. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotExist.html">pfcXToolkitNotExist</a></b></tt></b></tt> - The annotation element owner of the annotation does not exist. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#28">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsInactive">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsInactive</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoLicense.html">pfcXToolkitNoLicense</a></b></tt></b></tt> - License check failure.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#17">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Rotate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Rotate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Angle)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>LICENSE: </b>222</tt>
+<br>
+<br>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - The annotation does not support assigned rotation angles. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantWrite.html">pfcXToolkitCantWrite</a></b></tt></b></tt> - Could not modify the given item because it has read-only access. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#116">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/JAnnot.html#139">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Angle</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ConvertLegacy">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>ConvertLegacy</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+		Converts annotation created before Creo 4.0 or created using deprecated APIs ProGtolCreate or ProSetdatumtagCreate.
+    <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The annotation is not legacy.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#84">Annotations: Annotation Features and Annotations: Converting Annotations to Latest Version</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="NeedsConversion">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>NeedsConversion</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns if the annotation is created before Creo 4.0 or is created using deprecated APIs ProGtolCreate or ProSetdatumtagCreate and needs conversion. 
+	Call <tt><b><a class="method" href="t-wfcAnnotation-Annotation.html#ConvertLegacy">wfcAnnotation::ConvertLegacy()</a></b></tt> only if this API returns true.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#83">Annotations: Annotation Features and Annotations: Converting Annotations to Latest Version</a>, <a href="../manual0/JAnnot.html#84">Annotations: Annotation Features and Annotations: Converting Annotations to Latest Version</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>TRUE if the annotation needs conversion FALSE if the annotation is already converted</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSecurityMarking">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetSecurityMarking</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets Security Marking option for Notes and Symbols
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#161">Annotations: Annotation Features and Annotations: Annotation Security</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>If true then specified annotation is marked for security check</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSecurityMarking">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSecurityMarking</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Marking)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets Security Marking option for Notes and Symbols
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#160">Annotations: Annotation Features and Annotations: Annotation Security</a>, <a href="../manual0/JAnnot.html#161">Annotations: Annotation Features and Annotations: Annotation Security</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Marking</b></tt>
+</dt>
+<dd>True if the annotation refers a cross-section geometry.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="IsUsingXSecReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsUsingXSecReference</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Identifies if the annotation is created on or attached to a cross-sectional edge.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#18">Annotations: Annotation Features and Annotations: Accessing Annotations</a>, <a href="../manual0/JAnnot.html#26">Annotations: Annotation Features and Annotations: Accessing Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>True if the annotation refers a cross-section geometry.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

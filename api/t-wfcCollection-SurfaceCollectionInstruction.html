@@ -1,0 +1,389 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcSurfaceCollectionInstruction"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1011
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcCollection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcCollection-SurfaceCollectionInstruction.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSurfaceCollectionInstruction</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcCollection.html">wfcCollection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcSurfaceCollectionInstruction</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcSurfaceCollectionInstruction</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Class for instruction in surface collection  <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionInstruction.html">wfcSurfaceCollectionInstruction_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a>&nbsp;type, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Include, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a>&nbsp;SrfCollectionReferences, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a>&nbsp;Rules)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Creates a surface collection instruction object.
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#Include">GetInclude</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Include">SetInclude</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Surface collection instruction attribute.        
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Rules">GetRules</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Rules">SetRules</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+            Surface collection instruction rules. Used for Geometry or Shape based surface collection
+        </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#SrfCollectionReferences">GetSrfCollectionReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SrfCollectionReferences">SetSrfCollectionReferences</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The references contained in a surface collection instruction
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a></tt></td><td class="func-signature"><tt><a class="method" href="#Type">GetType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Type">SetType</a>
+ (<a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        The surface collection instruction type
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Type">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a></tt></td><td class="func-name"><tt>GetType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The surface collection instruction type
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#44">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#45">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Include">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetInclude</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetInclude</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Surface collection instruction attribute.        
+      <br>
+<br>
+       true  -  include the surfaces generated by this instruction in the set and
+        false - exclude the surfaces from the set
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#40">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#41">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SrfCollectionReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a></tt></td><td class="func-name"><tt>GetSrfCollectionReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSrfCollectionReferences</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        The references contained in a surface collection instruction
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#42">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#43">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Rules">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a></tt></td><td class="func-name"><tt>GetRules</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetRules</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+            Surface collection instruction rules. Used for Geometry or Shape based surface collection
+        <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#46">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#47">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionInstruction.html">wfcSurfaceCollectionInstruction_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcCollection-SurfaceCollectionInstrType.html">wfcSurfaceCollectionInstrType</a>&nbsp;type, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Include, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionReferences.html">wfcSurfaceCollectionReferences_ptr</a>&nbsp;SrfCollectionReferences, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcCollection-SurfaceCollectionRules.html">wfcSurfaceCollectionRules_ptr</a>&nbsp;Rules)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Creates a surface collection instruction object.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><b><tt><b>
+   &lt;reference 4 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </b></tt></b></tt>
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#39">Curve and Surface Collection: Surface Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>type</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Include</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>SrfCollectionReferences</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Rules</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A surface collection instruction object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

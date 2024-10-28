@@ -1,0 +1,778 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcTexturePlacement"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1024
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcDisplay.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcDisplay-TexturePlacement.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcTexturePlacement</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcDisplay.html">wfcDisplay.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcTexturePlacement</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcTexturePlacement</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface for texture placement <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcDisplay-TexturePlacement.html">wfcTexturePlacement_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a>&nbsp;TextureProjectionType, <a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;LocalSys, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;HorizontalOffset, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;VerticalOffset, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Rotate, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;HorizontalScale, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;VerticalScale, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;BumpHeight, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;DecalIntensity, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;HorizontalFlip, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;VerticalFlip)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Creates texture placement property</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#BumpHeight">GetBumpHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#BumpHeight">SetBumpHeight</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Bump height</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#DecalIntensity">GetDecalIntensity</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DecalIntensity">SetDecalIntensity</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Decal intensity</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalFlip">GetHorizontalFlip</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalFlip">SetHorizontalFlip</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Horizontal flip</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalOffset">GetHorizontalOffset</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalOffset">SetHorizontalOffset</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Horizontal Offset</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalScale">GetHorizontalScale</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#HorizontalScale">SetHorizontalScale</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Horizontal scale</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#LocalSys">GetLocalSys</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#LocalSys">SetLocalSys</a>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Transform of the coordinate system that should be taken as a
+   reference for texture application</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Rotate">GetRotate</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Rotate">SetRotate</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> otation parameter</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a></tt></td><td class="func-signature"><tt><a class="method" href="#TextureProjectionType">GetTextureProjectionType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TextureProjectionType">SetTextureProjectionType</a>
+ (<a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Projection type <tt><b><tt><b><a class="enumtype" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a></b></tt></b></tt></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#VerticalFlip">GetVerticalFlip</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#VerticalFlip">SetVerticalFlip</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Vertical flip</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#VerticalOffset">GetVerticalOffset</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#VerticalOffset">SetVerticalOffset</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Vertical Offset</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#VerticalScale">GetVerticalScale</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#VerticalScale">SetVerticalScale</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Vertical scale</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="TextureProjectionType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a></tt></td><td class="func-name"><tt>GetTextureProjectionType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTextureProjectionType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Projection type <tt><b><tt><b><a class="enumtype" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a></b></tt></b></tt>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#47">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#48">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="LocalSys">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a></tt></td><td class="func-name"><tt>GetLocalSys</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetLocalSys</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Transform of the coordinate system that should be taken as a
+   reference for texture application<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#49">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#50">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="HorizontalOffset">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHorizontalOffset</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHorizontalOffset</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Horizontal Offset<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#51">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#52">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VerticalOffset">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetVerticalOffset</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVerticalOffset</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Vertical Offset<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#53">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#54">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Rotate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetRotate</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetRotate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> otation parameter<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#55">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#56">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="HorizontalScale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetHorizontalScale</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHorizontalScale</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Horizontal scale<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#57">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#58">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VerticalScale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetVerticalScale</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVerticalScale</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Vertical scale<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#59">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#60">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="BumpHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetBumpHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetBumpHeight</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Bump height<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#61">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#62">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DecalIntensity">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetDecalIntensity</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDecalIntensity</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Decal intensity<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#63">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#64">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="HorizontalFlip">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetHorizontalFlip</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetHorizontalFlip</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Horizontal flip<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#65">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#66">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VerticalFlip">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetVerticalFlip</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVerticalFlip</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Vertical flip<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#68">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcDisplay-TexturePlacement.html">wfcTexturePlacement_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcDisplay-TextureProjectionType.html">wfcTextureProjectionType</a>&nbsp;TextureProjectionType, <a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;LocalSys, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;HorizontalOffset, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;VerticalOffset, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Rotate, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;HorizontalScale, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;VerticalScale, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;BumpHeight, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;DecalIntensity, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;HorizontalFlip, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;VerticalFlip)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Creates texture placement property<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#46">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#70">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextureProjectionType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>LocalSys</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>HorizontalOffset</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalOffset</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Rotate</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>HorizontalScale</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalScale</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>BumpHeight</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DecalIntensity</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>HorizontalFlip</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalFlip</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Handle to texture placement property </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

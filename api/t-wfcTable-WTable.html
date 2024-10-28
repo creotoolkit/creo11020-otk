@@ -1,0 +1,859 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWTable"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1159
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcTable.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcTable-WTable.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWTable</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcTable.html">wfcTable.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWTable</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-wfcModelItem-WModelItem.html">wfcWModelItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-wfcLayerState-LayerItem.html">wfcLayerItem</a>,<br>&nbsp;: public virtual <a class="bold" href="t-pfcTable-Table.html">pfcTable</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcWTable</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Extends the functionality of <tt><b><tt><b><a class="class" href="t-pfcTable-Table.html">pfcTable</a></b></tt></b></tt>
+<br>
+<br>This is the actual type of Table Items in Object Toolkit.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-TableGrowthDirType.html">wfcTableGrowthDirType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetGrowthDirection">GetGrowthDirection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Gets the growth direction for the drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-TableRowheightAutoadjustType.html">wfcTableRowheightAutoadjustType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetRowHeightAutoAdjustType">GetRowHeightAutoAdjustType</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Row)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Get the automatic row height adjustment property for a row of a drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-SegmentExtents.html">wfcSegmentExtents_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSegmentExtents">GetSegmentExtents</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the start/end rows and columns of a particular table segment. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Save">Save</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;TargetPath, <a class="type" href="t-wfcTable-TableFormatType.html">wfcTableFormatType</a>&nbsp;FormatType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Save table in different format. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetColumnWidth">SetColumnWidth</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Width, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ColumnId, <a class="type" href="t-pfcTable-TableSizeType.html">pfcTableSizeType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set the column width of a drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetGrowthDirection">SetGrowthDirection</a>
+ (<a class="type" href="t-wfcTable-TableGrowthDirType.html">wfcTableGrowthDirType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the growth direction for the drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetRowHeight">SetRowHeight</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Height, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;RowId, <a class="type" href="t-pfcTable-TableSizeType.html">pfcTableSizeType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set the row height of a drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetRowHeightAutoAdjustType">SetRowHeightAutoAdjustType</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Row, <a class="type" href="t-wfcTable-TableRowheightAutoadjustType.html">wfcTableRowheightAutoadjustType</a>&nbsp;Type)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set the automatic row height adjustment property for a row of a drawing table. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSegmentOrigin">SetSegmentOrigin</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;Origin)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Set table segment origin. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#WrapCelltext">WrapCelltext</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;RowId, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ColumnId)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Wrap text in cell </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WParameterOwner.html"><tt>wfcWParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+     <a class="method" href="t-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WRelationOwner.html"><tt>wfcWRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+     <a class="method" href="t-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItem.html"><tt>pfcModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcModelItem-WModelItem.html"><tt>wfcWModelItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+     <a class="method" href="t-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-wfcLayerState-LayerItem.html"><tt>wfcLayerItem</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+     <a class="method" href="t-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcTable-Table.html"><tt>pfcTable</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcTable-Table.html#GetRowCount"><tt>GetRowCount</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetColumnCount"><tt>GetColumnCount</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#RotateClockwise"><tt>RotateClockwise</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#CheckIfIsFromFormat"><tt>CheckIfIsFromFormat</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetInfo"><tt>GetInfo</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#InsertRow"><tt>InsertRow</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#InsertColumn"><tt>InsertColumn</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetRowSize"><tt>GetRowSize</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetColumnSize"><tt>GetColumnSize</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#MergeRegion"><tt>MergeRegion</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#SubdivideRegion"><tt>SubdivideRegion</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#DeleteRow"><tt>DeleteRow</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#DeleteColumn"><tt>DeleteColumn</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetSegmentCount"><tt>GetSegmentCount</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetSegmentSheet"><tt>GetSegmentSheet</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#MoveSegment"><tt>MoveSegment</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#SetText"><tt>SetText</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#IsCommentCell"><tt>IsCommentCell</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetText"><tt>GetText</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetCellComponentModel"><tt>GetCellComponentModel</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetCellNote"><tt>GetCellNote</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetCellTopModel"><tt>GetCellTopModel</tt></a>,
+     <a class="method" href="t-pfcTable-Table.html#GetCellReferenceModel"><tt>GetCellReferenceModel</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="SetColumnWidth">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetColumnWidth</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Width, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ColumnId, <a class="type" href="t-pfcTable-TableSizeType.html">pfcTableSizeType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set the column width of a drawing table. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#242">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Width</b></tt>
+</dt>
+<dd>Column width </dd>
+<dt>
+<tt><b>ColumnId</b></tt>
+</dt>
+<dd>The column index. Column indices start at 1. </dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>Size type. If pfcTABLESIZE_BY_NUM_CHARS, then row_height column_width will be rounded down. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSegmentExtents">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-SegmentExtents.html">wfcSegmentExtents_ptr</a></tt></td><td class="func-name"><tt>GetSegmentExtents</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the start/end rows and columns of a particular table segment. <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> - -1 was used for multiple-segment table. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#253">Drawings: Drawing Table Segments</a>, <a href="../manual0/jdrawfns.html#257">Drawings: Drawing Table Segments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SegmentId</b></tt>
+</dt>
+<dd>The table segment id. Pass -1 for a single segment table. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The segment extents. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetRowHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetRowHeight</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Height, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;RowId, <a class="type" href="t-pfcTable-TableSizeType.html">pfcTableSizeType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set the row height of a drawing table. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#243">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Height</b></tt>
+</dt>
+<dd>Row height. </dd>
+<dt>
+<tt><b>RowId</b></tt>
+</dt>
+<dd>The row index. </dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>Size type. If pfcTABLESIZE_BY_NUM_CHARS, then row_height will be rounded down. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="WrapCelltext">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>WrapCelltext</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;RowId, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;ColumnId)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Wrap text in cell <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#238">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RowId</b></tt>
+</dt>
+<dd>The row index </dd>
+<dt>
+<tt><b>ColumnId</b></tt>
+</dt>
+<dd>The column index </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSegmentOrigin">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSegmentOrigin</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;Origin)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set table segment origin. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#252">Drawings: Drawing Table Segments</a>, <a href="../manual0/jdrawfns.html#257">Drawings: Drawing Table Segments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SegmentId</b></tt>
+</dt>
+<dd>The segment identifier. </dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>Point location of the segment. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Save">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Save</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;TargetPath, <a class="type" href="t-wfcTable-TableFormatType.html">wfcTableFormatType</a>&nbsp;FormatType, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;SegmentId)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Save table in different format. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#241">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TargetPath</b></tt>
+</dt>
+<dd>Full path of the saved location. </dd>
+<dt>
+<tt><b>FormatType</b></tt>
+</dt>
+<dd>Save format of the drawing table. </dd>
+<dt>
+<tt><b>SegmentId</b></tt>
+</dt>
+<dd>segment of the table to save if table_format is wfcTABLEFORMAT_CSV. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetGrowthDirection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetGrowthDirection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcTable-TableGrowthDirType.html">wfcTableGrowthDirType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the growth direction for the drawing table. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#240">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The growth direction type. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetGrowthDirection">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-TableGrowthDirType.html">wfcTableGrowthDirType</a></tt></td><td class="func-name"><tt>GetGrowthDirection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Gets the growth direction for the drawing table. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#239">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The growth direction type. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetRowHeightAutoAdjustType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetRowHeightAutoAdjustType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Row, <a class="type" href="t-wfcTable-TableRowheightAutoadjustType.html">wfcTableRowheightAutoadjustType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Set the automatic row height adjustment property for a row of a drawing table. <br>
+<br>Height changes (if any) will be visible only after next regeneration or a call to pfcModel2D::UpdateTables().<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantModify.html">pfcXToolkitCantModify</a></b></tt></b></tt> - The row is a non-template repeat region row.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>Row number for which the property is to be set. Row numbers start with 1. </dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The auto-adjust property. wfcTBLROWHEIGHT_AUTOADJUST_TRUE to activate auto adjust. wfcTBLROWHEIGHT_AUTOADJUST_FALSE to deactivate auto adjust. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetRowHeightAutoAdjustType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcTable-TableRowheightAutoadjustType.html">wfcTableRowheightAutoadjustType</a></tt></td><td class="func-name"><tt>GetRowHeightAutoAdjustType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Row)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Get the automatic row height adjustment property for a row of a drawing table. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#244">Drawings: Drawing Tables Operations</a>, <a href="../manual0/jdrawfns.html#245">Drawings: Drawing Tables Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>Row number for which the property is to be retrieved. Row numbers start with 1. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Retrieved value for auto-adjust property. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

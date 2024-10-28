@@ -1,0 +1,190 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "pfcArgument.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      0
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-pfcArgument.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "pfcArgument.h"</h2>
+<b>Description</b>
+<br>
+<br>This package contains argument-related interfaces used for passing to other Creo Parametric <i>Auxiliary Applications</i>.
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-pfcArgument-ArgValueType.html">pfcArgValueType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This enumerated type contains the types of argument values.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcArgument-Argument.html">pfcArgument</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface represents a function or method argument, consisting of a name and a value.  
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcArgument-ArgValue.html">pfcArgValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface represents an argument value, which may be one of several different types.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-pfcArgument-Arguments.html">pfcArguments</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This interface contains a sequence of name-value pair arguments.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateASCIIStringArgValue.html">pfcCreateASCIIStringArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an ASCII string argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateBoolArgValue.html">pfcCreateBoolArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a boolean argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateDoubleArgValue.html">pfcCreateDoubleArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a double argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateIntArgValue.html">pfcCreateIntArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an integer argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateSelectionArgValue.html">pfcCreateSelectionArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSelect-Selection.html">pfcSelection_ptr</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new selection argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateStringArgValue.html">pfcCreateStringArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a string argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-ArgValue.html">pfcArgValue_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-CreateTransformArgValue.html">pfcCreateTransformArgValue</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new transform argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcArgument-Argument.html">pfcArgument_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-pfcArgument-FindArgumentByLabel.html">pfcFindArgumentByLabel</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcArgument-Arguments.html">pfcArguments_ptr</a>&nbsp;ArgList, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Label)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp; </td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="otk_ribbon" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Ribbon Tabs, Groups, and Menu Items</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANOTK_RIBBON0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="otk_ribbon_RibbonTabsGroupsAndMenuItems-5EF9289B_RibbonT_10_2" class="ChapterTitle">Ribbon Tabs, Groups, and Menu Items</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes the <span class=" x-ph-2-0" id="otk_ribbon_RibbonTabsGroupsAndMenuItems-5EF9289B_PTCCreo_10_7">Creo Object
+                  TOOLKIT C++</span> support for the Ribbon User Interface (UI). It also describes the impact of the ribbon user interface on legacy <span class=" x-ph-2-0">Pro/TOOLKIT</span> applications and the procedure to place the commands, buttons, and menu items created by the legacy applications in the <span class=" x-ph-2-0" id="otk_ribbon_RibbonTabsGroupsAndMenuItems-5EF9289B_PTCCreo_10_9"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface. Refer to the <span class=" x-ph-2-0" id="otk_ribbon_RibbonTabsGroupsAndMenuItems-5EF9289B_PTCCreo_10_9"><span xmlns="" profilecode="1">Creo Parametric</span></span> Help for more information on the ribbon user interface and the procedure to customize the ribbon.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="otk_ribbon_pubsTopic-15-5B6A64EB_10_13">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.8.3.1" class="Heading1">Creating Ribbon Tabs, Groups, and Menu Items</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Customizations to the ribbon user interface using the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoObjectToolkitC-E_10_17">Creo Object
+                     TOOLKIT C++</span> applications are supported through the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric Options</span></span></span>  dialog box. You can specify the user interface layout for a <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoObjectToolkitC-E_10_17">Creo Object
+                     TOOLKIT C++</span> application and save the layout definition in a ribbon definition file, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span>. Set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">tk_enable_ribbon_custom_save</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span> before customizing the ribbon user interface using the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoObjectToolkitC-E_10_17">Creo Object
+                     TOOLKIT C++</span> application. When you run <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoParametric-E9626_10_26"><span xmlns="" profilecode="1">Creo Parametric</span></span>, the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file is loaded along with the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoObjectToolkitC-E_10_17">Creo Object
+                     TOOLKIT C++</span> application and the commands created by the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoObjectToolkitC-E_10_17">Creo Object
+                     TOOLKIT C++</span> application appear in the ribbon user interface.  Refer to the section <a href="#otk_ribbon_pubsTopic-16-5B6C447810_32" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9"> About the Ribbon Definition File</a> for more information on the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file.
+               </div>
+               <div class=" x-p-7-0">You can customize the ribbon user interface only for a particular mode in <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoParametric-E9626_10_26"><span xmlns="" profilecode="1">Creo Parametric</span></span>. For example, if you customize the ribbon user interface and save it to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file in the Part mode, then on loading <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoParametric-E9626_10_26"><span xmlns="" profilecode="1">Creo Parametric</span></span> the customized user interface will be visible only in the Part mode.  To view a particular tab or group in all the modes,
+                  you must customize the ribbon user interface and save the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file in each mode. Refer to the Fundamentals Help for more information on customizing the ribbon.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">You can add a new group to an existing tab or create a new tab using the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> tab in the<span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric Options</span></span></span> dialog box. You will not be able to modify the tabs or groups that are defined by <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-15-5B6A64EB_PTCCreoParametric-E9626_10_26"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="otk_ribbon_pubsTopic-16-5B6B33B5_10_47">
+               
+               <a name="2"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.8.3.3.1" class="Heading2">Workflow to Add Menu Items to the Ribbon User Interface</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">The instructions explained below are applicable only if the application is implemented in full asynchronous mode. This is
+                        because applications in simple asynchronous mode cannot handle requests, that is, command callbacks, from <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Refer to the chapter <a href="JAsync.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Asynchronous Mode</a>, for more information.
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">Set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">tk_enable_ribbon_custom_save</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span> before customizing the ribbon user interface. The steps to add commands to the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span> ribbon user interface are as follows:
+                     <div class=" x-ol-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">1.</td>
+                                 <td><span class=" x-p-4-0">Create a <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application with complete command definition, which includes specifying command label, help text, large icon name, and small
+                                       icon name.  Designate the command using the <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcUICommand::Designate</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">2.</td>
+                                 <td><span class=" x-p-4-0">Start the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application and ensure that it has started or connected to <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The commands created by the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application will be loaded in <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">3.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span></span>. The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric Options</span></span></span> dialog box opens.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">4.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">5.</td>
+                                 <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize the Ribbon</span></span> list, select a tab and create a new group in it or create a new tab and a group in it. </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">6.</td>
+                                 <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Choose commands from</span></span> list, select <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">TOOLKIT Commands</span></span>. The commands created by the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application are displayed.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">7.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Add</span></span> to add the commands to the new tab or group. </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">8.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Import/Export</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Save the Auxilliary Application User Interface</span></span></span>. The changes are saved to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file. The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file is saved in the text folder specified in the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application registry file.  For more information refer to the section on <a href="#otk_ribbon_pubsTopic-16-5B6C447810_32" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9"> About the Ribbon Definition File</a>.</span><div class=" x-note-2-0 x-note-2-3">
+                                       <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                       <div class=" x-p-7-0">The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Save the Auxilliary Application User Interface</span></span> button is enabled only if you set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">tk_enable_ribbon_custom_save</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span>.
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">9.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Apply</span></span>. The custom settings are saved to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file. </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">10.</td>
+                                 <td><span class=" x-p-4-0">	Reload the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application or restart <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file will be loaded along with the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoObjectToolkitC-E_10_63">Creo Object
+                                          TOOLKIT C++</span> application.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">If translated messages are available for the newly added tabs or groups, then <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6B33B5_PTCCreoParametric-E9626_10_52"><span xmlns="" profilecode="1">Creo Parametric</span></span> displays the translated strings by searching for the same string from the list of string based messages that are loaded.
+                     For more information refer to the section on <a href="#otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF252410_124" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9"> Localizing the Ribbon User Interface Created by the Object TOOLKIT Applications</a>.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="otk_ribbon_pubsTopic-16-5B6C447810_32">
+            
+            <a name="3"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.8.4.1" class="Heading1">About the Ribbon Definition File</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">A ribbon definition file is a file that is created through the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span> interface in <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoParametric-E9626_10_128"><span xmlns="" profilecode="1">Creo Parametric</span></span>. This file defines the containers, that is, Tabs, Group, or Cascade menus that are created by a particular <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoObjectToolkitC-E_10_130">Creo Object
+                     TOOLKIT C++</span> application. It contains information on whether to show an icon or label.  It also contains the size of the icon to be used,
+                  that is, a large icon (32X32) or a small icon (16x16). 
+               </div>
+               <div class=" x-p-7-0">The ribbon user interface displays the commands referenced in the ribbon definition file only if the commands are loaded and
+                  are visible in that particular <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoParametric-E9626_10_128"><span xmlns="" profilecode="1">Creo Parametric</span></span> mode. If translated messages are available for the newly added tabs or groups, then <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoParametric-E9626_10_128"><span xmlns="" profilecode="1">Creo Parametric</span></span> displays the translated strings by searching for the same string from the list of string based messages that are loaded.
+                  For more information refer to the section on <a href="#otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF252410_124" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9"> Localizing the Ribbon User Interface Created by the Object TOOLKIT Applications</a>.
+               </div>
+               <div class=" x-p-7-0">Set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">tk_enable_ribbon_custom_save</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span> before customizing the ribbon user interface. To save the ribbon user interface layout definition to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file:
+                  <div class=" x-ol-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span></span>. The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric Options</span></span></span> dialog box opens.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span>. </span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">3.</td>
+                              <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize the Ribbon</span></span> list, select a tab and create a new group in it or create a new tab and a group in it. </span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">4.</td>
+                              <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Choose commands from</span></span> list, select <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">TOOLKIT Commands</span></span>. The commands created by the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoObjectToolkitC-E_10_130">Creo Object
+                                       TOOLKIT C++</span> application are displayed. </span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">5.</td>
+                              <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Add</span></span> to add the commands to the new tab or group. </span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">6.</td>
+                              <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Import/Export</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Save the Auxilliary Application User Interface</span></span></span>. The modified layout is saved to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file located in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text</span></span> folder within the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-16-5B6C4478_PTCCreoObjectToolkitC-E_10_130">Creo Object
+                                       TOOLKIT C++</span> application directory, that is, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_dir&gt;\text</span></span></span><div class=" x-note-2-0 x-note-2-3">
+                                    <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                    <div class=" x-p-7-0">The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Save the Auxilliary Application User Interface</span></span> button is enabled only if you set the configuration option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">tk_enable_ribbon_custom_save</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">yes</span></span>.
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">7.</td>
+                              <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">OK</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-note-1-0 x-note-1-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">You cannot edit the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> file manually.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="otk_ribbon_pubsTopic-164-5BB99482_10_183">
+               
+               <a name="4"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.8.4.3.1" class="Heading2">To Specify the Path for the Ribbon Definition File</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">You can rename the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span> to another filename with the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> extension. To enable the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoObjectToolkitC-_10_189">Creo Object
+                        TOOLKIT C++</span> application to read the ribbon definition file having a name other than <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkitribbonui.rbn</span></span>, it must be available at the location <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_dir&gt;\text\ribbon</span></span>. The function introduced in this section enables you to load the ribbon definition file from within a <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoObjectToolkitC-_10_189">Creo Object
+                        TOOLKIT C++</span> application.
+                  </div>
+                  <div class=" x-p-7-0">Function Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/t-pfcSession-Session.html#RibbonDefinitionfileLoad">pfcSession::RibbonDefinitionfileLoad</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The function <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession::RibbonDefinitionfileLoad</span></span> loads a specified ribbon definition file from a default path into the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoParametric-E962_10_200"><span xmlns="" profilecode="1">Creo Parametric</span></span> application.  The input argument is as follows:
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">file_name</span> - Specify the name of the ribbon definition file including its extension. The default search path for this file is:</span><div class=" x-ul-2-0">
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                </td>
+                                                <td><span class=" x-p-4-0">The working directory from where <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoParametric-E962_10_200"><span xmlns="" profilecode="1">Creo Parametric</span></span> is loaded.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                </td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_text_dir&gt;\ribbon</span></span></span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                </td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_text_dir&gt;\language\ribbon</span></span></span><div class=" x-note-2-0 x-note-2-3">
+                                                      <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                                      <div class=" x-ul-2-0">
+                                                         <table border="0" cellpadding="0" cellspacing="0" class=" x-li-7-0" style="table-layout: fixed; " width="100%">
+                                                            <col style="width: 0em">
+                                                            <col style="width: 18pt">
+                                                            <col>
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9670;</span>&nbsp;
+                                                                  </td>
+                                                                  <td><span class=" x-p-4-0">The location of the application text directory is specified in the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoObjectToolkitC-_10_189">Creo Object
+                                                                           TOOLKIT C++</span> registry file.</span></td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table border="0" cellpadding="0" cellspacing="0" class=" x-li-7-0" style="table-layout: fixed; " width="100%">
+                                                            <col style="width: 0em">
+                                                            <col style="width: 18pt">
+                                                            <col>
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9670;</span>&nbsp;
+                                                                  </td>
+                                                                  <td><span class=" x-p-4-0">A <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-164-5BB99482_PTCCreoObjectToolkitC-_10_189">Creo Object
+                                                                           TOOLKIT C++</span> application can load a ribbon definition file only once. After the application has loaded the ribbon, calls made to the method
+                                                                        <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession::RibbonDefinitionfileLoad</span></span> to load other ribbon definition files are ignored.</span></td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="otk_ribbon_pubsTopic-165-5BBC8B9B_10_226">
+               
+               <a name="6"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.8.4.4.1" class="Heading2">Loading Multiple Applications Using the Ribbon Definition File</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0"><span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoParametric-E962_10_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> supports loading of multiple <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> files in the same session. You can develop multiple <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                        TOOLKIT C++</span> applications that share the same tabs or groups and each application will have its own ribbon definition file. As each application
+                     is loaded, its <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> file will be read and applied. When an application is unloaded, the containers and command created by its <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> file will be removed.
+                  </div>
+                  <div class=" x-p-7-0">For example, consider two <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                        TOOLKIT C++</span> applications, namely, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pt_geardesign</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pt_examples</span></span> that add commands to the same group on a tab on the Ribbon user interface. The application <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pt_geardesign</span></span> adds a command <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Pro/TOOLKIT Gear Design</span></span> to the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Advanced Modeling</span></span> group on the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Modeling</span></span> tab and the application <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pt_examples</span></span> adds a command <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">TKPart</span></span> to the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Advanced Modeling</span></span> group on the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Model</span></span> tab. The ribbon definition file for each application will contain an instruction to create the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Advanced Modeling</span></span> group and if both the ribbon files are loaded, the group will be created only once and the two ribbon customizations will
+                     be merged into the same group.
+                  </div>
+                  <div class=" x-p-7-0">That is, if both the applications are running in the same <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoParametric-E962_10_230"><span xmlns="" profilecode="1">Creo Parametric</span></span> session, then the commands, <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Pro/TOOLKIT Gear Design</span></span> and <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">TKPart</span></span> will be available under the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Advanced Modeling</span></span> group on the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Model</span></span> tab.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">The order in which the commands will be displayed within the group will depend on the order of loading of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> file for each application.
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The following image displays commands added by two <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                        TOOLKIT C++</span> applications to the same group.
+                     <div class=" x-fig-1-0 x-fig-1-2" id="styler-id1.1.1.8.4.4.2.5.2">
+                        <div class=" x-image-1-0 x-image-1-1"><img alt="Image" src="graphics/protk_apps_rbn.gif"></div>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">To save the customization when multiple applications are loaded:
+                     <div class=" x-ol-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">1.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">File</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Options</span></span></span>. The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" profilecode="1"><span class="cf-Sanserif-combined-Default">Creo Parametric Options</span></span></span> dialog box opens.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">2.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize Ribbon</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">3.</td>
+                                 <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Customize the Ribbon</span></span> list, select a tab and create a new group in it or create a new tab and a group in it.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">4.</td>
+                                 <td><span class=" x-p-4-0">In the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Choose commands from list</span></span>, select <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">TOOLKIT Commands</span></span>. The commands created by the <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                                          TOOLKIT C++</span> application are displayed.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">5.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Add</span></span> to add the commands to the new tab or group.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">6.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Import/Export</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Save the Auxilliary Application User Interface</span></span></span>. The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Save UI Customization</span></span> dialog box opens.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">7.</td>
+                                 <td><span class=" x-p-4-0">Select a <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                                          TOOLKIT C++</span> application and Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Save</span></span>. The modified layout is saved to the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.rbn</span></span> file of the specified <span class=" x-ph-2-0" id="otk_ribbon_pubsTopic-165-5BBC8B9B_PTCCreoObjectToolkitC-_10_233">Creo Object
+                                          TOOLKIT C++</span> application.</span><br xmlns="" class="empty">The <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Save UI Customization</span></span> dialog box is shown in the following image:
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-fig-1-0 x-fig-1-2" id="styler-id1.1.1.8.4.4.2.6.2">
+                        <div class=" x-image-1-0 x-image-1-1"><img alt="Image" src="graphics/ui_customize_rbn.gif"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF252410_124">
+            
+            <a name="7"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.8.5.1" class="Heading1">Localizing the Ribbon User Interface Created by the Creo Object TOOLKIT C++ Applications</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The labels for the custom tabs, groups, and cascade menus belonging to the <span class=" x-ph-2-0" id="otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF2524__10_305">Creo Object
+                     TOOLKIT C++</span> application can be translated in the languages supported by <span class=" x-ph-2-0" id="otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF2524__10_306"><span xmlns="" profilecode="1">Creo Parametric</span></span>. To display localized labels, specify the translated labels in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ribbonui.txt</span></span> file and save this file at the location <span class=" x-filepath-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_text_dir&gt;\&lt;language&gt;</span></span>. For example, the text file for German locale must be saved at the location <span class=" x-filepath-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;application_text_dir&gt;\german\ribbonui.txt</span></span>.
+               </div>
+               <div class=" x-p-7-0"> Create a file containing translations for each of the languages in which the <span class=" x-ph-2-0" id="otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF2524__10_305">Creo Object
+                     TOOLKIT C++</span> application is localized. The Localized translation files must use the UTF-8 encoding with BOM character for the translated
+                  text to be displayed correctly in the user interface.
+               </div>
+               <div class=" x-p-7-0"> The format of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ribbonui.txt</span></span> file is as shown below. Specify the following lines for each label entry in the file:
+               </div>
+               <div class=" x-ol-6-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">1.</td>
+                           <td><span class=" x-p-4-0">A hash sign (#) followed by the label, as specified in the ribbon definition file.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">2.</td>
+                           <td><span class=" x-p-4-0">The label as specified in the ribbon definition file and as displayed in the ribbon user interface.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">3.</td>
+                           <td><span class=" x-p-4-0">The translated label.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0.00em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">4.</td>
+                           <td><span class=" x-p-4-0">Add an empty line at the end of each label entry in the file.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">For example, if the <span class=" x-ph-2-0" id="otk_ribbon_LocalizingTheRibbonUserInterfaceCre-8DCF2524__10_305">Creo Object
+                     TOOLKIT C++</span> application creates a tab with the name TK_TAB having a group with the name TK_GROUP, then the translated file will contain
+                  the following:<pre class=" x-codeblock-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">#TK_TAB
+TK_TAB
+&lt;translation for TK_TAB&gt;
+&lt;Empty_line&gt;
+#TK_GROUP
+TK_GROUP
+&lt;translation for TK_GROUP&gt;
+&lt;Empty_line&gt;
+</span></pre></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

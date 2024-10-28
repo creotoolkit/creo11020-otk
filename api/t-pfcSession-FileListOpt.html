@@ -1,0 +1,95 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcFileListOpt"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      54
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcSession.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcSession-FileListOpt.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcFileListOpt</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcSession.html">pfcSession.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcFileListOpt</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FILE_LIST_ALL">pfcFILE_LIST_ALL</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FILE_LIST_LATEST">pfcFILE_LIST_LATEST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FILE_LIST_ALL_INST">pfcFILE_LIST_ALL_INST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#FILE_LIST_LATEST_INST">pfcFILE_LIST_LATEST_INST</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcFileListOpt_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This enumerated type indicates which files should be returned when listing files in a directory.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcSession-BaseSession.html#ListFiles">pfcBaseSession::ListFiles(xrstring, pfcFileListOpt, optional xrstring)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#26">Session Objects: File Handling</a>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="FILE_LIST_ALL">pfcFILE_LIST_ALL</a></b></tt>
+</dt>
+<dd>List all files (including multiple versions of the same file).<br>
+</dd>
+<dt>
+<tt><b><a name="FILE_LIST_LATEST">pfcFILE_LIST_LATEST</a></b></tt>
+</dt>
+<dd>List only the latest version of each file.<br>
+</dd>
+<dt>
+<tt><b><a name="FILE_LIST_ALL_INST">pfcFILE_LIST_ALL_INST</a></b></tt>
+</dt>
+<dd>Same as FILE_LIST_ALL, to show instances for PDM locations.<br>
+</dd>
+<dt>
+<tt><b><a name="FILE_LIST_LATEST_INST">pfcFILE_LIST_LATEST_INST</a></b></tt>
+</dt>
+<dd>Same as FILE_LIST_LATEST, to show instances for PDM locations.<br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcFileListOpt_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

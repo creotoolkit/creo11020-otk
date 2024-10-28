@@ -1,0 +1,156 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcEmptyDimensionSense"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      211
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDimension2D.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDimension2D-EmptyDimensionSense.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcEmptyDimensionSense</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDimension-EmptyDimSense.html">pfcEmptyDimSense</a></tt>
+<p></p>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcDimension2D.html">pfcDimension2D.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcEmptyDimensionSense</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcDimension2D-DimensionSense.html">pfcDimensionSense</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcEmptyDimensionSense</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface is a dimension sense type with no specific information.
+<br>
+<br>The dimension sense gives more information about how the dimension attaches to the entity, 
+for example, to what part of the entity, and in what direction the dimension runs. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="class" href="t-pfcDimension2D-DrawingDimCreateInstructions.html">pfcDrawingDimCreateInstructions</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-Dimension2D.html#GetDimensionSenses">pfcDimension2D::GetDimensionSenses()</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDimension2D-EmptyDimensionSense.html">pfcEmptyDimensionSense_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDimension-EmptyDimSense.html#Create">pfcEmptyDimSense::Create</a></tt>
+<p></p>Creates an empty dimension sense object, for use in creating a new drawing dimension.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDimension2D-DimensionSense.html"><tt>pfcDimensionSense</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDimension2D-DimensionSense.html#GetType"><tt>GetType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcDimension2D-EmptyDimensionSense.html">pfcEmptyDimensionSense_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td><tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-pfcDimension-EmptyDimSense.html#Create">pfcEmptyDimSense::Create</a></tt>
+<p></p>
+<br>Creates an empty dimension sense object, for use in creating a new drawing dimension.
+<br>
+<br>This dimension sense is used if there is no special information required to accompany the dimension attachment.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><a class="method" href="t-pfcDimension2D-DrawingDimCreateInstructions.html#Create">pfcDrawingDimCreateInstructions::Create(pfcSelections_ptr, pfcDimensionSenses_ptr, pfcVector2D_ptr, pfcOrientationHint)</a></b></tt>, <tt><b><a class="method" href="t-pfcModel2D-Model2D.html#CreateDrawingDimension">pfcModel2D::CreateDrawingDimension(pfcDrawingDimCreateInstructions_ptr)</a></b></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#155">Drawings: Creating Drawing Dimensions</a>, <a href="../manual0/jdrawfns.html#161">Drawings: Creating Drawing Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created dimension sense object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcExplodedAnimationMove"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      864
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAssembly.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAssembly-ExplodedAnimationMove.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcExplodedAnimationMove</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAssembly.html">wfcAssembly.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcExplodedAnimationMove</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcExplodedAnimationMove</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface for ExplodedAnimationMove<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAssembly-ExplodedAnimationMove.html">wfcExplodedAnimationMove_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a>&nbsp;MoveType, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;StartPoint, <a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;DirVector, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates object of ExplodedAnimationMove</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#DirVector">GetDirVector</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DirVector">SetDirVector</a>
+ (<a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Direction vector of translation direction or rotation axis</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a></tt></td><td class="func-signature"><tt><a class="method" href="#MoveType">GetMoveType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#MoveType">SetMoveType</a>
+ (<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Exploded animation move type</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#StartPoint">GetStartPoint</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#StartPoint">SetStartPoint</a>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Start point of translation direction or rotation axis</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Value">SetValue</a>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">distance or angle</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="MoveType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a></tt></td><td class="func-name"><tt>GetMoveType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetMoveType</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Exploded animation move type<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#123">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#124">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="StartPoint">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td class="func-name"><tt>GetStartPoint</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetStartPoint</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Start point of translation direction or rotation axis<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#125">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#126">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DirVector">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a></tt></td><td class="func-name"><tt>GetDirVector</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDirVector</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Direction vector of translation direction or rotation axis<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#127">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#128">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Value">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetValue</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>distance or angle<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#129">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAssembly-ExplodedAnimationMove.html">wfcExplodedAnimationMove_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcAssembly-ExplodedAnimationMoveType.html">wfcExplodedAnimationMoveType</a>&nbsp;MoveType, <a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a>&nbsp;StartPoint, <a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a>&nbsp;DirVector, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates object of ExplodedAnimationMove<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#122">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#130">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MoveType</b></tt>
+</dt>
+<dd>Exploded animation move type</dd>
+<dt>
+<tt><b>StartPoint</b></tt>
+</dt>
+<dd>Start point of translation direction or rotation axis</dd>
+<dt>
+<tt><b>DirVector</b></tt>
+</dt>
+<dd>Direction vector of translation direction or rotation axis</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>distance or angle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

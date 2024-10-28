@@ -1,0 +1,347 @@
+<!--
+
+  14-MAY-02 J-03-23 Maya  $$1  Created.
+  13-AUG-02 J-03-30 Maya  $$2  Removed "Frames/No Frames"
+ 
+  -->
+
+<html>
+
+<head>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>
+  CIP C++ documentation for class xany
+ </title>
+ <link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="frame-entity">
+
+<table class="toolbar" border="0" width="100%" cellspacing="0">
+ <tr>
+  <td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="h-cipxx.html">File</a></td>
+<!-- Removed to work with API Wizard
+  <td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="h-xany.html">No&nbsp;Frames</a></td>
+-->
+  <td class="toolbar-lib-name"><font size="+2"><b><i>Standard Definitions</i></b></font></td>
+ </tr>
+</table>
+<hr>
+
+<h2>
+Class xany
+</h2>
+
+<tt># include &lt;<b><a href="h-cipxx.html">cipxx.h</a></b>&gt;</tt><br><br>
+
+<tt>
+<a name="xany_c">
+typedef struct <b>__xany_c xany_c</b>;<br><br>
+</a>
+</tt>
+
+<a name="xanykind">
+<table border="0">
+<tr>
+ <td colspan="2"><tt>typedef enum <b>__xanykind</b></tt></td>
+</tr>
+<tr>
+ <td colspan="2"><tt>{</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakuninit</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xaknil</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakint</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakbool</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakreal</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakstring</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakenum</b>,</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;</tt></td>
+ <td><tt><b>xakobject</b></tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td</tr>
+<tr>
+ <td colspan="2"><tt>} <b>xanykind</b>;
+</tr>
+</table>
+</a>
+<br><hr>
+
+<table class="method-summary" border="0">
+<tr>
+ <td colspan="3"><tt>class <b><a name="xany">xany</a></b></tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>{</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>public:</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="#xanykind">xanykind</a> in_kind = xakuninit);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (const xany &in);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (const <a class="type" href="#xany_c">xany_c</a> &in);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-basictypes.html#xint">xint</a> in_intvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-basictypes.html#xbool">xbool</a> in_boolvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-basictypes.html#xreal">xreal</a> in_realvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-xstring.html#xstring">xstring</a> in_stringvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-xstring.html#xrstring">xrstring</a> in_stringvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-xobject.html#xobject">xobject</a> *in_objectvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xany</b> (<a class="type" href="h-basictypes.html#xint">xint</a> in_value, <a class="type" href="h-xrtti.html#xrttienum">xrttienum</a> *in_rtti);</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>protected:</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>~xany ();</b></tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xanykind">xanykind</a></tt></td>
+ <td class="func-signature"><tt><b>getkind</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isuninit</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isnil</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isint</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isbool</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isreal</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isstring</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isenum</b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>isobject</b> () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>operator <a href="h-basictypes.html#xint">xint</a></b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>operator <a href="h-basictypes.html#xbool">xbool</a></b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>operator <a href="h-basictypes.html#xreal">xreal</a></b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>operator <a href="h-xstring.html#xrstring">xrstring</a></b> () const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>operator <a href="h-xobject.html#xobject">xobject</a></b> * () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="#xany_c">xany_c</a></tt></td>
+ <td class="func-signature"><tt><b>getxany_c</b> () const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (const xany &in);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (const <a class="type" href="#xany_c">xany_c</a> &in);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-basictypes.html#xint">xint</a> in_intvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-basictypes.html#xbool">xbool</a> in_boolvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-basictypes.html#xreal">xreal</a> in_realvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-xstring.html#xstring">xstring</a> in_stringlvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-xstring.html#xrstring">xrstring</a> in_stringlvalue);</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>xany</tt></td>
+ <td class="func-signature"><tt>&<b>operator=</b> (<a class="type" href="h-xobject.html#xobject">xobject</a> *in_objectvalue);</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (const xany &source) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-basictypes.html#xint">xint</a> in_intvalue) const;</tt></td>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-basictypes.html#xbool">xbool</a> in_boolvalue) const;</tt></td>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-basictypes.html#xreal">xreal</a> in_realvalue) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-xstring.html#xstring">xstring</a> in_stringvalue) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-xstring.html#xrstring">xrstring</a> in_stringvalue) const;</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><b>operator==</b> (<a class="type" href="h-xobject.html#xobject">xobject</a> *in_object) const;</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-xrtti.html#xrtti">xrtti</a></tt></td>
+ <td class="func-signature"><tt>*<b>getRtti</b> ();</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><b>getCipTypeName</b> ();</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><b>softvalidate</b> (<a class="type" href="h-xrtti.html#xrtti">xrtti</a>, <a class="type" href="h-basictypes.html#xbool">xbool</a> is_optional)</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>void</tt></td>
+ <td class="func-signature"><tt><b>validate</b> (<a class="type" href="h-xrtti.html#xrtti">xrtti</a>, <a class="type" href="h-basictypes.html#xbool">xbool</a> is_optional)</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>};</tt></td>
+</tr>
+</table>
+<br><hr><br>
+
+<b>Description</b>
+<br><br>
+Type xany allows the value to be of any type at all, including built-in types, enumerated types, interfaces, unions and data collections. 
+
+</body>
+
+</html>

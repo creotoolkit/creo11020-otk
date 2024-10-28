@@ -1,0 +1,550 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcCoordSysExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      78
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-CoordSysExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcCoordSysExportInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcModel.html">pfcModel.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcCoordSysExportInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcModel-ExportInstructions.html">pfcExportInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcCoordSysExportInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class of classes that export files with information that describes  faceted, solid models (without datums and surfaces).
+<br>
+<br>For more information about the Maximum Chord Height and Angle Control settings, refer to information about controlling the quality of an export in the Interface section of the Creo Parametric help.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-pfcModel-CATIAFacetsExportInstructions.html">pfcCATIAFacetsExportInstructions</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-RenderExportInstructions.html">pfcRenderExportInstructions</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-STLASCIIExportInstructions.html">pfcSTLASCIIExportInstructions</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-STLBinaryExportInstructions.html">pfcSTLBinaryExportInstructions</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-InventorExportInstructions.html">pfcInventorExportInstructions</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#AngleControl">GetAngleControl</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AngleControl">SetAngleControl</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The Angle Control setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.1.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#CsysName">GetCsysName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#CsysName">SetCsysName</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Stores the name of a coordinate-system feature in the model being 
+   exported. A coordinate system that places the part or assembly in its 
+   upper-right quadrant is recommended, so that all position/distance values 
+   are positive. Allowed to be <tt>null</tt> if exporting as Slice</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-FacetControlFlags.html">pfcFacetControlFlags_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#FacetControlOptions">GetFacetControlOptions</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FacetControlOptions">SetFacetControlOptions</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-FacetControlFlags.html">pfcFacetControlFlags_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Flags (FACET_STEP_SIZE_ADJUST and others) to control Facet export. (Pass <tt>null</tt> if not exporting slice formats).
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#MaxChordHeight">GetMaxChordHeight</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#MaxChordHeight">SetMaxChordHeight</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The Maximun Chord Height setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.1.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#Quality">GetQuality</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Quality">SetQuality</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Can be used in place of <i>MaxChordHeight</i> and <i>AngleControl</i>. A value between 1 and 10. The higher the value you pass, the lower the <i>MaxChordHeight</i> setting and the higher the <i>AngleControl</i> setting that the method will use. <p></p>
+Pass <tt>null</tt> if you use <i>MaxChordHeight</i> and <i>AngleControl</i> values. If <i>Quality</i>, <i>MaxChordHeight</i>, and <i>AngleControl</i> are all <tt>null</tt>, a <i>Quality</i> value of 3 is used. 
+Default value is 1.0</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-SliceExportData.html">pfcSliceExportData_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSliceExportData">GetSliceExportData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns an <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> object or NULL if the <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> isn't set.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#StepSize">GetStepSize</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#StepSize">SetStepSize</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The Step Size Control setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.0.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#SetSliceExportData">SetSliceExportData</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-SliceExportData.html">pfcSliceExportData_ptr</a>&nbsp;SliceExpData)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Sets the <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> .
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-ExportInstructions.html"><tt>pfcExportInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-ExportInstructions.html#GetFileType"><tt>GetFileType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CsysName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetCsysName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetCsysName</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Stores the name of a coordinate-system feature in the model being 
+   exported. A coordinate system that places the part or assembly in its 
+   upper-right quadrant is recommended, so that all position/distance values 
+   are positive. Allowed to be <tt>null</tt> if exporting as Slice<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#52">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#53">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Quality">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetQuality</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetQuality</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Can be used in place of <i>MaxChordHeight</i> and <i>AngleControl</i>. A value between 1 and 10. The higher the value you pass, the lower the <i>MaxChordHeight</i> setting and the higher the <i>AngleControl</i> setting that the method will use. <p></p>
+Pass <tt>null</tt> if you use <i>MaxChordHeight</i> and <i>AngleControl</i> values. If <i>Quality</i>, <i>MaxChordHeight</i>, and <i>AngleControl</i> are all <tt>null</tt>, a <i>Quality</i> value of 3 is used. 
+Default value is 1.0<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#54">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#55">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="MaxChordHeight">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetMaxChordHeight</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetMaxChordHeight</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The Maximun Chord Height setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.1.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#56">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#57">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AngleControl">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetAngleControl</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAngleControl</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The Angle Control setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.1.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#58">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#59">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="StepSize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetStepSize</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetStepSize</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The Step Size Control setting. (Pass <tt>null</tt> if you specify <i>Quality</i>.).
+   Default value is 0.0.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#62">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#63">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FacetControlOptions">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-FacetControlFlags.html">pfcFacetControlFlags_ptr</a></tt></td><td class="func-name"><tt>GetFacetControlOptions</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFacetControlOptions</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-FacetControlFlags.html">pfcFacetControlFlags_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Flags (FACET_STEP_SIZE_ADJUST and others) to control Facet export. (Pass <tt>null</tt> if not exporting slice formats).
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#64">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#65">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSliceExportData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-SliceExportData.html">pfcSliceExportData_ptr</a></tt></td><td class="func-name"><tt>GetSliceExportData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns an <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> object or NULL if the <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> isn't set.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#60">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="SetSliceExportData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetSliceExportData</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModel-SliceExportData.html">pfcSliceExportData_ptr</a>&nbsp;SliceExpData)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Sets the <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#61">Interface: Exporting Using Coordinate System</a>, <a href="../manual0/Jinterface.html#66">Interface: Exporting Using Coordinate System</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SliceExpData</b></tt>
+</dt>
+<dd>The <tt><b><tt><b><a class="class" href="t-pfcModel-SliceExportData.html">pfcSliceExportData</a></b></tt></b></tt> for setting.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

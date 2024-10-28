@@ -1,0 +1,222 @@
+<!--
+
+  14-MAY-02 J-03-23 Maya  $$1  Created.
+  13-AUG-02 J-03-30 Maya  $$2  Removed "Frames/No Frames"
+ 
+  -->
+
+<html>
+
+<head>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>
+  CIP C++ documentation for macro's Used in CIP C++ Headers
+ </title>
+ <link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="frame-entity">
+
+<table class="toolbar" border="0" width="100%" cellspacing="0">
+ <tr>
+  <td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="h-cipxx.html">File</a></td>
+<!-- Removed to work with API Wizard
+  <td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="h-xdeclare.html">No&nbsp;Frames</a></td>
+-->
+  <td class="toolbar-lib-name"><font size="+2"><b><i>Standard Definitions</i></b></font></td>
+ </tr>
+</table>
+<hr>
+
+<h2>
+Macro's Used in CIP C++ Headers
+</h2>
+
+<table class="method-summary" border="0">
+<tr>
+ <td colspan="3"><tt># define <a name="xbdeclare"><b>xbdeclare</b></a>(<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>public:</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static <a class="type" href="#CLASS">CLASS</a></tt></td>
+ <td class="func-signature"><tt>*<a class="method" href="#cast">cast</a> (<a class="type" href="h-xobject.html">xobject</a> *object);</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static <a class="type" href="#CLASS">CLASS</a></tt></td>
+ <td class="func-signature"><tt>*<a class="method" href="#softcast">softcast</a> (<a class="type" href="h-xobject.html">xobject</a> *object);</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static <a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a></tt></td>
+ <td class="func-signature"><tt>*<a class="method" href="#getClassRtti">getClassRtti</a> ();</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static <a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#isObjSameAs">isObjSameAs</a> (<a class="type" href="h-xobject.html">xobject</a> *object);</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>static <a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#isObjKindOf">isObjKindOf</a> (<a class="type" href="h-xobject.html">xobject</a> *object);</tt></td>
+ <td></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td colspan="3"><tt># define <a name="xdeclare"><b>xdeclare</b></a>(<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt><a class="method" href="#xbdeclare">xbdeclare</a> (<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt># define <a name="xsdeclare"><b>xsdeclare</b></a>(<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt><a class="method" href="#xbdeclare">xbdeclare</a> (<a class="tyep" href="#CLASS">CLASS</a>)</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td colspan="3"><tt># define <a name="xaideclare"><b>xaideclare</b></a>(<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+ <td><tt>\</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt><a class="method" href="#xdeclare">xdeclare</a> (<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+</tr>
+<tr> 
+ <td colspan="3"><tt># define <a name="xaisdeclare"><b>xaisdeclare</b></a>(<a class="type" href="#CLASS">CLASS</a>)</tt></td> 
+ <td><tt>\</tt></td>
+</tr> 
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td> 
+ <td><tt><a class="method" href="#xsdeclare">xsdeclare</a> (<a class="type" href="#CLASS">CLASS</a>)</tt></td>
+</tr>
+</table>
+<br><hr><br>
+
+<b>Description</b>
+<br><br>
+
+These macro definitions are used in CIP C++ class definitions to declare some useful service methods. The definitions for these methods are generated for CIP types from their CIPL definitions by the CIPL compiler. Macro <a href="#xdeclare">xdeclare</a> and <a href="#xaideclare">xaideclare</a> specify method declarations for compact and abstract interface classes respectively; macro <a href="#xsdeclare">xsdeclare</a> and <a href="#xaisdeclare">xaisdeclare</a> specify method declarations for compact and abstract data collection classes respectively. 
+<br><br><hr><br>
+
+<b>Macro Parameter</b>
+<br><br>
+
+<a name="CLASS">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td><tt><b>CLASS</b></tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Name of the C++ class in which a macro is used.
+</td></tr>
+</table>
+
+<br><hr><br>
+
+<b>Methods</b>
+<br><br>
+
+<a name="cast">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>static <a class="type" href="#CLASS">CLASS</a></tt></td>
+ <td class="func-name"><tt>*cast</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xobject.html">xobject</a> *object)</tt></td>
+</tr>
+</a>
+</table> 
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Casts object <tt>object</tt> to type <tt><a href="#CLASS">CLASS</a></tt>. If the object is not of a type derived from this class type, throws exception <tt>cipXTypeMismatch</tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="softcast">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>static <a class="type" href="#CLASS">CLASS</a></tt></td>                                
+ <td class="func-name"><tt>*softcast</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xobject.html">xobject</a>
+*object)</tt></td>
+</tr>
+</a>
+</table> 
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Casts object <tt>object</tt> to type <tt><a href="#CLASS">CLASS</a></tt>. If the object is not of a type derived from this class type, returns <tt>NULL</tt>
+</td></tr> 
+</table>
+<br>
+
+<a name="getClassRtti">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt>static <a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a></tt></td>
+ <td class="func-name"><tt>*getClassRtti</tt></td>
+ <td class="func-params"><tt>()</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns run-time information handle for type <tt><a href="#CLASS">CLASS</a></tt>.
+</td></tr>
+</table>
+<br>
+
+<a name="isObjSameAs">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-name"><tt>isObjSameAs</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xobject.html">xobject</a> *object)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <a href="h-basictypes.html#xbool"><tt>xtrue</tt></a> if object <tt>object</tt> is of type <tt><a href="#CLASS">CLASS</a></tt>, otherwise returns <a href="h-basictypes.html#xbool"><tt>xfalse</tt></a>.
+</td></tr> 
+</table> 
+<br>
+
+<a name="isObjKindOf">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-name"><tt>isObjKindOf</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xobject.html">xobject</a>
+*object)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <a href="h-basictypes.html#xbool"><tt>xtrue</tt></a> if object <tt>object</tt> is either of type <tt><a href="#CLASS">CLASS</a></tt> or of a type derived from <tt><a href="#CLASS">CLASS</a></tt>, otherwise returns <a href="h-basictypes.html#xbool"><tt>xfalse</tt></a>.
+</td></tr>  
+</table>  
+<br>
+
+</body>
+
+</html>

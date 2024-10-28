@@ -1,0 +1,172 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "uifcMenuBar.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      77
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-uifcMenuBar.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "uifcMenuBar.h"</h2>
+<b>Description</b>
+<br>
+<br>The MenuBar is a container which contains only MenuPanes.
+<br>A MenuBar can be placed normally as a child within a Dialog, or it can be
+automatically positioned at the very top of the Dialog in
+which it is contained.  It displays one cascading button for each
+child MenuPane.
+<br>When the user presses one of the MenuBar buttons the corresponding MenuPane
+is displayed beneath the MenuBar button.
+<br>The items of the MenuBar are automatically created from the names of the
+children.  The labels and images of the items are taken directly from the
+TitleText and TitleImage of each of the children.
+<br>The ALT key acts as an accelerator for the MenuBar, and when pressed and
+released the keyboard input focus will be moved onto the MenuBar.
+  <br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-uifcMenuBar-MenuBarAction.html">uifcMenuBarAction</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcMenuBar-MenuBar.html">uifcMenuBar</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcMenuBar-MenuBarItem.html">uifcMenuBarItem</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcMenuBar-MenuBarListener.html">uifcMenuBarListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcMenuBar-MenuBarTimer.html">uifcMenuBarTimer</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-uifcMenuBar-MenuBarItems.html">uifcMenuBarItems</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcMenuBar-MenuBar.html">uifcMenuBar_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcMenuBar-MenuBarDefine.html">uifcMenuBarDefine</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcMenuBar-MenuBar.html">uifcMenuBar_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcMenuBar-MenuBarFind.html">uifcMenuBarFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcMenuBar-MenuBarItem.html">uifcMenuBarItem_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcMenuBar-MenuBarItemDefine.html">uifcMenuBarItemDefine</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-uifcMenuBar-MenuBarItem.html">uifcMenuBarItem_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-uifcMenuBar-MenuBarItemFind.html">uifcMenuBarItemFind</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;device, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;component, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcChild"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      48
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcObject.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcObject-Child.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcChild</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcObject.html">pfcObject.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcChild</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Object.html">pfcObject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcChild</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Describes a child feature. 
+<br>
+<br>Some examples of parent-child relationships:
+      Parent   Child
+     --------|--------
+     Session | Model
+     Session | Window
+     Model   | ModelItem
+     Solid   | Feature
+     Model   | Parameter
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-pfcUnits-Unit.html">pfcUnit</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcUnits-UnitSystem.html">pfcUnitSystem</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModelItem-NamedModelItem.html">pfcNamedModelItem</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModelItem-ModelItem.html">pfcModelItem</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcView-View.html">pfcView</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcExternal-ExternalDataAccess.html">pfcExternalDataAccess</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-Model.html">pfcModel</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcXSection-XSection.html">pfcXSection</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcPart-Material.html">pfcMaterial</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcDisplay-DisplayList2D.html">pfcDisplayList2D</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcDisplay-DisplayList3D.html">pfcDisplayList3D</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcView2D-View2D.html">pfcView2D</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcSelect-SelectionBuffer.html">pfcSelectionBuffer</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcWindow-Window.html">pfcWindow</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcProToolkit-Dll.html">pfcDll</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcUI-Popupmenu.html">pfcPopupmenu</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcServer-ServerLocation.html">pfcServerLocation</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcServer-NonRegisteredServer.html">pfcNonRegisteredServer</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcServer-Server.html">pfcServer</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcComponentFeat-AssemblyItem.html">wfcAssemblyItem</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcAssembly-LineStock.html">wfcLineStock</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcAssembly-Spool.html">wfcSpool</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcObject-Parent.html">pfcParent_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#DBParent">GetDBParent</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The parent feature</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcObject-OId.html">pfcOId_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#OId">GetOId</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The object identifier</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="DBParent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcObject-Parent.html">pfcParent_ptr</a></tt></td><td class="func-name"><tt>GetDBParent</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The parent feature<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#111">Drawings: Drawing View Information</a>, <a href="../manual0/jdrawfns.html#123">Drawings: Drawing View Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcObject-OId.html">pfcOId_ptr</a></tt></td><td class="func-name"><tt>GetOId</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The object identifier<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#123">Drawings: Drawing View Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcEdgeSurfaceData"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      851
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcGeometry.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcGeometry-EdgeSurfaceData.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcEdgeSurfaceData</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcGeometry.html">wfcGeometry.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcEdgeSurfaceData</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcEdgeSurfaceData</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> The Edge surface data. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcGeometry-EdgeSurfaceData.html">wfcEdgeSurfaceData_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;EdgeSurfaceId, <a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a>&nbsp;Direction, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a>&nbsp;UVParamsSequence, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;UVCurveData)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates EdgeSurfaceData object.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a></tt></td><td class="func-signature"><tt><a class="method" href="#Direction">GetDirection</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Direction">SetDirection</a>
+ (<a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Direction on each side of surface. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#EdgeSurfaceId">GetEdgeSurfaceId</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#EdgeSurfaceId">SetEdgeSurfaceId</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Teh edge surface id.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#UVCurveData">GetUVCurveData</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UVCurveData">SetUVCurveData</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> UV-curves on each side of surface. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#UVParamsSequence">GetUVParamsSequence</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UVParamsSequence">SetUVParamsSequence</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Array of curve UV-points.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="EdgeSurfaceId">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>GetEdgeSurfaceId</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetEdgeSurfaceId</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Teh edge surface id.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#234">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#235">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Direction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a></tt></td><td class="func-name"><tt>GetDirection</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDirection</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Direction on each side of surface. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#236">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#237">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UVParamsSequence">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a></tt></td><td class="func-name"><tt>GetUVParamsSequence</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetUVParamsSequence</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Array of curve UV-points.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#238">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#239">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UVCurveData">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a></tt></td><td class="func-name"><tt>GetUVCurveData</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetUVCurveData</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> UV-curves on each side of surface. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#240">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#241">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcGeometry-EdgeSurfaceData.html">wfcEdgeSurfaceData_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;EdgeSurfaceId, <a class="type" href="t-wfcGeometry-EdgeDirection.html">wfcEdgeDirection</a>&nbsp;Direction, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-UVParamsSequence.html">pfcUVParamsSequence_ptr</a>&nbsp;UVParamsSequence, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcGeometry-CurveDescriptor.html">pfcCurveDescriptor_ptr</a>&nbsp;UVCurveData)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates EdgeSurfaceData object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#233">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#243">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>EdgeSurfaceId</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Direction</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>UVParamsSequence</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>UVCurveData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

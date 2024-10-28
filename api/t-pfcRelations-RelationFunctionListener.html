@@ -1,0 +1,314 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcRelationFunctionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      441
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcRelations.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcRelations-RelationFunctionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcRelationFunctionListener</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcRelations.html">pfcRelations.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcRelationFunctionListener</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcBase-ActionListener.html">pfcActionListener</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcRelationFunctionListener</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Listener providing the implementation for external functions 
+  registered by this application and capable of being used in relations. <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AssignValue">AssignValue</a>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;Assignment)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Function called to evaluate a custom relation function invoked 
+   on the left hand side of a relation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#CheckArguments">CheckArguments</a>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">To check the validity of arguments of external function.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#EvaluateFunction">EvaluateFunction</a>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Function called to evaluate a custom relation function invoked 
+   on the right hand side of a relation.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="CheckArguments">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>CheckArguments</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>To check the validity of arguments of external function.<br>
+<br>This method can be used to check the contents of the arguments.  
+   If you want to restrict the arguments to be a certain number and a certain type, 
+   use the optional argument <tt><b><a class="method" href="t-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">pfcRelationFunctionOptions::GetArgumentTypes(optional pfcRelationFunctionArguments_ptr)</a></b></tt> 
+   instead.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#27">Relations: Relation Function Listeners</a>, <a href="../manual0/JRelations.html#29">Relations: Relation Function Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> or <tt>false</tt> depending on the check. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="EvaluateFunction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a></tt></td><td class="func-name"><tt>EvaluateFunction</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Function called to evaluate a custom relation function invoked 
+   on the right hand side of a relation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#29">Relations: Relation Function Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The result of the relation function calculation. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssignValue">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AssignValue</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcModelItem-RelationOwner.html">pfcRelationOwner_ptr</a>&nbsp;Owner, <a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;FunctionName, <a class="type" href="t-pfcModelItem-ParamValues.html">pfcParamValues_ptr</a>&nbsp;Arguments, <a class="type" href="t-pfcModelItem-ParamValue.html">pfcParamValue_ptr</a>&nbsp;Assignment)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Function called to evaluate a custom relation function invoked 
+   on the left hand side of a relation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#28">Relations: Relation Function Listeners</a>, <a href="../manual0/JRelations.html#29">Relations: Relation Function Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   
+<purpose>Owner item of the relations</purpose>
+   
+</dd>
+<dt>
+<tt><b>FunctionName</b></tt>
+</dt>
+<dd>
+   
+<purpose>Name of the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Arguments</b></tt>
+</dt>
+<dd>
+   
+<purpose>Arguments passed by the relation to the external function.</purpose>
+   
+</dd>
+<dt>
+<tt><b>Assignment</b></tt>
+</dt>
+<dd>
+   
+<purpose>The right hand side of the relation to be used in the assignment.
+   </purpose>
+   
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

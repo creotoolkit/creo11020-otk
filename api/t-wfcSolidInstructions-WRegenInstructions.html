@@ -1,0 +1,433 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcWRegenInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1133
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcSolidInstructions.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcSolidInstructions-WRegenInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcWRegenInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcSolidInstructions.html">wfcSolidInstructions.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcWRegenInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcSolid-RegenInstructions.html">pfcRegenInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcWRegenInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes the instructions for regenerating the solid.<br>
+<br>These instructions are in addition to instructions provided 
+	by <tt><b><tt><b><a class="class" href="t-pfcSolid-RegenInstructions.html">pfcRegenInstructions</a></b></tt></b></tt> 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTKOverview.html#17">Overview of Creo Object TOOLKIT C++: Casting of Creo Object TOOLKIT C++ pfc Classes to wfc Classes</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new <i>WRegenInstructions</i> object.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#AllowConfirm">GetAllowConfirm</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AllowConfirm">SetAllowConfirm</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Allows Regeneration Failure popup dialog.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#NoResolveMode">GetNoResolveMode</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#NoResolveMode">SetNoResolveMode</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Regenerate in no resolve mode.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#ResolveMode">GetResolveMode</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ResolveMode">SetResolveMode</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Regenerate in resolve mode</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#TopAsmOnly">GetTopAsmOnly</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#TopAsmOnly">SetTopAsmOnly</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Force regeneration of top assembly only.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#UndoIfFail">GetUndoIfFail</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UndoIfFail">SetUndoIfFail</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Undo, if possible, in case of regeneration failure.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSolid-RegenInstructions.html"><tt>pfcRegenInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSolid-RegenInstructions.html#AllowFixUI"><tt>GetAllowFixUI</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#AllowFixUI"><tt>SetAllowFixUI</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ForceRegen"><tt>GetForceRegen</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ForceRegen"><tt>SetForceRegen</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ResumeExcludedComponents"><tt>GetResumeExcludedComponents</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ResumeExcludedComponents"><tt>SetResumeExcludedComponents</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#UpdateAssemblyOnly"><tt>GetUpdateAssemblyOnly</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#UpdateAssemblyOnly"><tt>SetUpdateAssemblyOnly</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#UpdateInstances"><tt>GetUpdateInstances</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#UpdateInstances"><tt>SetUpdateInstances</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ResolveModeRegen"><tt>GetResolveModeRegen</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#ResolveModeRegen"><tt>SetResolveModeRegen</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#FromFeat"><tt>GetFromFeat</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#FromFeat"><tt>SetFromFeat</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#RefreshModelTree"><tt>GetRefreshModelTree</tt></a>,
+     <a class="method" href="t-pfcSolid-RegenInstructions.html#RefreshModelTree"><tt>SetRefreshModelTree</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="NoResolveMode">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetNoResolveMode</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetNoResolveMode</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Regenerate in no resolve mode.<br>
+<br>Allows temporary override of default settings 
+	  controlling regeneration behavior.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#66">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#67">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ResolveMode">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetResolveMode</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetResolveMode</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Regenerate in resolve mode<br>
+<br>Allows temporary override of default settings 
+	  controlling regeneration behavior.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#68">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#69">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AllowConfirm">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetAllowConfirm</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAllowConfirm</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Allows Regeneration Failure popup dialog.<br>
+<br>
+<b>Deprecated since Creo 4.</b> This can be used if and only if 
+	  <tt><b><a class="method" href="t-wfcSolidInstructions-WRegenInstructions.html#ResolveMode">wfcWRegenInstructions::GetResolveMode(xbool)</a></b></tt> is also used.  
+	  If not, <tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> will be thrown.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#70">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#71">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UndoIfFail">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetUndoIfFail</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetUndoIfFail</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Undo, if possible, in case of regeneration failure.<br>
+<br>This can be used if and only if 
+	  <tt><b><a class="method" href="t-wfcSolidInstructions-WRegenInstructions.html#ResolveMode">wfcWRegenInstructions::GetResolveMode(xbool)</a></b></tt> is also used.
+	  If not, <tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitBadContext.html">pfcXToolkitBadContext</a></b></tt></b></tt> will be thrown.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#72">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#73">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="TopAsmOnly">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetTopAsmOnly</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetTopAsmOnly</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Force regeneration of top assembly only.<br>
+<br>Rest of the models will follow standard regeneration rules.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#74">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcSolidInstructions-WRegenInstructions.html">wfcWRegenInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new <i>WRegenInstructions</i> object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#65">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>WRegenInstructions</i> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

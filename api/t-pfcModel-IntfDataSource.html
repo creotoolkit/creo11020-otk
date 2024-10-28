@@ -1,0 +1,191 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcIntfDataSource"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      309
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModel.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModel-IntfDataSource.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcIntfDataSource</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcModel.html">pfcModel.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcIntfDataSource</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcIntfDataSource</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to several classes that represent the source of data from which to create an import feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#339">Interface: Solid Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-pfcModel-IntfNeutral.html">pfcIntfNeutral</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfNeutralFile.html">pfcIntfNeutralFile</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfIges.html">pfcIntfIges</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfStep.html">pfcIntfStep</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfVDA.html">pfcIntfVDA</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfICEM.html">pfcIntfICEM</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfACIS.html">pfcIntfACIS</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfDXF.html">pfcIntfDXF</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfCDRS.html">pfcIntfCDRS</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfSTL.html">pfcIntfSTL</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfVRML.html">pfcIntfVRML</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfParaSolid.html">pfcIntfParaSolid</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfAI.html">pfcIntfAI</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfCatiaPart.html">pfcIntfCatiaPart</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfUG.html">pfcIntfUG</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfProductView.html">pfcIntfProductView</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfCatiaProduct.html">pfcIntfCatiaProduct</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfCatiaCGR.html">pfcIntfCatiaCGR</a></b></tt>, 
+        <tt><b><a class="class" href="t-pfcModel-IntfJT.html">pfcIntfJT</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfInventorPart.html">wfcIntfInventorPart</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfInventorAsm.html">wfcIntfInventorAsm</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfIBL.html">wfcIntfIBL</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfPTS.html">wfcIntfPTS</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfSEdgePart.html">wfcIntfSEdgePart</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcModel-IntfSEdgeSheetmetal.html">wfcIntfSEdgeSheetmetal</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#FileName">GetFileName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#FileName">SetFileName</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The name of the imported feature file.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-IntfType.html">pfcIntfType</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetType">GetType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns a <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">pfcIntfType</a></b></tt></b></tt> instance that indicates the type of the source of data from which the import feature will be created.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="GetType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModel-IntfType.html">pfcIntfType</a></tt></td><td class="func-name"><tt>GetType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns a <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">pfcIntfType</a></b></tt></b></tt> instance that indicates the type of the source of data from which the import feature will be created.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>One of the static instances of <tt><b><tt><b><a class="enumtype" href="t-pfcModel-IntfType.html">pfcIntfType</a></b></tt></b></tt> (for example, INTF_NEUTRAL)</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="FileName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetFileName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetFileName</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The name of the imported feature file.<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

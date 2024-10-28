@@ -1,0 +1,814 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcUDFCustomCreateInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      574
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUDFCreate.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUDFCreate-UDFCustomCreateInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcUDFCustomCreateInstructions</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcUDFCreate.html">pfcUDFCreate.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcUDFCustomCreateInstructions</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html">pfcUDFGroupCreateInstructions</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>pfcUDFCustomCreateInstructions</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Contains all options required to place a UDF programmatically.
+Users can enter attribute data programmatically, or wait for 
+Creo Parametric to interactively prompt for the missing data.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcUDFCreate-WUDFCustomCreateInstructions.html">wfcWUDFCustomCreateInstructions</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcUDFCreate-UDFCustomCreateInstructions.html">pfcUDFCustomCreateInstructions_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates an instructions object, which is used to 
+place a UDF programmatically.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AssemblyReference">GetAssemblyReference</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AssemblyReference">SetAssemblyReference</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This property specifies the path to the placement model from the top-level assembly used by reference selections, if the placement model is not the top level assembly.  This is necessary whenever external references are used for placement, or whenever the reference selections are made from a context outside of the placement model.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDependencyType.html">pfcUDFDependencyType</a></tt></td><td class="func-signature"><tt><a class="method" href="#DependencyType">GetDependencyType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DependencyType">SetDependencyType</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDependencyType.html">pfcUDFDependencyType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">The dependency of the UDF. The choices correspond to the choices available when you create the UDF interactively.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDimensionDisplayType.html">pfcUDFDimensionDisplayType</a></tt></td><td class="func-signature"><tt><a class="method" href="#DimDisplayType">GetDimDisplayType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DimDisplayType">SetDimDisplayType</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDimensionDisplayType.html">pfcUDFDimensionDisplayType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">These values correspond to the options in Creo Parametric for determining the appearance in the model of UDF dimensions and pattern parameters that were not variable in the UDF, and therefore cannot be modified in the model. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFExternalReferences.html">pfcUDFExternalReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#ExtReferences">GetExtReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ExtReferences">SetExtReferences</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFExternalReferences.html">pfcUDFExternalReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">This property is deprecated.  To specify the path to the placement model from the top-level assembly used by reference selections use  the AssemblyReference property.  </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#InstanceName">GetInstanceName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#InstanceName">SetInstanceName</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If the UDF contains a family table, this field can be used to select which instance in that table is to be selected. If the UDF contains no family table, or if the generic instance is to be selected, the string should be empty. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFAssemblyIntersections.html">pfcUDFAssemblyIntersections_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Intersections">GetIntersections</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Intersections">SetIntersections</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFAssemblyIntersections.html">pfcUDFAssemblyIntersections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of intersections of the UDF and parts within the assembly.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFOrientations.html">pfcUDFOrientations_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Orientations">GetOrientations</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Orientations">SetOrientations</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFOrientations.html">pfcUDFOrientations_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of orientations that provide the answers to Creo Parametric prompts that use a flip arrow. The order of orientations should correspond to the order in which Creo Parametric prompts for them when the UDF is created interactively. If you do not provide an orientation that Creo Parametric needs, it uses the default value ``no flip.''</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Quadrants">GetQuadrants</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Quadrants">SetQuadrants</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of points, which provide the X, Y, and Z coordinates that correspond to the picks answering the Creo Parametric prompts for the feature positions. The order of quadrants should correspond to the order in which Creo Parametric prompts for them when the UDF is created interactively. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFReferences.html">pfcUDFReferences_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#References">GetReferences</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#References">SetReferences</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFReferences.html">pfcUDFReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of element references.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-signature"><tt><a class="method" href="#Scale">GetScale</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Scale">SetScale</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If the value of the ScaleType field is UDFSCALE_CUSTOM, this field is the user-defined scale factor. Otherwise, this field is ignored. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFScaleType.html">pfcUDFScaleType</a></tt></td><td class="func-signature"><tt><a class="method" href="#ScaleType">GetScaleType</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#ScaleType">SetScaleType</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFScaleType.html">pfcUDFScaleType</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Specifies what should happen if the UDF used different length units than the model to which it is being applied.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFVariantValues.html">pfcUDFVariantValues_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#VariantValues">GetVariantValues</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#VariantValues">SetVariantValues</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFVariantValues.html">pfcUDFVariantValues_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">An array of variable dimensions and pattern parameters</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html"><tt>pfcUDFGroupCreateInstructions</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#Name"><tt>GetName</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#Name"><tt>SetName</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#ShowUDFEditMenu"><tt>GetShowUDFEditMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#ShowUDFEditMenu"><tt>SetShowUDFEditMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#ShowModifyNCSeqMenu"><tt>GetShowModifyNCSeqMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#ShowModifyNCSeqMenu"><tt>SetShowModifyNCSeqMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#UseExistingTools"><tt>GetUseExistingTools</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#UseExistingTools"><tt>SetUseExistingTools</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#TurnOffUDFRedefineMenu"><tt>GetTurnOffUDFRedefineMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#TurnOffUDFRedefineMenu"><tt>SetTurnOffUDFRedefineMenu</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#TurnOffFixModelUI"><tt>GetTurnOffFixModelUI</tt></a>,
+     <a class="method" href="t-pfcUDFGroup-UDFGroupCreateInstructions.html#TurnOffFixModelUI"><tt>SetTurnOffFixModelUI</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="InstanceName">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetInstanceName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetInstanceName</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If the UDF contains a family table, this field can be used to select which instance in that table is to be selected. If the UDF contains no family table, or if the generic instance is to be selected, the string should be empty. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#141">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#140">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DependencyType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDependencyType.html">pfcUDFDependencyType</a></tt></td><td class="func-name"><tt>GetDependencyType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDependencyType</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDependencyType.html">pfcUDFDependencyType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>The dependency of the UDF. The choices correspond to the choices available when you create the UDF interactively.  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#143">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#142">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ScaleType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFScaleType.html">pfcUDFScaleType</a></tt></td><td class="func-name"><tt>GetScaleType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetScaleType</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFScaleType.html">pfcUDFScaleType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Specifies what should happen if the UDF used different length units than the model to which it is being applied.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#145">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#144">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Scale">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a></tt></td><td class="func-name"><tt>GetScale</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetScale</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If the value of the ScaleType field is UDFSCALE_CUSTOM, this field is the user-defined scale factor. Otherwise, this field is ignored. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#147">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#146">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="VariantValues">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFVariantValues.html">pfcUDFVariantValues_ptr</a></tt></td><td class="func-name"><tt>GetVariantValues</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetVariantValues</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFVariantValues.html">pfcUDFVariantValues_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of variable dimensions and pattern parameters<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#150">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#166">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DimDisplayType">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDimensionDisplayType.html">pfcUDFDimensionDisplayType</a></tt></td><td class="func-name"><tt>GetDimDisplayType</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDimDisplayType</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFDimensionDisplayType.html">pfcUDFDimensionDisplayType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>These values correspond to the options in Creo Parametric for determining the appearance in the model of UDF dimensions and pattern parameters that were not variable in the UDF, and therefore cannot be modified in the model. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#149">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#148">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="References">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFReferences.html">pfcUDFReferences_ptr</a></tt></td><td class="func-name"><tt>GetReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetReferences</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFReferences.html">pfcUDFReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of element references.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#172">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Intersections">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFAssemblyIntersections.html">pfcUDFAssemblyIntersections_ptr</a></tt></td><td class="func-name"><tt>GetIntersections</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetIntersections</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFAssemblyIntersections.html">pfcUDFAssemblyIntersections_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of intersections of the UDF and parts within the assembly.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#177">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Orientations">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFOrientations.html">pfcUDFOrientations_ptr</a></tt></td><td class="func-name"><tt>GetOrientations</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetOrientations</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFOrientations.html">pfcUDFOrientations_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of orientations that provide the answers to Creo Parametric prompts that use a flip arrow. The order of orientations should correspond to the order in which Creo Parametric prompts for them when the UDF is created interactively. If you do not provide an orientation that Creo Parametric needs, it uses the default value ``no flip.''<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#192">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#194">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Quadrants">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a></tt></td><td class="func-name"><tt>GetQuadrants</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetQuadrants</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Point3Ds.html">pfcPoint3Ds_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>An array of points, which provide the X, Y, and Z coordinates that correspond to the picks answering the Creo Parametric prompts for the feature positions. The order of quadrants should correspond to the order in which Creo Parametric prompts for them when the UDF is created interactively. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#195">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssemblyReference">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a></tt></td><td class="func-name"><tt>GetAssemblyReference</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetAssemblyReference</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This property specifies the path to the placement model from the top-level assembly used by reference selections, if the placement model is not the top level assembly.  This is necessary whenever external references are used for placement, or whenever the reference selections are made from a context outside of the placement model.  <br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="ExtReferences">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFExternalReferences.html">pfcUDFExternalReferences_ptr</a></tt></td><td class="func-name"><tt>GetExtReferences</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetExtReferences</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcUDFCreate-UDFExternalReferences.html">pfcUDFExternalReferences_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>This property is deprecated.  To specify the path to the placement model from the top-level assembly used by reference selections use  the AssemblyReference property.  <br>
+<br> If one or more valid component path is supplied for this property, and null is supplied for the AssemblyReference property, the first component path supplied will be used for the AssemblyReference path. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#196">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-pfcUDFCreate-UDFCustomCreateInstructions.html">pfcUDFCustomCreateInstructions_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates an instructions object, which is used to 
+place a UDF programmatically.
+<br>
+<br>Used as a component of <tt><b><tt><b><a class="class" href="t-pfcUDFCreate-UDFCustomCreateInstructions.html">pfcUDFCustomCreateInstructions</a></b></tt></b></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#138">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#139">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of UDF to be placed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFCustomCreateInstructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

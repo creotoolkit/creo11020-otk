@@ -1,0 +1,105 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for enum "pfcDimensionSenseType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      6,
+      38
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcDimension2D.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcDimension2D-DimensionSenseType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Enum&nbsp;pfcDimensionSenseType</h2>
+<tt>
+     # include &lt;<b><a href="m-pfcDimension2D.html">pfcDimension2D.h</a></b>&gt;<br>
+<br>
+     enum <b>pfcDimensionSenseType</b>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_NONE">pfcDIMSENSE_NONE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_POINT">pfcDIMSENSE_POINT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_SPLINE_PT">pfcDIMSENSE_SPLINE_PT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_TANGENT_INDEX">pfcDIMSENSE_TANGENT_INDEX</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT">pfcDIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_ANGLE">pfcDIMSENSE_ANGLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#DIMSENSE_POINT_TO_ANGLE">pfcDIMSENSE_POINT_TO_ANGLE</a></b>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="#null">pfcDimensionSenseType_nil</a></b>
+<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This enumerated type contains the options used for dimensions to attach to entities in a drawing.
+<br>
+<br>The dimension sense gives more information about how the dimension attaches to the entity, 
+for example, to what part of the entity, and in what direction the dimension runs. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><b><tt><b><a class="class" href="t-pfcDimension2D-EmptyDimensionSense.html">pfcEmptyDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-PointDimensionSense.html">pfcPointDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-SplinePointDimensionSense.html">pfcSplinePointDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-TangentIndexDimensionSense.html">pfcTangentIndexDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-LinAOCTangentDimensionSense.html">pfcLinAOCTangentDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-AngleDimensionSense.html">pfcAngleDimensionSense</a></b></tt></b></tt>, <tt><b><tt><b><a class="class" href="t-pfcDimension2D-PointToAngleDimensionSense.html">pfcPointToAngleDimensionSense</a></b></tt></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-Dimension2D.html#GetDimensionSenses">pfcDimension2D::GetDimensionSenses()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-EmptyDimensionSense.html#Create">pfcEmptyDimensionSense::Create()</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-PointDimensionSense.html#Create">pfcPointDimensionSense::Create(pfcDimensionPointType)</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-SplinePointDimensionSense.html#Create">pfcSplinePointDimensionSense::Create(xint)</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-TangentIndexDimensionSense.html#Create">pfcTangentIndexDimensionSense::Create(xint)</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-LinAOCTangentDimensionSense.html#Create">pfcLinAOCTangentDimensionSense::Create(pfcDimensionLinAOCTangentType)</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-AngleDimensionSense.html#Create">pfcAngleDimensionSense::Create(optional pfcDimensionAngleOptions_ptr)</a></b></tt>, <tt><b><a class="method" href="t-pfcDimension2D-PointToAngleDimensionSense.html#Create">pfcPointToAngleDimensionSense::Create(pfcDimensionPointType, optional pfcDimensionAngleOptions_ptr)</a></b></tt>
+</dd>
+</dl>
+<br>
+<br>
+<hr>
+<br>
+<h4>Values</h4>
+<dl>
+<dt>
+<tt><b><a name="DIMSENSE_NONE">pfcDIMSENSE_NONE</a></b></tt>
+</dt>
+<dd>No special dimension information is provided.<br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_POINT">pfcDIMSENSE_POINT</a></b></tt>
+</dt>
+<dd>The dimension is attached to a point.<br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_SPLINE_PT">pfcDIMSENSE_SPLINE_PT</a></b></tt>
+</dt>
+<dd>The dimension is attached to a spline point.<br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_TANGENT_INDEX">pfcDIMSENSE_TANGENT_INDEX</a></b></tt>
+</dt>
+<dd>The dimension attaches to a tangent of the entity, which is an arc or circle. <br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT">pfcDIMSENSE_LINEAR_TO_ARC_OR_CIRCLE_TANGENT</a></b></tt>
+</dt>
+<dd>The dimension is the perpendicular distance between a line and a tangent to an arc or a circle which is parallel to the line. <br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_ANGLE">pfcDIMSENSE_ANGLE</a></b></tt>
+</dt>
+<dd>The dimension is the angle between two straight entities. <br>
+</dd>
+<dt>
+<tt><b><a name="DIMSENSE_POINT_TO_ANGLE">pfcDIMSENSE_POINT_TO_ANGLE</a></b></tt>
+</dt>
+<dd>The dimension is the angle between a line entity and the tangent to a curved entity at one of its ends. <br>
+</dd>
+<dt>
+<tt><b><a name="null">pfcDimensionSenseType_nil</a></b></tt>
+</dt>
+<dd>Enum null value.<br>
+</dd>
+</dl>
+</body>
+</html>

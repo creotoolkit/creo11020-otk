@@ -1,0 +1,243 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcPopupmenu"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      419
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcUI.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcUI-Popupmenu.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcPopupmenu</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcUI.html">pfcUI.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcPopupmenu</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Child.html">pfcChild</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcPopupmenu</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies a popup menu.
+  <br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddButton">AddButton</a>
+ (<a class="type" href="t-pfcCommand-UICommand.html">pfcUICommand_ptr</a>&nbsp;Command, <a class="type" href="t-pfcUI-PopupmenuOptions.html">pfcPopupmenuOptions_ptr</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Add a new item to a Creo Parametric popup menu.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcUI-Popupmenu.html">pfcPopupmenu_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AddMenu">AddMenu</a>
+ (<a class="type" href="t-pfcUI-PopupmenuOptions.html">pfcPopupmenuOptions_ptr</a>&nbsp;Options)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds a cascade button to the popup menu.
+   </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-signature"><tt><a class="method" href="#Name">GetName</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Name of the popup menu.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Name">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td><td class="func-name"><tt>GetName</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Name of the popup menu.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#40">Menus, Commands, and Pop-up Menus: Accessing the Pop-up Menus</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddButton">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddButton</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcCommand-UICommand.html">pfcUICommand_ptr</a>&nbsp;Command, <a class="type" href="t-pfcUI-PopupmenuOptions.html">pfcPopupmenuOptions_ptr</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Add a new item to a Creo Parametric popup menu.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#43">Menus, Commands, and Pop-up Menus: Adding Content to the Pop-up Menus</a>, <a href="../manual0/menus_jlink.html#44">Menus, Commands, and Pop-up Menus: Adding Content to the Pop-up Menus</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Command</b></tt>
+</dt>
+<dd>Command associated to the popup menu button. 
+   </dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>Various attributes use to define this popup menu button. 
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddMenu">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcUI-Popupmenu.html">pfcPopupmenu_ptr</a></tt></td><td class="func-name"><tt>AddMenu</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcUI-PopupmenuOptions.html">pfcPopupmenuOptions_ptr</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds a cascade button to the popup menu.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#44">Menus, Commands, and Pop-up Menus: Adding Content to the Pop-up Menus</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>Various attributes used to define the popup menu. 
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The popup menu.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

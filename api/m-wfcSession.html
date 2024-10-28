@@ -1,0 +1,406 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+	 CIP C++ documentation for file "wfcSession.h"
+	</title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      129
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;File
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="m-wfcSession.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>File "wfcSession.h"</h2>
+<b>Description</b>
+<br>
+<br>
+  Similar to its predecessor J-Link, Object Toolkit top level object is a session, which provides methods to get objects representing Creo Parametric models, model items, parameters and so on. 
+  <br>
+<br>
+  
+<p>Since Object Toolkit has more functional features than J-Link, its actual Session object, returned by pfcGetProESession, is of type <tt><b><tt><b><a class="class" href="t-wfcSession-WSession.html">wfcWSession</a></b></tt></b></tt>.</p>
+  
+<p>Interface <tt><b><tt><b><a class="class" href="t-wfcSession-WSession.html">wfcWSession</a></b></tt></b></tt> combines methods from  <tt><b><tt><b><a class="class" href="t-pfcSession-Session.html">pfcSession</a></b></tt></b></tt> and methods which are available only in Object Toolkit. Besides, methods for obtaining models now return Object Toolkit classes instead of J-Link.</p>
+  
+<p>As pfcGetProESession is shared by both Object Toolkit and J-Link, it declares the type of the returned session as <tt><b><tt><b><a class="class" href="t-pfcSession-Session.html">pfcSession</a></b></tt></b></tt>. To obtain <tt><b><tt><b><a class="class" href="t-wfcSession-WSession.html">wfcWSession</a></b></tt></b></tt>, this object should be cast to that type:
+    <pre>
+    wfcWSession_ptr ses = wfcWSession::cast(pfcGetProESession() );
+    </pre>
+    
+  
+</p>
+  
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Enumerated Types</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcSession-IntfDataSourceType.html">wfcIntfDataSourceType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Provides the type of IntfDataSource.</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcSession-WModelRetrieveOption.html">wfcWModelRetrieveOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      Provides options to retrieve model.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcSession-KnownDirectoryType.html">wfcKnownDirectoryType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcSession-CreoType.html">wfcCreoType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>enum</tt></td><td class="entities-name"><tt><a class="enumtype" href="t-wfcSession-KinDragType.html">wfcKinDragType</a></tt></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Interface Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-BeforeModelRetrieveActionListener.html">wfcBeforeModelRetrieveActionListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This class delgates the event before activating file open dialog using <b>File -&gt; Open</b>.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-BeforeModelRetrieveInstructions.html">wfcBeforeModelRetrieveInstructions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">
+      This class specifies the instructions for action listener <tt><b><tt><b><a class="class" href="t-wfcSession-BeforeModelRetrieveActionListener.html">wfcBeforeModelRetrieveActionListener</a></b></tt></b></tt>.
+    </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-BeforeModelRetrieveListener.html">wfcBeforeModelRetrieveListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-BeforeModelSaveAllListener.html">wfcBeforeModelSaveAllListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-BrowserMessageListener.html">wfcBrowserMessageListener</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-ElementWstringOption.html">wfcElementWstringOption</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-FiletypeOpenOptions.html">wfcFiletypeOpenOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class specifies the options for file open dialog. 
+  </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-FiletypeSaveOptions.html">wfcFiletypeSaveOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">This class specifies the options for file save dialog. 
+</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-LineStyleData.html">wfcLineStyleData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text"> Provides the information about the Line Style.</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-ParsedFileNameData.html">wfcParsedFileNameData</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-RunnableAction.html">wfcRunnableAction</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-SnapshotTransformation.html">wfcSnapshotTransformation</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-Timer.html">wfcTimer</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-TimerAction.html">wfcTimerAction</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-TimeValue.html">wfcTimeValue</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-WBaseSession.html">wfcWBaseSession</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-WSession.html">wfcWSession</a></tt></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td class="entities-text">Top interface in Object Toolkit.</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Collection Classes</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-SnapshotTransformations.html">wfcSnapshotTransformations</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%"><tt>class</tt></td><td class="entities-name"><tt><a class="class" href="t-wfcSession-WModelRetrieveOptions.html">wfcWModelRetrieveOptions</a></tt></td>
+</tr>
+<tr>
+<td></td><td>
+    This is a <b>COMPACT</b> class.
+   </td>
+</tr>
+<tr>
+<td></td><td class="entities-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+<hr>
+<table border="0" class="entities">
+<tr>
+<th colspan="2" class="entities">Functions</th>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Matrix3D.html">pfcMatrix3D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateMatrix3D.html">wfcCreateMatrix3D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx00, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx01, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx02, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx03, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx10, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx11, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx12, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx13, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx20, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx21, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx22, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx23, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx30, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx31, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx32, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx33)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 3 dimensional Matrix with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Outline2D.html">pfcOutline2D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateOutline2D.html">wfcCreateOutline2D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx00, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx01, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx10, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx11)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 2 dimensional Line with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Outline3D.html">pfcOutline3D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateOutline3D.html">wfcCreateOutline3D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx00, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx01, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx02, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx10, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx11, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx12)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 3 dimensional Line with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Point2D.html">pfcPoint2D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreatePoint2D.html">wfcCreatePoint2D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx0, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx1)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 2 dimensional Point with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Point3D.html">pfcPoint3D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreatePoint3D.html">wfcCreatePoint3D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx0, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx1, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx2)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 3 dimensional Point with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-wfcSession-Timer.html">wfcTimer_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateTimer.html">wfcCreateTimer</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSession-TimerAction.html">wfcTimerAction_ptr</a>&nbsp;Action)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+      Create timer object with specified listener.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Vector2D.html">pfcVector2D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateVector2D.html">wfcCreateVector2D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx0, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx1)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 2 dimensional Vector with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="t-pfcBase-Vector3D.html">pfcVector3D_ptr</a></tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-CreateVector3D.html">wfcCreateVector3D</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx0, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx1, <a class="type" href="h-basictypes.html#xreal">xreal</a>&nbsp;idx2)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Intialize a 3 dimensional Vector with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td width="1%" class="func-name"><tt><a class="func" href="f-wfcSession-InvokeLater.html">wfcInvokeLater</a></tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-wfcSession-RunnableAction.html">wfcRunnableAction_ptr</a>&nbsp;Action)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+      Create listener object whose callback can be called as soon as Toolkit thread is available. User can call Object Toolkit methods in this callback.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    </td>
+</tr>
+</table>
+<br>
+</body>
+</html>

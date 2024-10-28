@@ -1,0 +1,310 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcReport"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      448
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcReport.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcReport-Report.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcReport</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcReport.html">pfcReport.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcReport</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcModel2D-Model2D.html">pfcModel2D</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcReport</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class represents a report model.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcModel-WReport.html">wfcWReport</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSheet-SheetOwner.html"><tt>pfcSheetOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSheet-SheetOwner.html#NumberOfSheets"><tt>GetNumberOfSheets</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>GetCurrentSheetNumber</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>SetCurrentSheetNumber</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#AddSheet"><tt>AddSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#ReorderSheet"><tt>ReorderSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetData"><tt>GetSheetData</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetInfo"><tt>GetSheetInfo</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetTransform"><tt>GetSheetTransform</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#RegenerateSheet"><tt>RegenerateSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#DeleteSheet"><tt>DeleteSheet</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetScale"><tt>GetSheetScale</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#SetSheetScale"><tt>SetSheetScale</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetFormat"><tt>GetSheetFormat</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#SetSheetFormat"><tt>SetSheetFormat</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetBackgroundView"><tt>GetSheetBackgroundView</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetUnits"><tt>GetSheetUnits</tt></a>,
+     <a class="method" href="t-pfcSheet-SheetOwner.html#GetSheetFormatDescr"><tt>GetSheetFormatDescr</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcDetail-DetailItemOwner.html"><tt>pfcDetailItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcDetail-DetailItemOwner.html#ListDetailItems"><tt>ListDetailItems</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#GetDetailItem"><tt>GetDetailItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateDetailItem"><tt>CreateDetailItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateFreeNote"><tt>CreateFreeNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateOffsetNote"><tt>CreateOffsetNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateOnItemNote"><tt>CreateOnItemNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#CreateLeaderNote"><tt>CreateLeaderNote</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition"><tt>RetrieveSymbolDefinition</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem"><tt>RetrieveSymbolDefItem</tt></a>,
+     <a class="method" href="t-pfcDetail-DetailItemOwner.html#AllowReadonlyNoteSelection"><tt>AllowReadonlyNoteSelection</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcTable-TableOwner.html"><tt>pfcTableOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcTable-TableOwner.html#ListTables"><tt>ListTables</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#GetTable"><tt>GetTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#CreateTable"><tt>CreateTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#RetrieveTable"><tt>RetrieveTable</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#RetrieveTableByOrigin"><tt>RetrieveTableByOrigin</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#UpdateTables"><tt>UpdateTables</tt></a>,
+     <a class="method" href="t-pfcTable-TableOwner.html#DeleteTable"><tt>DeleteTable</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItemOwner.html"><tt>pfcModelItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcView-ViewOwner.html"><tt>pfcViewOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-Model.html"><tt>pfcModel</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel2D-Model2D.html"><tt>pfcModel2D</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel2D-Model2D.html#TextHeight"><tt>GetTextHeight</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#TextHeight"><tt>SetTextHeight</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#List2DViews"><tt>List2DViews</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetViewByName"><tt>GetViewByName</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetViewDisplaying"><tt>GetViewDisplaying</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateView"><tt>CreateView</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#SetViewDisplaying"><tt>SetViewDisplaying</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#GetCurrentSolid"><tt>GetCurrentSolid</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#SetCurrentSolid"><tt>SetCurrentSolid</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListModels"><tt>ListModels</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#AddModel"><tt>AddModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#DeleteModel"><tt>DeleteModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#Regenerate"><tt>Regenerate</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ReplaceModel"><tt>ReplaceModel</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateDrawingDimension"><tt>CreateDrawingDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListShownDimensions"><tt>ListShownDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateDimension"><tt>CreateDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CreateRefDimension"><tt>CreateRefDimension</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CollectShownDimensions"><tt>CollectShownDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#CollectShownRefDimensions"><tt>CollectShownRefDimensions</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#ListSimplifiedReps"><tt>ListSimplifiedReps</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#AddSimplifiedRep"><tt>AddSimplifiedRep</tt></a>,
+     <a class="method" href="t-pfcModel2D-Model2D.html#DeleteSimplifiedRep"><tt>DeleteSimplifiedRep</tt></a>
+</dd>
+</dl>
+</body>
+</html>

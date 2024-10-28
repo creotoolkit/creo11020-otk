@@ -1,0 +1,197 @@
+<!--
+
+  14-MAY-02 J-03-23 Maya  $$1  Created.
+  13-AUG-02 J-03-30 Maya  $$2  Removed "Frames/No Frames"
+ 
+  -->
+
+<html>
+
+<head>
+ <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>
+  CIP C++ documentation for class xobject
+ </title>
+ <link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="frame-entity">
+
+<table class="toolbar" border="0" width="100%" cellspacing="0">
+ <tr>
+  <td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="h-cipxx.html">File</a></td>
+<!-- Removed to work with API Wizard
+  <td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="h-xobject.html">No&nbsp;Frames</a></td>
+-->
+  <td class="toolbar-lib-name"><font size="+2"><b><i>Standard Definitions</i></b></font></td>
+ </tr>
+</table>
+<hr>
+
+<h2>
+Class xobject
+</h2>
+
+<tt># include &lt;<b><a href="h-cipxx.html">cipxx.h</a></b>&gt;</tt><br><br>
+
+<table class="method-summary" border="0">
+<tr>
+ <td colspan="3"><tt>class <b><a name="xobject">xobject</a></b></tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>{</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>public:</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td></td>
+ <td class="func-signature"><tt><b>xobject</b> ();</tt></td>
+</tr>
+<tr>
+ <td colspan="3"><tt>protected:</tt></td>
+</tr>
+<tr> 
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt>virtual</tt></td> 
+ <td class="func-signature"><tt><b>xobject</b> ();</tt></td>
+</tr>
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td colspan="3"><tt>public:</tt></td>
+</tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td><tt><a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a></tt></td>
+ <td class="func-signature"><tt>*<a class="method" href="#getRtti">getRtti</a> ();</tt></td>
+</tr> 
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td>
+ <td class="func-signature"><tt><a class="method" href="#getCipTypeName">getCipTypeName</a> ();</tt></td>
+</tr> 
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#isSameAs">isSameAs</a> (<a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a> *type);</tt></td>
+</tr> 
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#isKindOf">isKindOf</a> (<a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a> *type);</tt></td>
+</tr> 
+<tr><td><tt>&nbsp;</tt></td></tr>
+<tr>
+ <td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+ <td class="return-type"><tt>bool</tt></td>
+ <td class="func-signature"><tt><a class="method" href="#isRefCountable">isRefCountable</a> ();</tt></td>
+</tr> 
+<tr>
+ <td colspan="3"><tt>};</tt></td>
+</tr>
+</table>
+<br><hr>
+
+<br>
+<b>Description</b>
+<br><br>
+This is a base class for all CIP object types, such as interfaces, unions and data collections. This class provides methods which allow to access run-time type information.
+<br>
+
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="h-xthrowable.html">xthrowable</a></tt>
+</dd>
+</dl>
+<hr><br>
+
+<b>Methods</b>
+<br><br>
+
+<a name="getRtti">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a></tt></td>
+ <td class="func-name"><tt>*getRtti</tt></td>
+ <td class="func-params"><tt>()</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the object run-time type information.
+</td></tr>
+</table>
+<br>
+
+<a name="getCipTypeName">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-xstring.html#xstring">xstring</a></tt></td>
+ <td class="func-name"><tt>getCipTypeName</tt></td>
+ <td class="func-params"><tt>()</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns the name of the object type.
+</td></tr> 
+</table>
+<br>
+
+<a name="isSameAs">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-name"><tt>isSameAs</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a> *type)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <a href="h-basictypes.html#xbool"><tt>xtrue</tt></a> if the object is of the same type as specified by parameter <tt>type</tt>, otherwise returns <a href="h-basictypes.html#xbool"><tt>xfalse</tt></a>.
+</td></tr>  
+</table>
+<br>
+
+<a name="isKindOf">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-name"><tt>isKindOf</tt></td>
+ <td class="func-params"><tt>(<a class="type" href="h-xrtti.html#xrttiobject">xrttiobject</a> *type)</tt></td>
+</tr>
+</table>
+</a>
+<table class="method-doc" border="0">
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <a href="h-basictypes.html#xbool"><tt>xtrue</tt></a> if the object is either of the same type as specified by parameter <tt>type</tt> or if the object type is derived from <tt>type</tt>, otherwise returns <a href="h-basictypes.html#xbool"><tt>xfalse</tt></a>.
+</td></tr>   
+</table> 
+<br>
+
+<a name="isRefCountable">
+<table class="method-def" border="0" cellspacing="0" cellpadding="5">
+<tr>
+ <td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td>
+ <td class="func-name"><tt>isRefCountable</tt></td>
+ <td class="func-params"><tt>()</tt></td>
+</tr>
+<table class="method-doc" border="0">
+</a>
+<tr><td><tt>&nbsp;</tt></td><td>
+Returns <a href="h-basictypes.html#xbool"><tt>xtrue</tt></a>, if the object type is reference countable, otherwise returns <a href="h-basictypes.html#xbool"><tt>xfalse</tt></a>.
+</td></tr>
+</table>
+<br>
+
+</body>
+
+</html>

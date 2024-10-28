@@ -1,0 +1,349 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcLayerItem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      927
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcLayerState.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcLayerState-LayerItem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcLayerItem</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcLayerState.html">wfcLayerState.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcLayerItem</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcObject-Object.html">pfcObject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>wfcLayerItem</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Provides the information of layer item.<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcLayerState-WLayer.html">wfcWLayer</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcLayerState-WSolidGeometryLayerItem.html">wfcWSolidGeometryLayerItem</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WAxis.html">wfcWAxis</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WSurface.html">wfcWSurface</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCurve.html">wfcWCurve</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WCsys.html">wfcWCsys</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WEdge.html">wfcWEdge</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcGeometry-WQuilt.html">wfcWQuilt</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcAnnotation-Annotation.html">wfcAnnotation</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcAnnotation-AnnotationElement.html">wfcAnnotationElement</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcXSection-WXSection.html">wfcWXSection</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcFeature-WFeature.html">wfcWFeature</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDimension-WRefDimension.html">wfcWRefDimension</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDimension-WUDFDimension.html">wfcWUDFDimension</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcDimension-WDimension2D.html">wfcWDimension2D</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcNote-WNote.html">wfcWNote</a></b></tt>, 
+        <tt><b><a class="class" href="t-wfcTable-WTable.html">wfcWTable</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AddNoUpdate">AddNoUpdate</a>
+ (<a class="type" href="t-pfcLayer-Layer.html">pfcLayer_ptr</a>&nbsp;Layer)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds the specified item to a layer. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcLayer-Layers.html">pfcLayers_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetLayers">GetLayers</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Finds all layers containing the given item. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsLayerItemVisible">IsLayerItemVisible</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the visibility status for the specified layer item. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#RemoveNoUpdate">RemoveNoUpdate</a>
+ (<a class="type" href="t-pfcLayer-Layer.html">pfcLayer_ptr</a>&nbsp;Layer)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes the specified item from the layer and does not do model tree update. </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="IsLayerItemVisible">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>IsLayerItemVisible</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcView-View.html">pfcView_ptr</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the visibility status for the specified layer item. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#56">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="RemoveNoUpdate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>RemoveNoUpdate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcLayer-Layer.html">pfcLayer_ptr</a>&nbsp;Layer)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes the specified item from the layer and does not do model tree update. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified layer was not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidName.html">pfcXToolkitInvalidName</a></b></tt></b></tt> - You specified an invalid layer name.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - You specified an invalid layer item type.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#57">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Layer</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetLayers">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcLayer-Layers.html">pfcLayers_ptr</a></tt></td><td class="func-name"><tt>GetLayers</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcDrawing-Drawing.html">pfcDrawing_ptr</a>&nbsp;Drawing)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Finds all layers containing the given item. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The item is not found on any layers in the designated model. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#55">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Drawing</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AddNoUpdate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AddNoUpdate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcLayer-Layer.html">pfcLayer_ptr</a>&nbsp;Layer)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds the specified item to a layer. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidName.html">pfcXToolkitInvalidName</a></b></tt></b></tt> - You specified an invalid layer name.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - You specified an invalid type in the <i>ProLayerItem</i> structure. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#58">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Layer</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

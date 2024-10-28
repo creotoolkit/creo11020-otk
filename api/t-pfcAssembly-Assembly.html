@@ -1,0 +1,1130 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcAssembly"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      20
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcAssembly.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcAssembly-Assembly.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcAssembly</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcAssembly.html">pfcAssembly.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcAssembly</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcSolid-Solid.html">pfcSolid</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcAssembly</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes an assembly.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><b><a class="class" href="t-wfcAssembly-WAssembly.html">wfcWAssembly</a></b></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AssembleByCopy">AssembleByCopy</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;NewModelName, <a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;ModelToCopy, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;LeaveUnplaced)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Assembles a copy of a model into the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#AssembleComponent">AssembleComponent</a>
+ (<a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;Model, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;Position)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Assembles the model into the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AssembleSkeleton">AssembleSkeleton</a>
+ (<a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;SkeletonModel)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Adds a skeleton model in the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#AssembleSkeletonByCopy">AssembleSkeletonByCopy</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;NewSkeletonName, <a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;SkeletonToCopy)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Copies the specified template model into the assembly as a skeleton model.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DeleteSkeleton">DeleteSkeleton</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Deletes the skeleton model from the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Explode">Explode</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Explodes the specified assembly.  The function invalidates
+the display list, but the application needs to repaint the
+window.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ExplodedState.html">pfcExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetActiveExplodedState">GetActiveExplodedState</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the current active exploded state in the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcAssembly-ExplodedState.html">pfcExplodedState_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetDefaultExplodedState">GetDefaultExplodedState</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the default exploded state in the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#DynamicPositioning">GetDynamicPositioning</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#DynamicPositioning">SetDynamicPositioning</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If the assembly uses dynamic positioning, this attribute is <tt>true</tt>; otherwise, it is <tt>false</tt></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#IsExploded">GetIsExploded</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">If the assembly is exploded, this attribute is <tt>true</tt>; otherwise, it is<tt>false</tt></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-MassProperty.html">pfcMassProperty_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetMassPropertyByCompPath">GetMassPropertyByCompPath</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem_ptr</a>&nbsp;CsysItem, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CsysPath)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Calculates the mass properties of solid referenced by
+   	the specified coordinate system, using respective component paths.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#GetSkeleton">GetSkeleton</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the skeleton model in the assembly.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#UnExplode">UnExplode</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Unexplodes the assembly.  The function invalidates
+the display list, but the application needs to repaint the
+window.
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcFamily-FamilyMember.html"><tt>pfcFamilyMember</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcFamily-FamilyMember.html#Parent"><tt>GetParent</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetImmediateGenericInfo"><tt>GetImmediateGenericInfo</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetTopGenericInfo"><tt>GetTopGenericInfo</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#ListColumns"><tt>ListColumns</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#ListRows"><tt>ListRows</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetCell"><tt>GetCell</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#SetCell"><tt>SetCell</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetCellIsDefault"><tt>GetCellIsDefault</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#AddRow"><tt>AddRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetRow"><tt>GetRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#RemoveRow"><tt>RemoveRow</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#AddColumn"><tt>AddColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#RemoveColumn"><tt>RemoveColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#GetColumn"><tt>GetColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateColumn"><tt>CreateColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateParamColumn"><tt>CreateParamColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateDimensionColumn"><tt>CreateDimensionColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateFeatureColumn"><tt>CreateFeatureColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateComponentColumn"><tt>CreateComponentColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateCompModelColumn"><tt>CreateCompModelColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateGroupColumn"><tt>CreateGroupColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateMergePartColumn"><tt>CreateMergePartColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolPlusColumn"><tt>CreateTolPlusColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolMinusColumn"><tt>CreateTolMinusColumn</tt></a>,
+     <a class="method" href="t-pfcFamily-FamilyMember.html#CreateTolPlusMinusColumn"><tt>CreateTolPlusMinusColumn</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Parent.html"><tt>pfcParent</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ModelItemOwner.html"><tt>pfcModelItemOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+     <a class="method" href="t-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcView-ViewOwner.html"><tt>pfcViewOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+     <a class="method" href="t-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcObject-Child.html"><tt>pfcChild</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+     <a class="method" href="t-pfcObject-Child.html#OId"><tt>GetOId</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcBase-ActionSource.html"><tt>pfcActionSource</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+     <a class="method" href="t-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-RelationOwner.html"><tt>pfcRelationOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+     <a class="method" href="t-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModelItem-ParameterOwner.html"><tt>pfcParameterOwner</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+     <a class="method" href="t-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcModel-Model.html"><tt>pfcModel</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+     <a class="method" href="t-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<dl>
+<dt>
+<b>Methods Inherited from&nbsp;Class</b>&nbsp;<a class="class" href="t-pfcSolid-Solid.html"><tt>pfcSolid</tt></a>:
+   </dt>
+<dd>
+<br>
+<a class="method" href="t-pfcSolid-Solid.html#GetDefaultBody"><tt>GetDefaultBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetSurfaceSolidBody"><tt>GetSurfaceSolidBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetEdgeSolidBody"><tt>GetEdgeSolidBody</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GeomOutline"><tt>GetGeomOutline</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#RelativeAccuracy"><tt>GetRelativeAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#RelativeAccuracy"><tt>SetRelativeAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#AbsoluteAccuracy"><tt>GetAbsoluteAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#AbsoluteAccuracy"><tt>SetAbsoluteAccuracy</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#Regenerate"><tt>Regenerate</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ExecuteFeatureOps"><tt>ExecuteFeatureOps</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#EvalOutline"><tt>EvalOutline</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateLocalGroup"><tt>CreateLocalGroup</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateNote"><tt>CreateNote</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListFailedFeatures"><tt>ListFailedFeatures</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListFeaturesByType"><tt>ListFeaturesByType</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListCrossSections"><tt>ListCrossSections</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetCrossSection"><tt>GetCrossSection</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#IsSkeleton"><tt>GetIsSkeleton</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#HasRetrievalErrors"><tt>HasRetrievalErrors</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetFeatureByName"><tt>GetFeatureByName</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetFeatureById"><tt>GetFeatureById</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateImportFeat"><tt>CreateImportFeat</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ActivateSimpRep"><tt>ActivateSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetActiveSimpRep"><tt>GetActiveSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateSimpRep"><tt>CreateSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#SelectSimpRep"><tt>SelectSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetSimpRep"><tt>GetSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMasterRep"><tt>GetMasterRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetGraphicsRep"><tt>GetGraphicsRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetGeomRep"><tt>GetGeomRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#DeleteSimpRep"><tt>DeleteSimpRep</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMassProperty"><tt>GetMassProperty</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetMassPropertyWithDensity"><tt>GetMassPropertyWithDensity</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListGroups"><tt>ListGroups</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateFeature"><tt>CreateFeature</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateUDFGroup"><tt>CreateUDFGroup</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ExportShrinkwrap"><tt>ExportShrinkwrap</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetPrincipalUnits"><tt>GetPrincipalUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#SetPrincipalUnits"><tt>SetPrincipalUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListUnits"><tt>ListUnits</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#ListUnitSystems"><tt>ListUnitSystems</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#GetUnit"><tt>GetUnit</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateCustomUnit"><tt>CreateCustomUnit</tt></a>,
+     <a class="method" href="t-pfcSolid-Solid.html#CreateUnitSystem"><tt>CreateUnitSystem</tt></a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="IsExploded">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetIsExploded</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If the assembly is exploded, this attribute is <tt>true</tt>; otherwise, it is<tt>false</tt>
+<br>
+<br>
+      The exploded status of an assembly depends on the mode, in particular, while the drawing view is active,
+      it does not represent the real explode state of the assembly, but the state of the assembly in the current
+      drawing view.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#95">Assemblies and Components: Exploded Assemblies</a>, <a href="../manual0/jassembly.html#100">Assemblies and Components: Exploded Assemblies</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DynamicPositioning">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetDynamicPositioning</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetDynamicPositioning</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>If the assembly uses dynamic positioning, this attribute is <tt>true</tt>; otherwise, it is <tt>false</tt>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Explode">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>Explode</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Explodes the specified assembly.  The function invalidates
+the display list, but the application needs to repaint the
+window.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The specified assembly is already exploded.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#96">Assemblies and Components: Exploded Assemblies</a>, <a href="../manual0/jassembly.html#100">Assemblies and Components: Exploded Assemblies</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="UnExplode">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>UnExplode</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Unexplodes the assembly.  The function invalidates
+the display list, but the application needs to repaint the
+window.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNoChange.html">pfcXToolkitNoChange</a></b></tt></b></tt> - The specified assembly is already unexploded. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#97">Assemblies and Components: Exploded Assemblies</a>, <a href="../manual0/jassembly.html#100">Assemblies and Components: Exploded Assemblies</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetDefaultExplodedState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcAssembly-ExplodedState.html">pfcExplodedState_ptr</a></tt></td><td class="func-name"><tt>GetDefaultExplodedState</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the default exploded state in the assembly.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#99">Assemblies and Components: Exploded Assemblies</a>, <a href="../manual0/jassembly.html#100">Assemblies and Components: Exploded Assemblies</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The default exploded state.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetActiveExplodedState">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ExplodedState.html">pfcExplodedState_ptr</a></tt></td><td class="func-name"><tt>GetActiveExplodedState</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the current active exploded state in the assembly.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#98">Assemblies and Components: Exploded Assemblies</a>, <a href="../manual0/jassembly.html#100">Assemblies and Components: Exploded Assemblies</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The active exploded state, or <tt>null</tt>, if the assembly is not exploded.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssembleComponent">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-name"><tt>AssembleComponent</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;Model, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcBase-Transform3D.html">pfcTransform3D_ptr</a>&nbsp;Position)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Assembles the model into the assembly.
+<br>
+<br>The new component will be packaged at the designated location.<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">pfcXToolkitUnsupported</a></b></tt></b></tt> - Unsupported model. For instance, models which come from Multi-CAD model approach, are not supported in this release. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#44">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The model to assemble.</dd>
+<dt>
+<tt><b>Position</b></tt>
+</dt>
+<dd>The initial position of the component.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new component feature object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssembleByCopy">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcFeature-Feature.html">pfcFeature_ptr</a></tt></td><td class="func-name"><tt>AssembleByCopy</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;NewModelName, <a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;ModelToCopy, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;LeaveUnplaced)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Assembles a copy of a model into the assembly.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Template type does not correspond to component type.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt> - The model can not be used as a template or has external dependencies. Copy is aborted. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitLineTooLong.html">pfcXToolkitLineTooLong</a></b></tt></b></tt> - comp_name length of the new component is more than 31 chars. This restriction will be removed in future releases. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">pfcXToolkitUnsupported</a></b></tt></b></tt> - Unsupported model. For instance, models which come from Multi-CAD model approach, are not supported in this release. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#45">Assemblies and Components: Assembling Components</a>, <a href="../manual0/jassembly.html#66">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewModelName</b></tt>
+</dt>
+<dd>The name of the new copy of the model.</dd>
+<dt>
+<tt><b>ModelToCopy</b></tt>
+</dt>
+<dd>The template model to copy.</dd>
+<dt>
+<tt><b>LeaveUnplaced</b></tt>
+</dt>
+<dd>
+<tt>true</tt> to leave the component unplaced, <tt>false</tt> to place the component in the default location. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new assembly component feature object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssembleSkeleton">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AssembleSkeleton</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;SkeletonModel)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Adds a skeleton model in the assembly.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitInvalidType.html">pfcXToolkitInvalidType</a></b></tt></b></tt> - Skeleton is a handle not to a skeleton model.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - Skeleton model already exists in the assembly.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#135">Assemblies and Components: Skeleton Models</a>, <a href="../manual0/jassembly.html#139">Assemblies and Components: Skeleton Models</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SkeletonModel</b></tt>
+</dt>
+<dd>The skeleton model.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="AssembleSkeletonByCopy">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>AssembleSkeletonByCopy</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;NewSkeletonName, <a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a>&nbsp;SkeletonToCopy)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Copies the specified template model into the assembly as a skeleton model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitFound.html">pfcXToolkitFound</a></b></tt></b></tt> - Skeleton model already exists in the assembly.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitAbort.html">pfcXToolkitAbort</a></b></tt></b></tt> - Template type is invalid (for example, is a manufacturing part), or has external external dependencies. Copying is aborted. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license is absent.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitUnsupported.html">pfcXToolkitUnsupported</a></b></tt></b></tt> - Models which come from Multi-CAD approach are not supported as template model. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitLineTooLong.html">pfcXToolkitLineTooLong</a></b></tt></b></tt> - Name length of skeleton model is more than 31 chars. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#136">Assemblies and Components: Skeleton Models</a>, <a href="../manual0/jassembly.html#139">Assemblies and Components: Skeleton Models</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewSkeletonName</b></tt>
+</dt>
+<dd>The name of the new skeleton model.</dd>
+<dt>
+<tt><b>SkeletonToCopy</b></tt>
+</dt>
+<dd>The template model to copy.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetSkeleton">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-Solid.html">pfcSolid_ptr</a></tt></td><td class="func-name"><tt>GetSkeleton</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the skeleton model in the assembly.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified assembly has no skeleton model. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitCantAccess.html">pfcXToolkitCantAccess</a></b></tt></b></tt> - The skeleton exists, but can not be used.</p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#137">Assemblies and Components: Skeleton Models</a>, <a href="../manual0/jassembly.html#139">Assemblies and Components: Skeleton Models</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The skeleton model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="DeleteSkeleton">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>DeleteSkeleton</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Deletes the skeleton model from the assembly.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified assembly has no skeleton model. </p>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotValid.html">pfcXToolkitNotValid</a></b></tt></b></tt> - Required license not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#138">Assemblies and Components: Skeleton Models</a>, <a href="../manual0/jassembly.html#139">Assemblies and Components: Skeleton Models</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="GetMassPropertyByCompPath">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcSolid-MassProperty.html">pfcMassProperty_ptr</a></tt></td><td class="func-name"><tt>GetMassPropertyByCompPath</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CompPath, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcModelItem-ModelItem.html">pfcModelItem_ptr</a>&nbsp;CsysItem, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-pfcAssembly-ComponentPath.html">pfcComponentPath_ptr</a>&nbsp;CsysPath)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Calculates the mass properties of solid referenced by
+   	the specified coordinate system, using respective component paths.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><b><tt><b><a class="class" href="t-pfcExceptions-XToolkitNotFound.html">pfcXToolkitNotFound</a></b></tt></b></tt> - The specified coordinate system was not found.
+    </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#163">Solid: Mass Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CompPath</b></tt>
+</dt>
+<dd>The component path of solid.
+	If this is <tt>null</tt>, the top assembly is referred. </dd>
+<dt>
+<tt><b>CsysItem</b></tt>
+</dt>
+<dd>The csys model item.
+	If this is <tt>null</tt>, default csys is referred.</dd>
+<dt>
+<tt><b>CsysPath</b></tt>
+</dt>
+<dd>The component path of csys.
+	If this is <tt>null</tt>, default csys is referred.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

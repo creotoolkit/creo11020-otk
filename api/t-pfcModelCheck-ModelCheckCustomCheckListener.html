@@ -1,0 +1,271 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "pfcModelCheckCustomCheckListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      357
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-pfcModelCheck.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcModelCheckCustomCheckListener</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-pfcModelCheck.html">pfcModelCheck.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>pfcModelCheckCustomCheckListener</b>
+<br>&nbsp;: public virtual <a class="bold" href="t-pfcBase-ActionListener.html">pfcActionListener</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xaideclare</a></b>(<b>pfcModelCheckCustomCheckListener</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface should be extended to provide the
+   implementation for a ModelCheck custom check.<br>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelCheck-CustomCheckResults.html">pfcCustomCheckResults_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheck">OnCustomCheck</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to evaluate a ModelCheck externally
+   defined check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheckAction">OnCustomCheckAction</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;SelectedItem)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to execute a repair action on an item
+   found by a custom check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#OnCustomCheckUpdate">OnCustomCheckUpdate</a>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;SelectedItem)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Override this method to update an item found by a custom check.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="OnCustomCheck">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcModelCheck-CustomCheckResults.html">pfcCustomCheckResults_ptr</a></tt></td><td class="func-name"><tt>OnCustomCheck</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to evaluate a ModelCheck externally
+   defined check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#96">Models: Custom Checks</a>, <a href="../manual0/JModel.html#102">Models: Custom Checks</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd>The name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> The  <tt><b><tt><b><a class="class" href="t-pfcModelCheck-CustomCheckResults.html">pfcCustomCheckResults</a></b></tt></b></tt>
+   object containing the results of the check for this model. 
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnCustomCheckAction">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnCustomCheckAction</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;SelectedItem)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to execute a repair action on an item
+   found by a custom check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#97">Models: Custom Checks</a>, <a href="../manual0/JModel.html#102">Models: Custom Checks</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd> Name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+<dt>
+<tt><b>SelectedItem</b></tt>
+</dt>
+<dd>Label of the item that was selected from
+   the table, if applicable.  This will match the value of string 
+   returned in the <tt><b><tt><b><a class="class" href="t-pfcModelCheck-CustomCheckResults.html">pfcCustomCheckResults</a></b></tt></b></tt> object
+   returned by <tt><b><a class="method" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html#OnCustomCheck">pfcModelCheckCustomCheckListener::OnCustomCheck(xrstring, pfcModel_ptr)</a></b></tt>.
+   Can be <tt>null</tt> if no item was selected.
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="OnCustomCheckUpdate">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>OnCustomCheckUpdate</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;CheckName, <a class="type" href="t-pfcModel-Model.html">pfcModel_ptr</a>&nbsp;Mdl, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="h-xstring.html#xrstring">xrstring</a>&nbsp;SelectedItem)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Override this method to update an item found by a custom check.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#98">Models: Custom Checks</a>, <a href="../manual0/JModel.html#102">Models: Custom Checks</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CheckName</b></tt>
+</dt>
+<dd> Name of the check. </dd>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>The model. </dd>
+<dt>
+<tt><b>SelectedItem</b></tt>
+</dt>
+<dd>Label of the item that was selected from
+   the table,if applicable. This will match the value of string returned in the 
+   <tt><b><tt><b><a class="class" href="t-pfcModelCheck-CustomCheckResults.html">pfcCustomCheckResults</a></b></tt></b></tt> object
+   returned by <tt><b><a class="method" href="t-pfcModelCheck-ModelCheckCustomCheckListener.html#OnCustomCheck">pfcModelCheckCustomCheckListener::OnCustomCheck(xrstring, pfcModel_ptr)</a></b></tt>.
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

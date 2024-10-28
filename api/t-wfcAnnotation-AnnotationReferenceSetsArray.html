@@ -1,0 +1,541 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcAnnotationReferenceSetsArray"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      779
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcAnnotation.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcAnnotationReferenceSetsArray</h2>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcAnnotation.html">wfcAnnotation.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcAnnotationReferenceSetsArray</b>
+<br>&nbsp;: public <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcAnnotationReferenceSetsArray</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>An ordered collection of objects of a certain type.<br>
+<br>The user can access elements by their integer index (position) in the list. Sequence provides methods for positional (indexed) access to its elements. Sequences are zero based.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAnnot.html#71">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#append">append</a>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Appends an element with the specified value to the end of the sequence.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#clear">clear</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes all the elements from the sequence.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray</a>&nbsp;*</tt></td><td class="func-signature"><tt><a class="method" href="#create">create</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new empty sequence.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray</a>&nbsp;*</tt></td><td class="func-signature"><tt><a class="method" href="#createCapacity">createCapacity</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;count)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Creates a new empty sequence with a specified initial capacity. Capacity is the number of elements, that can be added to the sequence without having to reallocate its internal buffers.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#get">get</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns the value of the sequence element with the specified index. If the index is out of range, this method throws exception <tt>cipXInvalidSeqIndex</tt>.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-signature"><tt><a class="method" href="#getarraysize">getarraysize</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Returns current number of elements in the sequence.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#insert">insert</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Inserts an element with the specified value in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#insertseq">insertseq</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">xtbsequence&lt;wfcAnnotationReferenceSets_ptr&gt;</a>&nbsp;*seq)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Inserts elements from the list passed as the second argument in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#removerange">removerange</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;frominc, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;toexcl)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Removes elements in the specified range from the sequence. The first argument specifies the index of the first element to be removed. The second argument specifies the index of the element immediately after the last in the range to be removed.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#set">set</a>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">Assigns a value to the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="getarraysize">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xint">xint</a></tt></td><td class="func-name"><tt>getarraysize</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns current number of elements in the sequence.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Current number of elements.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="get">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a></tt></td><td class="func-name"><tt>get</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Returns the value of the sequence element with the specified index. If the index is out of range, this method throws exception <tt>cipXInvalidSeqIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of requested sequence element.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Value of the element at the specified index.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="set">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>set</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Assigns a value to the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of the element to be assigned.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Value to be assigned.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="removerange">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>removerange</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;frominc, <a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;toexcl)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes elements in the specified range from the sequence. The first argument specifies the index of the first element to be removed. The second argument specifies the index of the element immediately after the last in the range to be removed.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>frominc</b></tt>
+</dt>
+<dd>Index of the first element to be removed.</dd>
+<dt>
+<tt><b>toexcl</b></tt>
+</dt>
+<dd>Index of the element following the last element to be removed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="append">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>append</tt></td><td class="func-params"><tt>
+ (<a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Appends an element with the specified value to the end of the sequence.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Value to be appended.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="insert">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>insert</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a href="h-basictypes.html#optional">optional</a>&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSets.html">wfcAnnotationReferenceSets_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Inserts an element with the specified value in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index for an element to be inserted at.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Value to be inserted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="insertseq">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>insertseq</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;idx, <a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">xtbsequence&lt;wfcAnnotationReferenceSets_ptr&gt;</a>&nbsp;*seq)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Inserts elements from the list passed as the second argument in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index at which the first new element should be inserted.</dd>
+<dt>
+<tt><b>seq</b></tt>
+</dt>
+<dd>Sequence of elements to be inserted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="clear">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>clear</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Removes all the elements from the sequence.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray</a>&nbsp;*</tt></td><td class="func-name"><tt>create</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new empty sequence.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created sequence.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="createCapacity">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcAnnotation-AnnotationReferenceSetsArray.html">wfcAnnotationReferenceSetsArray</a>&nbsp;*</tt></td><td class="func-name"><tt>createCapacity</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xint">xint</a>&nbsp;count)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>Creates a new empty sequence with a specified initial capacity. Capacity is the number of elements, that can be added to the sequence without having to reallocate its internal buffers.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>count</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created sequence.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP C++ documentation for class "wfcXSectionComponents"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      1175
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-entity">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="m-wfcXSection.html">File</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="t-wfcXSection-XSectionComponents.html">Expand</a></td><td class="toolbar-lib-name">
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcXSectionComponents</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="t-wfcXSection-XSectionExcludeItems.html">wfcXSectionExcludeItems</a></tt>
+<p></p>
+<tt>
+     # include
+     &lt;<b><a href="m-wfcXSection.html">wfcXSection.h</a></b>&gt;
+     <br>
+<br>
+
+     class <b>wfcXSectionComponents</b>
+<br>&nbsp;: public virtual <a class="bold" href="h-xobject.html">xobject</a>
+<br>
+     {<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="h-xdeclare.html">xdeclare</a></b>(<b>wfcXSectionComponents</b>)<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+     };<br>
+     This is a <b>COMPACT</b> class.
+    </tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Interface for excluding or including components from cross section <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<b>Method Summary</b>
+<br>
+<br>
+<table cellpadding="3" border="0" class="method-summary">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcXSection-XSectionComponents.html">wfcXSectionComponents_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Create">Create</a>
+ (<a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a>&nbsp;Components, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Exclude)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text">
+        Returns <tt><b><tt><b><a class="class" href="t-wfcXSection-XSectionComponents.html">wfcXSectionComponents</a></b></tt></b></tt> object
+      </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a></tt></td><td class="func-signature"><tt><a class="method" href="#Components">GetComponents</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Components">SetComponents</a>
+ (<a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Sequence of componets to exclude or include from cross section defination </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-signature"><tt><a class="method" href="#Exclude">GetExclude</a>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-signature"><tt><a class="method" href="#Exclude">SetExclude</a>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"> Pass <t>true</t> to exclude components and <t>xfalse</t> to include
+    </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td><td colspan="2" class="entities-text"></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<b>Method Detail</b>
+<br>
+<br>
+<a name="Components">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a></tt></td><td class="func-name"><tt>GetComponents</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetComponents</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Sequence of componets to exclude or include from cross section defination <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#42">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#43">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Exclude">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt><a class="type" href="h-basictypes.html#xbool">xbool</a></tt></td><td class="func-name"><tt>GetExclude</tt></td><td class="func-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="func-name"><tt>SetExclude</tt></td><td class="func-params"><tt>
+ (<a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br> Pass <t>true</t> to exclude components and <t>xfalse</t> to include
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#40">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#41">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<a name="Create">
+<table cellpadding="5" cellspacing="0" border="0" class="method-def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="t-wfcXSection-XSectionComponents.html">wfcXSectionComponents_ptr</a></tt></td><td class="func-name"><tt>Create</tt></td><td class="func-params"><tt>
+ (<a class="type" href="t-pfcAssembly-ComponentPaths.html">pfcComponentPaths_ptr</a>&nbsp;Components, <a class="type" href="h-basictypes.html#xbool">xbool</a>&nbsp;Exclude)
+</tt></td>
+</tr>
+</table>
+</a>
+<table border="0" class="method-doc">
+<tr>
+<td></td><td>
+<br>
+        Returns <tt><b><tt><b><a class="class" href="t-wfcXSection-XSectionComponents.html">wfcXSectionComponents</a></b></tt></b></tt> object
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Components</b></tt>
+</dt>
+<dd>  Sequence of componets to exclude or include from cross section definition </dd>
+<dt>
+<tt><b>Exclude</b></tt>
+</dt>
+<dd>
+        Pass <t>true</t> to exclude components and <t>xfalse</t> to include
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt><b><tt><b><a class="class" href="t-wfcXSection-XSectionHatch.html">wfcXSectionHatch</a></b></tt></b></tt>
+      
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>
